@@ -1,0 +1,223 @@
+Product,WAPE,MASE,MAE,Bias,RMSE
+Bakery,0.1479,0.8686,9.3153,-4.3393,11.6339
+P.Eggs on Toast,0.4807,1.1799,2.6852,-2.4905,3.0973
+Baked Beans,0.5296,0.8905,2.7943,-2.4249,3.3990
+Sausage Bap,0.2859,0.8226,3.4604,-1.8191,4.0112
+"Avo, Egg & Bacon",0.6246,1.1043,2.1323,-1.7043,2.7025
+Multiseed Toast Bread,0.6666,0.7179,1.9309,-1.6941,2.7250
+Tuna JP,0.6701,0.8935,1.8486,-1.6220,2.4686
+Breakfast Muffin,0.4514,0.7050,1.7745,-1.3132,2.2718
+Festive Stack,0.8276,1.4529,2.2545,-1.2176,2.8559
+S.Eggs on Toast,0.5695,0.8005,1.9047,-0.9916,2.3207
+"Avo, Feta & Tom",0.6328,0.7693,1.3528,-0.9911,1.9188
+Brown Toast Bread,0.2393,0.7420,2.0213,-0.9684,2.5864
+Veggie Breakfast,0.6438,0.6438,1.4430,-0.9332,1.9973
+Poached Egg,0.5878,0.6831,1.7430,-0.7957,2.4608
+Egg Bap,0.7425,0.6497,1.2546,-0.7626,1.7356
+Black Pudding,0.5965,0.6688,1.5221,-0.6961,2.0509
+Ltle Bfast Saus,0.7267,0.9217,1.3031,-0.6944,1.7035
+Tattie Scone,0.6807,0.7277,1.4553,-0.6882,1.9275
+Bacon,0.3871,0.6314,2.2426,-0.6496,3.1828
+F.Eggs on Toast,0.7094,0.8107,1.1742,-0.6188,1.5544
+Scrambled Egg,0.8295,0.6255,1.3157,-0.6156,1.8678
+Buttd Mushrooms,0.5526,0.8289,1.2576,-0.6059,1.5943
+Hash Brown,0.5194,0.7523,1.5045,-0.4357,1.9477
+Sourdough Toast Bread,0.8088,0.6558,0.8367,-0.4212,1.1859
+Chilli Carne JP,0.7051,0.7608,0.9969,-0.4101,1.2771
+Ltle Bfast Bacon,1.0625,0.7270,0.4763,-0.3617,0.8463
+Cheese & Bean JP,0.6611,0.7024,0.7751,-0.2948,0.9482
+Breakfast Hash,0.9301,0.6765,0.7698,-0.2748,0.9619
+Tuna Toastie,0.5151,0.6868,1.2788,-0.2097,1.8298
+Veggie Bap,1.1131,0.9373,0.6141,-0.1865,0.7602
+Posh Beans,0.8257,0.6445,0.9111,-0.1277,1.1485
+Porridge,1.0594,0.9712,0.4019,-0.1151,0.4727
+Cheese JP,1.4415,0.8237,0.3977,-0.0394,0.5229
+Bacon Bap,0.2574,0.7011,3.7715,-0.0192,5.1433
+Chicken Wrap,N/A,N/A,0.0000,0.0000,0.0000
+Chicken Waffles,N/A,N/A,0.0000,0.0000,0.0000
+Chickn Rice Bowl,N/A,N/A,0.0000,0.0000,0.0000
+Chips,N/A,N/A,0.0000,0.0000,0.0000
+Chorizo,N/A,N/A,0.0000,0.0000,0.0000
+Chorizo & Eggs,N/A,N/A,0.0000,0.0000,0.0000
+Cheese Scone,N/A,N/A,0.0000,0.0000,0.0000
+Chick Chzo Tstie,N/A,N/A,0.0000,0.0000,0.0000
+Chick Rice Bowl,N/A,N/A,0.0000,0.0000,0.0000
+Chicken Breast,N/A,N/A,0.0000,0.0000,0.0000
+Chicken Goujons,N/A,N/A,0.0000,0.0000,0.0000
+Chicken Burger,N/A,N/A,0.0000,0.0000,0.0000
+Chicken Strips,N/A,N/A,0.0000,0.0000,0.0000
+Cheese Sandwich,N/A,N/A,0.0000,0.0000,0.0000
+Chse Onion Tstie,N/A,N/A,0.0000,0.0000,0.0000
+Chse Tom Toastie,N/A,N/A,0.0000,0.0000,0.0000
+Blk Forest Syrup,N/A,N/A,0.0000,0.0000,0.0000
+Breakfast Bap,N/A,N/A,0.0000,0.0000,0.0000
+Brie Cranb Tstie,N/A,N/A,0.0000,0.0000,0.0000
+Brie Bacon Crois,N/A,N/A,0.0000,0.0000,0.0000
+Beyond Burger,N/A,N/A,0.0000,0.0000,0.0000
+Beef Hors Foca,N/A,N/A,0.0000,0.0000,0.0000
+Butter,N/A,N/A,0.0000,0.0000,0.0000
+Cheese Sand PnM,N/A,N/A,0.0000,0.0000,0.0000
+Cheese Pizza,N/A,N/A,0.0000,0.0000,0.0000
+Cheese Extra,N/A,N/A,0.0000,0.0000,0.0000
+Brunch Burger,N/A,N/A,0.0000,0.0000,0.0000
+Beef Burger,N/A,N/A,0.0000,0.0000,0.0000
+BD Curry Roll,N/A,N/A,0.0000,0.0000,0.0000
+Bre Cran Toastie,N/A,N/A,0.0000,0.0000,0.0000
+Kids Jacket Pota,N/A,N/A,0.0000,0.0000,0.0000
+Kids Beans,N/A,N/A,0.0000,0.0000,0.0000
+Kids Broccoli,N/A,N/A,0.0000,0.0000,0.0000
+Honey Chick Wrap,N/A,N/A,0.0000,0.0000,0.0000
+Hot Drinks,N/A,N/A,0.0000,0.0000,0.0000
+Hot Cross Bun,N/A,N/A,0.0000,0.0000,0.0000
+Ice Cream Sundae,N/A,N/A,0.0000,0.0000,0.0000
+Ice Drinks,N/A,N/A,0.0000,0.0000,0.0000
+Jams,N/A,N/A,0.0000,0.0000,0.0000
+Italian Bagel,N/A,N/A,0.0000,0.0000,0.0000
+Fish & Chips,N/A,N/A,0.0000,0.0000,0.0000
+Fish Fing Roll,N/A,N/A,0.0000,0.0000,0.0000
+Garlic Bread,N/A,N/A,0.0000,0.0000,0.0000
+Goats Ch Toastie,N/A,N/A,0.0000,0.0000,0.0000
+Goat Chse Panini,N/A,N/A,0.0000,0.0000,0.0000
+Deli Bagel,N/A,N/A,0.0000,0.0000,0.0000
+Halloumi Bowl,N/A,N/A,0.0000,0.0000,0.0000
+Halloumi Burger,N/A,N/A,0.0000,0.0000,0.0000
+Halloumi Rice,N/A,N/A,0.0000,0.0000,0.0000
+Goats Onion Foca,N/A,N/A,0.0000,0.0000,0.0000
+Granola Bowl,N/A,N/A,0.0000,0.0000,0.0000
+Granola Waffle,N/A,N/A,0.0000,0.0000,0.0000
+Gravy,N/A,N/A,0.0000,0.0000,0.0000
+Halloumi,N/A,N/A,0.0000,0.0000,0.0000
+Ham Chse Crois,N/A,N/A,0.0000,0.0000,0.0000
+Ham Chse Panini,N/A,N/A,0.0000,0.0000,0.0000
+Ham Chse Toastie,N/A,N/A,0.0000,0.0000,0.0000
+Ham Chse Crios,N/A,N/A,0.0000,0.0000,0.0000
+Ham Egg Stk Roll,N/A,N/A,0.0000,0.0000,0.0000
+Ham Sandwich,N/A,N/A,0.0000,0.0000,0.0000
+Ham Sand PnM,N/A,N/A,0.0000,0.0000,0.0000
+Gingbread Syrup,N/A,N/A,0.0000,0.0000,0.0000
+Kids Mini Pizza,N/A,N/A,0.0000,0.0000,0.0000
+Kids Lentil Curl,N/A,N/A,0.0000,0.0000,0.0000
+Kids Mac Cheese,N/A,N/A,0.0000,0.0000,0.0000
+Kids Carrot Mash,N/A,N/A,0.0000,0.0000,0.0000
+Kids Chips,N/A,N/A,0.0000,0.0000,0.0000
+Kids Crumpets,N/A,N/A,0.0000,0.0000,0.0000
+Kids Drinks,N/A,N/A,0.0000,0.0000,0.0000
+Kids Eat Free,N/A,N/A,0.0000,0.0000,0.0000
+Kids Popcorn,N/A,N/A,0.0000,0.0000,0.0000
+Kids Peas,N/A,N/A,0.0000,0.0000,0.0000
+Italian Foccacia,N/A,N/A,0.0000,0.0000,0.0000
+Jacket Potato,N/A,N/A,0.0000,0.0000,0.0000
+Katsu Wrap,N/A,N/A,0.0000,0.0000,0.0000
+Katsu Rice Bowl,N/A,N/A,0.0000,0.0000,0.0000
+Kid Chick Strips,N/A,N/A,0.0000,0.0000,0.0000
+Kids Banana,N/A,N/A,0.0000,0.0000,0.0000
+Coconut Kefir,N/A,N/A,0.0000,0.0000,0.0000
+Coleslaw,N/A,N/A,0.0000,0.0000,0.0000
+Cinnamon Dusting,N/A,N/A,0.0000,0.0000,0.0000
+Clotted Cream,N/A,N/A,0.0000,0.0000,0.0000
+Cream,N/A,N/A,0.0000,0.0000,0.0000
+DairyFree Butter,N/A,N/A,0.0000,0.0000,0.0000
+Fish Fingers,N/A,N/A,0.0000,0.0000,0.0000
+Fish Finger Wrap,N/A,N/A,0.0000,0.0000,0.0000
+Egg Soldiers,N/A,N/A,0.0000,0.0000,0.0000
+Finest FSC,N/A,N/A,0.0000,0.0000,0.0000
+Extra Tuna,N/A,N/A,0.0000,0.0000,0.0000
+Fest Plough Foca,N/A,N/A,0.0000,0.0000,0.0000
+Banana Bread,N/A,N/A,0.0000,0.0000,0.0000
+BLT,N/A,N/A,0.0000,0.0000,0.0000
+Apl & Blk Smthie,N/A,N/A,0.0000,0.0000,0.0000
+Almd & Aprct Bar,N/A,N/A,0.0000,0.0000,0.0000
+York Pud Wrap,N/A,N/A,0.0000,0.0000,0.0000
+Yog Granola Bowl,N/A,N/A,0.0000,0.0000,0.0000
+Yog Bowl Banana,N/A,N/A,0.0000,0.0000,0.0000
+White Bread,N/A,N/A,0.0000,0.0000,0.0000
+Yog Bowl Bluebry,N/A,N/A,0.0000,0.0000,0.0000
+Vegan Flapjack,N/A,N/A,0.0000,0.0000,0.0000
+Syrups,N/A,N/A,0.0000,0.0000,0.0000
+Sweet Pot Fries,N/A,N/A,0.0000,0.0000,0.0000
+Turkey Panini,N/A,N/A,0.0000,0.0000,0.0000
+Tomato Soup,N/A,N/A,0.0000,0.0000,0.0000
+Tomato Soup Add,N/A,N/A,0.0000,0.0000,0.0000
+Waffles,N/A,N/A,0.0000,0.0000,0.0000
+Waffle Fries,N/A,N/A,0.0000,0.0000,0.0000
+The Brunch,N/A,N/A,0.0000,0.0000,0.0000
+Kids Mash,N/A,N/A,0.0000,0.0000,0.0000
+Kids Sausage,N/A,N/A,0.0000,0.0000,0.0000
+Nduja Mozz Tstie,N/A,N/A,0.0000,0.0000,0.0000
+Mushroom Crois,N/A,N/A,0.0000,0.0000,0.0000
+NY Deli Foccacia,N/A,N/A,0.0000,0.0000,0.0000
+Mac and Cheese,N/A,N/A,0.0000,0.0000,0.0000
+Mozz Toastie,N/A,N/A,0.0000,0.0000,0.0000
+Moz Tom Focaccia,N/A,N/A,0.0000,0.0000,0.0000
+Mushroom,N/A,N/A,0.0000,0.0000,0.0000
+Marshmallows,N/A,N/A,0.0000,0.0000,0.0000
+Orange Switchel,N/A,N/A,0.0000,0.0000,0.0000
+Loaded Hot Dog,N/A,N/A,0.0000,0.0000,0.0000
+Little Pancakes,N/A,N/A,0.0000,0.0000,0.0000
+Lorne Sausage,N/A,N/A,0.0000,0.0000,0.0000
+Kids Veg Sticks,N/A,N/A,0.0000,0.0000,0.0000
+Lemon Drizzle,N/A,N/A,0.0000,0.0000,0.0000
+Kids Snacks,N/A,N/A,0.0000,0.0000,0.0000
+Kids Sweet Potat,N/A,N/A,0.0000,0.0000,0.0000
+Quorn Katsu,N/A,N/A,0.0000,0.0000,0.0000
+Quorn Burger,N/A,N/A,0.0000,0.0000,0.0000
+Posh Ploughmans,N/A,N/A,0.0000,0.0000,0.0000
+Plain JP,N/A,N/A,0.0000,0.0000,0.0000
+Mushy Peas,N/A,N/A,0.0000,0.0000,0.0000
+Pancakes Banana,N/A,N/A,0.0000,0.0000,0.0000
+Orange Buttons,N/A,N/A,0.0000,0.0000,0.0000
+Pancakes Bluebry,N/A,N/A,0.0000,0.0000,0.0000
+Pistachio Syrup,N/A,N/A,0.0000,0.0000,0.0000
+Pink Lemon Slush,N/A,N/A,0.0000,0.0000,0.0000
+Pig Blank Tstie,N/A,N/A,0.0000,0.0000,0.0000
+Plum Tomatoes,N/A,N/A,0.0000,0.0000,0.0000
+Peas,N/A,N/A,0.0000,0.0000,0.0000
+Panini Rolls,N/A,N/A,0.0000,0.0000,0.0000
+Parmesan Fries,N/A,N/A,0.0000,0.0000,0.0000
+Pastel De Nata,N/A,N/A,0.0000,0.0000,0.0000
+Soft Drinks,N/A,N/A,0.0000,0.0000,0.0000
+Spinach,N/A,N/A,0.0000,0.0000,0.0000
+Side Salad,N/A,N/A,0.0000,0.0000,0.0000
+Shakshuka Eggs,N/A,N/A,0.0000,0.0000,0.0000
+Scampi & Chips,N/A,N/A,0.0000,0.0000,0.0000
+Sauces,N/A,N/A,0.0000,0.0000,0.0000
+Seasoned Fries,N/A,N/A,0.0000,0.0000,0.0000
+Salmon Egg Bagel,N/A,N/A,0.0000,0.0000,0.0000
+Steak Pie,N/A,N/A,0.0000,0.0000,0.0000
+Tomato,N/A,N/A,0.0000,0.0000,0.0000
+Tom Pasta Bowl,N/A,N/A,0.0000,0.0000,0.0000
+Loaded Fries,N/A,N/A,0.0000,0.0000,0.0000
+Loaded Nachos,N/A,N/A,0.0000,0.0000,0.0000
+Milks Extra,N/A,N/A,0.0000,0.0000,0.0000
+Kids Sweetcorn,N/A,N/A,0.0000,0.0000,0.0000
+Kids Tom Pasta,N/A,N/A,0.0000,0.0000,0.0000
+Baked Beans JP,1.8931,1.2620,0.2611,0.0476,0.3343
+Veg Sausage Bap,N/A,N/A,0.0734,0.0734,0.0772
+Breakfast Wrap,N/A,N/A,0.0846,0.0846,0.0885
+Fried Egg,0.3944,0.8184,3.3865,0.1784,4.1240
+Little Avo Toast,N/A,N/A,0.1796,0.1796,0.1835
+Vegan Sausage,N/A,N/A,0.1820,0.1820,0.1856
+Bacon Waffle,0.5454,0.6497,1.5234,0.1860,2.0446
+Bean Soldiers,1.3612,1.1667,0.5632,0.2299,0.6006
+Streaky Bacon,2.9693,1.4846,0.4096,0.2323,0.4270
+Hash Brown Bites,N/A,N/A,0.2417,0.2417,0.2453
+Roll & Butter ,0.6622,0.9602,1.3244,0.2956,1.8327
+White Toast Bread,0.1434,0.5168,4.5085,0.3240,6.1678
+Bacon Egg Brioch,0.5116,0.6018,1.0584,0.3241,1.4174
+Vegan Breakfast,1.1348,0.9556,0.6261,0.3608,0.7005
+Little Egg Toast,N/A,N/A,0.4531,0.4531,0.4653
+Egg Bacon Brioch,N/A,N/A,0.5910,0.5910,0.6282
+Little Bean Toas,N/A,N/A,0.6207,0.6207,0.6402
+Avo & Hal Muffin,N/A,N/A,0.6912,0.6912,0.7050
+Avocado on Toast,0.7670,0.9034,1.4018,0.8029,1.5880
+Mini Hash Browns,0.9635,1.2106,1.6280,1.1424,2.2088
+Tuna Panini,N/A,N/A,1.3105,1.3105,1.3170
+Extra Beans,N/A,N/A,1.3919,1.3919,1.4104
+Tuna Melt Panini,N/A,N/A,1.4158,1.4158,1.4338
+Tuna Mayo Mix,N/A,N/A,1.5066,1.5066,1.5237
+Chicken Club,2.0381,2.4155,2.2489,1.6096,2.3942
+Toasted Teacake,0.2867,0.7466,2.4716,1.6435,3.0125
+Sausage,0.5134,0.7805,3.3106,1.7741,3.8729
+Big Breakfast,0.2299,0.5070,3.8291,1.9395,4.7079
+Chick Flatbread,3.0612,4.0178,2.2167,1.9491,2.3272
+The Breakfast,0.1964,0.5365,6.6788,1.9744,8.1950

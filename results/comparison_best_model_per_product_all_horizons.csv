@@ -1,0 +1,145 @@
+evaluation_horizon,product_name,model_type,WAPE,MAE,Bias
+1-Day,"Avo, Egg & Bacon",Prophet_Daily_Clustered,0.3997,2.4,-2.4
+1-Day,"Avo, Feta & Tom",XGBoost_Improved_Hourly,0.0256,0.05,-0.05
+1-Day,Avocado on Toast,XGBoost_Improved_Hourly,0.0189,0.06,-0.06
+1-Day,Bacon,LSTM_Global_Daily,0.047,0.24,0.24
+1-Day,Bacon Bap,LSTM_Global_Hourly,0.3254,8.46,-8.46
+1-Day,Bacon Egg Brioch,XGBoost_Improved_Daily,0.2166,0.87,-0.87
+1-Day,Bacon Waffle,Prophet_Hourly_Clustered,0.5527,6.63,-6.63
+1-Day,Baked Beans,Prophet_Hourly_Clustered,0.1434,1.15,-1.15
+1-Day,Bakery,LSTM_Global_Hourly,0.0818,4.09,4.09
+1-Day,Big Breakfast,XGBoost_Simple_Daily,0.0855,2.82,-2.82
+1-Day,Black Pudding,Prophet_Daily_Clustered,0.1814,0.91,-0.91
+1-Day,Breakfast Muffin,Prophet_Hourly_Clustered,0.2952,2.66,-2.66
+1-Day,Brown Toast Bread,XGBoost_Improved_Daily,0.007,0.06,0.06
+1-Day,Buttd Mushrooms,XGBoost_Improved_Daily,0.1122,0.34,-0.34
+1-Day,Cheese & Bean JP,LSTM_Global_Hourly,0.1315,0.39,-0.39
+1-Day,Cheese JP,XGBoost_Simple_Daily,0.642,0.64,-0.64
+1-Day,Chick Flatbread,XGBoost_Simple_Hourly,0.359,0.36,0.36
+1-Day,Chicken Club,ARIMA,0.039,0.16,0.16
+1-Day,Chilli Carne JP,XGBoost_Improved_Hourly,0.3301,0.33,0.33
+1-Day,F.Eggs on Toast,LSTM_Global_Daily,0.3872,1.16,-1.16
+1-Day,Fried Egg,XGBoost_Improved_Hourly,0.0147,0.16,0.16
+1-Day,Hash Brown,XGBoost_Improved_Daily,0.1702,0.85,-0.85
+1-Day,Ltle Bfast Bacon,Prophet_Hourly_Clustered,0.5721,1.72,-1.72
+1-Day,Ltle Bfast Saus,XGBoost_Improved_Daily,0.0057,0.01,0.01
+1-Day,Mini Hash Browns,Prophet_Hourly_Clustered,0.1013,0.2,-0.2
+1-Day,Multiseed Toast Bread,LSTM_Global_Hourly,0.4283,2.14,-2.14
+1-Day,P.Eggs on Toast,XGBoost_Improved_Hourly,0.0814,0.33,0.33
+1-Day,Poached Egg,Prophet_Hourly_Clustered,0.0892,0.45,-0.45
+1-Day,Porridge,XGBoost_Improved_Hourly,0.1761,0.18,-0.18
+1-Day,Roll & Butter ,XGBoost_Improved_Daily,0.305,1.22,-1.22
+1-Day,S.Eggs on Toast,LSTM_Global_Daily,0.4126,2.48,-2.48
+1-Day,Sausage,LSTM_Global_Daily,0.3595,1.8,1.8
+1-Day,Sausage Bap,XGBoost_Improved_Hourly,0.2677,4.55,-4.55
+1-Day,Scrambled Egg,LSTM_Global_Daily,0.0095,0.02,-0.02
+1-Day,Sourdough Toast Bread,LSTM_Global_Daily,0.7557,3.78,-3.78
+1-Day,The Breakfast,ARIMA,0.0084,0.37,0.37
+1-Day,Toasted Teacake,XGBoost_Simple_Daily,0.003,0.03,0.03
+1-Day,Tuna JP,LSTM_Global_Daily,0.6011,4.21,-4.21
+1-Day,Tuna Toastie,XGBoost_Simple_Daily,0.1774,0.35,0.35
+1-Day,Vegan Breakfast,XGBoost_Improved_Daily,0.0596,0.06,0.06
+1-Day,Veggie Bap,Prophet_Hourly_Clustered,0.4069,0.41,-0.41
+1-Day,Veggie Breakfast,XGBoost_Improved_Hourly,0.0352,0.11,-0.11
+1-Day,White Toast Bread,XGBoost_Improved_Hourly,0.0126,0.58,-0.58
+1-Week,"Avo, Egg & Bacon",Prophet_Hourly_Clustered,0.488,2.02,-1.42
+1-Week,"Avo, Feta & Tom",XGBoost_Improved_Hourly,0.4735,1.08,-0.83
+1-Week,Avocado on Toast,Prophet_Daily_Clustered,0.4498,1.35,-0.46
+1-Week,Bacon,ARIMA,0.2086,1.1,0.17
+1-Week,Bacon Bap,Prophet_Hourly_Clustered,0.2256,3.93,-0.68
+1-Week,Bacon Egg Brioch,XGBoost_Improved_Daily,0.1652,0.4,-0.15
+1-Week,Bacon Waffle,XGBoost_Simple_Daily,0.5415,2.4,-1.21
+1-Week,Baked Beans,Prophet_Daily_Clustered,0.2968,1.65,-0.63
+1-Week,Baked Beans JP,LSTM_Global_Daily,1.192,0.17,-0.11
+1-Week,Bakery,LSTM_Global_Hourly,0.0823,4.98,-0.31
+1-Week,Bean Soldiers,XGBoost_Simple_Hourly,1.0152,0.58,-0.42
+1-Week,Big Breakfast,Prophet_Hourly_Clustered,0.1925,3.38,-1.25
+1-Week,Black Pudding,XGBoost_Improved_Daily,0.5408,1.78,-1.21
+1-Week,Breakfast Hash,XGBoost_Simple_Daily,0.861,0.61,-0.23
+1-Week,Breakfast Muffin,Prophet_Daily_Clustered,0.3215,1.52,-1.0
+1-Week,Brown Toast Bread,ARIMA,0.1366,1.0,0.26
+1-Week,Buttd Mushrooms,ARIMA,0.3163,0.81,-0.41
+1-Week,Cheese & Bean JP,LSTM_Global_Hourly,0.5751,0.74,0.18
+1-Week,Cheese JP,XGBoost_Simple_Daily,0.8572,0.24,-0.11
+1-Week,Chick Flatbread,XGBoost_Improved_Daily,0.4839,1.24,-0.0
+1-Week,Chicken Club,LSTM_Global_Daily,0.3067,1.14,-0.41
+1-Week,Chilli Carne JP,XGBoost_Improved_Hourly,0.55,0.71,-0.21
+1-Week,Egg Bap,XGBoost_Simple_Daily,0.5594,0.88,-0.63
+1-Week,F.Eggs on Toast,LSTM_Global_Hourly,0.7655,0.66,-0.44
+1-Week,Fried Egg,Prophet_Hourly_Clustered,0.3772,2.69,0.29
+1-Week,Hash Brown,XGBoost_Improved_Hourly,0.2839,0.97,-0.7
+1-Week,Ltle Bfast Bacon,XGBoost_Simple_Daily,0.8331,0.48,-0.19
+1-Week,Ltle Bfast Saus,XGBoost_Simple_Hourly,0.7642,0.87,-0.6
+1-Week,Mini Hash Browns,Prophet_Hourly_Clustered,0.4871,0.77,-0.04
+1-Week,Multiseed Toast Bread,LSTM_Global_Hourly,0.6609,2.45,-1.51
+1-Week,P.Eggs on Toast,Prophet_Daily_Clustered,0.321,1.74,0.84
+1-Week,Poached Egg,XGBoost_Improved_Daily,0.4533,1.68,0.38
+1-Week,Porridge,LSTM_Global_Daily,0.937,0.27,-0.19
+1-Week,Posh Beans,XGBoost_Improved_Daily,0.4725,0.68,-0.21
+1-Week,Roll & Butter ,ARIMA,0.2886,0.58,0.02
+1-Week,S.Eggs on Toast,ARIMA,0.3926,1.68,-1.04
+1-Week,Sausage,Prophet_Hourly_Clustered,0.3546,2.28,0.36
+1-Week,Sausage Bap,XGBoost_Simple_Daily,0.326,3.87,-2.97
+1-Week,Scrambled Egg,LSTM_Global_Daily,0.5234,1.2,-0.72
+1-Week,Sourdough Toast Bread,Prophet_Hourly_Clustered,0.6697,0.96,-0.53
+1-Week,Streaky Bacon,Prophet_Daily_Clustered,0.9225,0.13,-0.1
+1-Week,Tattie Scone,LSTM_Global_Daily,0.9011,2.06,-0.69
+1-Week,The Breakfast,LSTM_Global_Daily,0.1742,5.57,-0.29
+1-Week,Toasted Teacake,XGBoost_Simple_Daily,0.1241,1.33,-0.48
+1-Week,Tuna JP,LSTM_Global_Hourly,0.6852,1.47,-0.99
+1-Week,Tuna Toastie,Prophet_Daily_Clustered,0.3164,0.72,0.65
+1-Week,Vegan Breakfast,Prophet_Daily_Clustered,0.712,0.51,-0.21
+1-Week,Veggie Bap,LSTM_Global_Daily,1.1298,0.48,-0.15
+1-Week,Veggie Breakfast,Prophet_Hourly_Clustered,0.5786,1.07,-0.26
+1-Week,White Toast Bread,XGBoost_Simple_Hourly,0.1602,4.6,0.89
+1-Month,"Avo, Egg & Bacon",Prophet_Hourly_Clustered,0.5072,1.73,-0.95
+1-Month,"Avo, Feta & Tom",XGBoost_Simple_Daily,0.5844,1.25,-0.46
+1-Month,Avocado on Toast,LSTM_Global_Daily,0.6,1.1,-0.51
+1-Month,Bacon,LSTM_Global_Daily,0.3588,2.08,-1.09
+1-Month,Bacon Bap,XGBoost_Improved_Hourly,0.2574,3.77,-0.02
+1-Month,Bacon Egg Brioch,XGBoost_Improved_Daily,0.4807,0.99,0.25
+1-Month,Bacon Waffle,XGBoost_Improved_Hourly,0.5454,1.52,0.19
+1-Month,Baked Beans,Prophet_Daily_Clustered,0.386,2.04,-0.33
+1-Month,Baked Beans JP,LSTM_Global_Daily,1.0472,0.14,-0.13
+1-Month,Bakery,ARIMA,0.1341,8.44,-2.38
+1-Month,Bean Soldiers,XGBoost_Simple_Daily,1.009,0.42,-0.12
+1-Month,Big Breakfast,Prophet_Hourly_Clustered,0.1848,3.08,0.45
+1-Month,Black Pudding,XGBoost_Improved_Daily,0.5818,1.48,-0.44
+1-Month,Breakfast Hash,XGBoost_Improved_Daily,0.918,0.76,-0.25
+1-Month,Breakfast Muffin,Prophet_Daily_Clustered,0.3741,1.47,-0.62
+1-Month,Brown Toast Bread,Prophet_Daily_Clustered,0.2183,1.84,-0.19
+1-Month,Buttd Mushrooms,XGBoost_Improved_Daily,0.5431,1.24,0.27
+1-Month,Cheese & Bean JP,XGBoost_Simple_Daily,0.5932,0.7,-0.16
+1-Month,Cheese JP,LSTM_Global_Daily,1.0075,0.28,-0.26
+1-Month,Chick Flatbread,LSTM_Global_Hourly,0.8654,0.65,-0.36
+1-Month,Chicken Club,LSTM_Global_Hourly,0.7687,0.88,-0.27
+1-Month,Chilli Carne JP,Prophet_Hourly_Clustered,0.6678,0.94,-0.26
+1-Month,Egg Bap,ARIMA,0.7059,1.19,-0.53
+1-Month,F.Eggs on Toast,XGBoost_Improved_Daily,0.6853,1.13,-0.3
+1-Month,Festive Stack,XGBoost_Improved_Hourly,0.8276,2.25,-1.22
+1-Month,Fried Egg,XGBoost_Improved_Daily,0.3894,3.34,0.56
+1-Month,Hash Brown,XGBoost_Simple_Daily,0.5045,1.46,-0.2
+1-Month,Ltle Bfast Bacon,XGBoost_Simple_Daily,0.9947,0.45,-0.22
+1-Month,Ltle Bfast Saus,XGBoost_Improved_Hourly,0.7267,1.3,-0.69
+1-Month,Mini Hash Browns,Prophet_Hourly_Clustered,0.4649,0.79,-0.17
+1-Month,Multiseed Toast Bread,Prophet_Hourly_Clustered,0.5594,1.62,-0.34
+1-Month,P.Eggs on Toast,Prophet_Daily_Clustered,0.2556,1.43,0.42
+1-Month,Poached Egg,Prophet_Hourly_Clustered,0.5835,1.73,-0.51
+1-Month,Porridge,LSTM_Global_Daily,0.9864,0.37,-0.36
+1-Month,Posh Beans,LSTM_Global_Daily,0.8253,0.91,0.12
+1-Month,Roll & Butter ,LSTM_Global_Daily,0.5404,1.08,-0.32
+1-Month,S.Eggs on Toast,LSTM_Global_Daily,0.5559,1.86,-0.82
+1-Month,Sausage,Prophet_Hourly_Clustered,0.4145,2.67,0.8
+1-Month,Sausage Bap,Prophet_Hourly_Clustered,0.2541,3.08,-0.42
+1-Month,Scrambled Egg,XGBoost_Simple_Daily,0.8189,1.27,-0.53
+1-Month,Sourdough Toast Bread,XGBoost_Improved_Daily,0.806,0.83,-0.48
+1-Month,Streaky Bacon,Prophet_Daily_Clustered,1.0121,0.14,-0.05
+1-Month,Tattie Scone,XGBoost_Improved_Daily,0.6431,1.37,-0.3
+1-Month,The Breakfast,LSTM_Global_Daily,0.1588,5.4,-0.81
+1-Month,Toasted Teacake,Prophet_Daily_Clustered,0.2469,2.13,-0.72
+1-Month,Tuna JP,ARIMA,0.5309,1.46,-0.21
+1-Month,Tuna Toastie,XGBoost_Simple_Daily,0.5089,1.26,0.05
+1-Month,Vegan Breakfast,Prophet_Daily_Clustered,0.8505,0.47,-0.03
+1-Month,Veggie Bap,LSTM_Global_Daily,1.05,0.58,-0.46
+1-Month,Veggie Breakfast,Prophet_Hourly_Clustered,0.587,1.32,-0.48
+1-Month,White Toast Bread,XGBoost_Improved_Hourly,0.1434,4.51,0.32

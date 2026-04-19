@@ -1,0 +1,1857 @@
+Date,Sales,LSTM_Prediction,Product_Name
+2025-11-02,0.0,0.00918109,Avo & Hal Muffin
+2025-11-03,0.0,0.0,Avo & Hal Muffin
+2025-11-04,0.0,0.0018867329,Avo & Hal Muffin
+2025-11-05,0.0,0.0033289343,Avo & Hal Muffin
+2025-11-06,0.0,0.0,Avo & Hal Muffin
+2025-11-07,0.0,0.0,Avo & Hal Muffin
+2025-11-08,0.0,0.0,Avo & Hal Muffin
+2025-11-09,0.0,0.0,Avo & Hal Muffin
+2025-11-10,0.0,0.0,Avo & Hal Muffin
+2025-11-11,0.0,0.0,Avo & Hal Muffin
+2025-11-12,0.0,0.0,Avo & Hal Muffin
+2025-11-13,0.0,0.0,Avo & Hal Muffin
+2025-11-14,0.0,0.0,Avo & Hal Muffin
+2025-11-15,0.0,0.0,Avo & Hal Muffin
+2025-11-16,0.0,0.0,Avo & Hal Muffin
+2025-11-17,0.0,0.0,Avo & Hal Muffin
+2025-11-18,0.0,0.0,Avo & Hal Muffin
+2025-11-19,0.0,0.0,Avo & Hal Muffin
+2025-11-20,0.0,0.0,Avo & Hal Muffin
+2025-11-21,0.0,0.0,Avo & Hal Muffin
+2025-11-22,0.0,0.0,Avo & Hal Muffin
+2025-11-23,0.0,0.0,Avo & Hal Muffin
+2025-11-24,0.0,0.0,Avo & Hal Muffin
+2025-11-25,0.0,0.0,Avo & Hal Muffin
+2025-11-26,0.0,0.0,Avo & Hal Muffin
+2025-11-27,0.0,0.0,Avo & Hal Muffin
+2025-11-28,0.0,0.0,Avo & Hal Muffin
+2025-11-29,0.0,0.0,Avo & Hal Muffin
+2025-11-30,0.0,0.0,Avo & Hal Muffin
+2025-11-02,6.0,2.8195493,"Avo, Egg & Bacon"
+2025-11-03,3.0,2.3910184,"Avo, Egg & Bacon"
+2025-11-04,1.0,2.350033,"Avo, Egg & Bacon"
+2025-11-05,2.0,2.4420106,"Avo, Egg & Bacon"
+2025-11-06,2.0,2.5933561,"Avo, Egg & Bacon"
+2025-11-07,6.0,2.8102064,"Avo, Egg & Bacon"
+2025-11-08,9.0,3.336989,"Avo, Egg & Bacon"
+2025-11-09,1.0,2.9501405,"Avo, Egg & Bacon"
+2025-11-10,0.0,2.4644823,"Avo, Egg & Bacon"
+2025-11-11,1.0,2.456799,"Avo, Egg & Bacon"
+2025-11-12,3.0,2.385525,"Avo, Egg & Bacon"
+2025-11-13,2.0,2.4922705,"Avo, Egg & Bacon"
+2025-11-14,5.0,2.691951,"Avo, Egg & Bacon"
+2025-11-15,6.0,3.123692,"Avo, Egg & Bacon"
+2025-11-16,5.0,2.7328253,"Avo, Egg & Bacon"
+2025-11-17,4.0,2.282141,"Avo, Egg & Bacon"
+2025-11-18,1.0,2.257414,"Avo, Egg & Bacon"
+2025-11-19,0.0,2.2808428,"Avo, Egg & Bacon"
+2025-11-20,3.0,2.3426604,"Avo, Egg & Bacon"
+2025-11-21,6.0,2.5320687,"Avo, Egg & Bacon"
+2025-11-22,7.0,2.5518303,"Avo, Egg & Bacon"
+2025-11-23,6.0,2.0066628,"Avo, Egg & Bacon"
+2025-11-24,2.0,1.4191692,"Avo, Egg & Bacon"
+2025-11-25,1.0,1.2011644,"Avo, Egg & Bacon"
+2025-11-26,2.0,1.3207711,"Avo, Egg & Bacon"
+2025-11-27,3.0,1.7517291,"Avo, Egg & Bacon"
+2025-11-28,3.0,2.3972898,"Avo, Egg & Bacon"
+2025-11-29,5.0,3.4801054,"Avo, Egg & Bacon"
+2025-11-30,4.0,3.4223666,"Avo, Egg & Bacon"
+2025-11-02,2.0,2.5567832,"Avo, Feta & Tom"
+2025-11-03,1.0,2.0929322,"Avo, Feta & Tom"
+2025-11-04,1.0,2.0062008,"Avo, Feta & Tom"
+2025-11-05,1.0,2.0628254,"Avo, Feta & Tom"
+2025-11-06,2.0,2.1764538,"Avo, Feta & Tom"
+2025-11-07,4.0,2.3706684,"Avo, Feta & Tom"
+2025-11-08,5.0,2.5983646,"Avo, Feta & Tom"
+2025-11-09,4.0,2.4134421,"Avo, Feta & Tom"
+2025-11-10,7.0,1.9802916,"Avo, Feta & Tom"
+2025-11-11,2.0,1.940655,"Avo, Feta & Tom"
+2025-11-12,2.0,1.8580328,"Avo, Feta & Tom"
+2025-11-13,1.0,1.9413977,"Avo, Feta & Tom"
+2025-11-14,3.0,2.1309853,"Avo, Feta & Tom"
+2025-11-15,3.0,2.4285436,"Avo, Feta & Tom"
+2025-11-16,2.0,2.227019,"Avo, Feta & Tom"
+2025-11-17,1.0,1.8191237,"Avo, Feta & Tom"
+2025-11-18,2.0,1.8071693,"Avo, Feta & Tom"
+2025-11-19,0.0,1.807538,"Avo, Feta & Tom"
+2025-11-20,3.0,1.8232937,"Avo, Feta & Tom"
+2025-11-21,1.0,1.9861588,"Avo, Feta & Tom"
+2025-11-22,4.0,1.9869697,"Avo, Feta & Tom"
+2025-11-23,0.0,1.4798679,"Avo, Feta & Tom"
+2025-11-24,1.0,0.92265785,"Avo, Feta & Tom"
+2025-11-25,2.0,0.68542457,"Avo, Feta & Tom"
+2025-11-26,5.0,0.77237844,"Avo, Feta & Tom"
+2025-11-27,1.0,1.1435142,"Avo, Feta & Tom"
+2025-11-28,0.0,1.7565938,"Avo, Feta & Tom"
+2025-11-29,2.0,2.589032,"Avo, Feta & Tom"
+2025-11-30,0.0,2.677764,"Avo, Feta & Tom"
+2025-11-02,3.0,1.840984,Avocado on Toast
+2025-11-03,1.0,1.4522009,Avocado on Toast
+2025-11-04,2.0,1.3947351,Avocado on Toast
+2025-11-05,4.0,1.4517286,Avocado on Toast
+2025-11-06,5.0,1.5203809,Avocado on Toast
+2025-11-07,1.0,1.6800586,Avocado on Toast
+2025-11-08,5.0,1.9058654,Avocado on Toast
+2025-11-09,3.0,1.7733976,Avocado on Toast
+2025-11-10,1.0,1.3427299,Avocado on Toast
+2025-11-11,3.0,1.3362615,Avocado on Toast
+2025-11-12,1.0,1.2703824,Avocado on Toast
+2025-11-13,1.0,1.2920533,Avocado on Toast
+2025-11-14,3.0,1.4313332,Avocado on Toast
+2025-11-15,4.0,1.7294217,Avocado on Toast
+2025-11-16,1.0,1.61546,Avocado on Toast
+2025-11-17,0.0,1.2855369,Avocado on Toast
+2025-11-18,1.0,1.3286843,Avocado on Toast
+2025-11-19,0.0,1.3262014,Avocado on Toast
+2025-11-20,1.0,1.3109409,Avocado on Toast
+2025-11-21,2.0,1.4346116,Avocado on Toast
+2025-11-22,0.0,1.424357,Avocado on Toast
+2025-11-23,2.0,0.9820634,Avocado on Toast
+2025-11-24,1.0,0.42650014,Avocado on Toast
+2025-11-25,0.0,0.20049632,Avocado on Toast
+2025-11-26,1.0,0.22890592,Avocado on Toast
+2025-11-27,1.0,0.43171328,Avocado on Toast
+2025-11-28,0.0,0.9172325,Avocado on Toast
+2025-11-29,2.0,1.7837304,Avocado on Toast
+2025-11-30,4.0,1.9754397,Avocado on Toast
+2025-11-02,5.0,5.2351847,Bacon
+2025-11-03,6.0,4.3208833,Bacon
+2025-11-04,7.0,4.349158,Bacon
+2025-11-05,5.0,4.5810037,Bacon
+2025-11-06,2.0,4.96087,Bacon
+2025-11-07,6.0,5.431285,Bacon
+2025-11-08,6.0,5.9432616,Bacon
+2025-11-09,11.0,5.649727,Bacon
+2025-11-10,1.0,4.822252,Bacon
+2025-11-11,4.0,4.893065,Bacon
+2025-11-12,4.0,4.7377,Bacon
+2025-11-13,8.0,4.9820457,Bacon
+2025-11-14,12.0,5.3422713,Bacon
+2025-11-15,6.0,5.7540817,Bacon
+2025-11-16,5.0,5.2091584,Bacon
+2025-11-17,4.0,4.1576786,Bacon
+2025-11-18,4.0,4.1619334,Bacon
+2025-11-19,4.0,4.329312,Bacon
+2025-11-20,7.0,4.6292496,Bacon
+2025-11-21,7.0,5.1259665,Bacon
+2025-11-22,5.0,5.269559,Bacon
+2025-11-23,4.0,4.1421833,Bacon
+2025-11-24,2.0,2.7972798,Bacon
+2025-11-25,6.0,2.5922675,Bacon
+2025-11-26,2.0,2.7612374,Bacon
+2025-11-27,5.0,3.7901635,Bacon
+2025-11-28,12.0,4.923196,Bacon
+2025-11-29,3.0,5.8867545,Bacon
+2025-11-30,15.0,5.6756825,Bacon
+2025-11-02,26.0,14.837831,Bacon Bap
+2025-11-03,8.0,11.615902,Bacon Bap
+2025-11-04,14.0,11.902988,Bacon Bap
+2025-11-05,14.0,12.142516,Bacon Bap
+2025-11-06,22.0,12.774776,Bacon Bap
+2025-11-07,18.0,14.043792,Bacon Bap
+2025-11-08,20.0,15.985879,Bacon Bap
+2025-11-09,12.0,15.354828,Bacon Bap
+2025-11-10,5.0,12.537934,Bacon Bap
+2025-11-11,14.0,13.119618,Bacon Bap
+2025-11-12,12.0,12.526625,Bacon Bap
+2025-11-13,9.0,13.207904,Bacon Bap
+2025-11-14,17.0,14.512489,Bacon Bap
+2025-11-15,10.0,16.20581,Bacon Bap
+2025-11-16,14.0,14.502556,Bacon Bap
+2025-11-17,13.0,10.258399,Bacon Bap
+2025-11-18,11.0,10.317479,Bacon Bap
+2025-11-19,13.0,10.75172,Bacon Bap
+2025-11-20,7.0,11.783214,Bacon Bap
+2025-11-21,16.0,13.4842205,Bacon Bap
+2025-11-22,17.0,14.767482,Bacon Bap
+2025-11-23,18.0,12.102341,Bacon Bap
+2025-11-24,26.0,8.311557,Bacon Bap
+2025-11-25,10.0,7.4768734,Bacon Bap
+2025-11-26,15.0,8.292404,Bacon Bap
+2025-11-27,11.0,10.601625,Bacon Bap
+2025-11-28,11.0,12.380064,Bacon Bap
+2025-11-29,16.0,14.4314,Bacon Bap
+2025-11-30,26.0,14.390437,Bacon Bap
+2025-11-02,4.0,2.1744206,Bacon Egg Brioch
+2025-11-03,1.0,1.8135847,Bacon Egg Brioch
+2025-11-04,2.0,1.791045,Bacon Egg Brioch
+2025-11-05,2.0,1.8838863,Bacon Egg Brioch
+2025-11-06,2.0,2.0102065,Bacon Egg Brioch
+2025-11-07,3.0,2.2168226,Bacon Egg Brioch
+2025-11-08,3.0,2.4582841,Bacon Egg Brioch
+2025-11-09,3.0,2.2841945,Bacon Egg Brioch
+2025-11-10,2.0,1.85162,Bacon Egg Brioch
+2025-11-11,2.0,1.8147945,Bacon Egg Brioch
+2025-11-12,0.0,1.7384841,Bacon Egg Brioch
+2025-11-13,3.0,1.8170273,Bacon Egg Brioch
+2025-11-14,0.0,2.0141468,Bacon Egg Brioch
+2025-11-15,3.0,2.3298826,Bacon Egg Brioch
+2025-11-16,6.0,2.1570055,Bacon Egg Brioch
+2025-11-17,3.0,1.769374,Bacon Egg Brioch
+2025-11-18,0.0,1.7747741,Bacon Egg Brioch
+2025-11-19,0.0,1.7848341,Bacon Egg Brioch
+2025-11-20,2.0,1.8101774,Bacon Egg Brioch
+2025-11-21,3.0,1.9789984,Bacon Egg Brioch
+2025-11-22,1.0,1.9795238,Bacon Egg Brioch
+2025-11-23,5.0,1.4794031,Bacon Egg Brioch
+2025-11-24,2.0,0.9234585,Bacon Egg Brioch
+2025-11-25,1.0,0.69282496,Bacon Egg Brioch
+2025-11-26,0.0,0.77683383,Bacon Egg Brioch
+2025-11-27,1.0,1.1435496,Bacon Egg Brioch
+2025-11-28,2.0,1.7547702,Bacon Egg Brioch
+2025-11-29,0.0,2.5784314,Bacon Egg Brioch
+2025-11-30,4.0,2.6573079,Bacon Egg Brioch
+2025-11-02,12.0,4.018615,Bacon Waffle
+2025-11-03,5.0,2.998069,Bacon Waffle
+2025-11-04,2.0,2.843074,Bacon Waffle
+2025-11-05,4.0,2.9684396,Bacon Waffle
+2025-11-06,2.0,3.2529674,Bacon Waffle
+2025-11-07,5.0,3.661724,Bacon Waffle
+2025-11-08,1.0,4.0972033,Bacon Waffle
+2025-11-09,3.0,3.6106334,Bacon Waffle
+2025-11-10,0.0,2.7175243,Bacon Waffle
+2025-11-11,0.0,2.6619806,Bacon Waffle
+2025-11-12,2.0,2.5800076,Bacon Waffle
+2025-11-13,1.0,2.7050116,Bacon Waffle
+2025-11-14,4.0,3.0211747,Bacon Waffle
+2025-11-15,2.0,3.6488152,Bacon Waffle
+2025-11-16,4.0,3.1095908,Bacon Waffle
+2025-11-17,3.0,2.4866583,Bacon Waffle
+2025-11-18,2.0,2.4323926,Bacon Waffle
+2025-11-19,0.0,2.438409,Bacon Waffle
+2025-11-20,1.0,2.4968674,Bacon Waffle
+2025-11-21,1.0,2.6856518,Bacon Waffle
+2025-11-22,4.0,2.7019024,Bacon Waffle
+2025-11-23,2.0,2.1647747,Bacon Waffle
+2025-11-24,3.0,1.569499,Bacon Waffle
+2025-11-25,2.0,1.3597383,Bacon Waffle
+2025-11-26,1.0,1.5038726,Bacon Waffle
+2025-11-27,2.0,1.9692314,Bacon Waffle
+2025-11-28,5.0,2.6119025,Bacon Waffle
+2025-11-29,3.0,3.8677442,Bacon Waffle
+2025-11-30,5.0,3.7342863,Bacon Waffle
+2025-11-02,8.0,4.837338,Baked Beans
+2025-11-03,3.0,3.9200702,Baked Beans
+2025-11-04,6.0,3.8902032,Baked Beans
+2025-11-05,3.0,4.0664387,Baked Beans
+2025-11-06,5.0,4.3807364,Baked Beans
+2025-11-07,9.0,4.7819824,Baked Beans
+2025-11-08,5.0,5.2023945,Baked Beans
+2025-11-09,7.0,4.7571783,Baked Beans
+2025-11-10,1.0,3.7633753,Baked Beans
+2025-11-11,7.0,3.721501,Baked Beans
+2025-11-12,5.0,3.5883486,Baked Beans
+2025-11-13,2.0,3.9127734,Baked Beans
+2025-11-14,5.0,4.3925605,Baked Beans
+2025-11-15,4.0,4.9421034,Baked Beans
+2025-11-16,8.0,4.42154,Baked Beans
+2025-11-17,7.0,3.3310232,Baked Beans
+2025-11-18,2.0,3.2569277,Baked Beans
+2025-11-19,2.0,3.3306544,Baked Beans
+2025-11-20,8.0,3.5444057,Baked Beans
+2025-11-21,9.0,4.0162253,Baked Beans
+2025-11-22,7.0,4.1061697,Baked Beans
+2025-11-23,6.0,2.8786213,Baked Beans
+2025-11-24,7.0,2.2356622,Baked Beans
+2025-11-25,3.0,2.025111,Baked Beans
+2025-11-26,7.0,2.2026408,Baked Beans
+2025-11-27,6.0,2.7145817,Baked Beans
+2025-11-28,1.0,3.8767738,Baked Beans
+2025-11-29,2.0,5.071543,Baked Beans
+2025-11-30,8.0,4.8541093,Baked Beans
+2025-11-02,0.0,0.05542499,Baked Beans JP
+2025-11-03,0.0,0.035193756,Baked Beans JP
+2025-11-04,0.0,0.040050767,Baked Beans JP
+2025-11-05,0.0,0.040967613,Baked Beans JP
+2025-11-06,0.0,0.018624857,Baked Beans JP
+2025-11-07,0.0,0.007430747,Baked Beans JP
+2025-11-08,1.0,0.0056930333,Baked Beans JP
+2025-11-09,1.0,0.003381975,Baked Beans JP
+2025-11-10,0.0,0.0,Baked Beans JP
+2025-11-11,0.0,0.0,Baked Beans JP
+2025-11-12,0.0,0.0,Baked Beans JP
+2025-11-13,0.0,0.0,Baked Beans JP
+2025-11-14,0.0,0.0,Baked Beans JP
+2025-11-15,0.0,0.0,Baked Beans JP
+2025-11-16,1.0,0.0,Baked Beans JP
+2025-11-17,0.0,0.0,Baked Beans JP
+2025-11-18,0.0,0.0,Baked Beans JP
+2025-11-19,0.0,0.0,Baked Beans JP
+2025-11-20,0.0,0.0,Baked Beans JP
+2025-11-21,0.0,0.0,Baked Beans JP
+2025-11-22,0.0,0.0,Baked Beans JP
+2025-11-23,0.0,0.0,Baked Beans JP
+2025-11-24,0.0,0.0,Baked Beans JP
+2025-11-25,0.0,0.0,Baked Beans JP
+2025-11-26,0.0,0.0,Baked Beans JP
+2025-11-27,0.0,0.0,Baked Beans JP
+2025-11-28,1.0,0.0,Baked Beans JP
+2025-11-29,0.0,0.0,Baked Beans JP
+2025-11-30,0.0,0.0,Baked Beans JP
+2025-11-02,50.0,57.7206,Bakery
+2025-11-03,56.0,52.625683,Bakery
+2025-11-04,60.0,56.98392,Bakery
+2025-11-05,56.99999999999999,59.96416,Bakery
+2025-11-06,70.0,61.11105,Bakery
+2025-11-07,74.0,63.792454,Bakery
+2025-11-08,56.99999999999999,69.19534,Bakery
+2025-11-09,66.0,62.162823,Bakery
+2025-11-10,41.0,54.70451,Bakery
+2025-11-11,52.0,61.261787,Bakery
+2025-11-12,65.0,64.62464,Bakery
+2025-11-13,52.0,66.514145,Bakery
+2025-11-14,62.0,71.10156,Bakery
+2025-11-15,60.0,74.638954,Bakery
+2025-11-16,56.99999999999999,63.188133,Bakery
+2025-11-17,71.0,50.99046,Bakery
+2025-11-18,51.00000000000001,56.99067,Bakery
+2025-11-19,48.0,60.627148,Bakery
+2025-11-20,60.0,62.87253,Bakery
+2025-11-21,60.99999999999999,67.90564,Bakery
+2025-11-22,60.99999999999999,71.67187,Bakery
+2025-11-23,83.0,55.739445,Bakery
+2025-11-24,60.99999999999999,46.555313,Bakery
+2025-11-25,74.0,52.660004,Bakery
+2025-11-26,76.0,55.47143,Bakery
+2025-11-27,78.0,59.48888,Bakery
+2025-11-28,84.0,63.893543,Bakery
+2025-11-29,60.0,74.781586,Bakery
+2025-11-30,79.0,69.20697,Bakery
+2025-11-02,0.0,0.7605908,Bean Soldiers
+2025-11-03,1.0,0.47689635,Bean Soldiers
+2025-11-04,0.0,0.45789012,Bean Soldiers
+2025-11-05,0.0,0.47696203,Bean Soldiers
+2025-11-06,0.0,0.36983752,Bean Soldiers
+2025-11-07,1.0,0.3609267,Bean Soldiers
+2025-11-08,2.0,0.4528765,Bean Soldiers
+2025-11-09,0.0,0.3736009,Bean Soldiers
+2025-11-10,1.0,0.063027486,Bean Soldiers
+2025-11-11,1.0,0.06385593,Bean Soldiers
+2025-11-12,1.0,0.054583915,Bean Soldiers
+2025-11-13,0.0,0.03963907,Bean Soldiers
+2025-11-14,0.0,0.034691133,Bean Soldiers
+2025-11-15,0.0,0.048105374,Bean Soldiers
+2025-11-16,0.0,0.04612519,Bean Soldiers
+2025-11-17,0.0,0.033660628,Bean Soldiers
+2025-11-18,0.0,0.04811295,Bean Soldiers
+2025-11-19,0.0,0.052952282,Bean Soldiers
+2025-11-20,0.0,0.040406898,Bean Soldiers
+2025-11-21,0.0,0.04044731,Bean Soldiers
+2025-11-22,1.0,0.029546186,Bean Soldiers
+2025-11-23,1.0,0.0046524256,Bean Soldiers
+2025-11-24,1.0,0.0,Bean Soldiers
+2025-11-25,0.0,0.0,Bean Soldiers
+2025-11-26,1.0,0.0,Bean Soldiers
+2025-11-27,0.0,0.0,Bean Soldiers
+2025-11-28,0.0,0.0,Bean Soldiers
+2025-11-29,0.0,0.0,Bean Soldiers
+2025-11-30,1.0,0.0,Bean Soldiers
+2025-11-02,33.0,17.284716,Big Breakfast
+2025-11-03,12.0,13.5984955,Big Breakfast
+2025-11-04,17.0,13.414021,Big Breakfast
+2025-11-05,7.0,13.183344,Big Breakfast
+2025-11-06,13.0,13.584843,Big Breakfast
+2025-11-07,13.0,14.939757,Big Breakfast
+2025-11-08,28.0,17.092838,Big Breakfast
+2025-11-09,20.0,16.546711,Big Breakfast
+2025-11-10,11.0,13.647297,Big Breakfast
+2025-11-11,10.0,14.246126,Big Breakfast
+2025-11-12,10.0,13.68862,Big Breakfast
+2025-11-13,12.0,14.513156,Big Breakfast
+2025-11-14,16.0,15.983651,Big Breakfast
+2025-11-15,24.0,17.940975,Big Breakfast
+2025-11-16,27.0,16.195274,Big Breakfast
+2025-11-17,6.0,11.364304,Big Breakfast
+2025-11-18,15.0,11.172921,Big Breakfast
+2025-11-19,12.0,11.611242,Big Breakfast
+2025-11-20,9.0,12.732112,Big Breakfast
+2025-11-21,15.0,14.676797,Big Breakfast
+2025-11-22,28.0,16.335941,Big Breakfast
+2025-11-23,29.0,13.8150215,Big Breakfast
+2025-11-24,16.0,9.717274,Big Breakfast
+2025-11-25,5.0,8.802615,Big Breakfast
+2025-11-26,14.0,9.442942,Big Breakfast
+2025-11-27,13.0,11.656811,Big Breakfast
+2025-11-28,9.0,13.479221,Big Breakfast
+2025-11-29,31.0,15.76507,Big Breakfast
+2025-11-30,28.0,15.97284,Big Breakfast
+2025-11-02,5.0,1.9540516,Black Pudding
+2025-11-03,7.0,1.548058,Black Pudding
+2025-11-04,2.0,1.4869804,Black Pudding
+2025-11-05,0.0,1.542168,Black Pudding
+2025-11-06,1.0,1.6172786,Black Pudding
+2025-11-07,2.0,1.7848947,Black Pudding
+2025-11-08,6.0,2.0009193,Black Pudding
+2025-11-09,1.0,1.8334068,Black Pudding
+2025-11-10,0.0,1.3912748,Black Pudding
+2025-11-11,2.0,1.3620771,Black Pudding
+2025-11-12,1.0,1.312714,Black Pudding
+2025-11-13,5.0,1.365151,Black Pudding
+2025-11-14,1.0,1.5376697,Black Pudding
+2025-11-15,3.0,1.8736899,Black Pudding
+2025-11-16,1.0,1.7461574,Black Pudding
+2025-11-17,5.0,1.4092531,Black Pudding
+2025-11-18,2.0,1.4212453,Black Pudding
+2025-11-19,0.0,1.4138044,Black Pudding
+2025-11-20,1.0,1.4032695,Black Pudding
+2025-11-21,4.0,1.5322418,Black Pudding
+2025-11-22,4.0,1.5214189,Black Pudding
+2025-11-23,8.0,1.0665194,Black Pudding
+2025-11-24,2.0,0.4978348,Black Pudding
+2025-11-25,2.0,0.24689427,Black Pudding
+2025-11-26,2.0,0.25878045,Black Pudding
+2025-11-27,0.0,0.46721518,Black Pudding
+2025-11-28,1.0,0.9635017,Black Pudding
+2025-11-29,3.0,1.8420448,Black Pudding
+2025-11-30,3.0,2.0254998,Black Pudding
+2025-11-02,0.0,0.8441273,Breakfast Hash
+2025-11-03,2.0,0.54110086,Breakfast Hash
+2025-11-04,2.0,0.50160575,Breakfast Hash
+2025-11-05,0.0,0.50763977,Breakfast Hash
+2025-11-06,0.0,0.40736002,Breakfast Hash
+2025-11-07,0.0,0.40610725,Breakfast Hash
+2025-11-08,1.0,0.4992543,Breakfast Hash
+2025-11-09,1.0,0.41838744,Breakfast Hash
+2025-11-10,0.0,0.07866691,Breakfast Hash
+2025-11-11,1.0,0.08196301,Breakfast Hash
+2025-11-12,1.0,0.058521554,Breakfast Hash
+2025-11-13,0.0,0.043942943,Breakfast Hash
+2025-11-14,2.0,0.03873738,Breakfast Hash
+2025-11-15,1.0,0.05206827,Breakfast Hash
+2025-11-16,2.0,0.049916334,Breakfast Hash
+2025-11-17,0.0,0.03764373,Breakfast Hash
+2025-11-18,1.0,0.050800346,Breakfast Hash
+2025-11-19,0.0,0.054649584,Breakfast Hash
+2025-11-20,0.0,0.04186678,Breakfast Hash
+2025-11-21,0.0,0.041861728,Breakfast Hash
+2025-11-22,3.0,0.031185396,Breakfast Hash
+2025-11-23,0.0,0.0065517873,Breakfast Hash
+2025-11-24,0.0,0.0,Breakfast Hash
+2025-11-25,2.0,0.0,Breakfast Hash
+2025-11-26,0.0,0.0,Breakfast Hash
+2025-11-27,1.0,0.0,Breakfast Hash
+2025-11-28,0.0,0.0,Breakfast Hash
+2025-11-29,3.0,0.0,Breakfast Hash
+2025-11-30,1.0,0.0,Breakfast Hash
+2025-11-02,9.0,2.750743,Breakfast Muffin
+2025-11-03,4.0,2.342403,Breakfast Muffin
+2025-11-04,2.0,2.2998364,Breakfast Muffin
+2025-11-05,4.0,2.3876567,Breakfast Muffin
+2025-11-06,3.0,2.5306745,Breakfast Muffin
+2025-11-07,7.0,2.7383995,Breakfast Muffin
+2025-11-08,4.0,3.129635,Breakfast Muffin
+2025-11-09,4.0,2.7688448,Breakfast Muffin
+2025-11-10,5.0,2.3208556,Breakfast Muffin
+2025-11-11,1.0,2.2814364,Breakfast Muffin
+2025-11-12,6.0,2.2214675,Breakfast Muffin
+2025-11-13,2.0,2.3423321,Breakfast Muffin
+2025-11-14,6.0,2.5607107,Breakfast Muffin
+2025-11-15,9.0,2.887363,Breakfast Muffin
+2025-11-16,4.0,2.6480107,Breakfast Muffin
+2025-11-17,3.0,2.1910121,Breakfast Muffin
+2025-11-18,1.0,2.1497567,Breakfast Muffin
+2025-11-19,5.0,2.153424,Breakfast Muffin
+2025-11-20,4.0,2.2071264,Breakfast Muffin
+2025-11-21,4.0,2.3941126,Breakfast Muffin
+2025-11-22,2.0,2.4095802,Breakfast Muffin
+2025-11-23,5.0,1.8719699,Breakfast Muffin
+2025-11-24,3.0,1.3002468,Breakfast Muffin
+2025-11-25,1.0,1.0777993,Breakfast Muffin
+2025-11-26,4.0,1.2061754,Breakfast Muffin
+2025-11-27,1.0,1.6195872,Breakfast Muffin
+2025-11-28,3.0,2.258586,Breakfast Muffin
+2025-11-29,4.0,3.2040842,Breakfast Muffin
+2025-11-30,4.0,3.140213,Breakfast Muffin
+2025-11-02,0.0,0.009964071,Breakfast Wrap
+2025-11-03,0.0,0.0,Breakfast Wrap
+2025-11-04,0.0,0.002374202,Breakfast Wrap
+2025-11-05,0.0,0.0037835687,Breakfast Wrap
+2025-11-06,0.0,0.0,Breakfast Wrap
+2025-11-07,0.0,0.0,Breakfast Wrap
+2025-11-08,0.0,0.0,Breakfast Wrap
+2025-11-09,0.0,0.0,Breakfast Wrap
+2025-11-10,0.0,0.0,Breakfast Wrap
+2025-11-11,0.0,0.0,Breakfast Wrap
+2025-11-12,0.0,0.0,Breakfast Wrap
+2025-11-13,0.0,0.0,Breakfast Wrap
+2025-11-14,0.0,0.0,Breakfast Wrap
+2025-11-15,0.0,0.0,Breakfast Wrap
+2025-11-16,0.0,0.0,Breakfast Wrap
+2025-11-17,0.0,0.0,Breakfast Wrap
+2025-11-18,0.0,0.0,Breakfast Wrap
+2025-11-19,0.0,0.0,Breakfast Wrap
+2025-11-20,0.0,0.0,Breakfast Wrap
+2025-11-21,0.0,0.0,Breakfast Wrap
+2025-11-22,0.0,0.0,Breakfast Wrap
+2025-11-23,0.0,0.0,Breakfast Wrap
+2025-11-24,0.0,0.0,Breakfast Wrap
+2025-11-25,0.0,0.0,Breakfast Wrap
+2025-11-26,0.0,0.0,Breakfast Wrap
+2025-11-27,0.0,0.0,Breakfast Wrap
+2025-11-28,0.0,0.0,Breakfast Wrap
+2025-11-29,0.0,0.0,Breakfast Wrap
+2025-11-30,0.0,0.0,Breakfast Wrap
+2025-11-02,8.0,6.7798305,Brown Toast Bread
+2025-11-03,7.0,6.006145,Brown Toast Bread
+2025-11-04,8.0,6.020264,Brown Toast Bread
+2025-11-05,6.0,6.0766478,Brown Toast Bread
+2025-11-06,9.0,6.263443,Brown Toast Bread
+2025-11-07,7.0,6.551819,Brown Toast Bread
+2025-11-08,6.0,6.8898206,Brown Toast Bread
+2025-11-09,12.0,6.5030932,Brown Toast Bread
+2025-11-10,9.0,5.579655,Brown Toast Bread
+2025-11-11,9.0,5.581614,Brown Toast Bread
+2025-11-12,6.0,5.468156,Brown Toast Bread
+2025-11-13,10.0,5.7676034,Brown Toast Bread
+2025-11-14,13.0,6.1572113,Brown Toast Bread
+2025-11-15,6.0,6.584213,Brown Toast Bread
+2025-11-16,8.0,6.0867114,Brown Toast Bread
+2025-11-17,11.0,5.002652,Brown Toast Bread
+2025-11-18,5.0,4.927818,Brown Toast Bread
+2025-11-19,6.0,5.018399,Brown Toast Bread
+2025-11-20,6.0,5.2832913,Brown Toast Bread
+2025-11-21,8.0,5.7495975,Brown Toast Bread
+2025-11-22,12.0,5.902553,Brown Toast Bread
+2025-11-23,15.0,4.8353605,Brown Toast Bread
+2025-11-24,8.0,3.4599447,Brown Toast Bread
+2025-11-25,6.0,2.9945128,Brown Toast Bread
+2025-11-26,9.0,3.4037974,Brown Toast Bread
+2025-11-27,11.0,4.4771,Brown Toast Bread
+2025-11-28,9.0,5.485317,Brown Toast Bread
+2025-11-29,8.0,6.3327646,Brown Toast Bread
+2025-11-30,7.0,6.1129336,Brown Toast Bread
+2025-11-02,3.0,2.0750222,Buttd Mushrooms
+2025-11-03,2.0,1.681627,Buttd Mushrooms
+2025-11-04,3.0,1.5987421,Buttd Mushrooms
+2025-11-05,4.0,1.6335293,Buttd Mushrooms
+2025-11-06,2.0,1.6981884,Buttd Mushrooms
+2025-11-07,3.0,1.8582197,Buttd Mushrooms
+2025-11-08,1.0,2.0739462,Buttd Mushrooms
+2025-11-09,4.0,1.9049764,Buttd Mushrooms
+2025-11-10,1.0,1.4737127,Buttd Mushrooms
+2025-11-11,1.0,1.4428759,Buttd Mushrooms
+2025-11-12,1.0,1.3981146,Buttd Mushrooms
+2025-11-13,1.0,1.4646022,Buttd Mushrooms
+2025-11-14,5.0,1.6393385,Buttd Mushrooms
+2025-11-15,3.0,1.9665313,Buttd Mushrooms
+2025-11-16,3.0,1.8218969,Buttd Mushrooms
+2025-11-17,1.0,1.4624301,Buttd Mushrooms
+2025-11-18,0.0,1.4589068,Buttd Mushrooms
+2025-11-19,5.0,1.4524484,Buttd Mushrooms
+2025-11-20,3.0,1.4543301,Buttd Mushrooms
+2025-11-21,0.0,1.6076176,Buttd Mushrooms
+2025-11-22,1.0,1.6145937,Buttd Mushrooms
+2025-11-23,1.0,1.1588328,Buttd Mushrooms
+2025-11-24,2.0,0.60185516,Buttd Mushrooms
+2025-11-25,1.0,0.358896,Buttd Mushrooms
+2025-11-26,2.0,0.4001288,Buttd Mushrooms
+2025-11-27,1.0,0.6530571,Buttd Mushrooms
+2025-11-28,5.0,1.1817086,Buttd Mushrooms
+2025-11-29,4.0,2.044683,Buttd Mushrooms
+2025-11-30,3.0,2.1834273,Buttd Mushrooms
+2025-11-02,3.0,2.0493884,Cheese & Bean JP
+2025-11-03,2.0,1.6700845,Cheese & Bean JP
+2025-11-04,0.0,1.6212466,Cheese & Bean JP
+2025-11-05,2.0,1.6834381,Cheese & Bean JP
+2025-11-06,0.0,1.7614356,Cheese & Bean JP
+2025-11-07,1.0,1.9241468,Cheese & Bean JP
+2025-11-08,1.0,2.126391,Cheese & Bean JP
+2025-11-09,2.0,1.9408773,Cheese & Bean JP
+2025-11-10,1.0,1.5083028,Cheese & Bean JP
+2025-11-11,1.0,1.4778726,Cheese & Bean JP
+2025-11-12,0.0,1.434109,Cheese & Bean JP
+2025-11-13,2.0,1.5225884,Cheese & Bean JP
+2025-11-14,2.0,1.7281059,Cheese & Bean JP
+2025-11-15,1.0,2.069261,Cheese & Bean JP
+2025-11-16,1.0,1.9267381,Cheese & Bean JP
+2025-11-17,1.0,1.5560368,Cheese & Bean JP
+2025-11-18,2.0,1.548399,Cheese & Bean JP
+2025-11-19,0.0,1.5471311,Cheese & Bean JP
+2025-11-20,0.0,1.5519654,Cheese & Bean JP
+2025-11-21,3.0,1.7013758,Cheese & Bean JP
+2025-11-22,0.0,1.7033106,Cheese & Bean JP
+2025-11-23,1.0,1.2234263,Cheese & Bean JP
+2025-11-24,1.0,0.65386283,Cheese & Bean JP
+2025-11-25,1.0,0.40478882,Cheese & Bean JP
+2025-11-26,2.0,0.43788368,Cheese & Bean JP
+2025-11-27,2.0,0.6960807,Cheese & Bean JP
+2025-11-28,0.0,1.2318345,Cheese & Bean JP
+2025-11-29,2.0,2.09859,Cheese & Bean JP
+2025-11-30,0.0,2.2350333,Cheese & Bean JP
+2025-11-02,1.0,0.18689516,Cheese JP
+2025-11-03,0.0,0.059536904,Cheese JP
+2025-11-04,0.0,0.06511375,Cheese JP
+2025-11-05,0.0,0.070599675,Cheese JP
+2025-11-06,1.0,0.048337743,Cheese JP
+2025-11-07,0.0,0.03908088,Cheese JP
+2025-11-08,0.0,0.039664328,Cheese JP
+2025-11-09,0.0,0.03466335,Cheese JP
+2025-11-10,1.0,0.0054707676,Cheese JP
+2025-11-11,2.0,0.008600168,Cheese JP
+2025-11-12,0.0,0.00070973486,Cheese JP
+2025-11-13,0.0,0.0,Cheese JP
+2025-11-14,0.0,0.0,Cheese JP
+2025-11-15,0.0,0.0,Cheese JP
+2025-11-16,0.0,0.0,Cheese JP
+2025-11-17,0.0,0.0,Cheese JP
+2025-11-18,0.0,0.0,Cheese JP
+2025-11-19,0.0,0.0,Cheese JP
+2025-11-20,0.0,0.0,Cheese JP
+2025-11-21,1.0,0.0,Cheese JP
+2025-11-22,0.0,0.0,Cheese JP
+2025-11-23,1.0,0.0,Cheese JP
+2025-11-24,0.0,0.0,Cheese JP
+2025-11-25,0.0,0.0,Cheese JP
+2025-11-26,0.0,0.0,Cheese JP
+2025-11-27,1.0,0.0,Cheese JP
+2025-11-28,0.0,0.0,Cheese JP
+2025-11-29,0.0,0.0,Cheese JP
+2025-11-30,0.0,0.0,Cheese JP
+2025-11-02,1.0,2.0332792,Chick Flatbread
+2025-11-03,2.0,1.6269648,Chick Flatbread
+2025-11-04,5.0,1.5438602,Chick Flatbread
+2025-11-05,4.0,1.5889776,Chick Flatbread
+2025-11-06,1.0,1.6555538,Chick Flatbread
+2025-11-07,2.0,1.8180856,Chick Flatbread
+2025-11-08,3.0,2.0248103,Chick Flatbread
+2025-11-09,2.0,1.8482581,Chick Flatbread
+2025-11-10,0.0,1.3945633,Chick Flatbread
+2025-11-11,1.0,1.3420808,Chick Flatbread
+2025-11-12,0.0,1.2860572,Chick Flatbread
+2025-11-13,0.0,1.3359154,Chick Flatbread
+2025-11-14,0.0,1.5092221,Chick Flatbread
+2025-11-15,0.0,1.8469145,Chick Flatbread
+2025-11-16,0.0,1.7155252,Chick Flatbread
+2025-11-17,0.0,1.3694372,Chick Flatbread
+2025-11-18,0.0,1.3721676,Chick Flatbread
+2025-11-19,0.0,1.3659137,Chick Flatbread
+2025-11-20,0.0,1.365795,Chick Flatbread
+2025-11-21,0.0,1.5075299,Chick Flatbread
+2025-11-22,0.0,1.5054361,Chick Flatbread
+2025-11-23,0.0,1.0564239,Chick Flatbread
+2025-11-24,0.0,0.49896887,Chick Flatbread
+2025-11-25,0.0,0.25856322,Chick Flatbread
+2025-11-26,0.0,0.28396213,Chick Flatbread
+2025-11-27,0.0,0.4952459,Chick Flatbread
+2025-11-28,0.0,0.98500085,Chick Flatbread
+2025-11-29,0.0,1.8463235,Chick Flatbread
+2025-11-30,0.0,2.0034528,Chick Flatbread
+2025-11-02,4.0,3.8082023,Chicken Club
+2025-11-03,3.0,2.8045614,Chicken Club
+2025-11-04,1.0,2.7415516,Chicken Club
+2025-11-05,2.0,2.8216255,Chicken Club
+2025-11-06,4.0,3.1541553,Chicken Club
+2025-11-07,5.0,3.6489236,Chicken Club
+2025-11-08,7.0,4.173726,Chicken Club
+2025-11-09,1.0,3.7630143,Chicken Club
+2025-11-10,1.0,2.7939281,Chicken Club
+2025-11-11,4.0,2.7625988,Chicken Club
+2025-11-12,0.0,2.7010462,Chicken Club
+2025-11-13,0.0,2.8382196,Chicken Club
+2025-11-14,0.0,3.335471,Chicken Club
+2025-11-15,0.0,3.9444172,Chicken Club
+2025-11-16,0.0,3.3899186,Chicken Club
+2025-11-17,0.0,2.5843518,Chicken Club
+2025-11-18,0.0,2.5260675,Chicken Club
+2025-11-19,0.0,2.5430584,Chicken Club
+2025-11-20,0.0,2.6358972,Chicken Club
+2025-11-21,0.0,2.8700643,Chicken Club
+2025-11-22,0.0,2.968404,Chicken Club
+2025-11-23,0.0,2.3572264,Chicken Club
+2025-11-24,0.0,1.7345465,Chicken Club
+2025-11-25,0.0,1.4931432,Chicken Club
+2025-11-26,0.0,1.6575189,Chicken Club
+2025-11-27,0.0,2.138656,Chicken Club
+2025-11-28,0.0,2.7612524,Chicken Club
+2025-11-29,0.0,4.1033006,Chicken Club
+2025-11-30,0.0,3.9048526,Chicken Club
+2025-11-02,1.0,1.9827617,Chilli Carne JP
+2025-11-03,3.0,1.5902607,Chilli Carne JP
+2025-11-04,2.0,1.5352827,Chilli Carne JP
+2025-11-05,1.0,1.6117396,Chilli Carne JP
+2025-11-06,1.0,1.710797,Chilli Carne JP
+2025-11-07,1.0,1.9008367,Chilli Carne JP
+2025-11-08,0.0,2.129581,Chilli Carne JP
+2025-11-09,2.0,1.9607474,Chilli Carne JP
+2025-11-10,2.0,1.5306708,Chilli Carne JP
+2025-11-11,1.0,1.4803023,Chilli Carne JP
+2025-11-12,3.0,1.409243,Chilli Carne JP
+2025-11-13,0.0,1.480815,Chilli Carne JP
+2025-11-14,2.0,1.6694504,Chilli Carne JP
+2025-11-15,3.0,1.9936048,Chilli Carne JP
+2025-11-16,4.0,1.8330456,Chilli Carne JP
+2025-11-17,2.0,1.4613011,Chilli Carne JP
+2025-11-18,3.0,1.4410725,Chilli Carne JP
+2025-11-19,0.0,1.4351572,Chilli Carne JP
+2025-11-20,1.0,1.4455885,Chilli Carne JP
+2025-11-21,2.0,1.6015357,Chilli Carne JP
+2025-11-22,1.0,1.6020256,Chilli Carne JP
+2025-11-23,4.0,1.1460752,Chilli Carne JP
+2025-11-24,0.0,0.5870417,Chilli Carne JP
+2025-11-25,0.0,0.35136926,Chilli Carne JP
+2025-11-26,1.0,0.40079814,Chilli Carne JP
+2025-11-27,0.0,0.6595483,Chilli Carne JP
+2025-11-28,0.0,1.1912205,Chilli Carne JP
+2025-11-29,0.0,2.048171,Chilli Carne JP
+2025-11-30,1.0,2.1660855,Chilli Carne JP
+2025-11-02,0.0,0.010830402,Egg Bacon Brioch
+2025-11-03,0.0,0.0,Egg Bacon Brioch
+2025-11-04,0.0,0.002854094,Egg Bacon Brioch
+2025-11-05,0.0,0.0043922737,Egg Bacon Brioch
+2025-11-06,0.0,0.0,Egg Bacon Brioch
+2025-11-07,0.0,0.0,Egg Bacon Brioch
+2025-11-08,0.0,0.0,Egg Bacon Brioch
+2025-11-09,0.0,0.0,Egg Bacon Brioch
+2025-11-10,0.0,0.0,Egg Bacon Brioch
+2025-11-11,0.0,0.0,Egg Bacon Brioch
+2025-11-12,0.0,0.0,Egg Bacon Brioch
+2025-11-13,0.0,0.0,Egg Bacon Brioch
+2025-11-14,0.0,0.0,Egg Bacon Brioch
+2025-11-15,0.0,0.0,Egg Bacon Brioch
+2025-11-16,0.0,0.0,Egg Bacon Brioch
+2025-11-17,0.0,0.0,Egg Bacon Brioch
+2025-11-18,0.0,0.0,Egg Bacon Brioch
+2025-11-19,0.0,0.0,Egg Bacon Brioch
+2025-11-20,0.0,0.0,Egg Bacon Brioch
+2025-11-21,0.0,0.0,Egg Bacon Brioch
+2025-11-22,0.0,0.0,Egg Bacon Brioch
+2025-11-23,0.0,0.0,Egg Bacon Brioch
+2025-11-24,0.0,0.0,Egg Bacon Brioch
+2025-11-25,0.0,0.0,Egg Bacon Brioch
+2025-11-26,0.0,0.0,Egg Bacon Brioch
+2025-11-27,0.0,0.0,Egg Bacon Brioch
+2025-11-28,0.0,0.0,Egg Bacon Brioch
+2025-11-29,0.0,0.0,Egg Bacon Brioch
+2025-11-30,0.0,0.0,Egg Bacon Brioch
+2025-11-02,0.0,1.8523145,Egg Bap
+2025-11-03,3.0,1.445937,Egg Bap
+2025-11-04,1.0,1.3619913,Egg Bap
+2025-11-05,1.0,1.398367,Egg Bap
+2025-11-06,3.0,1.4479071,Egg Bap
+2025-11-07,2.0,1.5912862,Egg Bap
+2025-11-08,1.0,1.7784945,Egg Bap
+2025-11-09,1.0,1.6056173,Egg Bap
+2025-11-10,1.0,1.1459339,Egg Bap
+2025-11-11,2.0,1.0873593,Egg Bap
+2025-11-12,0.0,1.0284992,Egg Bap
+2025-11-13,4.0,1.0695022,Egg Bap
+2025-11-14,0.0,1.2350397,Egg Bap
+2025-11-15,6.0,1.5802284,Egg Bap
+2025-11-16,2.0,1.4927113,Egg Bap
+2025-11-17,1.0,1.1620178,Egg Bap
+2025-11-18,0.0,1.1801451,Egg Bap
+2025-11-19,0.0,1.1786448,Egg Bap
+2025-11-20,4.0,1.1683853,Egg Bap
+2025-11-21,2.0,1.301146,Egg Bap
+2025-11-22,5.0,1.2859511,Egg Bap
+2025-11-23,0.0,0.8496006,Egg Bap
+2025-11-24,1.0,0.29637617,Egg Bap
+2025-11-25,0.0,0.07138013,Egg Bap
+2025-11-26,2.0,0.06692219,Egg Bap
+2025-11-27,2.0,0.1557527,Egg Bap
+2025-11-28,1.0,0.5357437,Egg Bap
+2025-11-29,3.0,1.3498476,Egg Bap
+2025-11-30,1.0,1.5252101,Egg Bap
+2025-11-02,0.0,0.0277327,Extra Beans
+2025-11-03,0.0,0.015798546,Extra Beans
+2025-11-04,0.0,0.024257272,Extra Beans
+2025-11-05,0.0,0.027823627,Extra Beans
+2025-11-06,0.0,0.007122606,Extra Beans
+2025-11-07,0.0,0.0,Extra Beans
+2025-11-08,0.0,0.0,Extra Beans
+2025-11-09,0.0,0.0,Extra Beans
+2025-11-10,0.0,0.0,Extra Beans
+2025-11-11,0.0,0.0,Extra Beans
+2025-11-12,0.0,0.0,Extra Beans
+2025-11-13,0.0,0.0,Extra Beans
+2025-11-14,0.0,0.0,Extra Beans
+2025-11-15,0.0,0.0,Extra Beans
+2025-11-16,0.0,0.0,Extra Beans
+2025-11-17,0.0,0.0,Extra Beans
+2025-11-18,0.0,0.0,Extra Beans
+2025-11-19,0.0,0.0,Extra Beans
+2025-11-20,0.0,0.0,Extra Beans
+2025-11-21,0.0,0.0,Extra Beans
+2025-11-22,0.0,0.0,Extra Beans
+2025-11-23,0.0,0.0,Extra Beans
+2025-11-24,0.0,0.0,Extra Beans
+2025-11-25,0.0,0.0,Extra Beans
+2025-11-26,0.0,0.0,Extra Beans
+2025-11-27,0.0,0.0,Extra Beans
+2025-11-28,0.0,0.0,Extra Beans
+2025-11-29,0.0,0.0,Extra Beans
+2025-11-30,0.0,0.0,Extra Beans
+2025-11-02,3.0,1.8385012,F.Eggs on Toast
+2025-11-03,1.0,1.4693431,F.Eggs on Toast
+2025-11-04,0.0,1.4107584,F.Eggs on Toast
+2025-11-05,1.0,1.4694113,F.Eggs on Toast
+2025-11-06,0.0,1.533242,F.Eggs on Toast
+2025-11-07,0.0,1.6954303,F.Eggs on Toast
+2025-11-08,1.0,1.9048551,F.Eggs on Toast
+2025-11-09,4.0,1.7285529,F.Eggs on Toast
+2025-11-10,0.0,1.2856759,F.Eggs on Toast
+2025-11-11,0.0,1.2342541,F.Eggs on Toast
+2025-11-12,2.0,1.1817616,F.Eggs on Toast
+2025-11-13,2.0,1.2452513,F.Eggs on Toast
+2025-11-14,2.0,1.4337225,F.Eggs on Toast
+2025-11-15,6.0,1.7902923,F.Eggs on Toast
+2025-11-16,0.0,1.680978,F.Eggs on Toast
+2025-11-17,1.0,1.3368526,F.Eggs on Toast
+2025-11-18,1.0,1.3305684,F.Eggs on Toast
+2025-11-19,2.0,1.3374461,F.Eggs on Toast
+2025-11-20,1.0,1.3500698,F.Eggs on Toast
+2025-11-21,3.0,1.5115559,F.Eggs on Toast
+2025-11-22,3.0,1.5203682,F.Eggs on Toast
+2025-11-23,2.0,1.0712223,F.Eggs on Toast
+2025-11-24,2.0,0.50689214,F.Eggs on Toast
+2025-11-25,1.0,0.25578743,F.Eggs on Toast
+2025-11-26,3.0,0.27496797,F.Eggs on Toast
+2025-11-27,2.0,0.4821474,F.Eggs on Toast
+2025-11-28,4.0,0.94242936,F.Eggs on Toast
+2025-11-29,1.0,1.7786006,F.Eggs on Toast
+2025-11-30,0.0,1.9118035,F.Eggs on Toast
+2025-11-02,0.0,0.0109491125,Festive Stack
+2025-11-03,0.0,0.0,Festive Stack
+2025-11-04,0.0,0.0029046088,Festive Stack
+2025-11-05,0.0,0.004488252,Festive Stack
+2025-11-06,0.0,0.0,Festive Stack
+2025-11-07,0.0,0.0,Festive Stack
+2025-11-08,0.0,0.0,Festive Stack
+2025-11-09,0.0,0.0,Festive Stack
+2025-11-10,0.0,0.0,Festive Stack
+2025-11-11,0.0,0.0,Festive Stack
+2025-11-12,7.0,0.0,Festive Stack
+2025-11-13,5.0,0.0,Festive Stack
+2025-11-14,8.0,0.0,Festive Stack
+2025-11-15,6.0,0.0,Festive Stack
+2025-11-16,7.0,0.0,Festive Stack
+2025-11-17,3.0,0.0,Festive Stack
+2025-11-18,3.0,0.0,Festive Stack
+2025-11-19,2.0,0.0,Festive Stack
+2025-11-20,1.0,0.0,Festive Stack
+2025-11-21,3.0,0.0,Festive Stack
+2025-11-22,3.0,0.0,Festive Stack
+2025-11-23,4.0,0.0,Festive Stack
+2025-11-24,4.0,0.0,Festive Stack
+2025-11-25,1.0,0.0,Festive Stack
+2025-11-26,2.0,0.0,Festive Stack
+2025-11-27,8.0,0.0,Festive Stack
+2025-11-28,3.0,0.0,Festive Stack
+2025-11-29,6.0,0.0,Festive Stack
+2025-11-30,3.0,0.0,Festive Stack
+2025-11-02,11.0,6.624718,Fried Egg
+2025-11-03,3.0,5.720243,Fried Egg
+2025-11-04,6.0,5.67459,Fried Egg
+2025-11-05,4.0,5.774388,Fried Egg
+2025-11-06,3.0,6.014805,Fried Egg
+2025-11-07,11.0,6.3664784,Fried Egg
+2025-11-08,12.0,6.7575207,Fried Egg
+2025-11-09,7.0,6.391502,Fried Egg
+2025-11-10,2.0,5.431054,Fried Egg
+2025-11-11,11.0,5.3777456,Fried Egg
+2025-11-12,9.0,5.2515078,Fried Egg
+2025-11-13,9.0,5.5840497,Fried Egg
+2025-11-14,14.0,6.0147414,Fried Egg
+2025-11-15,11.0,6.483683,Fried Egg
+2025-11-16,15.0,6.0004973,Fried Egg
+2025-11-17,13.0,4.8587565,Fried Egg
+2025-11-18,8.0,4.73505,Fried Egg
+2025-11-19,2.0,4.857294,Fried Egg
+2025-11-20,11.0,5.183219,Fried Egg
+2025-11-21,9.0,5.7059374,Fried Egg
+2025-11-22,10.0,5.8951964,Fried Egg
+2025-11-23,14.0,4.848906,Fried Egg
+2025-11-24,11.0,3.4183457,Fried Egg
+2025-11-25,3.0,2.9038184,Fried Egg
+2025-11-26,3.0,3.3230467,Fried Egg
+2025-11-27,5.0,4.393293,Fried Egg
+2025-11-28,9.0,5.4070215,Fried Egg
+2025-11-29,5.0,6.2588763,Fried Egg
+2025-11-30,18.0,6.0214915,Fried Egg
+2025-11-02,5.0,2.6599777,Hash Brown
+2025-11-03,3.0,2.1768174,Hash Brown
+2025-11-04,4.0,2.057087,Hash Brown
+2025-11-05,2.0,2.0957258,Hash Brown
+2025-11-06,2.0,2.1890497,Hash Brown
+2025-11-07,5.0,2.366597,Hash Brown
+2025-11-08,3.0,2.5682805,Hash Brown
+2025-11-09,5.0,2.3475983,Hash Brown
+2025-11-10,0.0,1.8716365,Hash Brown
+2025-11-11,4.0,1.7838315,Hash Brown
+2025-11-12,4.0,1.7274289,Hash Brown
+2025-11-13,5.0,1.8583485,Hash Brown
+2025-11-14,2.0,2.1075337,Hash Brown
+2025-11-15,3.0,2.4580088,Hash Brown
+2025-11-16,3.0,2.2746446,Hash Brown
+2025-11-17,4.0,1.8215181,Hash Brown
+2025-11-18,0.0,1.7670352,Hash Brown
+2025-11-19,2.0,1.7819068,Hash Brown
+2025-11-20,2.0,1.8440604,Hash Brown
+2025-11-21,5.0,2.047772,Hash Brown
+2025-11-22,2.0,2.0831525,Hash Brown
+2025-11-23,2.0,1.5757048,Hash Brown
+2025-11-24,8.0,1.0147845,Hash Brown
+2025-11-25,4.0,0.757176,Hash Brown
+2025-11-26,0.0,0.84555435,Hash Brown
+2025-11-27,0.0,1.2101182,Hash Brown
+2025-11-28,0.0,1.8073461,Hash Brown
+2025-11-29,3.0,2.5830357,Hash Brown
+2025-11-30,2.0,2.5595994,Hash Brown
+2025-11-02,0.0,0.011242099,Hash Brown Bites
+2025-11-03,0.0,0.0,Hash Brown Bites
+2025-11-04,0.0,0.0029904842,Hash Brown Bites
+2025-11-05,0.0,0.0048418567,Hash Brown Bites
+2025-11-06,0.0,0.0,Hash Brown Bites
+2025-11-07,0.0,0.0,Hash Brown Bites
+2025-11-08,0.0,0.0,Hash Brown Bites
+2025-11-09,0.0,0.0,Hash Brown Bites
+2025-11-10,0.0,0.0,Hash Brown Bites
+2025-11-11,0.0,0.0,Hash Brown Bites
+2025-11-12,0.0,0.0,Hash Brown Bites
+2025-11-13,0.0,0.0,Hash Brown Bites
+2025-11-14,0.0,0.0,Hash Brown Bites
+2025-11-15,0.0,0.0,Hash Brown Bites
+2025-11-16,0.0,0.0,Hash Brown Bites
+2025-11-17,0.0,0.0,Hash Brown Bites
+2025-11-18,0.0,0.0,Hash Brown Bites
+2025-11-19,0.0,0.0,Hash Brown Bites
+2025-11-20,0.0,0.0,Hash Brown Bites
+2025-11-21,0.0,0.0,Hash Brown Bites
+2025-11-22,0.0,0.0,Hash Brown Bites
+2025-11-23,0.0,0.0,Hash Brown Bites
+2025-11-24,0.0,0.0,Hash Brown Bites
+2025-11-25,0.0,0.0,Hash Brown Bites
+2025-11-26,0.0,0.0,Hash Brown Bites
+2025-11-27,0.0,0.0,Hash Brown Bites
+2025-11-28,0.0,0.0,Hash Brown Bites
+2025-11-29,0.0,0.0,Hash Brown Bites
+2025-11-30,0.0,0.0,Hash Brown Bites
+2025-11-02,0.0,0.011287563,Little Avo Toast
+2025-11-03,0.0,0.0,Little Avo Toast
+2025-11-04,0.0,0.0028490424,Little Avo Toast
+2025-11-05,0.0,0.005218193,Little Avo Toast
+2025-11-06,0.0,0.0,Little Avo Toast
+2025-11-07,0.0,0.0,Little Avo Toast
+2025-11-08,0.0,0.0,Little Avo Toast
+2025-11-09,0.0,0.0,Little Avo Toast
+2025-11-10,0.0,0.0,Little Avo Toast
+2025-11-11,0.0,0.0,Little Avo Toast
+2025-11-12,0.0,0.0,Little Avo Toast
+2025-11-13,0.0,0.0,Little Avo Toast
+2025-11-14,0.0,0.0,Little Avo Toast
+2025-11-15,0.0,0.0,Little Avo Toast
+2025-11-16,0.0,0.0,Little Avo Toast
+2025-11-17,0.0,0.0,Little Avo Toast
+2025-11-18,0.0,0.0,Little Avo Toast
+2025-11-19,0.0,0.0,Little Avo Toast
+2025-11-20,0.0,0.0,Little Avo Toast
+2025-11-21,0.0,0.0,Little Avo Toast
+2025-11-22,0.0,0.0,Little Avo Toast
+2025-11-23,0.0,0.0,Little Avo Toast
+2025-11-24,0.0,0.0,Little Avo Toast
+2025-11-25,0.0,0.0,Little Avo Toast
+2025-11-26,0.0,0.0,Little Avo Toast
+2025-11-27,0.0,0.0,Little Avo Toast
+2025-11-28,0.0,0.0,Little Avo Toast
+2025-11-29,0.0,0.0,Little Avo Toast
+2025-11-30,0.0,0.0,Little Avo Toast
+2025-11-02,0.0,0.011285037,Little Bean Toas
+2025-11-03,0.0,0.0,Little Bean Toas
+2025-11-04,0.0,0.0028389394,Little Bean Toas
+2025-11-05,0.0,0.0052308217,Little Bean Toas
+2025-11-06,0.0,0.0,Little Bean Toas
+2025-11-07,0.0,0.0,Little Bean Toas
+2025-11-08,0.0,0.0,Little Bean Toas
+2025-11-09,0.0,0.0,Little Bean Toas
+2025-11-10,0.0,0.0,Little Bean Toas
+2025-11-11,0.0,0.0,Little Bean Toas
+2025-11-12,0.0,0.0,Little Bean Toas
+2025-11-13,0.0,0.0,Little Bean Toas
+2025-11-14,0.0,0.0,Little Bean Toas
+2025-11-15,0.0,0.0,Little Bean Toas
+2025-11-16,0.0,0.0,Little Bean Toas
+2025-11-17,0.0,0.0,Little Bean Toas
+2025-11-18,0.0,0.0,Little Bean Toas
+2025-11-19,0.0,0.0,Little Bean Toas
+2025-11-20,0.0,0.0,Little Bean Toas
+2025-11-21,0.0,0.0,Little Bean Toas
+2025-11-22,0.0,0.0,Little Bean Toas
+2025-11-23,0.0,0.0,Little Bean Toas
+2025-11-24,0.0,0.0,Little Bean Toas
+2025-11-25,0.0,0.0,Little Bean Toas
+2025-11-26,0.0,0.0,Little Bean Toas
+2025-11-27,0.0,0.0,Little Bean Toas
+2025-11-28,0.0,0.0,Little Bean Toas
+2025-11-29,0.0,0.0,Little Bean Toas
+2025-11-30,0.0,0.0,Little Bean Toas
+2025-11-02,0.0,0.011282511,Little Egg Toast
+2025-11-03,0.0,0.0,Little Egg Toast
+2025-11-04,0.0,0.0028313622,Little Egg Toast
+2025-11-05,0.0,0.0052409247,Little Egg Toast
+2025-11-06,0.0,0.0,Little Egg Toast
+2025-11-07,0.0,0.0,Little Egg Toast
+2025-11-08,0.0,0.0,Little Egg Toast
+2025-11-09,0.0,0.0,Little Egg Toast
+2025-11-10,0.0,0.0,Little Egg Toast
+2025-11-11,0.0,0.0,Little Egg Toast
+2025-11-12,0.0,0.0,Little Egg Toast
+2025-11-13,0.0,0.0,Little Egg Toast
+2025-11-14,0.0,0.0,Little Egg Toast
+2025-11-15,0.0,0.0,Little Egg Toast
+2025-11-16,0.0,0.0,Little Egg Toast
+2025-11-17,0.0,0.0,Little Egg Toast
+2025-11-18,0.0,0.0,Little Egg Toast
+2025-11-19,0.0,0.0,Little Egg Toast
+2025-11-20,0.0,0.0,Little Egg Toast
+2025-11-21,0.0,0.0,Little Egg Toast
+2025-11-22,0.0,0.0,Little Egg Toast
+2025-11-23,0.0,0.0,Little Egg Toast
+2025-11-24,0.0,0.0,Little Egg Toast
+2025-11-25,0.0,0.0,Little Egg Toast
+2025-11-26,0.0,0.0,Little Egg Toast
+2025-11-27,0.0,0.0,Little Egg Toast
+2025-11-28,0.0,0.0,Little Egg Toast
+2025-11-29,0.0,0.0,Little Egg Toast
+2025-11-30,0.0,0.0,Little Egg Toast
+2025-11-02,3.0,0.84836555,Ltle Bfast Bacon
+2025-11-03,0.0,0.4854738,Ltle Bfast Bacon
+2025-11-04,0.0,0.3806528,Ltle Bfast Bacon
+2025-11-05,0.0,0.3636924,Ltle Bfast Bacon
+2025-11-06,0.0,0.24895781,Ltle Bfast Bacon
+2025-11-07,0.0,0.2251375,Ltle Bfast Bacon
+2025-11-08,1.0,0.27877426,Ltle Bfast Bacon
+2025-11-09,1.0,0.19366416,Ltle Bfast Bacon
+2025-11-10,0.0,0.045029014,Ltle Bfast Bacon
+2025-11-11,0.0,0.0414273,Ltle Bfast Bacon
+2025-11-12,2.0,0.032662958,Ltle Bfast Bacon
+2025-11-13,0.0,0.01839754,Ltle Bfast Bacon
+2025-11-14,0.0,0.012492344,Ltle Bfast Bacon
+2025-11-15,2.0,0.023580372,Ltle Bfast Bacon
+2025-11-16,1.0,0.024221912,Ltle Bfast Bacon
+2025-11-17,0.0,0.016313799,Ltle Bfast Bacon
+2025-11-18,0.0,0.027651876,Ltle Bfast Bacon
+2025-11-19,0.0,0.033319652,Ltle Bfast Bacon
+2025-11-20,1.0,0.025906585,Ltle Bfast Bacon
+2025-11-21,0.0,0.030710556,Ltle Bfast Bacon
+2025-11-22,0.0,0.025575712,Ltle Bfast Bacon
+2025-11-23,0.0,0.0071781725,Ltle Bfast Bacon
+2025-11-24,1.0,0.0,Ltle Bfast Bacon
+2025-11-25,0.0,0.0,Ltle Bfast Bacon
+2025-11-26,0.0,0.0,Ltle Bfast Bacon
+2025-11-27,0.0,0.0,Ltle Bfast Bacon
+2025-11-28,0.0,0.0,Ltle Bfast Bacon
+2025-11-29,1.0,0.0,Ltle Bfast Bacon
+2025-11-30,0.0,0.0,Ltle Bfast Bacon
+2025-11-02,2.0,2.3329313,Ltle Bfast Saus
+2025-11-03,1.0,1.8953001,Ltle Bfast Saus
+2025-11-04,0.0,1.7987081,Ltle Bfast Saus
+2025-11-05,0.0,1.8566159,Ltle Bfast Saus
+2025-11-06,1.0,1.9424862,Ltle Bfast Saus
+2025-11-07,4.0,2.124994,Ltle Bfast Saus
+2025-11-08,0.0,2.3315496,Ltle Bfast Saus
+2025-11-09,4.0,2.1206853,Ltle Bfast Saus
+2025-11-10,2.0,1.6500072,Ltle Bfast Saus
+2025-11-11,0.0,1.5651194,Ltle Bfast Saus
+2025-11-12,1.0,1.5301025,Ltle Bfast Saus
+2025-11-13,1.0,1.676616,Ltle Bfast Saus
+2025-11-14,3.0,1.9374902,Ltle Bfast Saus
+2025-11-15,2.0,2.3138568,Ltle Bfast Saus
+2025-11-16,2.0,2.148183,Ltle Bfast Saus
+2025-11-17,2.0,1.6980293,Ltle Bfast Saus
+2025-11-18,0.0,1.6338905,Ltle Bfast Saus
+2025-11-19,0.0,1.6622319,Ltle Bfast Saus
+2025-11-20,1.0,1.7392747,Ltle Bfast Saus
+2025-11-21,0.0,1.9619218,Ltle Bfast Saus
+2025-11-22,1.0,2.0168443,Ltle Bfast Saus
+2025-11-23,4.0,1.5181986,Ltle Bfast Saus
+2025-11-24,4.0,0.94941306,Ltle Bfast Saus
+2025-11-25,1.0,0.68655103,Ltle Bfast Saus
+2025-11-26,0.0,0.7604039,Ltle Bfast Saus
+2025-11-27,3.0,1.0857099,Ltle Bfast Saus
+2025-11-28,3.0,1.6491712,Ltle Bfast Saus
+2025-11-29,5.0,2.4174504,Ltle Bfast Saus
+2025-11-30,5.0,2.3772986,Ltle Bfast Saus
+2025-11-02,2.0,2.5896456,Mini Hash Browns
+2025-11-03,2.0,2.1268153,Mini Hash Browns
+2025-11-04,0.0,2.0282454,Mini Hash Browns
+2025-11-05,2.0,2.108016,Mini Hash Browns
+2025-11-06,3.0,2.228517,Mini Hash Browns
+2025-11-07,0.0,2.4366486,Mini Hash Browns
+2025-11-08,2.0,2.6584444,Mini Hash Browns
+2025-11-09,2.0,2.4462743,Mini Hash Browns
+2025-11-10,1.0,1.9586586,Mini Hash Browns
+2025-11-11,1.0,1.8738289,Mini Hash Browns
+2025-11-12,1.0,1.849218,Mini Hash Browns
+2025-11-13,3.0,2.0146923,Mini Hash Browns
+2025-11-14,1.0,2.2915065,Mini Hash Browns
+2025-11-15,3.0,2.6563709,Mini Hash Browns
+2025-11-16,3.0,2.4619741,Mini Hash Browns
+2025-11-17,0.0,1.9551983,Mini Hash Browns
+2025-11-18,1.0,1.8757888,Mini Hash Browns
+2025-11-19,2.0,1.9045495,Mini Hash Browns
+2025-11-20,3.0,2.0003157,Mini Hash Browns
+2025-11-21,1.0,2.238625,Mini Hash Browns
+2025-11-22,5.0,2.2958887,Mini Hash Browns
+2025-11-23,1.0,1.7692225,Mini Hash Browns
+2025-11-24,2.0,1.1665415,Mini Hash Browns
+2025-11-25,2.0,0.93477637,Mini Hash Browns
+2025-11-26,1.0,1.0490614,Mini Hash Browns
+2025-11-27,1.0,1.4150068,Mini Hash Browns
+2025-11-28,1.0,2.0098176,Mini Hash Browns
+2025-11-29,1.0,2.7252026,Mini Hash Browns
+2025-11-30,2.0,2.6483037,Mini Hash Browns
+2025-11-02,5.0,2.7657104,Multiseed Toast Bread
+2025-11-03,11.0,2.3148596,Multiseed Toast Bread
+2025-11-04,1.0,2.2184038,Multiseed Toast Bread
+2025-11-05,2.0,2.2868593,Multiseed Toast Bread
+2025-11-06,5.0,2.4011998,Multiseed Toast Bread
+2025-11-07,0.0,2.5893955,Multiseed Toast Bread
+2025-11-08,2.0,2.7852724,Multiseed Toast Bread
+2025-11-09,6.0,2.5413156,Multiseed Toast Bread
+2025-11-10,3.0,2.0194254,Multiseed Toast Bread
+2025-11-11,1.0,1.9112326,Multiseed Toast Bread
+2025-11-12,4.0,1.8854321,Multiseed Toast Bread
+2025-11-13,4.0,2.0605597,Multiseed Toast Bread
+2025-11-14,1.0,2.345497,Multiseed Toast Bread
+2025-11-15,4.0,2.7141473,Multiseed Toast Bread
+2025-11-16,4.0,2.5189652,Multiseed Toast Bread
+2025-11-17,0.0,2.0237243,Multiseed Toast Bread
+2025-11-18,1.0,1.9416906,Multiseed Toast Bread
+2025-11-19,4.0,1.9670769,Multiseed Toast Bread
+2025-11-20,2.0,2.0615828,Multiseed Toast Bread
+2025-11-21,4.0,2.2946234,Multiseed Toast Bread
+2025-11-22,5.0,2.347472,Multiseed Toast Bread
+2025-11-23,1.0,1.8223794,Multiseed Toast Bread
+2025-11-24,3.0,1.2025939,Multiseed Toast Bread
+2025-11-25,2.0,0.961567,Multiseed Toast Bread
+2025-11-26,1.0,1.082626,Multiseed Toast Bread
+2025-11-27,4.0,1.4621371,Multiseed Toast Bread
+2025-11-28,1.0,2.0583498,Multiseed Toast Bread
+2025-11-29,1.0,2.7618334,Multiseed Toast Bread
+2025-11-30,2.0,2.6703079,Multiseed Toast Bread
+2025-11-02,4.0,5.551891,P.Eggs on Toast
+2025-11-03,9.0,4.660132,P.Eggs on Toast
+2025-11-04,5.0,4.6400104,P.Eggs on Toast
+2025-11-05,3.0,4.8288364,P.Eggs on Toast
+2025-11-06,8.0,5.1207976,P.Eggs on Toast
+2025-11-07,3.0,5.5373816,P.Eggs on Toast
+2025-11-08,6.0,5.962663,P.Eggs on Toast
+2025-11-09,7.0,5.523424,P.Eggs on Toast
+2025-11-10,7.0,4.359252,P.Eggs on Toast
+2025-11-11,6.0,4.1918783,P.Eggs on Toast
+2025-11-12,6.0,4.145633,P.Eggs on Toast
+2025-11-13,8.0,4.61142,P.Eggs on Toast
+2025-11-14,7.0,5.202359,P.Eggs on Toast
+2025-11-15,4.0,5.834249,P.Eggs on Toast
+2025-11-16,10.0,5.3871756,P.Eggs on Toast
+2025-11-17,6.0,4.139334,P.Eggs on Toast
+2025-11-18,5.0,3.9413004,P.Eggs on Toast
+2025-11-19,3.0,4.0705442,P.Eggs on Toast
+2025-11-20,5.0,4.453517,P.Eggs on Toast
+2025-11-21,8.0,5.057789,P.Eggs on Toast
+2025-11-22,4.0,5.29332,P.Eggs on Toast
+2025-11-23,4.0,4.2067237,P.Eggs on Toast
+2025-11-24,5.0,2.758161,P.Eggs on Toast
+2025-11-25,3.0,2.5115118,P.Eggs on Toast
+2025-11-26,5.0,2.7271144,P.Eggs on Toast
+2025-11-27,4.0,3.7160227,P.Eggs on Toast
+2025-11-28,5.0,4.8363795,P.Eggs on Toast
+2025-11-29,7.0,5.766386,P.Eggs on Toast
+2025-11-30,5.0,5.4507055,P.Eggs on Toast
+2025-11-02,5.0,3.687262,Poached Egg
+2025-11-03,0.0,2.717552,Poached Egg
+2025-11-04,1.0,2.644611,Poached Egg
+2025-11-05,4.0,2.7335477,Poached Egg
+2025-11-06,6.0,2.9247518,Poached Egg
+2025-11-07,3.0,3.4182043,Poached Egg
+2025-11-08,7.0,3.9192708,Poached Egg
+2025-11-09,11.0,3.4004078,Poached Egg
+2025-11-10,0.0,2.5587583,Poached Egg
+2025-11-11,2.0,2.4522197,Poached Egg
+2025-11-12,1.0,2.4301043,Poached Egg
+2025-11-13,3.0,2.629694,Poached Egg
+2025-11-14,2.0,3.0288882,Poached Egg
+2025-11-15,1.0,3.8105032,Poached Egg
+2025-11-16,2.0,3.305427,Poached Egg
+2025-11-17,2.0,2.4944603,Poached Egg
+2025-11-18,0.0,2.4043417,Poached Egg
+2025-11-19,1.0,2.4635327,Poached Egg
+2025-11-20,5.0,2.6101043,Poached Egg
+2025-11-21,6.0,2.9329805,Poached Egg
+2025-11-22,2.0,3.1309788,Poached Egg
+2025-11-23,2.0,2.4344664,Poached Egg
+2025-11-24,5.0,1.7518252,Poached Egg
+2025-11-25,2.0,1.4789182,Poached Egg
+2025-11-26,6.0,1.6437637,Poached Egg
+2025-11-27,3.0,2.106897,Poached Egg
+2025-11-28,0.0,2.710816,Poached Egg
+2025-11-29,1.0,3.8938859,Poached Egg
+2025-11-30,3.0,3.559295,Poached Egg
+2025-11-02,1.0,0.34386274,Porridge
+2025-11-03,0.0,0.07196863,Porridge
+2025-11-04,0.0,0.064987466,Porridge
+2025-11-05,0.0,0.062719345,Porridge
+2025-11-06,1.0,0.04327867,Porridge
+2025-11-07,0.0,0.032339662,Porridge
+2025-11-08,0.0,0.029139541,Porridge
+2025-11-09,1.0,0.02330254,Porridge
+2025-11-10,0.0,0.0,Porridge
+2025-11-11,0.0,0.0,Porridge
+2025-11-12,0.0,0.0,Porridge
+2025-11-13,0.0,0.0,Porridge
+2025-11-14,1.0,0.0,Porridge
+2025-11-15,1.0,0.0,Porridge
+2025-11-16,1.0,0.0,Porridge
+2025-11-17,0.0,0.0,Porridge
+2025-11-18,0.0,0.0,Porridge
+2025-11-19,0.0,0.0,Porridge
+2025-11-20,0.0,0.0,Porridge
+2025-11-21,1.0,0.0,Porridge
+2025-11-22,1.0,0.0,Porridge
+2025-11-23,1.0,0.0,Porridge
+2025-11-24,0.0,0.0,Porridge
+2025-11-25,0.0,0.0,Porridge
+2025-11-26,1.0,0.0,Porridge
+2025-11-27,1.0,0.0,Porridge
+2025-11-28,0.0,0.0,Porridge
+2025-11-29,0.0,0.0,Porridge
+2025-11-30,0.0,0.0,Porridge
+2025-11-02,0.0,1.9797283,Posh Beans
+2025-11-03,1.0,1.5329237,Posh Beans
+2025-11-04,2.0,1.4157392,Posh Beans
+2025-11-05,1.0,1.4588335,Posh Beans
+2025-11-06,1.0,1.5147586,Posh Beans
+2025-11-07,3.0,1.6666014,Posh Beans
+2025-11-08,2.0,1.8405117,Posh Beans
+2025-11-09,0.0,1.6240047,Posh Beans
+2025-11-10,2.0,1.1695294,Posh Beans
+2025-11-11,0.0,1.0492761,Posh Beans
+2025-11-12,1.0,1.0086721,Posh Beans
+2025-11-13,3.0,1.0871925,Posh Beans
+2025-11-14,1.0,1.2913108,Posh Beans
+2025-11-15,0.0,1.6758734,Posh Beans
+2025-11-16,2.0,1.56077,Posh Beans
+2025-11-17,0.0,1.193923,Posh Beans
+2025-11-18,0.0,1.1663015,Posh Beans
+2025-11-19,4.0,1.1913973,Posh Beans
+2025-11-20,1.0,1.238351,Posh Beans
+2025-11-21,2.0,1.4289767,Posh Beans
+2025-11-22,1.0,1.4587325,Posh Beans
+2025-11-23,0.0,1.017823,Posh Beans
+2025-11-24,1.0,0.46942773,Posh Beans
+2025-11-25,0.0,0.19540441,Posh Beans
+2025-11-26,2.0,0.19199464,Posh Beans
+2025-11-27,0.0,0.35141474,Posh Beans
+2025-11-28,0.0,0.73466396,Posh Beans
+2025-11-29,0.0,1.4794056,Posh Beans
+2025-11-30,2.0,1.5408798,Posh Beans
+2025-11-02,4.0,2.299993,Roll & Butter 
+2025-11-03,2.0,1.8467958,Roll & Butter 
+2025-11-04,2.0,1.7396536,Roll & Butter 
+2025-11-05,1.0,1.8011631,Roll & Butter 
+2025-11-06,1.0,1.8880993,Roll & Butter 
+2025-11-07,2.0,2.0612745,Roll & Butter 
+2025-11-08,2.0,2.2471595,Roll & Butter 
+2025-11-09,1.0,2.0056148,Roll & Butter 
+2025-11-10,0.0,1.5118995,Roll & Butter 
+2025-11-11,4.0,1.4112989,Roll & Butter 
+2025-11-12,3.0,1.3927321,Roll & Butter 
+2025-11-13,1.0,1.5453353,Roll & Butter 
+2025-11-14,2.0,1.8180604,Roll & Butter 
+2025-11-15,2.0,2.2093945,Roll & Butter 
+2025-11-16,1.0,2.0548668,Roll & Butter 
+2025-11-17,5.0,1.6098201,Roll & Butter 
+2025-11-18,9.0,1.5563323,Roll & Butter 
+2025-11-19,1.0,1.5963452,Roll & Butter 
+2025-11-20,1.0,1.682852,Roll & Butter 
+2025-11-21,1.0,1.9032007,Roll & Butter 
+2025-11-22,1.0,1.9509399,Roll & Butter 
+2025-11-23,3.0,1.450097,Roll & Butter 
+2025-11-24,2.0,0.88013434,Roll & Butter 
+2025-11-25,0.0,0.60327715,Roll & Butter 
+2025-11-26,1.0,0.65789896,Roll & Butter 
+2025-11-27,1.0,0.95263594,Roll & Butter 
+2025-11-28,1.0,1.4697194,Roll & Butter 
+2025-11-29,2.0,2.2336998,Roll & Butter 
+2025-11-30,2.0,2.1957378,Roll & Butter 
+2025-11-02,6.0,3.5241013,S.Eggs on Toast
+2025-11-03,4.0,2.6367357,S.Eggs on Toast
+2025-11-04,5.0,2.5313969,S.Eggs on Toast
+2025-11-05,4.0,2.6106548,S.Eggs on Toast
+2025-11-06,6.0,2.746242,S.Eggs on Toast
+2025-11-07,4.0,3.1111696,S.Eggs on Toast
+2025-11-08,1.0,3.580769,S.Eggs on Toast
+2025-11-09,5.0,3.0228467,S.Eggs on Toast
+2025-11-10,1.0,2.3765333,S.Eggs on Toast
+2025-11-11,5.0,2.2480788,S.Eggs on Toast
+2025-11-12,0.0,2.2281003,S.Eggs on Toast
+2025-11-13,3.0,2.424328,S.Eggs on Toast
+2025-11-14,5.0,2.7081285,S.Eggs on Toast
+2025-11-15,5.0,3.3517923,S.Eggs on Toast
+2025-11-16,5.0,2.8601785,S.Eggs on Toast
+2025-11-17,3.0,2.2992504,S.Eggs on Toast
+2025-11-18,2.0,2.197824,S.Eggs on Toast
+2025-11-19,1.0,2.2326515,S.Eggs on Toast
+2025-11-20,1.0,2.3548548,S.Eggs on Toast
+2025-11-21,1.0,2.6127968,S.Eggs on Toast
+2025-11-22,10.0,2.6869729,S.Eggs on Toast
+2025-11-23,5.0,2.151353,S.Eggs on Toast
+2025-11-24,1.0,1.5040469,S.Eggs on Toast
+2025-11-25,1.0,1.2399598,S.Eggs on Toast
+2025-11-26,3.0,1.3968062,S.Eggs on Toast
+2025-11-27,3.0,1.8282316,S.Eggs on Toast
+2025-11-28,0.0,2.4363909,S.Eggs on Toast
+2025-11-29,2.0,3.3670504,S.Eggs on Toast
+2025-11-30,5.0,3.0684187,S.Eggs on Toast
+2025-11-02,5.0,6.7976284,Sausage
+2025-11-03,6.0,5.8267336,Sausage
+2025-11-04,3.0,5.768217,Sausage
+2025-11-05,4.0,5.8991556,Sausage
+2025-11-06,3.0,6.160098,Sausage
+2025-11-07,12.0,6.5657725,Sausage
+2025-11-08,12.0,7.288415,Sausage
+2025-11-09,13.0,6.696348,Sausage
+2025-11-10,4.0,5.6692295,Sausage
+2025-11-11,4.0,5.5530767,Sausage
+2025-11-12,2.0,5.4747963,Sausage
+2025-11-13,11.0,5.877648,Sausage
+2025-11-14,1.0,6.3707204,Sausage
+2025-11-15,8.0,6.892384,Sausage
+2025-11-16,14.0,6.4630756,Sausage
+2025-11-17,5.0,5.2018867,Sausage
+2025-11-18,0.0,5.015156,Sausage
+2025-11-19,3.0,5.1615605,Sausage
+2025-11-20,7.0,5.583584,Sausage
+2025-11-21,5.0,6.179391,Sausage
+2025-11-22,11.0,6.442786,Sausage
+2025-11-23,6.0,5.498547,Sausage
+2025-11-24,6.0,4.003377,Sausage
+2025-11-25,3.0,3.4091167,Sausage
+2025-11-26,5.0,3.8538046,Sausage
+2025-11-27,6.0,4.869233,Sausage
+2025-11-28,5.0,5.803954,Sausage
+2025-11-29,5.0,6.572113,Sausage
+2025-11-30,18.0,6.3112264,Sausage
+2025-11-02,17.0,11.265939,Sausage Bap
+2025-11-03,11.0,7.541731,Sausage Bap
+2025-11-04,14.0,7.317389,Sausage Bap
+2025-11-05,4.0,7.6487317,Sausage Bap
+2025-11-06,8.0,8.513723,Sausage Bap
+2025-11-07,7.0,9.940638,Sausage Bap
+2025-11-08,22.0,11.661676,Sausage Bap
+2025-11-09,13.0,10.82858,Sausage Bap
+2025-11-10,6.0,7.1434436,Sausage Bap
+2025-11-11,7.0,6.9723153,Sausage Bap
+2025-11-12,8.0,6.858509,Sausage Bap
+2025-11-13,7.0,8.02257,Sausage Bap
+2025-11-14,15.0,9.614389,Sausage Bap
+2025-11-15,18.0,11.403182,Sausage Bap
+2025-11-16,14.0,10.052589,Sausage Bap
+2025-11-17,12.0,6.5314865,Sausage Bap
+2025-11-18,12.0,6.4224234,Sausage Bap
+2025-11-19,7.0,6.581753,Sausage Bap
+2025-11-20,14.0,7.178574,Sausage Bap
+2025-11-21,14.0,9.239217,Sausage Bap
+2025-11-22,12.0,10.36391,Sausage Bap
+2025-11-23,17.0,7.565733,Sausage Bap
+2025-11-24,15.0,5.7541337,Sausage Bap
+2025-11-25,11.0,5.3248477,Sausage Bap
+2025-11-26,14.0,5.7141247,Sausage Bap
+2025-11-27,14.0,6.528635,Sausage Bap
+2025-11-28,10.0,8.001227,Sausage Bap
+2025-11-29,16.0,10.300077,Sausage Bap
+2025-11-30,12.0,9.795482,Sausage Bap
+2025-11-02,2.0,1.9809963,Scrambled Egg
+2025-11-03,3.0,1.5017383,Scrambled Egg
+2025-11-04,1.0,1.352252,Scrambled Egg
+2025-11-05,2.0,1.3841118,Scrambled Egg
+2025-11-06,6.0,1.4333967,Scrambled Egg
+2025-11-07,1.0,1.575912,Scrambled Egg
+2025-11-08,1.0,1.7466171,Scrambled Egg
+2025-11-09,3.0,1.5335249,Scrambled Egg
+2025-11-10,0.0,1.0707929,Scrambled Egg
+2025-11-11,3.0,0.9585209,Scrambled Egg
+2025-11-12,0.0,0.91623235,Scrambled Egg
+2025-11-13,0.0,0.9782672,Scrambled Egg
+2025-11-14,3.0,1.1678725,Scrambled Egg
+2025-11-15,0.0,1.53943,Scrambled Egg
+2025-11-16,2.0,1.4536532,Scrambled Egg
+2025-11-17,0.0,1.1004906,Scrambled Egg
+2025-11-18,0.0,1.0706489,Scrambled Egg
+2025-11-19,0.0,1.0979042,Scrambled Egg
+2025-11-20,0.0,1.1385839,Scrambled Egg
+2025-11-21,1.0,1.3239485,Scrambled Egg
+2025-11-22,0.0,1.3584906,Scrambled Egg
+2025-11-23,2.0,0.9321597,Scrambled Egg
+2025-11-24,0.0,0.38241574,Scrambled Egg
+2025-11-25,7.0,0.11753058,Scrambled Egg
+2025-11-26,0.0,0.10801356,Scrambled Egg
+2025-11-27,1.0,0.2334573,Scrambled Egg
+2025-11-28,3.0,0.580111,Scrambled Egg
+2025-11-29,1.0,1.296087,Scrambled Egg
+2025-11-30,3.0,1.3639361,Scrambled Egg
+2025-11-02,5.0,1.2212794,Sourdough Toast Bread
+2025-11-03,1.0,0.87091035,Sourdough Toast Bread
+2025-11-04,1.0,0.78039765,Sourdough Toast Bread
+2025-11-05,0.0,0.8127525,Sourdough Toast Bread
+2025-11-06,0.0,0.794653,Sourdough Toast Bread
+2025-11-07,1.0,0.8658538,Sourdough Toast Bread
+2025-11-08,2.0,0.99974364,Sourdough Toast Bread
+2025-11-09,1.0,0.8684503,Sourdough Toast Bread
+2025-11-10,2.0,0.44859284,Sourdough Toast Bread
+2025-11-11,1.0,0.38257235,Sourdough Toast Bread
+2025-11-12,0.0,0.33177957,Sourdough Toast Bread
+2025-11-13,1.0,0.3140337,Sourdough Toast Bread
+2025-11-14,0.0,0.39213482,Sourdough Toast Bread
+2025-11-15,1.0,0.66811305,Sourdough Toast Bread
+2025-11-16,2.0,0.6384431,Sourdough Toast Bread
+2025-11-17,0.0,0.42158756,Sourdough Toast Bread
+2025-11-18,2.0,0.4766564,Sourdough Toast Bread
+2025-11-19,0.0,0.5251508,Sourdough Toast Bread
+2025-11-20,0.0,0.5193264,Sourdough Toast Bread
+2025-11-21,0.0,0.6485032,Sourdough Toast Bread
+2025-11-22,4.0,0.63311887,Sourdough Toast Bread
+2025-11-23,1.0,0.2889227,Sourdough Toast Bread
+2025-11-24,0.0,0.050585657,Sourdough Toast Bread
+2025-11-25,0.0,0.019142635,Sourdough Toast Bread
+2025-11-26,0.0,0.008314759,Sourdough Toast Bread
+2025-11-27,1.0,0.0,Sourdough Toast Bread
+2025-11-28,0.0,0.004200317,Sourdough Toast Bread
+2025-11-29,2.0,0.042230487,Sourdough Toast Bread
+2025-11-30,2.0,0.050651327,Sourdough Toast Bread
+2025-11-02,0.0,0.056442864,Streaky Bacon
+2025-11-03,0.0,0.037631102,Streaky Bacon
+2025-11-04,0.0,0.03808321,Streaky Bacon
+2025-11-05,0.0,0.0409171,Streaky Bacon
+2025-11-06,1.0,0.023423776,Streaky Bacon
+2025-11-07,0.0,0.014379077,Streaky Bacon
+2025-11-08,0.0,0.0128939375,Streaky Bacon
+2025-11-09,0.0,0.010782413,Streaky Bacon
+2025-11-10,0.0,0.0,Streaky Bacon
+2025-11-11,0.0,0.0,Streaky Bacon
+2025-11-12,0.0,0.0,Streaky Bacon
+2025-11-13,1.0,0.0,Streaky Bacon
+2025-11-14,0.0,0.0,Streaky Bacon
+2025-11-15,0.0,0.0,Streaky Bacon
+2025-11-16,0.0,0.0,Streaky Bacon
+2025-11-17,0.0,0.0,Streaky Bacon
+2025-11-18,0.0,0.0,Streaky Bacon
+2025-11-19,0.0,0.0,Streaky Bacon
+2025-11-20,1.0,0.0,Streaky Bacon
+2025-11-21,0.0,0.0,Streaky Bacon
+2025-11-22,0.0,0.0,Streaky Bacon
+2025-11-23,0.0,0.0,Streaky Bacon
+2025-11-24,0.0,0.0,Streaky Bacon
+2025-11-25,0.0,0.0,Streaky Bacon
+2025-11-26,0.0,0.0,Streaky Bacon
+2025-11-27,1.0,0.0,Streaky Bacon
+2025-11-28,0.0,0.0,Streaky Bacon
+2025-11-29,0.0,0.0,Streaky Bacon
+2025-11-30,0.0,0.0,Streaky Bacon
+2025-11-02,0.0,2.0071201,Tattie Scone
+2025-11-03,5.0,1.5291755,Tattie Scone
+2025-11-04,0.0,1.3802525,Tattie Scone
+2025-11-05,0.0,1.4128245,Tattie Scone
+2025-11-06,6.0,1.4658525,Tattie Scone
+2025-11-07,3.0,1.6108456,Tattie Scone
+2025-11-08,2.0,1.7768931,Tattie Scone
+2025-11-09,6.0,1.5596714,Tattie Scone
+2025-11-10,0.0,1.0905544,Tattie Scone
+2025-11-11,0.0,0.9757137,Tattie Scone
+2025-11-12,1.0,0.93175304,Tattie Scone
+2025-11-13,2.0,1.0048659,Tattie Scone
+2025-11-14,2.0,1.1950445,Tattie Scone
+2025-11-15,3.0,1.5760736,Tattie Scone
+2025-11-16,2.0,1.4713359,Tattie Scone
+2025-11-17,3.0,1.1211286,Tattie Scone
+2025-11-18,0.0,1.0972198,Tattie Scone
+2025-11-19,0.0,1.132704,Tattie Scone
+2025-11-20,1.0,1.1901168,Tattie Scone
+2025-11-21,1.0,1.3900877,Tattie Scone
+2025-11-22,5.0,1.4287568,Tattie Scone
+2025-11-23,4.0,0.99168396,Tattie Scone
+2025-11-24,5.0,0.4621662,Tattie Scone
+2025-11-25,1.0,0.18430375,Tattie Scone
+2025-11-26,1.0,0.18303835,Tattie Scone
+2025-11-27,0.0,0.32421497,Tattie Scone
+2025-11-28,2.0,0.69312555,Tattie Scone
+2025-11-29,4.0,1.4046537,Tattie Scone
+2025-11-30,3.0,1.4632738,Tattie Scone
+2025-11-02,44.0,41.311413,The Breakfast
+2025-11-03,30.0,26.540545,The Breakfast
+2025-11-04,26.0,24.463028,The Breakfast
+2025-11-05,11.0,24.648983,The Breakfast
+2025-11-06,22.0,26.854176,The Breakfast
+2025-11-07,46.0,33.638885,The Breakfast
+2025-11-08,44.99999999999999,44.530117,The Breakfast
+2025-11-09,44.0,44.37304,The Breakfast
+2025-11-10,26.0,26.844225,The Breakfast
+2025-11-11,26.0,25.846407,The Breakfast
+2025-11-12,38.0,25.0788,The Breakfast
+2025-11-13,27.0,29.42744,The Breakfast
+2025-11-14,32.0,38.220814,The Breakfast
+2025-11-15,52.99999999999999,51.14966,The Breakfast
+2025-11-16,46.0,49.771286,The Breakfast
+2025-11-17,27.0,24.544966,The Breakfast
+2025-11-18,21.0,22.000679,The Breakfast
+2025-11-19,27.0,23.333097,The Breakfast
+2025-11-20,14.0,28.013954,The Breakfast
+2025-11-21,43.00000000000001,37.14289,The Breakfast
+2025-11-22,52.0,48.12379,The Breakfast
+2025-11-23,42.0,44.09314,The Breakfast
+2025-11-24,28.0,22.625555,The Breakfast
+2025-11-25,23.0,19.501064,The Breakfast
+2025-11-26,35.0,20.623589,The Breakfast
+2025-11-27,19.0,26.280567,The Breakfast
+2025-11-28,48.99999999999999,33.464104,The Breakfast
+2025-11-29,37.0,46.722004,The Breakfast
+2025-11-30,52.99999999999999,53.254555,The Breakfast
+2025-11-02,10.0,10.921135,Toasted Teacake
+2025-11-03,15.0,7.962379,Toasted Teacake
+2025-11-04,12.0,7.96961,Toasted Teacake
+2025-11-05,8.0,8.17382,Toasted Teacake
+2025-11-06,11.0,8.778684,Toasted Teacake
+2025-11-07,10.0,10.015022,Toasted Teacake
+2025-11-08,9.0,11.530033,Toasted Teacake
+2025-11-09,3.0,10.499925,Toasted Teacake
+2025-11-10,8.0,6.810459,Toasted Teacake
+2025-11-11,13.0,6.7310166,Toasted Teacake
+2025-11-12,6.0,6.6879516,Toasted Teacake
+2025-11-13,12.0,7.532441,Toasted Teacake
+2025-11-14,11.0,9.272656,Toasted Teacake
+2025-11-15,7.0,11.188104,Toasted Teacake
+2025-11-16,8.0,9.952334,Toasted Teacake
+2025-11-17,8.0,6.4932733,Toasted Teacake
+2025-11-18,13.0,6.3657684,Toasted Teacake
+2025-11-19,6.0,6.510938,Toasted Teacake
+2025-11-20,7.0,6.9185863,Toasted Teacake
+2025-11-21,9.0,9.025875,Toasted Teacake
+2025-11-22,6.0,10.186378,Toasted Teacake
+2025-11-23,5.0,7.397671,Toasted Teacake
+2025-11-24,6.0,5.6878896,Toasted Teacake
+2025-11-25,10.0,5.254248,Toasted Teacake
+2025-11-26,4.0,5.662222,Toasted Teacake
+2025-11-27,8.0,6.487877,Toasted Teacake
+2025-11-28,11.0,7.8705883,Toasted Teacake
+2025-11-29,8.0,10.1782,Toasted Teacake
+2025-11-30,6.0,9.635546,Toasted Teacake
+2025-11-02,7.0,2.7925239,Tuna JP
+2025-11-03,2.0,2.2771375,Tuna JP
+2025-11-04,3.0,2.1354938,Tuna JP
+2025-11-05,0.0,2.1998901,Tuna JP
+2025-11-06,1.0,2.3155012,Tuna JP
+2025-11-07,0.0,2.5107665,Tuna JP
+2025-11-08,2.0,2.7040164,Tuna JP
+2025-11-09,4.0,2.4520075,Tuna JP
+2025-11-10,3.0,1.9140311,Tuna JP
+2025-11-11,3.0,1.7882717,Tuna JP
+2025-11-12,4.0,1.7711219,Tuna JP
+2025-11-13,1.0,1.9535111,Tuna JP
+2025-11-14,1.0,2.2386756,Tuna JP
+2025-11-15,7.0,2.6143754,Tuna JP
+2025-11-16,3.0,2.4169805,Tuna JP
+2025-11-17,3.0,1.8955907,Tuna JP
+2025-11-18,4.0,1.7872614,Tuna JP
+2025-11-19,2.0,1.8299693,Tuna JP
+2025-11-20,6.0,1.9430697,Tuna JP
+2025-11-21,3.0,2.1879435,Tuna JP
+2025-11-22,2.0,2.2532136,Tuna JP
+2025-11-23,1.0,1.735418,Tuna JP
+2025-11-24,2.0,1.1188604,Tuna JP
+2025-11-25,2.0,0.88258684,Tuna JP
+2025-11-26,1.0,1.0113267,Tuna JP
+2025-11-27,6.0,1.3690507,Tuna JP
+2025-11-28,2.0,1.9423372,Tuna JP
+2025-11-29,1.0,2.6291888,Tuna JP
+2025-11-30,4.0,2.5243096,Tuna JP
+2025-11-02,0.0,0.010585405,Tuna Mayo Mix
+2025-11-03,0.0,0.0,Tuna Mayo Mix
+2025-11-04,0.0,0.0020003915,Tuna Mayo Mix
+2025-11-05,0.0,0.005938031,Tuna Mayo Mix
+2025-11-06,0.0,0.0,Tuna Mayo Mix
+2025-11-07,0.0,0.0,Tuna Mayo Mix
+2025-11-08,0.0,0.0,Tuna Mayo Mix
+2025-11-09,0.0,0.0,Tuna Mayo Mix
+2025-11-10,0.0,0.0,Tuna Mayo Mix
+2025-11-11,0.0,0.0,Tuna Mayo Mix
+2025-11-12,0.0,0.0,Tuna Mayo Mix
+2025-11-13,0.0,0.0,Tuna Mayo Mix
+2025-11-14,0.0,0.0,Tuna Mayo Mix
+2025-11-15,0.0,0.0,Tuna Mayo Mix
+2025-11-16,0.0,0.0,Tuna Mayo Mix
+2025-11-17,0.0,0.0,Tuna Mayo Mix
+2025-11-18,0.0,0.0,Tuna Mayo Mix
+2025-11-19,0.0,0.0,Tuna Mayo Mix
+2025-11-20,0.0,0.0,Tuna Mayo Mix
+2025-11-21,0.0,0.0,Tuna Mayo Mix
+2025-11-22,0.0,0.0,Tuna Mayo Mix
+2025-11-23,0.0,0.0,Tuna Mayo Mix
+2025-11-24,0.0,0.0,Tuna Mayo Mix
+2025-11-25,0.0,0.0,Tuna Mayo Mix
+2025-11-26,0.0,0.0,Tuna Mayo Mix
+2025-11-27,0.0,0.0,Tuna Mayo Mix
+2025-11-28,0.0,0.0,Tuna Mayo Mix
+2025-11-29,0.0,0.0,Tuna Mayo Mix
+2025-11-30,0.0,0.0,Tuna Mayo Mix
+2025-11-02,0.0,0.010567725,Tuna Melt Panini
+2025-11-03,0.0,0.0,Tuna Melt Panini
+2025-11-04,0.0,0.0019827113,Tuna Melt Panini
+2025-11-05,0.0,0.0059531853,Tuna Melt Panini
+2025-11-06,0.0,0.0,Tuna Melt Panini
+2025-11-07,0.0,0.0,Tuna Melt Panini
+2025-11-08,0.0,0.0,Tuna Melt Panini
+2025-11-09,0.0,0.0,Tuna Melt Panini
+2025-11-10,0.0,0.0,Tuna Melt Panini
+2025-11-11,0.0,0.0,Tuna Melt Panini
+2025-11-12,0.0,0.0,Tuna Melt Panini
+2025-11-13,0.0,0.0,Tuna Melt Panini
+2025-11-14,0.0,0.0,Tuna Melt Panini
+2025-11-15,0.0,0.0,Tuna Melt Panini
+2025-11-16,0.0,0.0,Tuna Melt Panini
+2025-11-17,0.0,0.0,Tuna Melt Panini
+2025-11-18,0.0,0.0,Tuna Melt Panini
+2025-11-19,0.0,0.0,Tuna Melt Panini
+2025-11-20,0.0,0.0,Tuna Melt Panini
+2025-11-21,0.0,0.0,Tuna Melt Panini
+2025-11-22,0.0,0.0,Tuna Melt Panini
+2025-11-23,0.0,0.0,Tuna Melt Panini
+2025-11-24,0.0,0.0,Tuna Melt Panini
+2025-11-25,0.0,0.0,Tuna Melt Panini
+2025-11-26,0.0,0.0,Tuna Melt Panini
+2025-11-27,0.0,0.0,Tuna Melt Panini
+2025-11-28,0.0,0.0,Tuna Melt Panini
+2025-11-29,0.0,0.0,Tuna Melt Panini
+2025-11-30,0.0,0.0,Tuna Melt Panini
+2025-11-02,0.0,0.010555096,Tuna Panini
+2025-11-03,0.0,0.0,Tuna Panini
+2025-11-04,0.0,0.0019726083,Tuna Panini
+2025-11-05,0.0,0.0059632882,Tuna Panini
+2025-11-06,0.0,0.0,Tuna Panini
+2025-11-07,0.0,0.0,Tuna Panini
+2025-11-08,0.0,0.0,Tuna Panini
+2025-11-09,0.0,0.0,Tuna Panini
+2025-11-10,0.0,0.0,Tuna Panini
+2025-11-11,0.0,0.0,Tuna Panini
+2025-11-12,0.0,0.0,Tuna Panini
+2025-11-13,0.0,0.0,Tuna Panini
+2025-11-14,0.0,0.0,Tuna Panini
+2025-11-15,0.0,0.0,Tuna Panini
+2025-11-16,0.0,0.0,Tuna Panini
+2025-11-17,0.0,0.0,Tuna Panini
+2025-11-18,0.0,0.0,Tuna Panini
+2025-11-19,0.0,0.0,Tuna Panini
+2025-11-20,0.0,0.0,Tuna Panini
+2025-11-21,0.0,0.0,Tuna Panini
+2025-11-22,0.0,0.0,Tuna Panini
+2025-11-23,0.0,0.0,Tuna Panini
+2025-11-24,0.0,0.0,Tuna Panini
+2025-11-25,0.0,0.0,Tuna Panini
+2025-11-26,0.0,0.0,Tuna Panini
+2025-11-27,0.0,0.0,Tuna Panini
+2025-11-28,0.0,0.0,Tuna Panini
+2025-11-29,0.0,0.0,Tuna Panini
+2025-11-30,0.0,0.0,Tuna Panini
+2025-11-02,2.0,2.6186311,Tuna Toastie
+2025-11-03,3.0,2.164209,Tuna Toastie
+2025-11-04,3.0,2.0741458,Tuna Toastie
+2025-11-05,3.0,2.1641078,Tuna Toastie
+2025-11-06,1.0,2.2923906,Tuna Toastie
+2025-11-07,3.0,2.5024645,Tuna Toastie
+2025-11-08,1.0,2.703087,Tuna Toastie
+2025-11-09,2.0,2.4556825,Tuna Toastie
+2025-11-10,2.0,1.9124348,Tuna Toastie
+2025-11-11,8.0,1.7929671,Tuna Toastie
+2025-11-12,4.0,1.7800958,Tuna Toastie
+2025-11-13,2.0,1.9715348,Tuna Toastie
+2025-11-14,4.0,2.2723236,Tuna Toastie
+2025-11-15,0.0,2.661074,Tuna Toastie
+2025-11-16,2.0,2.4733021,Tuna Toastie
+2025-11-17,3.0,1.966256,Tuna Toastie
+2025-11-18,1.0,1.8781832,Tuna Toastie
+2025-11-19,0.0,1.9331359,Tuna Toastie
+2025-11-20,3.0,2.0615222,Tuna Toastie
+2025-11-21,2.0,2.3219619,Tuna Toastie
+2025-11-22,2.0,2.3924732,Tuna Toastie
+2025-11-23,3.0,1.866047,Tuna Toastie
+2025-11-24,7.0,1.2352089,Tuna Toastie
+2025-11-25,2.0,0.9751732,Tuna Toastie
+2025-11-26,1.0,1.1047263,Tuna Toastie
+2025-11-27,1.0,1.4809439,Tuna Toastie
+2025-11-28,2.0,2.05888,Tuna Toastie
+2025-11-29,4.0,2.728928,Tuna Toastie
+2025-11-30,1.0,2.607793,Tuna Toastie
+2025-11-02,0.0,0.010512158,Veg Sausage Bap
+2025-11-03,0.0,0.0,Veg Sausage Bap
+2025-11-04,0.0,0.0019246191,Veg Sausage Bap
+2025-11-05,0.0,0.0060037,Veg Sausage Bap
+2025-11-06,0.0,0.0,Veg Sausage Bap
+2025-11-07,0.0,0.0,Veg Sausage Bap
+2025-11-08,0.0,0.0,Veg Sausage Bap
+2025-11-09,0.0,0.0,Veg Sausage Bap
+2025-11-10,0.0,0.0,Veg Sausage Bap
+2025-11-11,0.0,0.0,Veg Sausage Bap
+2025-11-12,0.0,0.0,Veg Sausage Bap
+2025-11-13,0.0,0.0,Veg Sausage Bap
+2025-11-14,0.0,0.0,Veg Sausage Bap
+2025-11-15,0.0,0.0,Veg Sausage Bap
+2025-11-16,0.0,0.0,Veg Sausage Bap
+2025-11-17,0.0,0.0,Veg Sausage Bap
+2025-11-18,0.0,0.0,Veg Sausage Bap
+2025-11-19,0.0,0.0,Veg Sausage Bap
+2025-11-20,0.0,0.0,Veg Sausage Bap
+2025-11-21,0.0,0.0,Veg Sausage Bap
+2025-11-22,0.0,0.0,Veg Sausage Bap
+2025-11-23,0.0,0.0,Veg Sausage Bap
+2025-11-24,0.0,0.0,Veg Sausage Bap
+2025-11-25,0.0,0.0,Veg Sausage Bap
+2025-11-26,0.0,0.0,Veg Sausage Bap
+2025-11-27,0.0,0.0,Veg Sausage Bap
+2025-11-28,0.0,0.0,Veg Sausage Bap
+2025-11-29,0.0,0.0,Veg Sausage Bap
+2025-11-30,0.0,0.0,Veg Sausage Bap
+2025-11-02,1.0,1.1151197,Vegan Breakfast
+2025-11-03,0.0,0.77876854,Vegan Breakfast
+2025-11-04,0.0,0.69027144,Vegan Breakfast
+2025-11-05,1.0,0.7177869,Vegan Breakfast
+2025-11-06,1.0,0.6790546,Vegan Breakfast
+2025-11-07,0.0,0.7272863,Vegan Breakfast
+2025-11-08,2.0,0.83259475,Vegan Breakfast
+2025-11-09,1.0,0.6926785,Vegan Breakfast
+2025-11-10,0.0,0.28267905,Vegan Breakfast
+2025-11-11,0.0,0.1885268,Vegan Breakfast
+2025-11-12,1.0,0.1215743,Vegan Breakfast
+2025-11-13,1.0,0.07065777,Vegan Breakfast
+2025-11-14,0.0,0.10515442,Vegan Breakfast
+2025-11-15,1.0,0.31043196,Vegan Breakfast
+2025-11-16,2.0,0.29940706,Vegan Breakfast
+2025-11-17,0.0,0.13783759,Vegan Breakfast
+2025-11-18,0.0,0.1980514,Vegan Breakfast
+2025-11-19,0.0,0.2660672,Vegan Breakfast
+2025-11-20,1.0,0.2581793,Vegan Breakfast
+2025-11-21,1.0,0.3674684,Vegan Breakfast
+2025-11-22,1.0,0.35178095,Vegan Breakfast
+2025-11-23,0.0,0.076110855,Vegan Breakfast
+2025-11-24,0.0,0.027924657,Vegan Breakfast
+2025-11-25,0.0,0.00078045577,Vegan Breakfast
+2025-11-26,0.0,0.0,Vegan Breakfast
+2025-11-27,0.0,0.0,Vegan Breakfast
+2025-11-28,0.0,0.0,Vegan Breakfast
+2025-11-29,2.0,0.0,Vegan Breakfast
+2025-11-30,0.0,0.0,Vegan Breakfast
+2025-11-02,0.0,0.031460702,Vegan Sausage
+2025-11-03,0.0,0.014381602,Vegan Sausage
+2025-11-04,0.0,0.012257449,Vegan Sausage
+2025-11-05,0.0,0.013282903,Vegan Sausage
+2025-11-06,0.0,0.0,Vegan Sausage
+2025-11-07,0.0,0.0,Vegan Sausage
+2025-11-08,0.0,0.0,Vegan Sausage
+2025-11-09,0.0,0.0,Vegan Sausage
+2025-11-10,0.0,0.0,Vegan Sausage
+2025-11-11,0.0,0.0,Vegan Sausage
+2025-11-12,0.0,0.0,Vegan Sausage
+2025-11-13,0.0,0.0,Vegan Sausage
+2025-11-14,0.0,0.0,Vegan Sausage
+2025-11-15,0.0,0.0,Vegan Sausage
+2025-11-16,0.0,0.0,Vegan Sausage
+2025-11-17,0.0,0.0,Vegan Sausage
+2025-11-18,0.0,0.0,Vegan Sausage
+2025-11-19,0.0,0.0,Vegan Sausage
+2025-11-20,0.0,0.0,Vegan Sausage
+2025-11-21,0.0,0.0,Vegan Sausage
+2025-11-22,0.0,0.0,Vegan Sausage
+2025-11-23,0.0,0.0,Vegan Sausage
+2025-11-24,0.0,0.0,Vegan Sausage
+2025-11-25,0.0,0.0,Vegan Sausage
+2025-11-26,0.0,0.0,Vegan Sausage
+2025-11-27,0.0,0.0,Vegan Sausage
+2025-11-28,0.0,0.0,Vegan Sausage
+2025-11-29,0.0,0.0,Vegan Sausage
+2025-11-30,0.0,0.0,Vegan Sausage
+2025-11-02,1.0,0.50617987,Veggie Bap
+2025-11-03,2.0,0.26760036,Veggie Bap
+2025-11-04,0.0,0.23461914,Veggie Bap
+2025-11-05,0.0,0.27458656,Veggie Bap
+2025-11-06,0.0,0.19499776,Veggie Bap
+2025-11-07,0.0,0.19762707,Veggie Bap
+2025-11-08,0.0,0.2613062,Veggie Bap
+2025-11-09,0.0,0.17850968,Veggie Bap
+2025-11-10,0.0,0.045213394,Veggie Bap
+2025-11-11,0.0,0.039927006,Veggie Bap
+2025-11-12,1.0,0.032700844,Veggie Bap
+2025-11-13,0.0,0.020597465,Veggie Bap
+2025-11-14,1.0,0.014838763,Veggie Bap
+2025-11-15,1.0,0.02678302,Veggie Bap
+2025-11-16,1.0,0.029697731,Veggie Bap
+2025-11-17,2.0,0.022984296,Veggie Bap
+2025-11-18,0.0,0.036042407,Veggie Bap
+2025-11-19,0.0,0.045885243,Veggie Bap
+2025-11-20,0.0,0.041737966,Veggie Bap
+2025-11-21,0.0,0.051146373,Veggie Bap
+2025-11-22,0.0,0.049739532,Veggie Bap
+2025-11-23,0.0,0.028177232,Veggie Bap
+2025-11-24,2.0,0.0,Veggie Bap
+2025-11-25,0.0,0.0,Veggie Bap
+2025-11-26,1.0,0.0,Veggie Bap
+2025-11-27,2.0,0.0,Veggie Bap
+2025-11-28,1.0,0.0,Veggie Bap
+2025-11-29,0.0,0.0,Veggie Bap
+2025-11-30,1.0,0.0,Veggie Bap
+2025-11-02,3.0,2.4385757,Veggie Breakfast
+2025-11-03,0.0,1.9098434,Veggie Breakfast
+2025-11-04,1.0,1.7539998,Veggie Breakfast
+2025-11-05,0.0,1.8122082,Veggie Breakfast
+2025-11-06,2.0,1.9199439,Veggie Breakfast
+2025-11-07,5.0,2.125181,Veggie Breakfast
+2025-11-08,2.0,2.3479872,Veggie Breakfast
+2025-11-09,2.0,2.1325665,Veggie Breakfast
+2025-11-10,1.0,1.6369668,Veggie Breakfast
+2025-11-11,0.0,1.5090201,Veggie Breakfast
+2025-11-12,1.0,1.4807949,Veggie Breakfast
+2025-11-13,5.0,1.6403867,Veggie Breakfast
+2025-11-14,1.0,1.9101137,Veggie Breakfast
+2025-11-15,6.0,2.2875185,Veggie Breakfast
+2025-11-16,2.0,2.105556,Veggie Breakfast
+2025-11-17,0.0,1.6305438,Veggie Breakfast
+2025-11-18,1.0,1.5538925,Veggie Breakfast
+2025-11-19,3.0,1.6031294,Veggie Breakfast
+2025-11-20,0.0,1.7112718,Veggie Breakfast
+2025-11-21,2.0,1.9583807,Veggie Breakfast
+2025-11-22,4.0,2.025846,Veggie Breakfast
+2025-11-23,4.0,1.5290997,Veggie Breakfast
+2025-11-24,4.0,0.9507391,Veggie Breakfast
+2025-11-25,0.0,0.7105153,Veggie Breakfast
+2025-11-26,2.0,0.7954764,Veggie Breakfast
+2025-11-27,4.0,1.1261699,Veggie Breakfast
+2025-11-28,1.0,1.6654295,Veggie Breakfast
+2025-11-29,3.0,2.3653543,Veggie Breakfast
+2025-11-30,6.0,2.2794538,Veggie Breakfast
+2025-11-02,46.0,41.249786,White Toast Bread
+2025-11-03,28.0,24.32336,White Toast Bread
+2025-11-04,20.0,21.312479,White Toast Bread
+2025-11-05,16.0,21.710182,White Toast Bread
+2025-11-06,29.0,24.475496,White Toast Bread
+2025-11-07,31.0,32.008488,White Toast Bread
+2025-11-08,31.0,43.725758,White Toast Bread
+2025-11-09,50.0,45.311573,White Toast Bread
+2025-11-10,28.0,26.810568,White Toast Bread
+2025-11-11,28.0,24.729433,White Toast Bread
+2025-11-12,26.0,23.520876,White Toast Bread
+2025-11-13,19.0,27.970163,White Toast Bread
+2025-11-14,30.0,36.976997,White Toast Bread
+2025-11-15,41.0,50.26567,White Toast Bread
+2025-11-16,36.0,50.233624,White Toast Bread
+2025-11-17,22.0,23.886732,White Toast Bread
+2025-11-18,26.0,20.147161,White Toast Bread
+2025-11-19,30.0,21.49045,White Toast Bread
+2025-11-20,27.0,26.405935,White Toast Bread
+2025-11-21,35.0,35.749817,White Toast Bread
+2025-11-22,39.0,46.917152,White Toast Bread
+2025-11-23,63.00000000000001,44.214268,White Toast Bread
+2025-11-24,32.0,21.94771,White Toast Bread
+2025-11-25,22.0,18.755688,White Toast Bread
+2025-11-26,29.0,19.322235,White Toast Bread
+2025-11-27,25.0,24.790274,White Toast Bread
+2025-11-28,31.0,31.914953,White Toast Bread
+2025-11-29,38.0,44.872723,White Toast Bread
+2025-11-30,34.0,52.373055,White Toast Bread
