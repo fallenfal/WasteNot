@@ -1,0 +1,6661 @@
+Date,Product_Name,Actual_Sales
+2025-11-01,Almd & Aprct Bar,1
+2025-11-02,Almd & Aprct Bar,0
+2025-11-03,Almd & Aprct Bar,0
+2025-11-04,Almd & Aprct Bar,0
+2025-11-05,Almd & Aprct Bar,0
+2025-11-06,Almd & Aprct Bar,0
+2025-11-07,Almd & Aprct Bar,0
+2025-11-08,Almd & Aprct Bar,0
+2025-11-09,Almd & Aprct Bar,2
+2025-11-10,Almd & Aprct Bar,0
+2025-11-11,Almd & Aprct Bar,0
+2025-11-12,Almd & Aprct Bar,1
+2025-11-13,Almd & Aprct Bar,1
+2025-11-14,Almd & Aprct Bar,1
+2025-11-15,Almd & Aprct Bar,0
+2025-11-16,Almd & Aprct Bar,1
+2025-11-17,Almd & Aprct Bar,1
+2025-11-18,Almd & Aprct Bar,1
+2025-11-19,Almd & Aprct Bar,4
+2025-11-20,Almd & Aprct Bar,0
+2025-11-21,Almd & Aprct Bar,1
+2025-11-22,Almd & Aprct Bar,0
+2025-11-23,Almd & Aprct Bar,1
+2025-11-24,Almd & Aprct Bar,1
+2025-11-25,Almd & Aprct Bar,0
+2025-11-26,Almd & Aprct Bar,0
+2025-11-27,Almd & Aprct Bar,1
+2025-11-28,Almd & Aprct Bar,1
+2025-11-29,Almd & Aprct Bar,0
+2025-11-30,Almd & Aprct Bar,0
+2025-11-01,Apl & Blk Smthie,0
+2025-11-02,Apl & Blk Smthie,0
+2025-11-03,Apl & Blk Smthie,0
+2025-11-04,Apl & Blk Smthie,0
+2025-11-05,Apl & Blk Smthie,0
+2025-11-06,Apl & Blk Smthie,0
+2025-11-07,Apl & Blk Smthie,0
+2025-11-08,Apl & Blk Smthie,0
+2025-11-09,Apl & Blk Smthie,0
+2025-11-10,Apl & Blk Smthie,0
+2025-11-11,Apl & Blk Smthie,0
+2025-11-12,Apl & Blk Smthie,0
+2025-11-13,Apl & Blk Smthie,0
+2025-11-14,Apl & Blk Smthie,0
+2025-11-15,Apl & Blk Smthie,0
+2025-11-16,Apl & Blk Smthie,0
+2025-11-17,Apl & Blk Smthie,0
+2025-11-18,Apl & Blk Smthie,0
+2025-11-19,Apl & Blk Smthie,0
+2025-11-20,Apl & Blk Smthie,0
+2025-11-21,Apl & Blk Smthie,0
+2025-11-22,Apl & Blk Smthie,0
+2025-11-23,Apl & Blk Smthie,0
+2025-11-24,Apl & Blk Smthie,0
+2025-11-25,Apl & Blk Smthie,0
+2025-11-26,Apl & Blk Smthie,0
+2025-11-27,Apl & Blk Smthie,0
+2025-11-28,Apl & Blk Smthie,0
+2025-11-29,Apl & Blk Smthie,0
+2025-11-30,Apl & Blk Smthie,0
+2025-11-01,Avo & Hal Muffin,0
+2025-11-02,Avo & Hal Muffin,0
+2025-11-03,Avo & Hal Muffin,0
+2025-11-04,Avo & Hal Muffin,0
+2025-11-05,Avo & Hal Muffin,0
+2025-11-06,Avo & Hal Muffin,0
+2025-11-07,Avo & Hal Muffin,0
+2025-11-08,Avo & Hal Muffin,0
+2025-11-09,Avo & Hal Muffin,0
+2025-11-10,Avo & Hal Muffin,0
+2025-11-11,Avo & Hal Muffin,0
+2025-11-12,Avo & Hal Muffin,0
+2025-11-13,Avo & Hal Muffin,0
+2025-11-14,Avo & Hal Muffin,0
+2025-11-15,Avo & Hal Muffin,0
+2025-11-16,Avo & Hal Muffin,0
+2025-11-17,Avo & Hal Muffin,0
+2025-11-18,Avo & Hal Muffin,0
+2025-11-19,Avo & Hal Muffin,0
+2025-11-20,Avo & Hal Muffin,0
+2025-11-21,Avo & Hal Muffin,0
+2025-11-22,Avo & Hal Muffin,0
+2025-11-23,Avo & Hal Muffin,0
+2025-11-24,Avo & Hal Muffin,0
+2025-11-25,Avo & Hal Muffin,0
+2025-11-26,Avo & Hal Muffin,0
+2025-11-27,Avo & Hal Muffin,0
+2025-11-28,Avo & Hal Muffin,0
+2025-11-29,Avo & Hal Muffin,0
+2025-11-30,Avo & Hal Muffin,0
+2025-11-01,"Avo, Egg & Bacon",8
+2025-11-02,"Avo, Egg & Bacon",6
+2025-11-03,"Avo, Egg & Bacon",3
+2025-11-04,"Avo, Egg & Bacon",1
+2025-11-05,"Avo, Egg & Bacon",2
+2025-11-06,"Avo, Egg & Bacon",2
+2025-11-07,"Avo, Egg & Bacon",6
+2025-11-08,"Avo, Egg & Bacon",9
+2025-11-09,"Avo, Egg & Bacon",1
+2025-11-10,"Avo, Egg & Bacon",0
+2025-11-11,"Avo, Egg & Bacon",1
+2025-11-12,"Avo, Egg & Bacon",3
+2025-11-13,"Avo, Egg & Bacon",2
+2025-11-14,"Avo, Egg & Bacon",5
+2025-11-15,"Avo, Egg & Bacon",6
+2025-11-16,"Avo, Egg & Bacon",5
+2025-11-17,"Avo, Egg & Bacon",4
+2025-11-18,"Avo, Egg & Bacon",1
+2025-11-19,"Avo, Egg & Bacon",0
+2025-11-20,"Avo, Egg & Bacon",3
+2025-11-21,"Avo, Egg & Bacon",6
+2025-11-22,"Avo, Egg & Bacon",7
+2025-11-23,"Avo, Egg & Bacon",6
+2025-11-24,"Avo, Egg & Bacon",2
+2025-11-25,"Avo, Egg & Bacon",1
+2025-11-26,"Avo, Egg & Bacon",2
+2025-11-27,"Avo, Egg & Bacon",3
+2025-11-28,"Avo, Egg & Bacon",3
+2025-11-29,"Avo, Egg & Bacon",5
+2025-11-30,"Avo, Egg & Bacon",4
+2025-11-01,"Avo, Feta & Tom",5
+2025-11-02,"Avo, Feta & Tom",2
+2025-11-03,"Avo, Feta & Tom",1
+2025-11-04,"Avo, Feta & Tom",1
+2025-11-05,"Avo, Feta & Tom",1
+2025-11-06,"Avo, Feta & Tom",2
+2025-11-07,"Avo, Feta & Tom",4
+2025-11-08,"Avo, Feta & Tom",5
+2025-11-09,"Avo, Feta & Tom",4
+2025-11-10,"Avo, Feta & Tom",7
+2025-11-11,"Avo, Feta & Tom",2
+2025-11-12,"Avo, Feta & Tom",2
+2025-11-13,"Avo, Feta & Tom",1
+2025-11-14,"Avo, Feta & Tom",3
+2025-11-15,"Avo, Feta & Tom",3
+2025-11-16,"Avo, Feta & Tom",2
+2025-11-17,"Avo, Feta & Tom",1
+2025-11-18,"Avo, Feta & Tom",2
+2025-11-19,"Avo, Feta & Tom",0
+2025-11-20,"Avo, Feta & Tom",3
+2025-11-21,"Avo, Feta & Tom",1
+2025-11-22,"Avo, Feta & Tom",4
+2025-11-23,"Avo, Feta & Tom",0
+2025-11-24,"Avo, Feta & Tom",1
+2025-11-25,"Avo, Feta & Tom",2
+2025-11-26,"Avo, Feta & Tom",5
+2025-11-27,"Avo, Feta & Tom",1
+2025-11-28,"Avo, Feta & Tom",0
+2025-11-29,"Avo, Feta & Tom",2
+2025-11-30,"Avo, Feta & Tom",0
+2025-11-01,Avocado on Toast,3
+2025-11-02,Avocado on Toast,3
+2025-11-03,Avocado on Toast,1
+2025-11-04,Avocado on Toast,2
+2025-11-05,Avocado on Toast,4
+2025-11-06,Avocado on Toast,5
+2025-11-07,Avocado on Toast,1
+2025-11-08,Avocado on Toast,5
+2025-11-09,Avocado on Toast,3
+2025-11-10,Avocado on Toast,1
+2025-11-11,Avocado on Toast,3
+2025-11-12,Avocado on Toast,1
+2025-11-13,Avocado on Toast,1
+2025-11-14,Avocado on Toast,3
+2025-11-15,Avocado on Toast,4
+2025-11-16,Avocado on Toast,1
+2025-11-17,Avocado on Toast,0
+2025-11-18,Avocado on Toast,1
+2025-11-19,Avocado on Toast,0
+2025-11-20,Avocado on Toast,1
+2025-11-21,Avocado on Toast,2
+2025-11-22,Avocado on Toast,0
+2025-11-23,Avocado on Toast,2
+2025-11-24,Avocado on Toast,1
+2025-11-25,Avocado on Toast,0
+2025-11-26,Avocado on Toast,1
+2025-11-27,Avocado on Toast,1
+2025-11-28,Avocado on Toast,0
+2025-11-29,Avocado on Toast,2
+2025-11-30,Avocado on Toast,4
+2025-11-01,BD Curry Roll,0
+2025-11-02,BD Curry Roll,0
+2025-11-03,BD Curry Roll,0
+2025-11-04,BD Curry Roll,0
+2025-11-05,BD Curry Roll,0
+2025-11-06,BD Curry Roll,0
+2025-11-07,BD Curry Roll,0
+2025-11-08,BD Curry Roll,0
+2025-11-09,BD Curry Roll,0
+2025-11-10,BD Curry Roll,0
+2025-11-11,BD Curry Roll,0
+2025-11-12,BD Curry Roll,0
+2025-11-13,BD Curry Roll,0
+2025-11-14,BD Curry Roll,1
+2025-11-15,BD Curry Roll,1
+2025-11-16,BD Curry Roll,0
+2025-11-17,BD Curry Roll,4
+2025-11-18,BD Curry Roll,2
+2025-11-19,BD Curry Roll,0
+2025-11-20,BD Curry Roll,0
+2025-11-21,BD Curry Roll,0
+2025-11-22,BD Curry Roll,2
+2025-11-23,BD Curry Roll,0
+2025-11-24,BD Curry Roll,1
+2025-11-25,BD Curry Roll,1
+2025-11-26,BD Curry Roll,1
+2025-11-27,BD Curry Roll,0
+2025-11-28,BD Curry Roll,3
+2025-11-29,BD Curry Roll,4
+2025-11-30,BD Curry Roll,1
+2025-11-01,BLT,0
+2025-11-02,BLT,0
+2025-11-03,BLT,0
+2025-11-04,BLT,0
+2025-11-05,BLT,0
+2025-11-06,BLT,0
+2025-11-07,BLT,0
+2025-11-08,BLT,0
+2025-11-09,BLT,0
+2025-11-10,BLT,0
+2025-11-11,BLT,0
+2025-11-12,BLT,0
+2025-11-13,BLT,0
+2025-11-14,BLT,0
+2025-11-15,BLT,0
+2025-11-16,BLT,0
+2025-11-17,BLT,0
+2025-11-18,BLT,0
+2025-11-19,BLT,0
+2025-11-20,BLT,0
+2025-11-21,BLT,0
+2025-11-22,BLT,0
+2025-11-23,BLT,0
+2025-11-24,BLT,0
+2025-11-25,BLT,0
+2025-11-26,BLT,0
+2025-11-27,BLT,0
+2025-11-28,BLT,0
+2025-11-29,BLT,0
+2025-11-30,BLT,0
+2025-11-01,Bacon,16
+2025-11-02,Bacon,5
+2025-11-03,Bacon,6
+2025-11-04,Bacon,7
+2025-11-05,Bacon,5
+2025-11-06,Bacon,2
+2025-11-07,Bacon,6
+2025-11-08,Bacon,6
+2025-11-09,Bacon,11
+2025-11-10,Bacon,1
+2025-11-11,Bacon,4
+2025-11-12,Bacon,4
+2025-11-13,Bacon,8
+2025-11-14,Bacon,12
+2025-11-15,Bacon,6
+2025-11-16,Bacon,5
+2025-11-17,Bacon,4
+2025-11-18,Bacon,4
+2025-11-19,Bacon,4
+2025-11-20,Bacon,7
+2025-11-21,Bacon,7
+2025-11-22,Bacon,5
+2025-11-23,Bacon,4
+2025-11-24,Bacon,2
+2025-11-25,Bacon,6
+2025-11-26,Bacon,2
+2025-11-27,Bacon,5
+2025-11-28,Bacon,12
+2025-11-29,Bacon,3
+2025-11-30,Bacon,15
+2025-11-01,Bacon Bap,26
+2025-11-02,Bacon Bap,26
+2025-11-03,Bacon Bap,8
+2025-11-04,Bacon Bap,14
+2025-11-05,Bacon Bap,14
+2025-11-06,Bacon Bap,22
+2025-11-07,Bacon Bap,18
+2025-11-08,Bacon Bap,20
+2025-11-09,Bacon Bap,12
+2025-11-10,Bacon Bap,5
+2025-11-11,Bacon Bap,14
+2025-11-12,Bacon Bap,12
+2025-11-13,Bacon Bap,9
+2025-11-14,Bacon Bap,17
+2025-11-15,Bacon Bap,10
+2025-11-16,Bacon Bap,14
+2025-11-17,Bacon Bap,13
+2025-11-18,Bacon Bap,11
+2025-11-19,Bacon Bap,13
+2025-11-20,Bacon Bap,7
+2025-11-21,Bacon Bap,16
+2025-11-22,Bacon Bap,17
+2025-11-23,Bacon Bap,18
+2025-11-24,Bacon Bap,26
+2025-11-25,Bacon Bap,10
+2025-11-26,Bacon Bap,15
+2025-11-27,Bacon Bap,11
+2025-11-28,Bacon Bap,11
+2025-11-29,Bacon Bap,16
+2025-11-30,Bacon Bap,26
+2025-11-01,Bacon Egg Brioch,1
+2025-11-02,Bacon Egg Brioch,4
+2025-11-03,Bacon Egg Brioch,1
+2025-11-04,Bacon Egg Brioch,2
+2025-11-05,Bacon Egg Brioch,2
+2025-11-06,Bacon Egg Brioch,2
+2025-11-07,Bacon Egg Brioch,3
+2025-11-08,Bacon Egg Brioch,3
+2025-11-09,Bacon Egg Brioch,3
+2025-11-10,Bacon Egg Brioch,2
+2025-11-11,Bacon Egg Brioch,2
+2025-11-12,Bacon Egg Brioch,0
+2025-11-13,Bacon Egg Brioch,3
+2025-11-14,Bacon Egg Brioch,0
+2025-11-15,Bacon Egg Brioch,3
+2025-11-16,Bacon Egg Brioch,6
+2025-11-17,Bacon Egg Brioch,3
+2025-11-18,Bacon Egg Brioch,0
+2025-11-19,Bacon Egg Brioch,0
+2025-11-20,Bacon Egg Brioch,2
+2025-11-21,Bacon Egg Brioch,3
+2025-11-22,Bacon Egg Brioch,1
+2025-11-23,Bacon Egg Brioch,5
+2025-11-24,Bacon Egg Brioch,2
+2025-11-25,Bacon Egg Brioch,1
+2025-11-26,Bacon Egg Brioch,0
+2025-11-27,Bacon Egg Brioch,1
+2025-11-28,Bacon Egg Brioch,2
+2025-11-29,Bacon Egg Brioch,0
+2025-11-30,Bacon Egg Brioch,4
+2025-11-01,Bacon Waffle,1
+2025-11-02,Bacon Waffle,12
+2025-11-03,Bacon Waffle,5
+2025-11-04,Bacon Waffle,2
+2025-11-05,Bacon Waffle,4
+2025-11-06,Bacon Waffle,2
+2025-11-07,Bacon Waffle,5
+2025-11-08,Bacon Waffle,1
+2025-11-09,Bacon Waffle,3
+2025-11-10,Bacon Waffle,0
+2025-11-11,Bacon Waffle,0
+2025-11-12,Bacon Waffle,2
+2025-11-13,Bacon Waffle,1
+2025-11-14,Bacon Waffle,4
+2025-11-15,Bacon Waffle,2
+2025-11-16,Bacon Waffle,4
+2025-11-17,Bacon Waffle,3
+2025-11-18,Bacon Waffle,2
+2025-11-19,Bacon Waffle,0
+2025-11-20,Bacon Waffle,1
+2025-11-21,Bacon Waffle,1
+2025-11-22,Bacon Waffle,4
+2025-11-23,Bacon Waffle,2
+2025-11-24,Bacon Waffle,3
+2025-11-25,Bacon Waffle,2
+2025-11-26,Bacon Waffle,1
+2025-11-27,Bacon Waffle,2
+2025-11-28,Bacon Waffle,5
+2025-11-29,Bacon Waffle,3
+2025-11-30,Bacon Waffle,5
+2025-11-01,Baked Beans,3
+2025-11-02,Baked Beans,8
+2025-11-03,Baked Beans,3
+2025-11-04,Baked Beans,6
+2025-11-05,Baked Beans,3
+2025-11-06,Baked Beans,5
+2025-11-07,Baked Beans,9
+2025-11-08,Baked Beans,5
+2025-11-09,Baked Beans,7
+2025-11-10,Baked Beans,1
+2025-11-11,Baked Beans,7
+2025-11-12,Baked Beans,5
+2025-11-13,Baked Beans,2
+2025-11-14,Baked Beans,5
+2025-11-15,Baked Beans,4
+2025-11-16,Baked Beans,8
+2025-11-17,Baked Beans,7
+2025-11-18,Baked Beans,2
+2025-11-19,Baked Beans,2
+2025-11-20,Baked Beans,8
+2025-11-21,Baked Beans,9
+2025-11-22,Baked Beans,7
+2025-11-23,Baked Beans,6
+2025-11-24,Baked Beans,7
+2025-11-25,Baked Beans,3
+2025-11-26,Baked Beans,7
+2025-11-27,Baked Beans,6
+2025-11-28,Baked Beans,1
+2025-11-29,Baked Beans,2
+2025-11-30,Baked Beans,8
+2025-11-01,Baked Beans JP,0
+2025-11-02,Baked Beans JP,0
+2025-11-03,Baked Beans JP,0
+2025-11-04,Baked Beans JP,0
+2025-11-05,Baked Beans JP,0
+2025-11-06,Baked Beans JP,0
+2025-11-07,Baked Beans JP,0
+2025-11-08,Baked Beans JP,1
+2025-11-09,Baked Beans JP,1
+2025-11-10,Baked Beans JP,0
+2025-11-11,Baked Beans JP,0
+2025-11-12,Baked Beans JP,0
+2025-11-13,Baked Beans JP,0
+2025-11-14,Baked Beans JP,0
+2025-11-15,Baked Beans JP,0
+2025-11-16,Baked Beans JP,1
+2025-11-17,Baked Beans JP,0
+2025-11-18,Baked Beans JP,0
+2025-11-19,Baked Beans JP,0
+2025-11-20,Baked Beans JP,0
+2025-11-21,Baked Beans JP,0
+2025-11-22,Baked Beans JP,0
+2025-11-23,Baked Beans JP,0
+2025-11-24,Baked Beans JP,0
+2025-11-25,Baked Beans JP,0
+2025-11-26,Baked Beans JP,0
+2025-11-27,Baked Beans JP,0
+2025-11-28,Baked Beans JP,1
+2025-11-29,Baked Beans JP,0
+2025-11-30,Baked Beans JP,0
+2025-11-01,Bakery,68
+2025-11-02,Bakery,50
+2025-11-03,Bakery,56
+2025-11-04,Bakery,60
+2025-11-05,Bakery,57
+2025-11-06,Bakery,70
+2025-11-07,Bakery,74
+2025-11-08,Bakery,57
+2025-11-09,Bakery,66
+2025-11-10,Bakery,41
+2025-11-11,Bakery,52
+2025-11-12,Bakery,65
+2025-11-13,Bakery,52
+2025-11-14,Bakery,62
+2025-11-15,Bakery,60
+2025-11-16,Bakery,57
+2025-11-17,Bakery,71
+2025-11-18,Bakery,51
+2025-11-19,Bakery,48
+2025-11-20,Bakery,60
+2025-11-21,Bakery,61
+2025-11-22,Bakery,61
+2025-11-23,Bakery,83
+2025-11-24,Bakery,61
+2025-11-25,Bakery,74
+2025-11-26,Bakery,76
+2025-11-27,Bakery,78
+2025-11-28,Bakery,84
+2025-11-29,Bakery,60
+2025-11-30,Bakery,79
+2025-11-01,Banana Bread,5
+2025-11-02,Banana Bread,4
+2025-11-03,Banana Bread,5
+2025-11-04,Banana Bread,8
+2025-11-05,Banana Bread,4
+2025-11-06,Banana Bread,3
+2025-11-07,Banana Bread,3
+2025-11-08,Banana Bread,5
+2025-11-09,Banana Bread,4
+2025-11-10,Banana Bread,4
+2025-11-11,Banana Bread,2
+2025-11-12,Banana Bread,6
+2025-11-13,Banana Bread,4
+2025-11-14,Banana Bread,6
+2025-11-15,Banana Bread,8
+2025-11-16,Banana Bread,1
+2025-11-17,Banana Bread,3
+2025-11-18,Banana Bread,5
+2025-11-19,Banana Bread,2
+2025-11-20,Banana Bread,8
+2025-11-21,Banana Bread,8
+2025-11-22,Banana Bread,2
+2025-11-23,Banana Bread,3
+2025-11-24,Banana Bread,5
+2025-11-25,Banana Bread,2
+2025-11-26,Banana Bread,4
+2025-11-27,Banana Bread,4
+2025-11-28,Banana Bread,2
+2025-11-29,Banana Bread,4
+2025-11-30,Banana Bread,5
+2025-11-01,Bean Soldiers,1
+2025-11-02,Bean Soldiers,0
+2025-11-03,Bean Soldiers,1
+2025-11-04,Bean Soldiers,0
+2025-11-05,Bean Soldiers,0
+2025-11-06,Bean Soldiers,0
+2025-11-07,Bean Soldiers,1
+2025-11-08,Bean Soldiers,2
+2025-11-09,Bean Soldiers,0
+2025-11-10,Bean Soldiers,1
+2025-11-11,Bean Soldiers,1
+2025-11-12,Bean Soldiers,1
+2025-11-13,Bean Soldiers,0
+2025-11-14,Bean Soldiers,0
+2025-11-15,Bean Soldiers,0
+2025-11-16,Bean Soldiers,0
+2025-11-17,Bean Soldiers,0
+2025-11-18,Bean Soldiers,0
+2025-11-19,Bean Soldiers,0
+2025-11-20,Bean Soldiers,0
+2025-11-21,Bean Soldiers,0
+2025-11-22,Bean Soldiers,1
+2025-11-23,Bean Soldiers,1
+2025-11-24,Bean Soldiers,1
+2025-11-25,Bean Soldiers,0
+2025-11-26,Bean Soldiers,1
+2025-11-27,Bean Soldiers,0
+2025-11-28,Bean Soldiers,0
+2025-11-29,Bean Soldiers,0
+2025-11-30,Bean Soldiers,1
+2025-11-01,Beef Burger,0
+2025-11-02,Beef Burger,0
+2025-11-03,Beef Burger,0
+2025-11-04,Beef Burger,0
+2025-11-05,Beef Burger,0
+2025-11-06,Beef Burger,0
+2025-11-07,Beef Burger,0
+2025-11-08,Beef Burger,0
+2025-11-09,Beef Burger,0
+2025-11-10,Beef Burger,0
+2025-11-11,Beef Burger,0
+2025-11-12,Beef Burger,0
+2025-11-13,Beef Burger,0
+2025-11-14,Beef Burger,0
+2025-11-15,Beef Burger,0
+2025-11-16,Beef Burger,0
+2025-11-17,Beef Burger,0
+2025-11-18,Beef Burger,0
+2025-11-19,Beef Burger,0
+2025-11-20,Beef Burger,0
+2025-11-21,Beef Burger,0
+2025-11-22,Beef Burger,0
+2025-11-23,Beef Burger,0
+2025-11-24,Beef Burger,0
+2025-11-25,Beef Burger,0
+2025-11-26,Beef Burger,0
+2025-11-27,Beef Burger,0
+2025-11-28,Beef Burger,0
+2025-11-29,Beef Burger,0
+2025-11-30,Beef Burger,0
+2025-11-01,Beef Hors Foca,1
+2025-11-02,Beef Hors Foca,1
+2025-11-03,Beef Hors Foca,0
+2025-11-04,Beef Hors Foca,0
+2025-11-05,Beef Hors Foca,1
+2025-11-06,Beef Hors Foca,0
+2025-11-07,Beef Hors Foca,0
+2025-11-08,Beef Hors Foca,1
+2025-11-09,Beef Hors Foca,3
+2025-11-10,Beef Hors Foca,2
+2025-11-11,Beef Hors Foca,1
+2025-11-12,Beef Hors Foca,0
+2025-11-13,Beef Hors Foca,0
+2025-11-14,Beef Hors Foca,1
+2025-11-15,Beef Hors Foca,0
+2025-11-16,Beef Hors Foca,0
+2025-11-17,Beef Hors Foca,0
+2025-11-18,Beef Hors Foca,1
+2025-11-19,Beef Hors Foca,0
+2025-11-20,Beef Hors Foca,0
+2025-11-21,Beef Hors Foca,2
+2025-11-22,Beef Hors Foca,0
+2025-11-23,Beef Hors Foca,1
+2025-11-24,Beef Hors Foca,1
+2025-11-25,Beef Hors Foca,0
+2025-11-26,Beef Hors Foca,0
+2025-11-27,Beef Hors Foca,0
+2025-11-28,Beef Hors Foca,0
+2025-11-29,Beef Hors Foca,1
+2025-11-30,Beef Hors Foca,1
+2025-11-01,Beyond Burger,0
+2025-11-02,Beyond Burger,0
+2025-11-03,Beyond Burger,0
+2025-11-04,Beyond Burger,0
+2025-11-05,Beyond Burger,0
+2025-11-06,Beyond Burger,0
+2025-11-07,Beyond Burger,0
+2025-11-08,Beyond Burger,0
+2025-11-09,Beyond Burger,0
+2025-11-10,Beyond Burger,0
+2025-11-11,Beyond Burger,0
+2025-11-12,Beyond Burger,0
+2025-11-13,Beyond Burger,0
+2025-11-14,Beyond Burger,0
+2025-11-15,Beyond Burger,0
+2025-11-16,Beyond Burger,0
+2025-11-17,Beyond Burger,0
+2025-11-18,Beyond Burger,0
+2025-11-19,Beyond Burger,0
+2025-11-20,Beyond Burger,0
+2025-11-21,Beyond Burger,0
+2025-11-22,Beyond Burger,0
+2025-11-23,Beyond Burger,0
+2025-11-24,Beyond Burger,0
+2025-11-25,Beyond Burger,0
+2025-11-26,Beyond Burger,0
+2025-11-27,Beyond Burger,0
+2025-11-28,Beyond Burger,0
+2025-11-29,Beyond Burger,0
+2025-11-30,Beyond Burger,0
+2025-11-01,Big Breakfast,25
+2025-11-02,Big Breakfast,33
+2025-11-03,Big Breakfast,12
+2025-11-04,Big Breakfast,17
+2025-11-05,Big Breakfast,7
+2025-11-06,Big Breakfast,13
+2025-11-07,Big Breakfast,13
+2025-11-08,Big Breakfast,28
+2025-11-09,Big Breakfast,20
+2025-11-10,Big Breakfast,11
+2025-11-11,Big Breakfast,10
+2025-11-12,Big Breakfast,10
+2025-11-13,Big Breakfast,12
+2025-11-14,Big Breakfast,16
+2025-11-15,Big Breakfast,24
+2025-11-16,Big Breakfast,27
+2025-11-17,Big Breakfast,6
+2025-11-18,Big Breakfast,15
+2025-11-19,Big Breakfast,12
+2025-11-20,Big Breakfast,9
+2025-11-21,Big Breakfast,15
+2025-11-22,Big Breakfast,28
+2025-11-23,Big Breakfast,29
+2025-11-24,Big Breakfast,16
+2025-11-25,Big Breakfast,5
+2025-11-26,Big Breakfast,14
+2025-11-27,Big Breakfast,13
+2025-11-28,Big Breakfast,9
+2025-11-29,Big Breakfast,31
+2025-11-30,Big Breakfast,28
+2025-11-01,Black Pudding,3
+2025-11-02,Black Pudding,5
+2025-11-03,Black Pudding,7
+2025-11-04,Black Pudding,2
+2025-11-05,Black Pudding,0
+2025-11-06,Black Pudding,1
+2025-11-07,Black Pudding,2
+2025-11-08,Black Pudding,6
+2025-11-09,Black Pudding,1
+2025-11-10,Black Pudding,0
+2025-11-11,Black Pudding,2
+2025-11-12,Black Pudding,1
+2025-11-13,Black Pudding,5
+2025-11-14,Black Pudding,1
+2025-11-15,Black Pudding,3
+2025-11-16,Black Pudding,1
+2025-11-17,Black Pudding,5
+2025-11-18,Black Pudding,2
+2025-11-19,Black Pudding,0
+2025-11-20,Black Pudding,1
+2025-11-21,Black Pudding,4
+2025-11-22,Black Pudding,4
+2025-11-23,Black Pudding,8
+2025-11-24,Black Pudding,2
+2025-11-25,Black Pudding,2
+2025-11-26,Black Pudding,2
+2025-11-27,Black Pudding,0
+2025-11-28,Black Pudding,1
+2025-11-29,Black Pudding,3
+2025-11-30,Black Pudding,3
+2025-11-01,Blk Forest Syrup,0
+2025-11-02,Blk Forest Syrup,0
+2025-11-03,Blk Forest Syrup,0
+2025-11-04,Blk Forest Syrup,0
+2025-11-05,Blk Forest Syrup,0
+2025-11-06,Blk Forest Syrup,0
+2025-11-07,Blk Forest Syrup,0
+2025-11-08,Blk Forest Syrup,0
+2025-11-09,Blk Forest Syrup,0
+2025-11-10,Blk Forest Syrup,0
+2025-11-11,Blk Forest Syrup,0
+2025-11-12,Blk Forest Syrup,0
+2025-11-13,Blk Forest Syrup,0
+2025-11-14,Blk Forest Syrup,0
+2025-11-15,Blk Forest Syrup,0
+2025-11-16,Blk Forest Syrup,0
+2025-11-17,Blk Forest Syrup,0
+2025-11-18,Blk Forest Syrup,0
+2025-11-19,Blk Forest Syrup,0
+2025-11-20,Blk Forest Syrup,0
+2025-11-21,Blk Forest Syrup,0
+2025-11-22,Blk Forest Syrup,0
+2025-11-23,Blk Forest Syrup,0
+2025-11-24,Blk Forest Syrup,0
+2025-11-25,Blk Forest Syrup,0
+2025-11-26,Blk Forest Syrup,0
+2025-11-27,Blk Forest Syrup,0
+2025-11-28,Blk Forest Syrup,0
+2025-11-29,Blk Forest Syrup,0
+2025-11-30,Blk Forest Syrup,0
+2025-11-01,Bre Cran Toastie,0
+2025-11-02,Bre Cran Toastie,0
+2025-11-03,Bre Cran Toastie,0
+2025-11-04,Bre Cran Toastie,0
+2025-11-05,Bre Cran Toastie,0
+2025-11-06,Bre Cran Toastie,0
+2025-11-07,Bre Cran Toastie,0
+2025-11-08,Bre Cran Toastie,0
+2025-11-09,Bre Cran Toastie,0
+2025-11-10,Bre Cran Toastie,0
+2025-11-11,Bre Cran Toastie,0
+2025-11-12,Bre Cran Toastie,0
+2025-11-13,Bre Cran Toastie,0
+2025-11-14,Bre Cran Toastie,0
+2025-11-15,Bre Cran Toastie,0
+2025-11-16,Bre Cran Toastie,0
+2025-11-17,Bre Cran Toastie,0
+2025-11-18,Bre Cran Toastie,0
+2025-11-19,Bre Cran Toastie,0
+2025-11-20,Bre Cran Toastie,0
+2025-11-21,Bre Cran Toastie,0
+2025-11-22,Bre Cran Toastie,0
+2025-11-23,Bre Cran Toastie,0
+2025-11-24,Bre Cran Toastie,0
+2025-11-25,Bre Cran Toastie,0
+2025-11-26,Bre Cran Toastie,0
+2025-11-27,Bre Cran Toastie,0
+2025-11-28,Bre Cran Toastie,0
+2025-11-29,Bre Cran Toastie,0
+2025-11-30,Bre Cran Toastie,0
+2025-11-01,Breakfast Bap,0
+2025-11-02,Breakfast Bap,0
+2025-11-03,Breakfast Bap,0
+2025-11-04,Breakfast Bap,0
+2025-11-05,Breakfast Bap,0
+2025-11-06,Breakfast Bap,0
+2025-11-07,Breakfast Bap,0
+2025-11-08,Breakfast Bap,0
+2025-11-09,Breakfast Bap,0
+2025-11-10,Breakfast Bap,0
+2025-11-11,Breakfast Bap,0
+2025-11-12,Breakfast Bap,0
+2025-11-13,Breakfast Bap,0
+2025-11-14,Breakfast Bap,0
+2025-11-15,Breakfast Bap,0
+2025-11-16,Breakfast Bap,0
+2025-11-17,Breakfast Bap,0
+2025-11-18,Breakfast Bap,0
+2025-11-19,Breakfast Bap,0
+2025-11-20,Breakfast Bap,0
+2025-11-21,Breakfast Bap,0
+2025-11-22,Breakfast Bap,0
+2025-11-23,Breakfast Bap,0
+2025-11-24,Breakfast Bap,0
+2025-11-25,Breakfast Bap,0
+2025-11-26,Breakfast Bap,0
+2025-11-27,Breakfast Bap,0
+2025-11-28,Breakfast Bap,0
+2025-11-29,Breakfast Bap,0
+2025-11-30,Breakfast Bap,0
+2025-11-01,Breakfast Hash,0
+2025-11-02,Breakfast Hash,0
+2025-11-03,Breakfast Hash,2
+2025-11-04,Breakfast Hash,2
+2025-11-05,Breakfast Hash,0
+2025-11-06,Breakfast Hash,0
+2025-11-07,Breakfast Hash,0
+2025-11-08,Breakfast Hash,1
+2025-11-09,Breakfast Hash,1
+2025-11-10,Breakfast Hash,0
+2025-11-11,Breakfast Hash,1
+2025-11-12,Breakfast Hash,1
+2025-11-13,Breakfast Hash,0
+2025-11-14,Breakfast Hash,2
+2025-11-15,Breakfast Hash,1
+2025-11-16,Breakfast Hash,2
+2025-11-17,Breakfast Hash,0
+2025-11-18,Breakfast Hash,1
+2025-11-19,Breakfast Hash,0
+2025-11-20,Breakfast Hash,0
+2025-11-21,Breakfast Hash,0
+2025-11-22,Breakfast Hash,3
+2025-11-23,Breakfast Hash,0
+2025-11-24,Breakfast Hash,0
+2025-11-25,Breakfast Hash,2
+2025-11-26,Breakfast Hash,0
+2025-11-27,Breakfast Hash,1
+2025-11-28,Breakfast Hash,0
+2025-11-29,Breakfast Hash,3
+2025-11-30,Breakfast Hash,1
+2025-11-01,Breakfast Muffin,5
+2025-11-02,Breakfast Muffin,9
+2025-11-03,Breakfast Muffin,4
+2025-11-04,Breakfast Muffin,2
+2025-11-05,Breakfast Muffin,4
+2025-11-06,Breakfast Muffin,3
+2025-11-07,Breakfast Muffin,7
+2025-11-08,Breakfast Muffin,4
+2025-11-09,Breakfast Muffin,4
+2025-11-10,Breakfast Muffin,5
+2025-11-11,Breakfast Muffin,1
+2025-11-12,Breakfast Muffin,6
+2025-11-13,Breakfast Muffin,2
+2025-11-14,Breakfast Muffin,6
+2025-11-15,Breakfast Muffin,9
+2025-11-16,Breakfast Muffin,4
+2025-11-17,Breakfast Muffin,3
+2025-11-18,Breakfast Muffin,1
+2025-11-19,Breakfast Muffin,5
+2025-11-20,Breakfast Muffin,4
+2025-11-21,Breakfast Muffin,4
+2025-11-22,Breakfast Muffin,2
+2025-11-23,Breakfast Muffin,5
+2025-11-24,Breakfast Muffin,3
+2025-11-25,Breakfast Muffin,1
+2025-11-26,Breakfast Muffin,4
+2025-11-27,Breakfast Muffin,1
+2025-11-28,Breakfast Muffin,3
+2025-11-29,Breakfast Muffin,4
+2025-11-30,Breakfast Muffin,4
+2025-11-01,Breakfast Wrap,0
+2025-11-02,Breakfast Wrap,0
+2025-11-03,Breakfast Wrap,0
+2025-11-04,Breakfast Wrap,0
+2025-11-05,Breakfast Wrap,0
+2025-11-06,Breakfast Wrap,0
+2025-11-07,Breakfast Wrap,0
+2025-11-08,Breakfast Wrap,0
+2025-11-09,Breakfast Wrap,0
+2025-11-10,Breakfast Wrap,0
+2025-11-11,Breakfast Wrap,0
+2025-11-12,Breakfast Wrap,0
+2025-11-13,Breakfast Wrap,0
+2025-11-14,Breakfast Wrap,0
+2025-11-15,Breakfast Wrap,0
+2025-11-16,Breakfast Wrap,0
+2025-11-17,Breakfast Wrap,0
+2025-11-18,Breakfast Wrap,0
+2025-11-19,Breakfast Wrap,0
+2025-11-20,Breakfast Wrap,0
+2025-11-21,Breakfast Wrap,0
+2025-11-22,Breakfast Wrap,0
+2025-11-23,Breakfast Wrap,0
+2025-11-24,Breakfast Wrap,0
+2025-11-25,Breakfast Wrap,0
+2025-11-26,Breakfast Wrap,0
+2025-11-27,Breakfast Wrap,0
+2025-11-28,Breakfast Wrap,0
+2025-11-29,Breakfast Wrap,0
+2025-11-30,Breakfast Wrap,0
+2025-11-01,Brie Bacon Crois,0
+2025-11-02,Brie Bacon Crois,0
+2025-11-03,Brie Bacon Crois,0
+2025-11-04,Brie Bacon Crois,0
+2025-11-05,Brie Bacon Crois,0
+2025-11-06,Brie Bacon Crois,0
+2025-11-07,Brie Bacon Crois,0
+2025-11-08,Brie Bacon Crois,0
+2025-11-09,Brie Bacon Crois,0
+2025-11-10,Brie Bacon Crois,0
+2025-11-11,Brie Bacon Crois,0
+2025-11-12,Brie Bacon Crois,0
+2025-11-13,Brie Bacon Crois,0
+2025-11-14,Brie Bacon Crois,0
+2025-11-15,Brie Bacon Crois,0
+2025-11-16,Brie Bacon Crois,0
+2025-11-17,Brie Bacon Crois,0
+2025-11-18,Brie Bacon Crois,0
+2025-11-19,Brie Bacon Crois,0
+2025-11-20,Brie Bacon Crois,0
+2025-11-21,Brie Bacon Crois,0
+2025-11-22,Brie Bacon Crois,0
+2025-11-23,Brie Bacon Crois,0
+2025-11-24,Brie Bacon Crois,0
+2025-11-25,Brie Bacon Crois,0
+2025-11-26,Brie Bacon Crois,0
+2025-11-27,Brie Bacon Crois,0
+2025-11-28,Brie Bacon Crois,0
+2025-11-29,Brie Bacon Crois,0
+2025-11-30,Brie Bacon Crois,0
+2025-11-01,Brie Cranb Tstie,0
+2025-11-02,Brie Cranb Tstie,0
+2025-11-03,Brie Cranb Tstie,0
+2025-11-04,Brie Cranb Tstie,0
+2025-11-05,Brie Cranb Tstie,0
+2025-11-06,Brie Cranb Tstie,0
+2025-11-07,Brie Cranb Tstie,0
+2025-11-08,Brie Cranb Tstie,0
+2025-11-09,Brie Cranb Tstie,0
+2025-11-10,Brie Cranb Tstie,0
+2025-11-11,Brie Cranb Tstie,0
+2025-11-12,Brie Cranb Tstie,4
+2025-11-13,Brie Cranb Tstie,1
+2025-11-14,Brie Cranb Tstie,7
+2025-11-15,Brie Cranb Tstie,6
+2025-11-16,Brie Cranb Tstie,9
+2025-11-17,Brie Cranb Tstie,10
+2025-11-18,Brie Cranb Tstie,6
+2025-11-19,Brie Cranb Tstie,5
+2025-11-20,Brie Cranb Tstie,6
+2025-11-21,Brie Cranb Tstie,6
+2025-11-22,Brie Cranb Tstie,7
+2025-11-23,Brie Cranb Tstie,7
+2025-11-24,Brie Cranb Tstie,8
+2025-11-25,Brie Cranb Tstie,4
+2025-11-26,Brie Cranb Tstie,8
+2025-11-27,Brie Cranb Tstie,4
+2025-11-28,Brie Cranb Tstie,15
+2025-11-29,Brie Cranb Tstie,7
+2025-11-30,Brie Cranb Tstie,4
+2025-11-01,Brown Toast Bread,4
+2025-11-02,Brown Toast Bread,8
+2025-11-03,Brown Toast Bread,7
+2025-11-04,Brown Toast Bread,8
+2025-11-05,Brown Toast Bread,6
+2025-11-06,Brown Toast Bread,9
+2025-11-07,Brown Toast Bread,7
+2025-11-08,Brown Toast Bread,6
+2025-11-09,Brown Toast Bread,12
+2025-11-10,Brown Toast Bread,9
+2025-11-11,Brown Toast Bread,9
+2025-11-12,Brown Toast Bread,6
+2025-11-13,Brown Toast Bread,10
+2025-11-14,Brown Toast Bread,13
+2025-11-15,Brown Toast Bread,6
+2025-11-16,Brown Toast Bread,8
+2025-11-17,Brown Toast Bread,11
+2025-11-18,Brown Toast Bread,5
+2025-11-19,Brown Toast Bread,6
+2025-11-20,Brown Toast Bread,6
+2025-11-21,Brown Toast Bread,8
+2025-11-22,Brown Toast Bread,12
+2025-11-23,Brown Toast Bread,15
+2025-11-24,Brown Toast Bread,8
+2025-11-25,Brown Toast Bread,6
+2025-11-26,Brown Toast Bread,9
+2025-11-27,Brown Toast Bread,11
+2025-11-28,Brown Toast Bread,9
+2025-11-29,Brown Toast Bread,8
+2025-11-30,Brown Toast Bread,7
+2025-11-01,Brunch Burger,0
+2025-11-02,Brunch Burger,0
+2025-11-03,Brunch Burger,0
+2025-11-04,Brunch Burger,0
+2025-11-05,Brunch Burger,0
+2025-11-06,Brunch Burger,0
+2025-11-07,Brunch Burger,0
+2025-11-08,Brunch Burger,0
+2025-11-09,Brunch Burger,0
+2025-11-10,Brunch Burger,0
+2025-11-11,Brunch Burger,0
+2025-11-12,Brunch Burger,0
+2025-11-13,Brunch Burger,0
+2025-11-14,Brunch Burger,0
+2025-11-15,Brunch Burger,0
+2025-11-16,Brunch Burger,0
+2025-11-17,Brunch Burger,0
+2025-11-18,Brunch Burger,0
+2025-11-19,Brunch Burger,0
+2025-11-20,Brunch Burger,0
+2025-11-21,Brunch Burger,0
+2025-11-22,Brunch Burger,0
+2025-11-23,Brunch Burger,0
+2025-11-24,Brunch Burger,0
+2025-11-25,Brunch Burger,0
+2025-11-26,Brunch Burger,0
+2025-11-27,Brunch Burger,0
+2025-11-28,Brunch Burger,0
+2025-11-29,Brunch Burger,0
+2025-11-30,Brunch Burger,0
+2025-11-01,Buttd Mushrooms,3
+2025-11-02,Buttd Mushrooms,3
+2025-11-03,Buttd Mushrooms,2
+2025-11-04,Buttd Mushrooms,3
+2025-11-05,Buttd Mushrooms,4
+2025-11-06,Buttd Mushrooms,2
+2025-11-07,Buttd Mushrooms,3
+2025-11-08,Buttd Mushrooms,1
+2025-11-09,Buttd Mushrooms,4
+2025-11-10,Buttd Mushrooms,1
+2025-11-11,Buttd Mushrooms,1
+2025-11-12,Buttd Mushrooms,1
+2025-11-13,Buttd Mushrooms,1
+2025-11-14,Buttd Mushrooms,5
+2025-11-15,Buttd Mushrooms,3
+2025-11-16,Buttd Mushrooms,3
+2025-11-17,Buttd Mushrooms,1
+2025-11-18,Buttd Mushrooms,0
+2025-11-19,Buttd Mushrooms,5
+2025-11-20,Buttd Mushrooms,3
+2025-11-21,Buttd Mushrooms,0
+2025-11-22,Buttd Mushrooms,1
+2025-11-23,Buttd Mushrooms,1
+2025-11-24,Buttd Mushrooms,2
+2025-11-25,Buttd Mushrooms,1
+2025-11-26,Buttd Mushrooms,2
+2025-11-27,Buttd Mushrooms,1
+2025-11-28,Buttd Mushrooms,5
+2025-11-29,Buttd Mushrooms,4
+2025-11-30,Buttd Mushrooms,3
+2025-11-01,Butter,0
+2025-11-02,Butter,0
+2025-11-03,Butter,0
+2025-11-04,Butter,0
+2025-11-05,Butter,0
+2025-11-06,Butter,0
+2025-11-07,Butter,0
+2025-11-08,Butter,0
+2025-11-09,Butter,0
+2025-11-10,Butter,0
+2025-11-11,Butter,0
+2025-11-12,Butter,0
+2025-11-13,Butter,0
+2025-11-14,Butter,0
+2025-11-15,Butter,0
+2025-11-16,Butter,0
+2025-11-17,Butter,1
+2025-11-18,Butter,0
+2025-11-19,Butter,2
+2025-11-20,Butter,0
+2025-11-21,Butter,0
+2025-11-22,Butter,0
+2025-11-23,Butter,0
+2025-11-24,Butter,0
+2025-11-25,Butter,0
+2025-11-26,Butter,0
+2025-11-27,Butter,0
+2025-11-28,Butter,0
+2025-11-29,Butter,0
+2025-11-30,Butter,0
+2025-11-01,Cheese & Bean JP,2
+2025-11-02,Cheese & Bean JP,3
+2025-11-03,Cheese & Bean JP,2
+2025-11-04,Cheese & Bean JP,0
+2025-11-05,Cheese & Bean JP,2
+2025-11-06,Cheese & Bean JP,0
+2025-11-07,Cheese & Bean JP,1
+2025-11-08,Cheese & Bean JP,1
+2025-11-09,Cheese & Bean JP,2
+2025-11-10,Cheese & Bean JP,1
+2025-11-11,Cheese & Bean JP,1
+2025-11-12,Cheese & Bean JP,0
+2025-11-13,Cheese & Bean JP,2
+2025-11-14,Cheese & Bean JP,2
+2025-11-15,Cheese & Bean JP,1
+2025-11-16,Cheese & Bean JP,1
+2025-11-17,Cheese & Bean JP,1
+2025-11-18,Cheese & Bean JP,2
+2025-11-19,Cheese & Bean JP,0
+2025-11-20,Cheese & Bean JP,0
+2025-11-21,Cheese & Bean JP,3
+2025-11-22,Cheese & Bean JP,0
+2025-11-23,Cheese & Bean JP,1
+2025-11-24,Cheese & Bean JP,1
+2025-11-25,Cheese & Bean JP,1
+2025-11-26,Cheese & Bean JP,2
+2025-11-27,Cheese & Bean JP,2
+2025-11-28,Cheese & Bean JP,0
+2025-11-29,Cheese & Bean JP,2
+2025-11-30,Cheese & Bean JP,0
+2025-11-01,Cheese Extra,3
+2025-11-02,Cheese Extra,3
+2025-11-03,Cheese Extra,2
+2025-11-04,Cheese Extra,1
+2025-11-05,Cheese Extra,0
+2025-11-06,Cheese Extra,1
+2025-11-07,Cheese Extra,0
+2025-11-08,Cheese Extra,5
+2025-11-09,Cheese Extra,2
+2025-11-10,Cheese Extra,0
+2025-11-11,Cheese Extra,0
+2025-11-12,Cheese Extra,1
+2025-11-13,Cheese Extra,0
+2025-11-14,Cheese Extra,2
+2025-11-15,Cheese Extra,1
+2025-11-16,Cheese Extra,0
+2025-11-17,Cheese Extra,0
+2025-11-18,Cheese Extra,4
+2025-11-19,Cheese Extra,1
+2025-11-20,Cheese Extra,0
+2025-11-21,Cheese Extra,0
+2025-11-22,Cheese Extra,0
+2025-11-23,Cheese Extra,1
+2025-11-24,Cheese Extra,1
+2025-11-25,Cheese Extra,0
+2025-11-26,Cheese Extra,0
+2025-11-27,Cheese Extra,1
+2025-11-28,Cheese Extra,1
+2025-11-29,Cheese Extra,1
+2025-11-30,Cheese Extra,2
+2025-11-01,Cheese JP,0
+2025-11-02,Cheese JP,1
+2025-11-03,Cheese JP,0
+2025-11-04,Cheese JP,0
+2025-11-05,Cheese JP,0
+2025-11-06,Cheese JP,1
+2025-11-07,Cheese JP,0
+2025-11-08,Cheese JP,0
+2025-11-09,Cheese JP,0
+2025-11-10,Cheese JP,1
+2025-11-11,Cheese JP,2
+2025-11-12,Cheese JP,0
+2025-11-13,Cheese JP,0
+2025-11-14,Cheese JP,0
+2025-11-15,Cheese JP,0
+2025-11-16,Cheese JP,0
+2025-11-17,Cheese JP,0
+2025-11-18,Cheese JP,0
+2025-11-19,Cheese JP,0
+2025-11-20,Cheese JP,0
+2025-11-21,Cheese JP,1
+2025-11-22,Cheese JP,0
+2025-11-23,Cheese JP,1
+2025-11-24,Cheese JP,0
+2025-11-25,Cheese JP,0
+2025-11-26,Cheese JP,0
+2025-11-27,Cheese JP,1
+2025-11-28,Cheese JP,0
+2025-11-29,Cheese JP,0
+2025-11-30,Cheese JP,0
+2025-11-01,Cheese Pizza,0
+2025-11-02,Cheese Pizza,0
+2025-11-03,Cheese Pizza,0
+2025-11-04,Cheese Pizza,0
+2025-11-05,Cheese Pizza,0
+2025-11-06,Cheese Pizza,0
+2025-11-07,Cheese Pizza,0
+2025-11-08,Cheese Pizza,0
+2025-11-09,Cheese Pizza,0
+2025-11-10,Cheese Pizza,0
+2025-11-11,Cheese Pizza,0
+2025-11-12,Cheese Pizza,0
+2025-11-13,Cheese Pizza,0
+2025-11-14,Cheese Pizza,0
+2025-11-15,Cheese Pizza,0
+2025-11-16,Cheese Pizza,0
+2025-11-17,Cheese Pizza,0
+2025-11-18,Cheese Pizza,0
+2025-11-19,Cheese Pizza,0
+2025-11-20,Cheese Pizza,0
+2025-11-21,Cheese Pizza,0
+2025-11-22,Cheese Pizza,0
+2025-11-23,Cheese Pizza,0
+2025-11-24,Cheese Pizza,0
+2025-11-25,Cheese Pizza,0
+2025-11-26,Cheese Pizza,0
+2025-11-27,Cheese Pizza,0
+2025-11-28,Cheese Pizza,0
+2025-11-29,Cheese Pizza,0
+2025-11-30,Cheese Pizza,0
+2025-11-01,Cheese Sand PnM,4
+2025-11-02,Cheese Sand PnM,7
+2025-11-03,Cheese Sand PnM,2
+2025-11-04,Cheese Sand PnM,1
+2025-11-05,Cheese Sand PnM,2
+2025-11-06,Cheese Sand PnM,0
+2025-11-07,Cheese Sand PnM,1
+2025-11-08,Cheese Sand PnM,3
+2025-11-09,Cheese Sand PnM,3
+2025-11-10,Cheese Sand PnM,3
+2025-11-11,Cheese Sand PnM,2
+2025-11-12,Cheese Sand PnM,3
+2025-11-13,Cheese Sand PnM,3
+2025-11-14,Cheese Sand PnM,8
+2025-11-15,Cheese Sand PnM,2
+2025-11-16,Cheese Sand PnM,1
+2025-11-17,Cheese Sand PnM,4
+2025-11-18,Cheese Sand PnM,0
+2025-11-19,Cheese Sand PnM,0
+2025-11-20,Cheese Sand PnM,1
+2025-11-21,Cheese Sand PnM,1
+2025-11-22,Cheese Sand PnM,1
+2025-11-23,Cheese Sand PnM,2
+2025-11-24,Cheese Sand PnM,4
+2025-11-25,Cheese Sand PnM,1
+2025-11-26,Cheese Sand PnM,2
+2025-11-27,Cheese Sand PnM,3
+2025-11-28,Cheese Sand PnM,3
+2025-11-29,Cheese Sand PnM,3
+2025-11-30,Cheese Sand PnM,3
+2025-11-01,Cheese Sandwich,0
+2025-11-02,Cheese Sandwich,1
+2025-11-03,Cheese Sandwich,1
+2025-11-04,Cheese Sandwich,0
+2025-11-05,Cheese Sandwich,0
+2025-11-06,Cheese Sandwich,1
+2025-11-07,Cheese Sandwich,1
+2025-11-08,Cheese Sandwich,0
+2025-11-09,Cheese Sandwich,0
+2025-11-10,Cheese Sandwich,0
+2025-11-11,Cheese Sandwich,3
+2025-11-12,Cheese Sandwich,0
+2025-11-13,Cheese Sandwich,1
+2025-11-14,Cheese Sandwich,0
+2025-11-15,Cheese Sandwich,0
+2025-11-16,Cheese Sandwich,0
+2025-11-17,Cheese Sandwich,1
+2025-11-18,Cheese Sandwich,1
+2025-11-19,Cheese Sandwich,0
+2025-11-20,Cheese Sandwich,0
+2025-11-21,Cheese Sandwich,0
+2025-11-22,Cheese Sandwich,0
+2025-11-23,Cheese Sandwich,0
+2025-11-24,Cheese Sandwich,1
+2025-11-25,Cheese Sandwich,1
+2025-11-26,Cheese Sandwich,0
+2025-11-27,Cheese Sandwich,1
+2025-11-28,Cheese Sandwich,0
+2025-11-29,Cheese Sandwich,1
+2025-11-30,Cheese Sandwich,1
+2025-11-01,Cheese Scone,4
+2025-11-02,Cheese Scone,3
+2025-11-03,Cheese Scone,1
+2025-11-04,Cheese Scone,4
+2025-11-05,Cheese Scone,5
+2025-11-06,Cheese Scone,5
+2025-11-07,Cheese Scone,1
+2025-11-08,Cheese Scone,2
+2025-11-09,Cheese Scone,2
+2025-11-10,Cheese Scone,2
+2025-11-11,Cheese Scone,3
+2025-11-12,Cheese Scone,5
+2025-11-13,Cheese Scone,2
+2025-11-14,Cheese Scone,4
+2025-11-15,Cheese Scone,4
+2025-11-16,Cheese Scone,5
+2025-11-17,Cheese Scone,5
+2025-11-18,Cheese Scone,3
+2025-11-19,Cheese Scone,0
+2025-11-20,Cheese Scone,1
+2025-11-21,Cheese Scone,6
+2025-11-22,Cheese Scone,5
+2025-11-23,Cheese Scone,2
+2025-11-24,Cheese Scone,5
+2025-11-25,Cheese Scone,6
+2025-11-26,Cheese Scone,2
+2025-11-27,Cheese Scone,4
+2025-11-28,Cheese Scone,4
+2025-11-29,Cheese Scone,2
+2025-11-30,Cheese Scone,3
+2025-11-01,Chick Chzo Tstie,0
+2025-11-02,Chick Chzo Tstie,0
+2025-11-03,Chick Chzo Tstie,0
+2025-11-04,Chick Chzo Tstie,0
+2025-11-05,Chick Chzo Tstie,0
+2025-11-06,Chick Chzo Tstie,0
+2025-11-07,Chick Chzo Tstie,0
+2025-11-08,Chick Chzo Tstie,0
+2025-11-09,Chick Chzo Tstie,0
+2025-11-10,Chick Chzo Tstie,0
+2025-11-11,Chick Chzo Tstie,0
+2025-11-12,Chick Chzo Tstie,0
+2025-11-13,Chick Chzo Tstie,0
+2025-11-14,Chick Chzo Tstie,0
+2025-11-15,Chick Chzo Tstie,0
+2025-11-16,Chick Chzo Tstie,0
+2025-11-17,Chick Chzo Tstie,0
+2025-11-18,Chick Chzo Tstie,0
+2025-11-19,Chick Chzo Tstie,0
+2025-11-20,Chick Chzo Tstie,0
+2025-11-21,Chick Chzo Tstie,0
+2025-11-22,Chick Chzo Tstie,0
+2025-11-23,Chick Chzo Tstie,0
+2025-11-24,Chick Chzo Tstie,0
+2025-11-25,Chick Chzo Tstie,0
+2025-11-26,Chick Chzo Tstie,0
+2025-11-27,Chick Chzo Tstie,0
+2025-11-28,Chick Chzo Tstie,0
+2025-11-29,Chick Chzo Tstie,0
+2025-11-30,Chick Chzo Tstie,0
+2025-11-01,Chick Flatbread,0
+2025-11-02,Chick Flatbread,1
+2025-11-03,Chick Flatbread,2
+2025-11-04,Chick Flatbread,5
+2025-11-05,Chick Flatbread,4
+2025-11-06,Chick Flatbread,1
+2025-11-07,Chick Flatbread,2
+2025-11-08,Chick Flatbread,3
+2025-11-09,Chick Flatbread,2
+2025-11-10,Chick Flatbread,0
+2025-11-11,Chick Flatbread,1
+2025-11-12,Chick Flatbread,0
+2025-11-13,Chick Flatbread,0
+2025-11-14,Chick Flatbread,0
+2025-11-15,Chick Flatbread,0
+2025-11-16,Chick Flatbread,0
+2025-11-17,Chick Flatbread,0
+2025-11-18,Chick Flatbread,0
+2025-11-19,Chick Flatbread,0
+2025-11-20,Chick Flatbread,0
+2025-11-21,Chick Flatbread,0
+2025-11-22,Chick Flatbread,0
+2025-11-23,Chick Flatbread,0
+2025-11-24,Chick Flatbread,0
+2025-11-25,Chick Flatbread,0
+2025-11-26,Chick Flatbread,0
+2025-11-27,Chick Flatbread,0
+2025-11-28,Chick Flatbread,0
+2025-11-29,Chick Flatbread,0
+2025-11-30,Chick Flatbread,0
+2025-11-01,Chick Rice Bowl,0
+2025-11-02,Chick Rice Bowl,1
+2025-11-03,Chick Rice Bowl,1
+2025-11-04,Chick Rice Bowl,2
+2025-11-05,Chick Rice Bowl,0
+2025-11-06,Chick Rice Bowl,1
+2025-11-07,Chick Rice Bowl,2
+2025-11-08,Chick Rice Bowl,0
+2025-11-09,Chick Rice Bowl,2
+2025-11-10,Chick Rice Bowl,3
+2025-11-11,Chick Rice Bowl,0
+2025-11-12,Chick Rice Bowl,1
+2025-11-13,Chick Rice Bowl,0
+2025-11-14,Chick Rice Bowl,1
+2025-11-15,Chick Rice Bowl,1
+2025-11-16,Chick Rice Bowl,0
+2025-11-17,Chick Rice Bowl,0
+2025-11-18,Chick Rice Bowl,0
+2025-11-19,Chick Rice Bowl,0
+2025-11-20,Chick Rice Bowl,1
+2025-11-21,Chick Rice Bowl,0
+2025-11-22,Chick Rice Bowl,0
+2025-11-23,Chick Rice Bowl,2
+2025-11-24,Chick Rice Bowl,1
+2025-11-25,Chick Rice Bowl,1
+2025-11-26,Chick Rice Bowl,0
+2025-11-27,Chick Rice Bowl,1
+2025-11-28,Chick Rice Bowl,1
+2025-11-29,Chick Rice Bowl,0
+2025-11-30,Chick Rice Bowl,1
+2025-11-01,Chicken Breast,0
+2025-11-02,Chicken Breast,0
+2025-11-03,Chicken Breast,0
+2025-11-04,Chicken Breast,0
+2025-11-05,Chicken Breast,0
+2025-11-06,Chicken Breast,0
+2025-11-07,Chicken Breast,0
+2025-11-08,Chicken Breast,0
+2025-11-09,Chicken Breast,0
+2025-11-10,Chicken Breast,0
+2025-11-11,Chicken Breast,0
+2025-11-12,Chicken Breast,0
+2025-11-13,Chicken Breast,0
+2025-11-14,Chicken Breast,0
+2025-11-15,Chicken Breast,0
+2025-11-16,Chicken Breast,0
+2025-11-17,Chicken Breast,0
+2025-11-18,Chicken Breast,0
+2025-11-19,Chicken Breast,0
+2025-11-20,Chicken Breast,0
+2025-11-21,Chicken Breast,0
+2025-11-22,Chicken Breast,0
+2025-11-23,Chicken Breast,0
+2025-11-24,Chicken Breast,0
+2025-11-25,Chicken Breast,0
+2025-11-26,Chicken Breast,0
+2025-11-27,Chicken Breast,0
+2025-11-28,Chicken Breast,0
+2025-11-29,Chicken Breast,0
+2025-11-30,Chicken Breast,0
+2025-11-01,Chicken Burger,6
+2025-11-02,Chicken Burger,7
+2025-11-03,Chicken Burger,4
+2025-11-04,Chicken Burger,4
+2025-11-05,Chicken Burger,3
+2025-11-06,Chicken Burger,5
+2025-11-07,Chicken Burger,8
+2025-11-08,Chicken Burger,12
+2025-11-09,Chicken Burger,9
+2025-11-10,Chicken Burger,4
+2025-11-11,Chicken Burger,3
+2025-11-12,Chicken Burger,7
+2025-11-13,Chicken Burger,4
+2025-11-14,Chicken Burger,7
+2025-11-15,Chicken Burger,6
+2025-11-16,Chicken Burger,7
+2025-11-17,Chicken Burger,4
+2025-11-18,Chicken Burger,5
+2025-11-19,Chicken Burger,3
+2025-11-20,Chicken Burger,5
+2025-11-21,Chicken Burger,7
+2025-11-22,Chicken Burger,10
+2025-11-23,Chicken Burger,5
+2025-11-24,Chicken Burger,6
+2025-11-25,Chicken Burger,6
+2025-11-26,Chicken Burger,2
+2025-11-27,Chicken Burger,13
+2025-11-28,Chicken Burger,6
+2025-11-29,Chicken Burger,11
+2025-11-30,Chicken Burger,6
+2025-11-01,Chicken Club,9
+2025-11-02,Chicken Club,4
+2025-11-03,Chicken Club,3
+2025-11-04,Chicken Club,1
+2025-11-05,Chicken Club,2
+2025-11-06,Chicken Club,4
+2025-11-07,Chicken Club,5
+2025-11-08,Chicken Club,7
+2025-11-09,Chicken Club,1
+2025-11-10,Chicken Club,1
+2025-11-11,Chicken Club,4
+2025-11-12,Chicken Club,0
+2025-11-13,Chicken Club,0
+2025-11-14,Chicken Club,0
+2025-11-15,Chicken Club,0
+2025-11-16,Chicken Club,0
+2025-11-17,Chicken Club,0
+2025-11-18,Chicken Club,0
+2025-11-19,Chicken Club,0
+2025-11-20,Chicken Club,0
+2025-11-21,Chicken Club,0
+2025-11-22,Chicken Club,0
+2025-11-23,Chicken Club,0
+2025-11-24,Chicken Club,0
+2025-11-25,Chicken Club,0
+2025-11-26,Chicken Club,0
+2025-11-27,Chicken Club,0
+2025-11-28,Chicken Club,0
+2025-11-29,Chicken Club,0
+2025-11-30,Chicken Club,0
+2025-11-01,Chicken Goujons,0
+2025-11-02,Chicken Goujons,0
+2025-11-03,Chicken Goujons,0
+2025-11-04,Chicken Goujons,0
+2025-11-05,Chicken Goujons,0
+2025-11-06,Chicken Goujons,0
+2025-11-07,Chicken Goujons,0
+2025-11-08,Chicken Goujons,0
+2025-11-09,Chicken Goujons,0
+2025-11-10,Chicken Goujons,0
+2025-11-11,Chicken Goujons,0
+2025-11-12,Chicken Goujons,0
+2025-11-13,Chicken Goujons,0
+2025-11-14,Chicken Goujons,0
+2025-11-15,Chicken Goujons,0
+2025-11-16,Chicken Goujons,0
+2025-11-17,Chicken Goujons,0
+2025-11-18,Chicken Goujons,0
+2025-11-19,Chicken Goujons,0
+2025-11-20,Chicken Goujons,0
+2025-11-21,Chicken Goujons,0
+2025-11-22,Chicken Goujons,0
+2025-11-23,Chicken Goujons,0
+2025-11-24,Chicken Goujons,0
+2025-11-25,Chicken Goujons,0
+2025-11-26,Chicken Goujons,0
+2025-11-27,Chicken Goujons,0
+2025-11-28,Chicken Goujons,0
+2025-11-29,Chicken Goujons,0
+2025-11-30,Chicken Goujons,0
+2025-11-01,Chicken Strips,0
+2025-11-02,Chicken Strips,0
+2025-11-03,Chicken Strips,0
+2025-11-04,Chicken Strips,0
+2025-11-05,Chicken Strips,0
+2025-11-06,Chicken Strips,0
+2025-11-07,Chicken Strips,0
+2025-11-08,Chicken Strips,0
+2025-11-09,Chicken Strips,0
+2025-11-10,Chicken Strips,0
+2025-11-11,Chicken Strips,0
+2025-11-12,Chicken Strips,0
+2025-11-13,Chicken Strips,0
+2025-11-14,Chicken Strips,0
+2025-11-15,Chicken Strips,0
+2025-11-16,Chicken Strips,0
+2025-11-17,Chicken Strips,0
+2025-11-18,Chicken Strips,0
+2025-11-19,Chicken Strips,0
+2025-11-20,Chicken Strips,0
+2025-11-21,Chicken Strips,0
+2025-11-22,Chicken Strips,0
+2025-11-23,Chicken Strips,0
+2025-11-24,Chicken Strips,0
+2025-11-25,Chicken Strips,0
+2025-11-26,Chicken Strips,0
+2025-11-27,Chicken Strips,0
+2025-11-28,Chicken Strips,0
+2025-11-29,Chicken Strips,0
+2025-11-30,Chicken Strips,0
+2025-11-01,Chicken Waffles,0
+2025-11-02,Chicken Waffles,0
+2025-11-03,Chicken Waffles,0
+2025-11-04,Chicken Waffles,0
+2025-11-05,Chicken Waffles,0
+2025-11-06,Chicken Waffles,0
+2025-11-07,Chicken Waffles,0
+2025-11-08,Chicken Waffles,0
+2025-11-09,Chicken Waffles,0
+2025-11-10,Chicken Waffles,0
+2025-11-11,Chicken Waffles,0
+2025-11-12,Chicken Waffles,0
+2025-11-13,Chicken Waffles,0
+2025-11-14,Chicken Waffles,0
+2025-11-15,Chicken Waffles,0
+2025-11-16,Chicken Waffles,0
+2025-11-17,Chicken Waffles,0
+2025-11-18,Chicken Waffles,0
+2025-11-19,Chicken Waffles,0
+2025-11-20,Chicken Waffles,0
+2025-11-21,Chicken Waffles,0
+2025-11-22,Chicken Waffles,0
+2025-11-23,Chicken Waffles,0
+2025-11-24,Chicken Waffles,0
+2025-11-25,Chicken Waffles,0
+2025-11-26,Chicken Waffles,0
+2025-11-27,Chicken Waffles,0
+2025-11-28,Chicken Waffles,0
+2025-11-29,Chicken Waffles,0
+2025-11-30,Chicken Waffles,0
+2025-11-01,Chicken Wrap,5
+2025-11-02,Chicken Wrap,6
+2025-11-03,Chicken Wrap,6
+2025-11-04,Chicken Wrap,2
+2025-11-05,Chicken Wrap,2
+2025-11-06,Chicken Wrap,2
+2025-11-07,Chicken Wrap,3
+2025-11-08,Chicken Wrap,9
+2025-11-09,Chicken Wrap,4
+2025-11-10,Chicken Wrap,5
+2025-11-11,Chicken Wrap,5
+2025-11-12,Chicken Wrap,4
+2025-11-13,Chicken Wrap,4
+2025-11-14,Chicken Wrap,4
+2025-11-15,Chicken Wrap,1
+2025-11-16,Chicken Wrap,7
+2025-11-17,Chicken Wrap,3
+2025-11-18,Chicken Wrap,2
+2025-11-19,Chicken Wrap,3
+2025-11-20,Chicken Wrap,1
+2025-11-21,Chicken Wrap,1
+2025-11-22,Chicken Wrap,6
+2025-11-23,Chicken Wrap,4
+2025-11-24,Chicken Wrap,2
+2025-11-25,Chicken Wrap,5
+2025-11-26,Chicken Wrap,4
+2025-11-27,Chicken Wrap,3
+2025-11-28,Chicken Wrap,3
+2025-11-29,Chicken Wrap,4
+2025-11-30,Chicken Wrap,3
+2025-11-01,Chickn Rice Bowl,0
+2025-11-02,Chickn Rice Bowl,0
+2025-11-03,Chickn Rice Bowl,0
+2025-11-04,Chickn Rice Bowl,0
+2025-11-05,Chickn Rice Bowl,0
+2025-11-06,Chickn Rice Bowl,0
+2025-11-07,Chickn Rice Bowl,0
+2025-11-08,Chickn Rice Bowl,0
+2025-11-09,Chickn Rice Bowl,0
+2025-11-10,Chickn Rice Bowl,0
+2025-11-11,Chickn Rice Bowl,0
+2025-11-12,Chickn Rice Bowl,0
+2025-11-13,Chickn Rice Bowl,0
+2025-11-14,Chickn Rice Bowl,0
+2025-11-15,Chickn Rice Bowl,0
+2025-11-16,Chickn Rice Bowl,0
+2025-11-17,Chickn Rice Bowl,0
+2025-11-18,Chickn Rice Bowl,0
+2025-11-19,Chickn Rice Bowl,0
+2025-11-20,Chickn Rice Bowl,0
+2025-11-21,Chickn Rice Bowl,0
+2025-11-22,Chickn Rice Bowl,0
+2025-11-23,Chickn Rice Bowl,0
+2025-11-24,Chickn Rice Bowl,0
+2025-11-25,Chickn Rice Bowl,0
+2025-11-26,Chickn Rice Bowl,0
+2025-11-27,Chickn Rice Bowl,0
+2025-11-28,Chickn Rice Bowl,0
+2025-11-29,Chickn Rice Bowl,0
+2025-11-30,Chickn Rice Bowl,0
+2025-11-01,Chilli Carne JP,3
+2025-11-02,Chilli Carne JP,1
+2025-11-03,Chilli Carne JP,3
+2025-11-04,Chilli Carne JP,2
+2025-11-05,Chilli Carne JP,1
+2025-11-06,Chilli Carne JP,1
+2025-11-07,Chilli Carne JP,1
+2025-11-08,Chilli Carne JP,0
+2025-11-09,Chilli Carne JP,2
+2025-11-10,Chilli Carne JP,2
+2025-11-11,Chilli Carne JP,1
+2025-11-12,Chilli Carne JP,3
+2025-11-13,Chilli Carne JP,0
+2025-11-14,Chilli Carne JP,2
+2025-11-15,Chilli Carne JP,3
+2025-11-16,Chilli Carne JP,4
+2025-11-17,Chilli Carne JP,2
+2025-11-18,Chilli Carne JP,3
+2025-11-19,Chilli Carne JP,0
+2025-11-20,Chilli Carne JP,1
+2025-11-21,Chilli Carne JP,2
+2025-11-22,Chilli Carne JP,1
+2025-11-23,Chilli Carne JP,4
+2025-11-24,Chilli Carne JP,0
+2025-11-25,Chilli Carne JP,0
+2025-11-26,Chilli Carne JP,1
+2025-11-27,Chilli Carne JP,0
+2025-11-28,Chilli Carne JP,0
+2025-11-29,Chilli Carne JP,0
+2025-11-30,Chilli Carne JP,1
+2025-11-01,Chips,17
+2025-11-02,Chips,11
+2025-11-03,Chips,15
+2025-11-04,Chips,17
+2025-11-05,Chips,11
+2025-11-06,Chips,9
+2025-11-07,Chips,12
+2025-11-08,Chips,23
+2025-11-09,Chips,14
+2025-11-10,Chips,7
+2025-11-11,Chips,12
+2025-11-12,Chips,5
+2025-11-13,Chips,11
+2025-11-14,Chips,27
+2025-11-15,Chips,10
+2025-11-16,Chips,19
+2025-11-17,Chips,9
+2025-11-18,Chips,11
+2025-11-19,Chips,14
+2025-11-20,Chips,12
+2025-11-21,Chips,10
+2025-11-22,Chips,18
+2025-11-23,Chips,18
+2025-11-24,Chips,16
+2025-11-25,Chips,8
+2025-11-26,Chips,5
+2025-11-27,Chips,12
+2025-11-28,Chips,14
+2025-11-29,Chips,24
+2025-11-30,Chips,14
+2025-11-01,Chorizo,0
+2025-11-02,Chorizo,0
+2025-11-03,Chorizo,0
+2025-11-04,Chorizo,0
+2025-11-05,Chorizo,0
+2025-11-06,Chorizo,0
+2025-11-07,Chorizo,0
+2025-11-08,Chorizo,0
+2025-11-09,Chorizo,0
+2025-11-10,Chorizo,0
+2025-11-11,Chorizo,0
+2025-11-12,Chorizo,0
+2025-11-13,Chorizo,0
+2025-11-14,Chorizo,0
+2025-11-15,Chorizo,0
+2025-11-16,Chorizo,0
+2025-11-17,Chorizo,0
+2025-11-18,Chorizo,0
+2025-11-19,Chorizo,0
+2025-11-20,Chorizo,0
+2025-11-21,Chorizo,0
+2025-11-22,Chorizo,0
+2025-11-23,Chorizo,0
+2025-11-24,Chorizo,0
+2025-11-25,Chorizo,0
+2025-11-26,Chorizo,0
+2025-11-27,Chorizo,0
+2025-11-28,Chorizo,0
+2025-11-29,Chorizo,0
+2025-11-30,Chorizo,0
+2025-11-01,Chorizo & Eggs,0
+2025-11-02,Chorizo & Eggs,0
+2025-11-03,Chorizo & Eggs,0
+2025-11-04,Chorizo & Eggs,0
+2025-11-05,Chorizo & Eggs,0
+2025-11-06,Chorizo & Eggs,0
+2025-11-07,Chorizo & Eggs,0
+2025-11-08,Chorizo & Eggs,0
+2025-11-09,Chorizo & Eggs,0
+2025-11-10,Chorizo & Eggs,0
+2025-11-11,Chorizo & Eggs,0
+2025-11-12,Chorizo & Eggs,0
+2025-11-13,Chorizo & Eggs,0
+2025-11-14,Chorizo & Eggs,0
+2025-11-15,Chorizo & Eggs,0
+2025-11-16,Chorizo & Eggs,0
+2025-11-17,Chorizo & Eggs,0
+2025-11-18,Chorizo & Eggs,0
+2025-11-19,Chorizo & Eggs,0
+2025-11-20,Chorizo & Eggs,0
+2025-11-21,Chorizo & Eggs,0
+2025-11-22,Chorizo & Eggs,0
+2025-11-23,Chorizo & Eggs,0
+2025-11-24,Chorizo & Eggs,0
+2025-11-25,Chorizo & Eggs,0
+2025-11-26,Chorizo & Eggs,0
+2025-11-27,Chorizo & Eggs,0
+2025-11-28,Chorizo & Eggs,0
+2025-11-29,Chorizo & Eggs,0
+2025-11-30,Chorizo & Eggs,0
+2025-11-01,Chse Onion Tstie,12
+2025-11-02,Chse Onion Tstie,1
+2025-11-03,Chse Onion Tstie,5
+2025-11-04,Chse Onion Tstie,9
+2025-11-05,Chse Onion Tstie,3
+2025-11-06,Chse Onion Tstie,1
+2025-11-07,Chse Onion Tstie,3
+2025-11-08,Chse Onion Tstie,8
+2025-11-09,Chse Onion Tstie,1
+2025-11-10,Chse Onion Tstie,3
+2025-11-11,Chse Onion Tstie,3
+2025-11-12,Chse Onion Tstie,3
+2025-11-13,Chse Onion Tstie,7
+2025-11-14,Chse Onion Tstie,6
+2025-11-15,Chse Onion Tstie,2
+2025-11-16,Chse Onion Tstie,5
+2025-11-17,Chse Onion Tstie,3
+2025-11-18,Chse Onion Tstie,2
+2025-11-19,Chse Onion Tstie,1
+2025-11-20,Chse Onion Tstie,4
+2025-11-21,Chse Onion Tstie,5
+2025-11-22,Chse Onion Tstie,4
+2025-11-23,Chse Onion Tstie,1
+2025-11-24,Chse Onion Tstie,10
+2025-11-25,Chse Onion Tstie,1
+2025-11-26,Chse Onion Tstie,7
+2025-11-27,Chse Onion Tstie,2
+2025-11-28,Chse Onion Tstie,5
+2025-11-29,Chse Onion Tstie,6
+2025-11-30,Chse Onion Tstie,4
+2025-11-01,Chse Tom Toastie,0
+2025-11-02,Chse Tom Toastie,0
+2025-11-03,Chse Tom Toastie,0
+2025-11-04,Chse Tom Toastie,0
+2025-11-05,Chse Tom Toastie,0
+2025-11-06,Chse Tom Toastie,0
+2025-11-07,Chse Tom Toastie,0
+2025-11-08,Chse Tom Toastie,0
+2025-11-09,Chse Tom Toastie,0
+2025-11-10,Chse Tom Toastie,0
+2025-11-11,Chse Tom Toastie,0
+2025-11-12,Chse Tom Toastie,0
+2025-11-13,Chse Tom Toastie,0
+2025-11-14,Chse Tom Toastie,0
+2025-11-15,Chse Tom Toastie,0
+2025-11-16,Chse Tom Toastie,0
+2025-11-17,Chse Tom Toastie,0
+2025-11-18,Chse Tom Toastie,0
+2025-11-19,Chse Tom Toastie,0
+2025-11-20,Chse Tom Toastie,0
+2025-11-21,Chse Tom Toastie,0
+2025-11-22,Chse Tom Toastie,0
+2025-11-23,Chse Tom Toastie,0
+2025-11-24,Chse Tom Toastie,0
+2025-11-25,Chse Tom Toastie,0
+2025-11-26,Chse Tom Toastie,0
+2025-11-27,Chse Tom Toastie,0
+2025-11-28,Chse Tom Toastie,0
+2025-11-29,Chse Tom Toastie,0
+2025-11-30,Chse Tom Toastie,0
+2025-11-01,Cinnamon Dusting,0
+2025-11-02,Cinnamon Dusting,0
+2025-11-03,Cinnamon Dusting,0
+2025-11-04,Cinnamon Dusting,0
+2025-11-05,Cinnamon Dusting,0
+2025-11-06,Cinnamon Dusting,2
+2025-11-07,Cinnamon Dusting,0
+2025-11-08,Cinnamon Dusting,2
+2025-11-09,Cinnamon Dusting,0
+2025-11-10,Cinnamon Dusting,1
+2025-11-11,Cinnamon Dusting,1
+2025-11-12,Cinnamon Dusting,4
+2025-11-13,Cinnamon Dusting,1
+2025-11-14,Cinnamon Dusting,5
+2025-11-15,Cinnamon Dusting,2
+2025-11-16,Cinnamon Dusting,1
+2025-11-17,Cinnamon Dusting,2
+2025-11-18,Cinnamon Dusting,5
+2025-11-19,Cinnamon Dusting,1
+2025-11-20,Cinnamon Dusting,6
+2025-11-21,Cinnamon Dusting,2
+2025-11-22,Cinnamon Dusting,1
+2025-11-23,Cinnamon Dusting,3
+2025-11-24,Cinnamon Dusting,4
+2025-11-25,Cinnamon Dusting,2
+2025-11-26,Cinnamon Dusting,4
+2025-11-27,Cinnamon Dusting,3
+2025-11-28,Cinnamon Dusting,0
+2025-11-29,Cinnamon Dusting,0
+2025-11-30,Cinnamon Dusting,1
+2025-11-01,Clotted Cream,0
+2025-11-02,Clotted Cream,0
+2025-11-03,Clotted Cream,0
+2025-11-04,Clotted Cream,0
+2025-11-05,Clotted Cream,0
+2025-11-06,Clotted Cream,0
+2025-11-07,Clotted Cream,0
+2025-11-08,Clotted Cream,0
+2025-11-09,Clotted Cream,0
+2025-11-10,Clotted Cream,0
+2025-11-11,Clotted Cream,0
+2025-11-12,Clotted Cream,0
+2025-11-13,Clotted Cream,0
+2025-11-14,Clotted Cream,0
+2025-11-15,Clotted Cream,0
+2025-11-16,Clotted Cream,0
+2025-11-17,Clotted Cream,0
+2025-11-18,Clotted Cream,0
+2025-11-19,Clotted Cream,0
+2025-11-20,Clotted Cream,0
+2025-11-21,Clotted Cream,0
+2025-11-22,Clotted Cream,0
+2025-11-23,Clotted Cream,0
+2025-11-24,Clotted Cream,0
+2025-11-25,Clotted Cream,0
+2025-11-26,Clotted Cream,0
+2025-11-27,Clotted Cream,0
+2025-11-28,Clotted Cream,0
+2025-11-29,Clotted Cream,0
+2025-11-30,Clotted Cream,0
+2025-11-01,Coconut Kefir,0
+2025-11-02,Coconut Kefir,0
+2025-11-03,Coconut Kefir,0
+2025-11-04,Coconut Kefir,0
+2025-11-05,Coconut Kefir,0
+2025-11-06,Coconut Kefir,0
+2025-11-07,Coconut Kefir,0
+2025-11-08,Coconut Kefir,0
+2025-11-09,Coconut Kefir,0
+2025-11-10,Coconut Kefir,0
+2025-11-11,Coconut Kefir,0
+2025-11-12,Coconut Kefir,0
+2025-11-13,Coconut Kefir,0
+2025-11-14,Coconut Kefir,0
+2025-11-15,Coconut Kefir,0
+2025-11-16,Coconut Kefir,0
+2025-11-17,Coconut Kefir,0
+2025-11-18,Coconut Kefir,0
+2025-11-19,Coconut Kefir,0
+2025-11-20,Coconut Kefir,0
+2025-11-21,Coconut Kefir,0
+2025-11-22,Coconut Kefir,0
+2025-11-23,Coconut Kefir,0
+2025-11-24,Coconut Kefir,0
+2025-11-25,Coconut Kefir,0
+2025-11-26,Coconut Kefir,0
+2025-11-27,Coconut Kefir,0
+2025-11-28,Coconut Kefir,0
+2025-11-29,Coconut Kefir,0
+2025-11-30,Coconut Kefir,0
+2025-11-01,Coleslaw,0
+2025-11-02,Coleslaw,1
+2025-11-03,Coleslaw,0
+2025-11-04,Coleslaw,0
+2025-11-05,Coleslaw,0
+2025-11-06,Coleslaw,0
+2025-11-07,Coleslaw,2
+2025-11-08,Coleslaw,0
+2025-11-09,Coleslaw,0
+2025-11-10,Coleslaw,0
+2025-11-11,Coleslaw,0
+2025-11-12,Coleslaw,0
+2025-11-13,Coleslaw,0
+2025-11-14,Coleslaw,0
+2025-11-15,Coleslaw,0
+2025-11-16,Coleslaw,0
+2025-11-17,Coleslaw,0
+2025-11-18,Coleslaw,0
+2025-11-19,Coleslaw,0
+2025-11-20,Coleslaw,0
+2025-11-21,Coleslaw,0
+2025-11-22,Coleslaw,0
+2025-11-23,Coleslaw,0
+2025-11-24,Coleslaw,0
+2025-11-25,Coleslaw,0
+2025-11-26,Coleslaw,0
+2025-11-27,Coleslaw,0
+2025-11-28,Coleslaw,0
+2025-11-29,Coleslaw,1
+2025-11-30,Coleslaw,0
+2025-11-01,Cream,5
+2025-11-02,Cream,0
+2025-11-03,Cream,0
+2025-11-04,Cream,0
+2025-11-05,Cream,2
+2025-11-06,Cream,1
+2025-11-07,Cream,2
+2025-11-08,Cream,4
+2025-11-09,Cream,4
+2025-11-10,Cream,0
+2025-11-11,Cream,0
+2025-11-12,Cream,6
+2025-11-13,Cream,1
+2025-11-14,Cream,4
+2025-11-15,Cream,3
+2025-11-16,Cream,5
+2025-11-17,Cream,6
+2025-11-18,Cream,3
+2025-11-19,Cream,0
+2025-11-20,Cream,8
+2025-11-21,Cream,7
+2025-11-22,Cream,3
+2025-11-23,Cream,8
+2025-11-24,Cream,4
+2025-11-25,Cream,2
+2025-11-26,Cream,0
+2025-11-27,Cream,4
+2025-11-28,Cream,5
+2025-11-29,Cream,4
+2025-11-30,Cream,3
+2025-11-01,DairyFree Butter,0
+2025-11-02,DairyFree Butter,0
+2025-11-03,DairyFree Butter,0
+2025-11-04,DairyFree Butter,0
+2025-11-05,DairyFree Butter,0
+2025-11-06,DairyFree Butter,0
+2025-11-07,DairyFree Butter,0
+2025-11-08,DairyFree Butter,0
+2025-11-09,DairyFree Butter,1
+2025-11-10,DairyFree Butter,0
+2025-11-11,DairyFree Butter,0
+2025-11-12,DairyFree Butter,0
+2025-11-13,DairyFree Butter,0
+2025-11-14,DairyFree Butter,0
+2025-11-15,DairyFree Butter,0
+2025-11-16,DairyFree Butter,0
+2025-11-17,DairyFree Butter,0
+2025-11-18,DairyFree Butter,0
+2025-11-19,DairyFree Butter,0
+2025-11-20,DairyFree Butter,0
+2025-11-21,DairyFree Butter,0
+2025-11-22,DairyFree Butter,0
+2025-11-23,DairyFree Butter,0
+2025-11-24,DairyFree Butter,0
+2025-11-25,DairyFree Butter,0
+2025-11-26,DairyFree Butter,0
+2025-11-27,DairyFree Butter,0
+2025-11-28,DairyFree Butter,0
+2025-11-29,DairyFree Butter,0
+2025-11-30,DairyFree Butter,0
+2025-11-01,Deli Bagel,0
+2025-11-02,Deli Bagel,0
+2025-11-03,Deli Bagel,0
+2025-11-04,Deli Bagel,0
+2025-11-05,Deli Bagel,0
+2025-11-06,Deli Bagel,0
+2025-11-07,Deli Bagel,0
+2025-11-08,Deli Bagel,0
+2025-11-09,Deli Bagel,0
+2025-11-10,Deli Bagel,0
+2025-11-11,Deli Bagel,0
+2025-11-12,Deli Bagel,0
+2025-11-13,Deli Bagel,0
+2025-11-14,Deli Bagel,0
+2025-11-15,Deli Bagel,0
+2025-11-16,Deli Bagel,0
+2025-11-17,Deli Bagel,0
+2025-11-18,Deli Bagel,0
+2025-11-19,Deli Bagel,0
+2025-11-20,Deli Bagel,0
+2025-11-21,Deli Bagel,0
+2025-11-22,Deli Bagel,0
+2025-11-23,Deli Bagel,0
+2025-11-24,Deli Bagel,0
+2025-11-25,Deli Bagel,0
+2025-11-26,Deli Bagel,0
+2025-11-27,Deli Bagel,0
+2025-11-28,Deli Bagel,0
+2025-11-29,Deli Bagel,0
+2025-11-30,Deli Bagel,0
+2025-11-01,Egg Bacon Brioch,0
+2025-11-02,Egg Bacon Brioch,0
+2025-11-03,Egg Bacon Brioch,0
+2025-11-04,Egg Bacon Brioch,0
+2025-11-05,Egg Bacon Brioch,0
+2025-11-06,Egg Bacon Brioch,0
+2025-11-07,Egg Bacon Brioch,0
+2025-11-08,Egg Bacon Brioch,0
+2025-11-09,Egg Bacon Brioch,0
+2025-11-10,Egg Bacon Brioch,0
+2025-11-11,Egg Bacon Brioch,0
+2025-11-12,Egg Bacon Brioch,0
+2025-11-13,Egg Bacon Brioch,0
+2025-11-14,Egg Bacon Brioch,0
+2025-11-15,Egg Bacon Brioch,0
+2025-11-16,Egg Bacon Brioch,0
+2025-11-17,Egg Bacon Brioch,0
+2025-11-18,Egg Bacon Brioch,0
+2025-11-19,Egg Bacon Brioch,0
+2025-11-20,Egg Bacon Brioch,0
+2025-11-21,Egg Bacon Brioch,0
+2025-11-22,Egg Bacon Brioch,0
+2025-11-23,Egg Bacon Brioch,0
+2025-11-24,Egg Bacon Brioch,0
+2025-11-25,Egg Bacon Brioch,0
+2025-11-26,Egg Bacon Brioch,0
+2025-11-27,Egg Bacon Brioch,0
+2025-11-28,Egg Bacon Brioch,0
+2025-11-29,Egg Bacon Brioch,0
+2025-11-30,Egg Bacon Brioch,0
+2025-11-01,Egg Bap,1
+2025-11-02,Egg Bap,0
+2025-11-03,Egg Bap,3
+2025-11-04,Egg Bap,1
+2025-11-05,Egg Bap,1
+2025-11-06,Egg Bap,3
+2025-11-07,Egg Bap,2
+2025-11-08,Egg Bap,1
+2025-11-09,Egg Bap,1
+2025-11-10,Egg Bap,1
+2025-11-11,Egg Bap,2
+2025-11-12,Egg Bap,0
+2025-11-13,Egg Bap,4
+2025-11-14,Egg Bap,0
+2025-11-15,Egg Bap,6
+2025-11-16,Egg Bap,2
+2025-11-17,Egg Bap,1
+2025-11-18,Egg Bap,0
+2025-11-19,Egg Bap,0
+2025-11-20,Egg Bap,4
+2025-11-21,Egg Bap,2
+2025-11-22,Egg Bap,5
+2025-11-23,Egg Bap,0
+2025-11-24,Egg Bap,1
+2025-11-25,Egg Bap,0
+2025-11-26,Egg Bap,2
+2025-11-27,Egg Bap,2
+2025-11-28,Egg Bap,1
+2025-11-29,Egg Bap,3
+2025-11-30,Egg Bap,1
+2025-11-01,Egg Soldiers,3
+2025-11-02,Egg Soldiers,1
+2025-11-03,Egg Soldiers,0
+2025-11-04,Egg Soldiers,0
+2025-11-05,Egg Soldiers,0
+2025-11-06,Egg Soldiers,0
+2025-11-07,Egg Soldiers,0
+2025-11-08,Egg Soldiers,1
+2025-11-09,Egg Soldiers,0
+2025-11-10,Egg Soldiers,0
+2025-11-11,Egg Soldiers,0
+2025-11-12,Egg Soldiers,0
+2025-11-13,Egg Soldiers,0
+2025-11-14,Egg Soldiers,0
+2025-11-15,Egg Soldiers,0
+2025-11-16,Egg Soldiers,1
+2025-11-17,Egg Soldiers,0
+2025-11-18,Egg Soldiers,0
+2025-11-19,Egg Soldiers,0
+2025-11-20,Egg Soldiers,0
+2025-11-21,Egg Soldiers,0
+2025-11-22,Egg Soldiers,1
+2025-11-23,Egg Soldiers,0
+2025-11-24,Egg Soldiers,0
+2025-11-25,Egg Soldiers,0
+2025-11-26,Egg Soldiers,0
+2025-11-27,Egg Soldiers,0
+2025-11-28,Egg Soldiers,0
+2025-11-29,Egg Soldiers,1
+2025-11-30,Egg Soldiers,0
+2025-11-01,Extra Beans,0
+2025-11-02,Extra Beans,0
+2025-11-03,Extra Beans,0
+2025-11-04,Extra Beans,0
+2025-11-05,Extra Beans,0
+2025-11-06,Extra Beans,0
+2025-11-07,Extra Beans,0
+2025-11-08,Extra Beans,0
+2025-11-09,Extra Beans,0
+2025-11-10,Extra Beans,0
+2025-11-11,Extra Beans,0
+2025-11-12,Extra Beans,0
+2025-11-13,Extra Beans,0
+2025-11-14,Extra Beans,0
+2025-11-15,Extra Beans,0
+2025-11-16,Extra Beans,0
+2025-11-17,Extra Beans,0
+2025-11-18,Extra Beans,0
+2025-11-19,Extra Beans,0
+2025-11-20,Extra Beans,0
+2025-11-21,Extra Beans,0
+2025-11-22,Extra Beans,0
+2025-11-23,Extra Beans,0
+2025-11-24,Extra Beans,0
+2025-11-25,Extra Beans,0
+2025-11-26,Extra Beans,0
+2025-11-27,Extra Beans,0
+2025-11-28,Extra Beans,0
+2025-11-29,Extra Beans,0
+2025-11-30,Extra Beans,0
+2025-11-01,Extra Tuna,0
+2025-11-02,Extra Tuna,0
+2025-11-03,Extra Tuna,0
+2025-11-04,Extra Tuna,1
+2025-11-05,Extra Tuna,0
+2025-11-06,Extra Tuna,0
+2025-11-07,Extra Tuna,0
+2025-11-08,Extra Tuna,1
+2025-11-09,Extra Tuna,0
+2025-11-10,Extra Tuna,0
+2025-11-11,Extra Tuna,0
+2025-11-12,Extra Tuna,0
+2025-11-13,Extra Tuna,0
+2025-11-14,Extra Tuna,0
+2025-11-15,Extra Tuna,0
+2025-11-16,Extra Tuna,0
+2025-11-17,Extra Tuna,0
+2025-11-18,Extra Tuna,0
+2025-11-19,Extra Tuna,0
+2025-11-20,Extra Tuna,0
+2025-11-21,Extra Tuna,0
+2025-11-22,Extra Tuna,0
+2025-11-23,Extra Tuna,0
+2025-11-24,Extra Tuna,0
+2025-11-25,Extra Tuna,0
+2025-11-26,Extra Tuna,0
+2025-11-27,Extra Tuna,0
+2025-11-28,Extra Tuna,0
+2025-11-29,Extra Tuna,0
+2025-11-30,Extra Tuna,0
+2025-11-01,F.Eggs on Toast,2
+2025-11-02,F.Eggs on Toast,3
+2025-11-03,F.Eggs on Toast,1
+2025-11-04,F.Eggs on Toast,0
+2025-11-05,F.Eggs on Toast,1
+2025-11-06,F.Eggs on Toast,0
+2025-11-07,F.Eggs on Toast,0
+2025-11-08,F.Eggs on Toast,1
+2025-11-09,F.Eggs on Toast,4
+2025-11-10,F.Eggs on Toast,0
+2025-11-11,F.Eggs on Toast,0
+2025-11-12,F.Eggs on Toast,2
+2025-11-13,F.Eggs on Toast,2
+2025-11-14,F.Eggs on Toast,2
+2025-11-15,F.Eggs on Toast,6
+2025-11-16,F.Eggs on Toast,0
+2025-11-17,F.Eggs on Toast,1
+2025-11-18,F.Eggs on Toast,1
+2025-11-19,F.Eggs on Toast,2
+2025-11-20,F.Eggs on Toast,1
+2025-11-21,F.Eggs on Toast,3
+2025-11-22,F.Eggs on Toast,3
+2025-11-23,F.Eggs on Toast,2
+2025-11-24,F.Eggs on Toast,2
+2025-11-25,F.Eggs on Toast,1
+2025-11-26,F.Eggs on Toast,3
+2025-11-27,F.Eggs on Toast,2
+2025-11-28,F.Eggs on Toast,4
+2025-11-29,F.Eggs on Toast,1
+2025-11-30,F.Eggs on Toast,0
+2025-11-01,Fest Plough Foca,0
+2025-11-02,Fest Plough Foca,0
+2025-11-03,Fest Plough Foca,0
+2025-11-04,Fest Plough Foca,0
+2025-11-05,Fest Plough Foca,0
+2025-11-06,Fest Plough Foca,0
+2025-11-07,Fest Plough Foca,0
+2025-11-08,Fest Plough Foca,0
+2025-11-09,Fest Plough Foca,0
+2025-11-10,Fest Plough Foca,0
+2025-11-11,Fest Plough Foca,0
+2025-11-12,Fest Plough Foca,0
+2025-11-13,Fest Plough Foca,1
+2025-11-14,Fest Plough Foca,1
+2025-11-15,Fest Plough Foca,0
+2025-11-16,Fest Plough Foca,0
+2025-11-17,Fest Plough Foca,1
+2025-11-18,Fest Plough Foca,2
+2025-11-19,Fest Plough Foca,1
+2025-11-20,Fest Plough Foca,0
+2025-11-21,Fest Plough Foca,1
+2025-11-22,Fest Plough Foca,3
+2025-11-23,Fest Plough Foca,1
+2025-11-24,Fest Plough Foca,2
+2025-11-25,Fest Plough Foca,0
+2025-11-26,Fest Plough Foca,1
+2025-11-27,Fest Plough Foca,2
+2025-11-28,Fest Plough Foca,0
+2025-11-29,Fest Plough Foca,2
+2025-11-30,Fest Plough Foca,0
+2025-11-01,Festive Stack,0
+2025-11-02,Festive Stack,0
+2025-11-03,Festive Stack,0
+2025-11-04,Festive Stack,0
+2025-11-05,Festive Stack,0
+2025-11-06,Festive Stack,0
+2025-11-07,Festive Stack,0
+2025-11-08,Festive Stack,0
+2025-11-09,Festive Stack,0
+2025-11-10,Festive Stack,0
+2025-11-11,Festive Stack,0
+2025-11-12,Festive Stack,7
+2025-11-13,Festive Stack,5
+2025-11-14,Festive Stack,8
+2025-11-15,Festive Stack,6
+2025-11-16,Festive Stack,7
+2025-11-17,Festive Stack,3
+2025-11-18,Festive Stack,3
+2025-11-19,Festive Stack,2
+2025-11-20,Festive Stack,1
+2025-11-21,Festive Stack,3
+2025-11-22,Festive Stack,3
+2025-11-23,Festive Stack,4
+2025-11-24,Festive Stack,4
+2025-11-25,Festive Stack,1
+2025-11-26,Festive Stack,2
+2025-11-27,Festive Stack,8
+2025-11-28,Festive Stack,3
+2025-11-29,Festive Stack,6
+2025-11-30,Festive Stack,3
+2025-11-01,Finest FSC,0
+2025-11-02,Finest FSC,0
+2025-11-03,Finest FSC,0
+2025-11-04,Finest FSC,0
+2025-11-05,Finest FSC,0
+2025-11-06,Finest FSC,0
+2025-11-07,Finest FSC,0
+2025-11-08,Finest FSC,0
+2025-11-09,Finest FSC,0
+2025-11-10,Finest FSC,0
+2025-11-11,Finest FSC,0
+2025-11-12,Finest FSC,0
+2025-11-13,Finest FSC,0
+2025-11-14,Finest FSC,0
+2025-11-15,Finest FSC,0
+2025-11-16,Finest FSC,0
+2025-11-17,Finest FSC,0
+2025-11-18,Finest FSC,0
+2025-11-19,Finest FSC,0
+2025-11-20,Finest FSC,0
+2025-11-21,Finest FSC,0
+2025-11-22,Finest FSC,0
+2025-11-23,Finest FSC,0
+2025-11-24,Finest FSC,0
+2025-11-25,Finest FSC,0
+2025-11-26,Finest FSC,0
+2025-11-27,Finest FSC,0
+2025-11-28,Finest FSC,0
+2025-11-29,Finest FSC,0
+2025-11-30,Finest FSC,0
+2025-11-01,Fish & Chips,7
+2025-11-02,Fish & Chips,5
+2025-11-03,Fish & Chips,2
+2025-11-04,Fish & Chips,2
+2025-11-05,Fish & Chips,2
+2025-11-06,Fish & Chips,3
+2025-11-07,Fish & Chips,9
+2025-11-08,Fish & Chips,3
+2025-11-09,Fish & Chips,4
+2025-11-10,Fish & Chips,1
+2025-11-11,Fish & Chips,3
+2025-11-12,Fish & Chips,2
+2025-11-13,Fish & Chips,1
+2025-11-14,Fish & Chips,7
+2025-11-15,Fish & Chips,5
+2025-11-16,Fish & Chips,6
+2025-11-17,Fish & Chips,6
+2025-11-18,Fish & Chips,1
+2025-11-19,Fish & Chips,1
+2025-11-20,Fish & Chips,3
+2025-11-21,Fish & Chips,5
+2025-11-22,Fish & Chips,3
+2025-11-23,Fish & Chips,4
+2025-11-24,Fish & Chips,3
+2025-11-25,Fish & Chips,7
+2025-11-26,Fish & Chips,5
+2025-11-27,Fish & Chips,4
+2025-11-28,Fish & Chips,4
+2025-11-29,Fish & Chips,3
+2025-11-30,Fish & Chips,5
+2025-11-01,Fish Fing Roll,0
+2025-11-02,Fish Fing Roll,0
+2025-11-03,Fish Fing Roll,0
+2025-11-04,Fish Fing Roll,0
+2025-11-05,Fish Fing Roll,0
+2025-11-06,Fish Fing Roll,0
+2025-11-07,Fish Fing Roll,0
+2025-11-08,Fish Fing Roll,0
+2025-11-09,Fish Fing Roll,0
+2025-11-10,Fish Fing Roll,0
+2025-11-11,Fish Fing Roll,0
+2025-11-12,Fish Fing Roll,0
+2025-11-13,Fish Fing Roll,0
+2025-11-14,Fish Fing Roll,0
+2025-11-15,Fish Fing Roll,0
+2025-11-16,Fish Fing Roll,0
+2025-11-17,Fish Fing Roll,0
+2025-11-18,Fish Fing Roll,0
+2025-11-19,Fish Fing Roll,0
+2025-11-20,Fish Fing Roll,0
+2025-11-21,Fish Fing Roll,0
+2025-11-22,Fish Fing Roll,0
+2025-11-23,Fish Fing Roll,0
+2025-11-24,Fish Fing Roll,0
+2025-11-25,Fish Fing Roll,0
+2025-11-26,Fish Fing Roll,0
+2025-11-27,Fish Fing Roll,0
+2025-11-28,Fish Fing Roll,0
+2025-11-29,Fish Fing Roll,0
+2025-11-30,Fish Fing Roll,0
+2025-11-01,Fish Finger Wrap,3
+2025-11-02,Fish Finger Wrap,1
+2025-11-03,Fish Finger Wrap,0
+2025-11-04,Fish Finger Wrap,1
+2025-11-05,Fish Finger Wrap,3
+2025-11-06,Fish Finger Wrap,0
+2025-11-07,Fish Finger Wrap,1
+2025-11-08,Fish Finger Wrap,0
+2025-11-09,Fish Finger Wrap,3
+2025-11-10,Fish Finger Wrap,1
+2025-11-11,Fish Finger Wrap,0
+2025-11-12,Fish Finger Wrap,4
+2025-11-13,Fish Finger Wrap,1
+2025-11-14,Fish Finger Wrap,1
+2025-11-15,Fish Finger Wrap,2
+2025-11-16,Fish Finger Wrap,1
+2025-11-17,Fish Finger Wrap,0
+2025-11-18,Fish Finger Wrap,2
+2025-11-19,Fish Finger Wrap,1
+2025-11-20,Fish Finger Wrap,4
+2025-11-21,Fish Finger Wrap,3
+2025-11-22,Fish Finger Wrap,3
+2025-11-23,Fish Finger Wrap,2
+2025-11-24,Fish Finger Wrap,0
+2025-11-25,Fish Finger Wrap,2
+2025-11-26,Fish Finger Wrap,2
+2025-11-27,Fish Finger Wrap,2
+2025-11-28,Fish Finger Wrap,1
+2025-11-29,Fish Finger Wrap,0
+2025-11-30,Fish Finger Wrap,2
+2025-11-01,Fish Fingers,1
+2025-11-02,Fish Fingers,4
+2025-11-03,Fish Fingers,1
+2025-11-04,Fish Fingers,2
+2025-11-05,Fish Fingers,0
+2025-11-06,Fish Fingers,1
+2025-11-07,Fish Fingers,0
+2025-11-08,Fish Fingers,5
+2025-11-09,Fish Fingers,3
+2025-11-10,Fish Fingers,1
+2025-11-11,Fish Fingers,2
+2025-11-12,Fish Fingers,1
+2025-11-13,Fish Fingers,0
+2025-11-14,Fish Fingers,5
+2025-11-15,Fish Fingers,4
+2025-11-16,Fish Fingers,0
+2025-11-17,Fish Fingers,0
+2025-11-18,Fish Fingers,0
+2025-11-19,Fish Fingers,1
+2025-11-20,Fish Fingers,2
+2025-11-21,Fish Fingers,2
+2025-11-22,Fish Fingers,0
+2025-11-23,Fish Fingers,0
+2025-11-24,Fish Fingers,0
+2025-11-25,Fish Fingers,1
+2025-11-26,Fish Fingers,0
+2025-11-27,Fish Fingers,4
+2025-11-28,Fish Fingers,0
+2025-11-29,Fish Fingers,3
+2025-11-30,Fish Fingers,0
+2025-11-01,Fried Egg,10
+2025-11-02,Fried Egg,11
+2025-11-03,Fried Egg,3
+2025-11-04,Fried Egg,6
+2025-11-05,Fried Egg,4
+2025-11-06,Fried Egg,3
+2025-11-07,Fried Egg,11
+2025-11-08,Fried Egg,12
+2025-11-09,Fried Egg,7
+2025-11-10,Fried Egg,2
+2025-11-11,Fried Egg,11
+2025-11-12,Fried Egg,9
+2025-11-13,Fried Egg,9
+2025-11-14,Fried Egg,14
+2025-11-15,Fried Egg,11
+2025-11-16,Fried Egg,15
+2025-11-17,Fried Egg,13
+2025-11-18,Fried Egg,8
+2025-11-19,Fried Egg,2
+2025-11-20,Fried Egg,11
+2025-11-21,Fried Egg,9
+2025-11-22,Fried Egg,10
+2025-11-23,Fried Egg,14
+2025-11-24,Fried Egg,11
+2025-11-25,Fried Egg,3
+2025-11-26,Fried Egg,3
+2025-11-27,Fried Egg,5
+2025-11-28,Fried Egg,9
+2025-11-29,Fried Egg,5
+2025-11-30,Fried Egg,18
+2025-11-01,Garlic Bread,5
+2025-11-02,Garlic Bread,2
+2025-11-03,Garlic Bread,2
+2025-11-04,Garlic Bread,0
+2025-11-05,Garlic Bread,1
+2025-11-06,Garlic Bread,1
+2025-11-07,Garlic Bread,0
+2025-11-08,Garlic Bread,2
+2025-11-09,Garlic Bread,3
+2025-11-10,Garlic Bread,1
+2025-11-11,Garlic Bread,2
+2025-11-12,Garlic Bread,0
+2025-11-13,Garlic Bread,2
+2025-11-14,Garlic Bread,1
+2025-11-15,Garlic Bread,3
+2025-11-16,Garlic Bread,0
+2025-11-17,Garlic Bread,0
+2025-11-18,Garlic Bread,3
+2025-11-19,Garlic Bread,0
+2025-11-20,Garlic Bread,0
+2025-11-21,Garlic Bread,1
+2025-11-22,Garlic Bread,0
+2025-11-23,Garlic Bread,0
+2025-11-24,Garlic Bread,1
+2025-11-25,Garlic Bread,1
+2025-11-26,Garlic Bread,0
+2025-11-27,Garlic Bread,0
+2025-11-28,Garlic Bread,0
+2025-11-29,Garlic Bread,2
+2025-11-30,Garlic Bread,2
+2025-11-01,Gingbread Syrup,0
+2025-11-02,Gingbread Syrup,0
+2025-11-03,Gingbread Syrup,0
+2025-11-04,Gingbread Syrup,0
+2025-11-05,Gingbread Syrup,0
+2025-11-06,Gingbread Syrup,0
+2025-11-07,Gingbread Syrup,0
+2025-11-08,Gingbread Syrup,0
+2025-11-09,Gingbread Syrup,0
+2025-11-10,Gingbread Syrup,0
+2025-11-11,Gingbread Syrup,0
+2025-11-12,Gingbread Syrup,0
+2025-11-13,Gingbread Syrup,0
+2025-11-14,Gingbread Syrup,0
+2025-11-15,Gingbread Syrup,0
+2025-11-16,Gingbread Syrup,0
+2025-11-17,Gingbread Syrup,0
+2025-11-18,Gingbread Syrup,0
+2025-11-19,Gingbread Syrup,0
+2025-11-20,Gingbread Syrup,0
+2025-11-21,Gingbread Syrup,0
+2025-11-22,Gingbread Syrup,0
+2025-11-23,Gingbread Syrup,0
+2025-11-24,Gingbread Syrup,0
+2025-11-25,Gingbread Syrup,0
+2025-11-26,Gingbread Syrup,0
+2025-11-27,Gingbread Syrup,0
+2025-11-28,Gingbread Syrup,0
+2025-11-29,Gingbread Syrup,0
+2025-11-30,Gingbread Syrup,0
+2025-11-01,Goat Chse Panini,0
+2025-11-02,Goat Chse Panini,0
+2025-11-03,Goat Chse Panini,0
+2025-11-04,Goat Chse Panini,0
+2025-11-05,Goat Chse Panini,0
+2025-11-06,Goat Chse Panini,0
+2025-11-07,Goat Chse Panini,0
+2025-11-08,Goat Chse Panini,0
+2025-11-09,Goat Chse Panini,0
+2025-11-10,Goat Chse Panini,0
+2025-11-11,Goat Chse Panini,0
+2025-11-12,Goat Chse Panini,0
+2025-11-13,Goat Chse Panini,0
+2025-11-14,Goat Chse Panini,0
+2025-11-15,Goat Chse Panini,0
+2025-11-16,Goat Chse Panini,0
+2025-11-17,Goat Chse Panini,0
+2025-11-18,Goat Chse Panini,0
+2025-11-19,Goat Chse Panini,0
+2025-11-20,Goat Chse Panini,0
+2025-11-21,Goat Chse Panini,0
+2025-11-22,Goat Chse Panini,0
+2025-11-23,Goat Chse Panini,0
+2025-11-24,Goat Chse Panini,0
+2025-11-25,Goat Chse Panini,0
+2025-11-26,Goat Chse Panini,0
+2025-11-27,Goat Chse Panini,0
+2025-11-28,Goat Chse Panini,0
+2025-11-29,Goat Chse Panini,0
+2025-11-30,Goat Chse Panini,0
+2025-11-01,Goats Ch Toastie,0
+2025-11-02,Goats Ch Toastie,0
+2025-11-03,Goats Ch Toastie,0
+2025-11-04,Goats Ch Toastie,0
+2025-11-05,Goats Ch Toastie,0
+2025-11-06,Goats Ch Toastie,0
+2025-11-07,Goats Ch Toastie,0
+2025-11-08,Goats Ch Toastie,0
+2025-11-09,Goats Ch Toastie,0
+2025-11-10,Goats Ch Toastie,0
+2025-11-11,Goats Ch Toastie,0
+2025-11-12,Goats Ch Toastie,0
+2025-11-13,Goats Ch Toastie,0
+2025-11-14,Goats Ch Toastie,0
+2025-11-15,Goats Ch Toastie,0
+2025-11-16,Goats Ch Toastie,0
+2025-11-17,Goats Ch Toastie,0
+2025-11-18,Goats Ch Toastie,0
+2025-11-19,Goats Ch Toastie,0
+2025-11-20,Goats Ch Toastie,0
+2025-11-21,Goats Ch Toastie,0
+2025-11-22,Goats Ch Toastie,0
+2025-11-23,Goats Ch Toastie,0
+2025-11-24,Goats Ch Toastie,0
+2025-11-25,Goats Ch Toastie,0
+2025-11-26,Goats Ch Toastie,0
+2025-11-27,Goats Ch Toastie,0
+2025-11-28,Goats Ch Toastie,0
+2025-11-29,Goats Ch Toastie,0
+2025-11-30,Goats Ch Toastie,0
+2025-11-01,Goats Onion Foca,0
+2025-11-02,Goats Onion Foca,0
+2025-11-03,Goats Onion Foca,0
+2025-11-04,Goats Onion Foca,0
+2025-11-05,Goats Onion Foca,0
+2025-11-06,Goats Onion Foca,0
+2025-11-07,Goats Onion Foca,0
+2025-11-08,Goats Onion Foca,0
+2025-11-09,Goats Onion Foca,0
+2025-11-10,Goats Onion Foca,0
+2025-11-11,Goats Onion Foca,0
+2025-11-12,Goats Onion Foca,0
+2025-11-13,Goats Onion Foca,0
+2025-11-14,Goats Onion Foca,0
+2025-11-15,Goats Onion Foca,0
+2025-11-16,Goats Onion Foca,0
+2025-11-17,Goats Onion Foca,0
+2025-11-18,Goats Onion Foca,0
+2025-11-19,Goats Onion Foca,0
+2025-11-20,Goats Onion Foca,0
+2025-11-21,Goats Onion Foca,0
+2025-11-22,Goats Onion Foca,0
+2025-11-23,Goats Onion Foca,0
+2025-11-24,Goats Onion Foca,0
+2025-11-25,Goats Onion Foca,0
+2025-11-26,Goats Onion Foca,0
+2025-11-27,Goats Onion Foca,0
+2025-11-28,Goats Onion Foca,0
+2025-11-29,Goats Onion Foca,0
+2025-11-30,Goats Onion Foca,0
+2025-11-01,Granola Bowl,0
+2025-11-02,Granola Bowl,0
+2025-11-03,Granola Bowl,1
+2025-11-04,Granola Bowl,1
+2025-11-05,Granola Bowl,0
+2025-11-06,Granola Bowl,1
+2025-11-07,Granola Bowl,3
+2025-11-08,Granola Bowl,4
+2025-11-09,Granola Bowl,1
+2025-11-10,Granola Bowl,0
+2025-11-11,Granola Bowl,1
+2025-11-12,Granola Bowl,1
+2025-11-13,Granola Bowl,0
+2025-11-14,Granola Bowl,0
+2025-11-15,Granola Bowl,1
+2025-11-16,Granola Bowl,3
+2025-11-17,Granola Bowl,1
+2025-11-18,Granola Bowl,0
+2025-11-19,Granola Bowl,1
+2025-11-20,Granola Bowl,1
+2025-11-21,Granola Bowl,0
+2025-11-22,Granola Bowl,2
+2025-11-23,Granola Bowl,0
+2025-11-24,Granola Bowl,1
+2025-11-25,Granola Bowl,0
+2025-11-26,Granola Bowl,1
+2025-11-27,Granola Bowl,0
+2025-11-28,Granola Bowl,0
+2025-11-29,Granola Bowl,1
+2025-11-30,Granola Bowl,1
+2025-11-01,Granola Waffle,0
+2025-11-02,Granola Waffle,0
+2025-11-03,Granola Waffle,0
+2025-11-04,Granola Waffle,0
+2025-11-05,Granola Waffle,0
+2025-11-06,Granola Waffle,0
+2025-11-07,Granola Waffle,0
+2025-11-08,Granola Waffle,0
+2025-11-09,Granola Waffle,0
+2025-11-10,Granola Waffle,0
+2025-11-11,Granola Waffle,0
+2025-11-12,Granola Waffle,0
+2025-11-13,Granola Waffle,0
+2025-11-14,Granola Waffle,0
+2025-11-15,Granola Waffle,0
+2025-11-16,Granola Waffle,0
+2025-11-17,Granola Waffle,0
+2025-11-18,Granola Waffle,0
+2025-11-19,Granola Waffle,0
+2025-11-20,Granola Waffle,0
+2025-11-21,Granola Waffle,0
+2025-11-22,Granola Waffle,0
+2025-11-23,Granola Waffle,0
+2025-11-24,Granola Waffle,0
+2025-11-25,Granola Waffle,0
+2025-11-26,Granola Waffle,0
+2025-11-27,Granola Waffle,0
+2025-11-28,Granola Waffle,0
+2025-11-29,Granola Waffle,0
+2025-11-30,Granola Waffle,0
+2025-11-01,Gravy,0
+2025-11-02,Gravy,0
+2025-11-03,Gravy,1
+2025-11-04,Gravy,0
+2025-11-05,Gravy,0
+2025-11-06,Gravy,0
+2025-11-07,Gravy,0
+2025-11-08,Gravy,0
+2025-11-09,Gravy,0
+2025-11-10,Gravy,0
+2025-11-11,Gravy,0
+2025-11-12,Gravy,0
+2025-11-13,Gravy,2
+2025-11-14,Gravy,0
+2025-11-15,Gravy,0
+2025-11-16,Gravy,0
+2025-11-17,Gravy,0
+2025-11-18,Gravy,0
+2025-11-19,Gravy,0
+2025-11-20,Gravy,0
+2025-11-21,Gravy,0
+2025-11-22,Gravy,0
+2025-11-23,Gravy,0
+2025-11-24,Gravy,0
+2025-11-25,Gravy,0
+2025-11-26,Gravy,0
+2025-11-27,Gravy,0
+2025-11-28,Gravy,0
+2025-11-29,Gravy,0
+2025-11-30,Gravy,0
+2025-11-01,Halloumi,0
+2025-11-02,Halloumi,0
+2025-11-03,Halloumi,1
+2025-11-04,Halloumi,0
+2025-11-05,Halloumi,0
+2025-11-06,Halloumi,1
+2025-11-07,Halloumi,0
+2025-11-08,Halloumi,1
+2025-11-09,Halloumi,0
+2025-11-10,Halloumi,0
+2025-11-11,Halloumi,0
+2025-11-12,Halloumi,0
+2025-11-13,Halloumi,0
+2025-11-14,Halloumi,0
+2025-11-15,Halloumi,0
+2025-11-16,Halloumi,1
+2025-11-17,Halloumi,0
+2025-11-18,Halloumi,0
+2025-11-19,Halloumi,0
+2025-11-20,Halloumi,0
+2025-11-21,Halloumi,0
+2025-11-22,Halloumi,0
+2025-11-23,Halloumi,0
+2025-11-24,Halloumi,0
+2025-11-25,Halloumi,0
+2025-11-26,Halloumi,0
+2025-11-27,Halloumi,0
+2025-11-28,Halloumi,0
+2025-11-29,Halloumi,0
+2025-11-30,Halloumi,0
+2025-11-01,Halloumi Bowl,0
+2025-11-02,Halloumi Bowl,1
+2025-11-03,Halloumi Bowl,0
+2025-11-04,Halloumi Bowl,1
+2025-11-05,Halloumi Bowl,0
+2025-11-06,Halloumi Bowl,0
+2025-11-07,Halloumi Bowl,0
+2025-11-08,Halloumi Bowl,0
+2025-11-09,Halloumi Bowl,0
+2025-11-10,Halloumi Bowl,0
+2025-11-11,Halloumi Bowl,0
+2025-11-12,Halloumi Bowl,0
+2025-11-13,Halloumi Bowl,0
+2025-11-14,Halloumi Bowl,0
+2025-11-15,Halloumi Bowl,1
+2025-11-16,Halloumi Bowl,0
+2025-11-17,Halloumi Bowl,0
+2025-11-18,Halloumi Bowl,0
+2025-11-19,Halloumi Bowl,0
+2025-11-20,Halloumi Bowl,0
+2025-11-21,Halloumi Bowl,0
+2025-11-22,Halloumi Bowl,0
+2025-11-23,Halloumi Bowl,0
+2025-11-24,Halloumi Bowl,0
+2025-11-25,Halloumi Bowl,0
+2025-11-26,Halloumi Bowl,0
+2025-11-27,Halloumi Bowl,0
+2025-11-28,Halloumi Bowl,0
+2025-11-29,Halloumi Bowl,0
+2025-11-30,Halloumi Bowl,0
+2025-11-01,Halloumi Burger,2
+2025-11-02,Halloumi Burger,1
+2025-11-03,Halloumi Burger,1
+2025-11-04,Halloumi Burger,0
+2025-11-05,Halloumi Burger,3
+2025-11-06,Halloumi Burger,0
+2025-11-07,Halloumi Burger,1
+2025-11-08,Halloumi Burger,2
+2025-11-09,Halloumi Burger,2
+2025-11-10,Halloumi Burger,3
+2025-11-11,Halloumi Burger,1
+2025-11-12,Halloumi Burger,1
+2025-11-13,Halloumi Burger,0
+2025-11-14,Halloumi Burger,4
+2025-11-15,Halloumi Burger,0
+2025-11-16,Halloumi Burger,1
+2025-11-17,Halloumi Burger,1
+2025-11-18,Halloumi Burger,2
+2025-11-19,Halloumi Burger,0
+2025-11-20,Halloumi Burger,1
+2025-11-21,Halloumi Burger,2
+2025-11-22,Halloumi Burger,5
+2025-11-23,Halloumi Burger,0
+2025-11-24,Halloumi Burger,3
+2025-11-25,Halloumi Burger,1
+2025-11-26,Halloumi Burger,1
+2025-11-27,Halloumi Burger,5
+2025-11-28,Halloumi Burger,3
+2025-11-29,Halloumi Burger,7
+2025-11-30,Halloumi Burger,0
+2025-11-01,Halloumi Rice,0
+2025-11-02,Halloumi Rice,0
+2025-11-03,Halloumi Rice,0
+2025-11-04,Halloumi Rice,0
+2025-11-05,Halloumi Rice,0
+2025-11-06,Halloumi Rice,0
+2025-11-07,Halloumi Rice,0
+2025-11-08,Halloumi Rice,0
+2025-11-09,Halloumi Rice,0
+2025-11-10,Halloumi Rice,0
+2025-11-11,Halloumi Rice,0
+2025-11-12,Halloumi Rice,0
+2025-11-13,Halloumi Rice,0
+2025-11-14,Halloumi Rice,0
+2025-11-15,Halloumi Rice,0
+2025-11-16,Halloumi Rice,0
+2025-11-17,Halloumi Rice,0
+2025-11-18,Halloumi Rice,0
+2025-11-19,Halloumi Rice,0
+2025-11-20,Halloumi Rice,0
+2025-11-21,Halloumi Rice,0
+2025-11-22,Halloumi Rice,0
+2025-11-23,Halloumi Rice,0
+2025-11-24,Halloumi Rice,0
+2025-11-25,Halloumi Rice,0
+2025-11-26,Halloumi Rice,0
+2025-11-27,Halloumi Rice,0
+2025-11-28,Halloumi Rice,0
+2025-11-29,Halloumi Rice,0
+2025-11-30,Halloumi Rice,0
+2025-11-01,Ham Chse Crios,0
+2025-11-02,Ham Chse Crios,0
+2025-11-03,Ham Chse Crios,0
+2025-11-04,Ham Chse Crios,0
+2025-11-05,Ham Chse Crios,0
+2025-11-06,Ham Chse Crios,0
+2025-11-07,Ham Chse Crios,0
+2025-11-08,Ham Chse Crios,0
+2025-11-09,Ham Chse Crios,0
+2025-11-10,Ham Chse Crios,0
+2025-11-11,Ham Chse Crios,0
+2025-11-12,Ham Chse Crios,0
+2025-11-13,Ham Chse Crios,0
+2025-11-14,Ham Chse Crios,0
+2025-11-15,Ham Chse Crios,0
+2025-11-16,Ham Chse Crios,0
+2025-11-17,Ham Chse Crios,0
+2025-11-18,Ham Chse Crios,0
+2025-11-19,Ham Chse Crios,0
+2025-11-20,Ham Chse Crios,0
+2025-11-21,Ham Chse Crios,0
+2025-11-22,Ham Chse Crios,0
+2025-11-23,Ham Chse Crios,0
+2025-11-24,Ham Chse Crios,0
+2025-11-25,Ham Chse Crios,0
+2025-11-26,Ham Chse Crios,0
+2025-11-27,Ham Chse Crios,0
+2025-11-28,Ham Chse Crios,0
+2025-11-29,Ham Chse Crios,0
+2025-11-30,Ham Chse Crios,0
+2025-11-01,Ham Chse Crois,0
+2025-11-02,Ham Chse Crois,0
+2025-11-03,Ham Chse Crois,0
+2025-11-04,Ham Chse Crois,0
+2025-11-05,Ham Chse Crois,0
+2025-11-06,Ham Chse Crois,0
+2025-11-07,Ham Chse Crois,0
+2025-11-08,Ham Chse Crois,0
+2025-11-09,Ham Chse Crois,0
+2025-11-10,Ham Chse Crois,0
+2025-11-11,Ham Chse Crois,0
+2025-11-12,Ham Chse Crois,0
+2025-11-13,Ham Chse Crois,0
+2025-11-14,Ham Chse Crois,0
+2025-11-15,Ham Chse Crois,0
+2025-11-16,Ham Chse Crois,0
+2025-11-17,Ham Chse Crois,0
+2025-11-18,Ham Chse Crois,0
+2025-11-19,Ham Chse Crois,0
+2025-11-20,Ham Chse Crois,0
+2025-11-21,Ham Chse Crois,0
+2025-11-22,Ham Chse Crois,0
+2025-11-23,Ham Chse Crois,0
+2025-11-24,Ham Chse Crois,0
+2025-11-25,Ham Chse Crois,0
+2025-11-26,Ham Chse Crois,0
+2025-11-27,Ham Chse Crois,0
+2025-11-28,Ham Chse Crois,0
+2025-11-29,Ham Chse Crois,0
+2025-11-30,Ham Chse Crois,0
+2025-11-01,Ham Chse Panini,0
+2025-11-02,Ham Chse Panini,0
+2025-11-03,Ham Chse Panini,0
+2025-11-04,Ham Chse Panini,0
+2025-11-05,Ham Chse Panini,0
+2025-11-06,Ham Chse Panini,0
+2025-11-07,Ham Chse Panini,0
+2025-11-08,Ham Chse Panini,0
+2025-11-09,Ham Chse Panini,0
+2025-11-10,Ham Chse Panini,0
+2025-11-11,Ham Chse Panini,0
+2025-11-12,Ham Chse Panini,0
+2025-11-13,Ham Chse Panini,0
+2025-11-14,Ham Chse Panini,0
+2025-11-15,Ham Chse Panini,0
+2025-11-16,Ham Chse Panini,0
+2025-11-17,Ham Chse Panini,0
+2025-11-18,Ham Chse Panini,0
+2025-11-19,Ham Chse Panini,0
+2025-11-20,Ham Chse Panini,0
+2025-11-21,Ham Chse Panini,0
+2025-11-22,Ham Chse Panini,0
+2025-11-23,Ham Chse Panini,0
+2025-11-24,Ham Chse Panini,0
+2025-11-25,Ham Chse Panini,0
+2025-11-26,Ham Chse Panini,0
+2025-11-27,Ham Chse Panini,0
+2025-11-28,Ham Chse Panini,0
+2025-11-29,Ham Chse Panini,0
+2025-11-30,Ham Chse Panini,0
+2025-11-01,Ham Chse Toastie,12
+2025-11-02,Ham Chse Toastie,7
+2025-11-03,Ham Chse Toastie,11
+2025-11-04,Ham Chse Toastie,8
+2025-11-05,Ham Chse Toastie,8
+2025-11-06,Ham Chse Toastie,9
+2025-11-07,Ham Chse Toastie,16
+2025-11-08,Ham Chse Toastie,14
+2025-11-09,Ham Chse Toastie,5
+2025-11-10,Ham Chse Toastie,7
+2025-11-11,Ham Chse Toastie,17
+2025-11-12,Ham Chse Toastie,12
+2025-11-13,Ham Chse Toastie,9
+2025-11-14,Ham Chse Toastie,12
+2025-11-15,Ham Chse Toastie,8
+2025-11-16,Ham Chse Toastie,6
+2025-11-17,Ham Chse Toastie,7
+2025-11-18,Ham Chse Toastie,9
+2025-11-19,Ham Chse Toastie,9
+2025-11-20,Ham Chse Toastie,7
+2025-11-21,Ham Chse Toastie,9
+2025-11-22,Ham Chse Toastie,5
+2025-11-23,Ham Chse Toastie,9
+2025-11-24,Ham Chse Toastie,5
+2025-11-25,Ham Chse Toastie,11
+2025-11-26,Ham Chse Toastie,11
+2025-11-27,Ham Chse Toastie,6
+2025-11-28,Ham Chse Toastie,10
+2025-11-29,Ham Chse Toastie,9
+2025-11-30,Ham Chse Toastie,13
+2025-11-01,Ham Egg Stk Roll,0
+2025-11-02,Ham Egg Stk Roll,0
+2025-11-03,Ham Egg Stk Roll,0
+2025-11-04,Ham Egg Stk Roll,0
+2025-11-05,Ham Egg Stk Roll,0
+2025-11-06,Ham Egg Stk Roll,0
+2025-11-07,Ham Egg Stk Roll,0
+2025-11-08,Ham Egg Stk Roll,0
+2025-11-09,Ham Egg Stk Roll,0
+2025-11-10,Ham Egg Stk Roll,0
+2025-11-11,Ham Egg Stk Roll,0
+2025-11-12,Ham Egg Stk Roll,0
+2025-11-13,Ham Egg Stk Roll,0
+2025-11-14,Ham Egg Stk Roll,0
+2025-11-15,Ham Egg Stk Roll,0
+2025-11-16,Ham Egg Stk Roll,0
+2025-11-17,Ham Egg Stk Roll,0
+2025-11-18,Ham Egg Stk Roll,0
+2025-11-19,Ham Egg Stk Roll,0
+2025-11-20,Ham Egg Stk Roll,0
+2025-11-21,Ham Egg Stk Roll,0
+2025-11-22,Ham Egg Stk Roll,0
+2025-11-23,Ham Egg Stk Roll,0
+2025-11-24,Ham Egg Stk Roll,0
+2025-11-25,Ham Egg Stk Roll,0
+2025-11-26,Ham Egg Stk Roll,0
+2025-11-27,Ham Egg Stk Roll,0
+2025-11-28,Ham Egg Stk Roll,0
+2025-11-29,Ham Egg Stk Roll,0
+2025-11-30,Ham Egg Stk Roll,0
+2025-11-01,Ham Sand PnM,1
+2025-11-02,Ham Sand PnM,1
+2025-11-03,Ham Sand PnM,0
+2025-11-04,Ham Sand PnM,1
+2025-11-05,Ham Sand PnM,1
+2025-11-06,Ham Sand PnM,2
+2025-11-07,Ham Sand PnM,1
+2025-11-08,Ham Sand PnM,4
+2025-11-09,Ham Sand PnM,4
+2025-11-10,Ham Sand PnM,1
+2025-11-11,Ham Sand PnM,2
+2025-11-12,Ham Sand PnM,2
+2025-11-13,Ham Sand PnM,1
+2025-11-14,Ham Sand PnM,6
+2025-11-15,Ham Sand PnM,3
+2025-11-16,Ham Sand PnM,4
+2025-11-17,Ham Sand PnM,0
+2025-11-18,Ham Sand PnM,0
+2025-11-19,Ham Sand PnM,1
+2025-11-20,Ham Sand PnM,2
+2025-11-21,Ham Sand PnM,2
+2025-11-22,Ham Sand PnM,2
+2025-11-23,Ham Sand PnM,4
+2025-11-24,Ham Sand PnM,2
+2025-11-25,Ham Sand PnM,0
+2025-11-26,Ham Sand PnM,1
+2025-11-27,Ham Sand PnM,1
+2025-11-28,Ham Sand PnM,5
+2025-11-29,Ham Sand PnM,5
+2025-11-30,Ham Sand PnM,4
+2025-11-01,Ham Sandwich,0
+2025-11-02,Ham Sandwich,0
+2025-11-03,Ham Sandwich,0
+2025-11-04,Ham Sandwich,0
+2025-11-05,Ham Sandwich,1
+2025-11-06,Ham Sandwich,0
+2025-11-07,Ham Sandwich,0
+2025-11-08,Ham Sandwich,1
+2025-11-09,Ham Sandwich,0
+2025-11-10,Ham Sandwich,1
+2025-11-11,Ham Sandwich,1
+2025-11-12,Ham Sandwich,1
+2025-11-13,Ham Sandwich,0
+2025-11-14,Ham Sandwich,1
+2025-11-15,Ham Sandwich,1
+2025-11-16,Ham Sandwich,0
+2025-11-17,Ham Sandwich,0
+2025-11-18,Ham Sandwich,0
+2025-11-19,Ham Sandwich,1
+2025-11-20,Ham Sandwich,0
+2025-11-21,Ham Sandwich,0
+2025-11-22,Ham Sandwich,0
+2025-11-23,Ham Sandwich,0
+2025-11-24,Ham Sandwich,2
+2025-11-25,Ham Sandwich,0
+2025-11-26,Ham Sandwich,1
+2025-11-27,Ham Sandwich,0
+2025-11-28,Ham Sandwich,0
+2025-11-29,Ham Sandwich,1
+2025-11-30,Ham Sandwich,0
+2025-11-01,Hash Brown,4
+2025-11-02,Hash Brown,5
+2025-11-03,Hash Brown,3
+2025-11-04,Hash Brown,4
+2025-11-05,Hash Brown,2
+2025-11-06,Hash Brown,2
+2025-11-07,Hash Brown,5
+2025-11-08,Hash Brown,3
+2025-11-09,Hash Brown,5
+2025-11-10,Hash Brown,0
+2025-11-11,Hash Brown,4
+2025-11-12,Hash Brown,4
+2025-11-13,Hash Brown,5
+2025-11-14,Hash Brown,2
+2025-11-15,Hash Brown,3
+2025-11-16,Hash Brown,3
+2025-11-17,Hash Brown,4
+2025-11-18,Hash Brown,0
+2025-11-19,Hash Brown,2
+2025-11-20,Hash Brown,2
+2025-11-21,Hash Brown,5
+2025-11-22,Hash Brown,2
+2025-11-23,Hash Brown,2
+2025-11-24,Hash Brown,8
+2025-11-25,Hash Brown,4
+2025-11-26,Hash Brown,0
+2025-11-27,Hash Brown,0
+2025-11-28,Hash Brown,0
+2025-11-29,Hash Brown,3
+2025-11-30,Hash Brown,2
+2025-11-01,Hash Brown Bites,0
+2025-11-02,Hash Brown Bites,0
+2025-11-03,Hash Brown Bites,0
+2025-11-04,Hash Brown Bites,0
+2025-11-05,Hash Brown Bites,0
+2025-11-06,Hash Brown Bites,0
+2025-11-07,Hash Brown Bites,0
+2025-11-08,Hash Brown Bites,0
+2025-11-09,Hash Brown Bites,0
+2025-11-10,Hash Brown Bites,0
+2025-11-11,Hash Brown Bites,0
+2025-11-12,Hash Brown Bites,0
+2025-11-13,Hash Brown Bites,0
+2025-11-14,Hash Brown Bites,0
+2025-11-15,Hash Brown Bites,0
+2025-11-16,Hash Brown Bites,0
+2025-11-17,Hash Brown Bites,0
+2025-11-18,Hash Brown Bites,0
+2025-11-19,Hash Brown Bites,0
+2025-11-20,Hash Brown Bites,0
+2025-11-21,Hash Brown Bites,0
+2025-11-22,Hash Brown Bites,0
+2025-11-23,Hash Brown Bites,0
+2025-11-24,Hash Brown Bites,0
+2025-11-25,Hash Brown Bites,0
+2025-11-26,Hash Brown Bites,0
+2025-11-27,Hash Brown Bites,0
+2025-11-28,Hash Brown Bites,0
+2025-11-29,Hash Brown Bites,0
+2025-11-30,Hash Brown Bites,0
+2025-11-01,Honey Chick Wrap,7
+2025-11-02,Honey Chick Wrap,4
+2025-11-03,Honey Chick Wrap,8
+2025-11-04,Honey Chick Wrap,2
+2025-11-05,Honey Chick Wrap,4
+2025-11-06,Honey Chick Wrap,5
+2025-11-07,Honey Chick Wrap,4
+2025-11-08,Honey Chick Wrap,2
+2025-11-09,Honey Chick Wrap,5
+2025-11-10,Honey Chick Wrap,6
+2025-11-11,Honey Chick Wrap,1
+2025-11-12,Honey Chick Wrap,2
+2025-11-13,Honey Chick Wrap,2
+2025-11-14,Honey Chick Wrap,4
+2025-11-15,Honey Chick Wrap,3
+2025-11-16,Honey Chick Wrap,7
+2025-11-17,Honey Chick Wrap,6
+2025-11-18,Honey Chick Wrap,1
+2025-11-19,Honey Chick Wrap,0
+2025-11-20,Honey Chick Wrap,4
+2025-11-21,Honey Chick Wrap,2
+2025-11-22,Honey Chick Wrap,7
+2025-11-23,Honey Chick Wrap,2
+2025-11-24,Honey Chick Wrap,3
+2025-11-25,Honey Chick Wrap,1
+2025-11-26,Honey Chick Wrap,2
+2025-11-27,Honey Chick Wrap,3
+2025-11-28,Honey Chick Wrap,3
+2025-11-29,Honey Chick Wrap,2
+2025-11-30,Honey Chick Wrap,5
+2025-11-01,Hot Cross Bun,0
+2025-11-02,Hot Cross Bun,0
+2025-11-03,Hot Cross Bun,0
+2025-11-04,Hot Cross Bun,0
+2025-11-05,Hot Cross Bun,0
+2025-11-06,Hot Cross Bun,0
+2025-11-07,Hot Cross Bun,0
+2025-11-08,Hot Cross Bun,0
+2025-11-09,Hot Cross Bun,0
+2025-11-10,Hot Cross Bun,0
+2025-11-11,Hot Cross Bun,0
+2025-11-12,Hot Cross Bun,0
+2025-11-13,Hot Cross Bun,0
+2025-11-14,Hot Cross Bun,0
+2025-11-15,Hot Cross Bun,0
+2025-11-16,Hot Cross Bun,0
+2025-11-17,Hot Cross Bun,0
+2025-11-18,Hot Cross Bun,0
+2025-11-19,Hot Cross Bun,0
+2025-11-20,Hot Cross Bun,0
+2025-11-21,Hot Cross Bun,0
+2025-11-22,Hot Cross Bun,0
+2025-11-23,Hot Cross Bun,0
+2025-11-24,Hot Cross Bun,0
+2025-11-25,Hot Cross Bun,0
+2025-11-26,Hot Cross Bun,0
+2025-11-27,Hot Cross Bun,0
+2025-11-28,Hot Cross Bun,0
+2025-11-29,Hot Cross Bun,0
+2025-11-30,Hot Cross Bun,0
+2025-11-01,Hot Drinks,318
+2025-11-02,Hot Drinks,280
+2025-11-03,Hot Drinks,247
+2025-11-04,Hot Drinks,262
+2025-11-05,Hot Drinks,205
+2025-11-06,Hot Drinks,249
+2025-11-07,Hot Drinks,282
+2025-11-08,Hot Drinks,275
+2025-11-09,Hot Drinks,272
+2025-11-10,Hot Drinks,184
+2025-11-11,Hot Drinks,245
+2025-11-12,Hot Drinks,248
+2025-11-13,Hot Drinks,244
+2025-11-14,Hot Drinks,277
+2025-11-15,Hot Drinks,285
+2025-11-16,Hot Drinks,272
+2025-11-17,Hot Drinks,277
+2025-11-18,Hot Drinks,227
+2025-11-19,Hot Drinks,171
+2025-11-20,Hot Drinks,212
+2025-11-21,Hot Drinks,284
+2025-11-22,Hot Drinks,285
+2025-11-23,Hot Drinks,288
+2025-11-24,Hot Drinks,258
+2025-11-25,Hot Drinks,259
+2025-11-26,Hot Drinks,266
+2025-11-27,Hot Drinks,271
+2025-11-28,Hot Drinks,279
+2025-11-29,Hot Drinks,297
+2025-11-30,Hot Drinks,286
+2025-11-01,Ice Cream Sundae,0
+2025-11-02,Ice Cream Sundae,0
+2025-11-03,Ice Cream Sundae,0
+2025-11-04,Ice Cream Sundae,0
+2025-11-05,Ice Cream Sundae,0
+2025-11-06,Ice Cream Sundae,0
+2025-11-07,Ice Cream Sundae,0
+2025-11-08,Ice Cream Sundae,0
+2025-11-09,Ice Cream Sundae,0
+2025-11-10,Ice Cream Sundae,0
+2025-11-11,Ice Cream Sundae,0
+2025-11-12,Ice Cream Sundae,0
+2025-11-13,Ice Cream Sundae,0
+2025-11-14,Ice Cream Sundae,0
+2025-11-15,Ice Cream Sundae,0
+2025-11-16,Ice Cream Sundae,0
+2025-11-17,Ice Cream Sundae,0
+2025-11-18,Ice Cream Sundae,0
+2025-11-19,Ice Cream Sundae,0
+2025-11-20,Ice Cream Sundae,0
+2025-11-21,Ice Cream Sundae,0
+2025-11-22,Ice Cream Sundae,0
+2025-11-23,Ice Cream Sundae,0
+2025-11-24,Ice Cream Sundae,0
+2025-11-25,Ice Cream Sundae,0
+2025-11-26,Ice Cream Sundae,0
+2025-11-27,Ice Cream Sundae,0
+2025-11-28,Ice Cream Sundae,0
+2025-11-29,Ice Cream Sundae,0
+2025-11-30,Ice Cream Sundae,0
+2025-11-01,Ice Drinks,29
+2025-11-02,Ice Drinks,30
+2025-11-03,Ice Drinks,15
+2025-11-04,Ice Drinks,14
+2025-11-05,Ice Drinks,9
+2025-11-06,Ice Drinks,13
+2025-11-07,Ice Drinks,21
+2025-11-08,Ice Drinks,29
+2025-11-09,Ice Drinks,16
+2025-11-10,Ice Drinks,11
+2025-11-11,Ice Drinks,18
+2025-11-12,Ice Drinks,10
+2025-11-13,Ice Drinks,11
+2025-11-14,Ice Drinks,16
+2025-11-15,Ice Drinks,19
+2025-11-16,Ice Drinks,13
+2025-11-17,Ice Drinks,12
+2025-11-18,Ice Drinks,11
+2025-11-19,Ice Drinks,5
+2025-11-20,Ice Drinks,9
+2025-11-21,Ice Drinks,15
+2025-11-22,Ice Drinks,22
+2025-11-23,Ice Drinks,13
+2025-11-24,Ice Drinks,16
+2025-11-25,Ice Drinks,12
+2025-11-26,Ice Drinks,11
+2025-11-27,Ice Drinks,11
+2025-11-28,Ice Drinks,13
+2025-11-29,Ice Drinks,27
+2025-11-30,Ice Drinks,22
+2025-11-01,Italian Bagel,0
+2025-11-02,Italian Bagel,0
+2025-11-03,Italian Bagel,0
+2025-11-04,Italian Bagel,0
+2025-11-05,Italian Bagel,0
+2025-11-06,Italian Bagel,0
+2025-11-07,Italian Bagel,0
+2025-11-08,Italian Bagel,0
+2025-11-09,Italian Bagel,0
+2025-11-10,Italian Bagel,0
+2025-11-11,Italian Bagel,0
+2025-11-12,Italian Bagel,0
+2025-11-13,Italian Bagel,0
+2025-11-14,Italian Bagel,0
+2025-11-15,Italian Bagel,0
+2025-11-16,Italian Bagel,0
+2025-11-17,Italian Bagel,0
+2025-11-18,Italian Bagel,0
+2025-11-19,Italian Bagel,0
+2025-11-20,Italian Bagel,0
+2025-11-21,Italian Bagel,0
+2025-11-22,Italian Bagel,0
+2025-11-23,Italian Bagel,0
+2025-11-24,Italian Bagel,0
+2025-11-25,Italian Bagel,0
+2025-11-26,Italian Bagel,0
+2025-11-27,Italian Bagel,0
+2025-11-28,Italian Bagel,0
+2025-11-29,Italian Bagel,0
+2025-11-30,Italian Bagel,0
+2025-11-01,Italian Foccacia,0
+2025-11-02,Italian Foccacia,0
+2025-11-03,Italian Foccacia,0
+2025-11-04,Italian Foccacia,0
+2025-11-05,Italian Foccacia,0
+2025-11-06,Italian Foccacia,0
+2025-11-07,Italian Foccacia,0
+2025-11-08,Italian Foccacia,0
+2025-11-09,Italian Foccacia,0
+2025-11-10,Italian Foccacia,0
+2025-11-11,Italian Foccacia,0
+2025-11-12,Italian Foccacia,0
+2025-11-13,Italian Foccacia,0
+2025-11-14,Italian Foccacia,0
+2025-11-15,Italian Foccacia,0
+2025-11-16,Italian Foccacia,0
+2025-11-17,Italian Foccacia,0
+2025-11-18,Italian Foccacia,0
+2025-11-19,Italian Foccacia,0
+2025-11-20,Italian Foccacia,0
+2025-11-21,Italian Foccacia,0
+2025-11-22,Italian Foccacia,0
+2025-11-23,Italian Foccacia,0
+2025-11-24,Italian Foccacia,0
+2025-11-25,Italian Foccacia,0
+2025-11-26,Italian Foccacia,0
+2025-11-27,Italian Foccacia,0
+2025-11-28,Italian Foccacia,0
+2025-11-29,Italian Foccacia,0
+2025-11-30,Italian Foccacia,0
+2025-11-01,Jacket Potato,0
+2025-11-02,Jacket Potato,0
+2025-11-03,Jacket Potato,0
+2025-11-04,Jacket Potato,0
+2025-11-05,Jacket Potato,0
+2025-11-06,Jacket Potato,0
+2025-11-07,Jacket Potato,0
+2025-11-08,Jacket Potato,0
+2025-11-09,Jacket Potato,0
+2025-11-10,Jacket Potato,0
+2025-11-11,Jacket Potato,0
+2025-11-12,Jacket Potato,0
+2025-11-13,Jacket Potato,0
+2025-11-14,Jacket Potato,0
+2025-11-15,Jacket Potato,0
+2025-11-16,Jacket Potato,0
+2025-11-17,Jacket Potato,0
+2025-11-18,Jacket Potato,0
+2025-11-19,Jacket Potato,0
+2025-11-20,Jacket Potato,0
+2025-11-21,Jacket Potato,0
+2025-11-22,Jacket Potato,0
+2025-11-23,Jacket Potato,0
+2025-11-24,Jacket Potato,0
+2025-11-25,Jacket Potato,0
+2025-11-26,Jacket Potato,0
+2025-11-27,Jacket Potato,0
+2025-11-28,Jacket Potato,0
+2025-11-29,Jacket Potato,0
+2025-11-30,Jacket Potato,0
+2025-11-01,Jams,16
+2025-11-02,Jams,10
+2025-11-03,Jams,26
+2025-11-04,Jams,20
+2025-11-05,Jams,11
+2025-11-06,Jams,15
+2025-11-07,Jams,19
+2025-11-08,Jams,8
+2025-11-09,Jams,7
+2025-11-10,Jams,19
+2025-11-11,Jams,24
+2025-11-12,Jams,14
+2025-11-13,Jams,17
+2025-11-14,Jams,13
+2025-11-15,Jams,8
+2025-11-16,Jams,13
+2025-11-17,Jams,18
+2025-11-18,Jams,22
+2025-11-19,Jams,19
+2025-11-20,Jams,11
+2025-11-21,Jams,17
+2025-11-22,Jams,13
+2025-11-23,Jams,4
+2025-11-24,Jams,14
+2025-11-25,Jams,26
+2025-11-26,Jams,14
+2025-11-27,Jams,19
+2025-11-28,Jams,15
+2025-11-29,Jams,16
+2025-11-30,Jams,11
+2025-11-01,Katsu Rice Bowl,0
+2025-11-02,Katsu Rice Bowl,0
+2025-11-03,Katsu Rice Bowl,0
+2025-11-04,Katsu Rice Bowl,0
+2025-11-05,Katsu Rice Bowl,0
+2025-11-06,Katsu Rice Bowl,0
+2025-11-07,Katsu Rice Bowl,0
+2025-11-08,Katsu Rice Bowl,0
+2025-11-09,Katsu Rice Bowl,0
+2025-11-10,Katsu Rice Bowl,0
+2025-11-11,Katsu Rice Bowl,0
+2025-11-12,Katsu Rice Bowl,0
+2025-11-13,Katsu Rice Bowl,0
+2025-11-14,Katsu Rice Bowl,0
+2025-11-15,Katsu Rice Bowl,0
+2025-11-16,Katsu Rice Bowl,0
+2025-11-17,Katsu Rice Bowl,0
+2025-11-18,Katsu Rice Bowl,0
+2025-11-19,Katsu Rice Bowl,0
+2025-11-20,Katsu Rice Bowl,0
+2025-11-21,Katsu Rice Bowl,0
+2025-11-22,Katsu Rice Bowl,0
+2025-11-23,Katsu Rice Bowl,0
+2025-11-24,Katsu Rice Bowl,0
+2025-11-25,Katsu Rice Bowl,0
+2025-11-26,Katsu Rice Bowl,0
+2025-11-27,Katsu Rice Bowl,0
+2025-11-28,Katsu Rice Bowl,0
+2025-11-29,Katsu Rice Bowl,0
+2025-11-30,Katsu Rice Bowl,0
+2025-11-01,Katsu Wrap,0
+2025-11-02,Katsu Wrap,0
+2025-11-03,Katsu Wrap,0
+2025-11-04,Katsu Wrap,0
+2025-11-05,Katsu Wrap,0
+2025-11-06,Katsu Wrap,0
+2025-11-07,Katsu Wrap,0
+2025-11-08,Katsu Wrap,0
+2025-11-09,Katsu Wrap,0
+2025-11-10,Katsu Wrap,0
+2025-11-11,Katsu Wrap,0
+2025-11-12,Katsu Wrap,0
+2025-11-13,Katsu Wrap,0
+2025-11-14,Katsu Wrap,0
+2025-11-15,Katsu Wrap,0
+2025-11-16,Katsu Wrap,0
+2025-11-17,Katsu Wrap,0
+2025-11-18,Katsu Wrap,0
+2025-11-19,Katsu Wrap,0
+2025-11-20,Katsu Wrap,0
+2025-11-21,Katsu Wrap,0
+2025-11-22,Katsu Wrap,0
+2025-11-23,Katsu Wrap,0
+2025-11-24,Katsu Wrap,0
+2025-11-25,Katsu Wrap,0
+2025-11-26,Katsu Wrap,0
+2025-11-27,Katsu Wrap,0
+2025-11-28,Katsu Wrap,0
+2025-11-29,Katsu Wrap,0
+2025-11-30,Katsu Wrap,0
+2025-11-01,Kid Chick Strips,8
+2025-11-02,Kid Chick Strips,5
+2025-11-03,Kid Chick Strips,3
+2025-11-04,Kid Chick Strips,2
+2025-11-05,Kid Chick Strips,0
+2025-11-06,Kid Chick Strips,3
+2025-11-07,Kid Chick Strips,0
+2025-11-08,Kid Chick Strips,3
+2025-11-09,Kid Chick Strips,8
+2025-11-10,Kid Chick Strips,4
+2025-11-11,Kid Chick Strips,3
+2025-11-12,Kid Chick Strips,0
+2025-11-13,Kid Chick Strips,2
+2025-11-14,Kid Chick Strips,1
+2025-11-15,Kid Chick Strips,1
+2025-11-16,Kid Chick Strips,1
+2025-11-17,Kid Chick Strips,2
+2025-11-18,Kid Chick Strips,2
+2025-11-19,Kid Chick Strips,2
+2025-11-20,Kid Chick Strips,1
+2025-11-21,Kid Chick Strips,0
+2025-11-22,Kid Chick Strips,6
+2025-11-23,Kid Chick Strips,3
+2025-11-24,Kid Chick Strips,2
+2025-11-25,Kid Chick Strips,0
+2025-11-26,Kid Chick Strips,3
+2025-11-27,Kid Chick Strips,2
+2025-11-28,Kid Chick Strips,1
+2025-11-29,Kid Chick Strips,5
+2025-11-30,Kid Chick Strips,3
+2025-11-01,Kids Banana,0
+2025-11-02,Kids Banana,0
+2025-11-03,Kids Banana,0
+2025-11-04,Kids Banana,1
+2025-11-05,Kids Banana,1
+2025-11-06,Kids Banana,1
+2025-11-07,Kids Banana,0
+2025-11-08,Kids Banana,1
+2025-11-09,Kids Banana,0
+2025-11-10,Kids Banana,0
+2025-11-11,Kids Banana,1
+2025-11-12,Kids Banana,1
+2025-11-13,Kids Banana,0
+2025-11-14,Kids Banana,0
+2025-11-15,Kids Banana,0
+2025-11-16,Kids Banana,2
+2025-11-17,Kids Banana,0
+2025-11-18,Kids Banana,0
+2025-11-19,Kids Banana,0
+2025-11-20,Kids Banana,3
+2025-11-21,Kids Banana,1
+2025-11-22,Kids Banana,0
+2025-11-23,Kids Banana,1
+2025-11-24,Kids Banana,1
+2025-11-25,Kids Banana,1
+2025-11-26,Kids Banana,0
+2025-11-27,Kids Banana,1
+2025-11-28,Kids Banana,0
+2025-11-29,Kids Banana,0
+2025-11-30,Kids Banana,0
+2025-11-01,Kids Beans,10
+2025-11-02,Kids Beans,6
+2025-11-03,Kids Beans,2
+2025-11-04,Kids Beans,1
+2025-11-05,Kids Beans,1
+2025-11-06,Kids Beans,1
+2025-11-07,Kids Beans,0
+2025-11-08,Kids Beans,5
+2025-11-09,Kids Beans,7
+2025-11-10,Kids Beans,3
+2025-11-11,Kids Beans,1
+2025-11-12,Kids Beans,1
+2025-11-13,Kids Beans,1
+2025-11-14,Kids Beans,6
+2025-11-15,Kids Beans,2
+2025-11-16,Kids Beans,4
+2025-11-17,Kids Beans,1
+2025-11-18,Kids Beans,2
+2025-11-19,Kids Beans,2
+2025-11-20,Kids Beans,2
+2025-11-21,Kids Beans,3
+2025-11-22,Kids Beans,2
+2025-11-23,Kids Beans,2
+2025-11-24,Kids Beans,0
+2025-11-25,Kids Beans,3
+2025-11-26,Kids Beans,1
+2025-11-27,Kids Beans,4
+2025-11-28,Kids Beans,3
+2025-11-29,Kids Beans,5
+2025-11-30,Kids Beans,4
+2025-11-01,Kids Broccoli,3
+2025-11-02,Kids Broccoli,3
+2025-11-03,Kids Broccoli,1
+2025-11-04,Kids Broccoli,0
+2025-11-05,Kids Broccoli,1
+2025-11-06,Kids Broccoli,0
+2025-11-07,Kids Broccoli,0
+2025-11-08,Kids Broccoli,2
+2025-11-09,Kids Broccoli,0
+2025-11-10,Kids Broccoli,0
+2025-11-11,Kids Broccoli,1
+2025-11-12,Kids Broccoli,0
+2025-11-13,Kids Broccoli,0
+2025-11-14,Kids Broccoli,0
+2025-11-15,Kids Broccoli,4
+2025-11-16,Kids Broccoli,1
+2025-11-17,Kids Broccoli,0
+2025-11-18,Kids Broccoli,1
+2025-11-19,Kids Broccoli,0
+2025-11-20,Kids Broccoli,2
+2025-11-21,Kids Broccoli,0
+2025-11-22,Kids Broccoli,2
+2025-11-23,Kids Broccoli,2
+2025-11-24,Kids Broccoli,2
+2025-11-25,Kids Broccoli,0
+2025-11-26,Kids Broccoli,1
+2025-11-27,Kids Broccoli,1
+2025-11-28,Kids Broccoli,1
+2025-11-29,Kids Broccoli,2
+2025-11-30,Kids Broccoli,0
+2025-11-01,Kids Carrot Mash,0
+2025-11-02,Kids Carrot Mash,0
+2025-11-03,Kids Carrot Mash,0
+2025-11-04,Kids Carrot Mash,0
+2025-11-05,Kids Carrot Mash,0
+2025-11-06,Kids Carrot Mash,0
+2025-11-07,Kids Carrot Mash,0
+2025-11-08,Kids Carrot Mash,0
+2025-11-09,Kids Carrot Mash,0
+2025-11-10,Kids Carrot Mash,0
+2025-11-11,Kids Carrot Mash,0
+2025-11-12,Kids Carrot Mash,0
+2025-11-13,Kids Carrot Mash,0
+2025-11-14,Kids Carrot Mash,0
+2025-11-15,Kids Carrot Mash,0
+2025-11-16,Kids Carrot Mash,0
+2025-11-17,Kids Carrot Mash,0
+2025-11-18,Kids Carrot Mash,0
+2025-11-19,Kids Carrot Mash,0
+2025-11-20,Kids Carrot Mash,0
+2025-11-21,Kids Carrot Mash,0
+2025-11-22,Kids Carrot Mash,0
+2025-11-23,Kids Carrot Mash,0
+2025-11-24,Kids Carrot Mash,0
+2025-11-25,Kids Carrot Mash,0
+2025-11-26,Kids Carrot Mash,0
+2025-11-27,Kids Carrot Mash,0
+2025-11-28,Kids Carrot Mash,0
+2025-11-29,Kids Carrot Mash,0
+2025-11-30,Kids Carrot Mash,0
+2025-11-01,Kids Chips,14
+2025-11-02,Kids Chips,7
+2025-11-03,Kids Chips,6
+2025-11-04,Kids Chips,5
+2025-11-05,Kids Chips,0
+2025-11-06,Kids Chips,5
+2025-11-07,Kids Chips,0
+2025-11-08,Kids Chips,14
+2025-11-09,Kids Chips,12
+2025-11-10,Kids Chips,6
+2025-11-11,Kids Chips,7
+2025-11-12,Kids Chips,5
+2025-11-13,Kids Chips,3
+2025-11-14,Kids Chips,10
+2025-11-15,Kids Chips,9
+2025-11-16,Kids Chips,4
+2025-11-17,Kids Chips,4
+2025-11-18,Kids Chips,3
+2025-11-19,Kids Chips,3
+2025-11-20,Kids Chips,1
+2025-11-21,Kids Chips,5
+2025-11-22,Kids Chips,8
+2025-11-23,Kids Chips,7
+2025-11-24,Kids Chips,6
+2025-11-25,Kids Chips,2
+2025-11-26,Kids Chips,5
+2025-11-27,Kids Chips,8
+2025-11-28,Kids Chips,5
+2025-11-29,Kids Chips,15
+2025-11-30,Kids Chips,6
+2025-11-01,Kids Crumpets,0
+2025-11-02,Kids Crumpets,0
+2025-11-03,Kids Crumpets,0
+2025-11-04,Kids Crumpets,0
+2025-11-05,Kids Crumpets,0
+2025-11-06,Kids Crumpets,0
+2025-11-07,Kids Crumpets,0
+2025-11-08,Kids Crumpets,0
+2025-11-09,Kids Crumpets,0
+2025-11-10,Kids Crumpets,0
+2025-11-11,Kids Crumpets,0
+2025-11-12,Kids Crumpets,0
+2025-11-13,Kids Crumpets,0
+2025-11-14,Kids Crumpets,0
+2025-11-15,Kids Crumpets,0
+2025-11-16,Kids Crumpets,0
+2025-11-17,Kids Crumpets,0
+2025-11-18,Kids Crumpets,0
+2025-11-19,Kids Crumpets,0
+2025-11-20,Kids Crumpets,0
+2025-11-21,Kids Crumpets,0
+2025-11-22,Kids Crumpets,0
+2025-11-23,Kids Crumpets,0
+2025-11-24,Kids Crumpets,0
+2025-11-25,Kids Crumpets,0
+2025-11-26,Kids Crumpets,0
+2025-11-27,Kids Crumpets,0
+2025-11-28,Kids Crumpets,0
+2025-11-29,Kids Crumpets,0
+2025-11-30,Kids Crumpets,0
+2025-11-01,Kids Drinks,45
+2025-11-02,Kids Drinks,34
+2025-11-03,Kids Drinks,19
+2025-11-04,Kids Drinks,17
+2025-11-05,Kids Drinks,13
+2025-11-06,Kids Drinks,17
+2025-11-07,Kids Drinks,16
+2025-11-08,Kids Drinks,35
+2025-11-09,Kids Drinks,36
+2025-11-10,Kids Drinks,9
+2025-11-11,Kids Drinks,25
+2025-11-12,Kids Drinks,15
+2025-11-13,Kids Drinks,11
+2025-11-14,Kids Drinks,24
+2025-11-15,Kids Drinks,38
+2025-11-16,Kids Drinks,29
+2025-11-17,Kids Drinks,9
+2025-11-18,Kids Drinks,16
+2025-11-19,Kids Drinks,14
+2025-11-20,Kids Drinks,13
+2025-11-21,Kids Drinks,21
+2025-11-22,Kids Drinks,21
+2025-11-23,Kids Drinks,27
+2025-11-24,Kids Drinks,19
+2025-11-25,Kids Drinks,15
+2025-11-26,Kids Drinks,16
+2025-11-27,Kids Drinks,23
+2025-11-28,Kids Drinks,20
+2025-11-29,Kids Drinks,38
+2025-11-30,Kids Drinks,33
+2025-11-01,Kids Eat Free,0
+2025-11-02,Kids Eat Free,0
+2025-11-03,Kids Eat Free,0
+2025-11-04,Kids Eat Free,0
+2025-11-05,Kids Eat Free,0
+2025-11-06,Kids Eat Free,0
+2025-11-07,Kids Eat Free,0
+2025-11-08,Kids Eat Free,0
+2025-11-09,Kids Eat Free,0
+2025-11-10,Kids Eat Free,0
+2025-11-11,Kids Eat Free,0
+2025-11-12,Kids Eat Free,0
+2025-11-13,Kids Eat Free,0
+2025-11-14,Kids Eat Free,0
+2025-11-15,Kids Eat Free,0
+2025-11-16,Kids Eat Free,0
+2025-11-17,Kids Eat Free,0
+2025-11-18,Kids Eat Free,0
+2025-11-19,Kids Eat Free,0
+2025-11-20,Kids Eat Free,0
+2025-11-21,Kids Eat Free,0
+2025-11-22,Kids Eat Free,0
+2025-11-23,Kids Eat Free,0
+2025-11-24,Kids Eat Free,0
+2025-11-25,Kids Eat Free,0
+2025-11-26,Kids Eat Free,0
+2025-11-27,Kids Eat Free,0
+2025-11-28,Kids Eat Free,0
+2025-11-29,Kids Eat Free,0
+2025-11-30,Kids Eat Free,0
+2025-11-01,Kids Jacket Pota,0
+2025-11-02,Kids Jacket Pota,0
+2025-11-03,Kids Jacket Pota,0
+2025-11-04,Kids Jacket Pota,0
+2025-11-05,Kids Jacket Pota,0
+2025-11-06,Kids Jacket Pota,0
+2025-11-07,Kids Jacket Pota,0
+2025-11-08,Kids Jacket Pota,0
+2025-11-09,Kids Jacket Pota,0
+2025-11-10,Kids Jacket Pota,0
+2025-11-11,Kids Jacket Pota,0
+2025-11-12,Kids Jacket Pota,0
+2025-11-13,Kids Jacket Pota,0
+2025-11-14,Kids Jacket Pota,0
+2025-11-15,Kids Jacket Pota,0
+2025-11-16,Kids Jacket Pota,0
+2025-11-17,Kids Jacket Pota,0
+2025-11-18,Kids Jacket Pota,0
+2025-11-19,Kids Jacket Pota,0
+2025-11-20,Kids Jacket Pota,0
+2025-11-21,Kids Jacket Pota,0
+2025-11-22,Kids Jacket Pota,0
+2025-11-23,Kids Jacket Pota,0
+2025-11-24,Kids Jacket Pota,0
+2025-11-25,Kids Jacket Pota,0
+2025-11-26,Kids Jacket Pota,0
+2025-11-27,Kids Jacket Pota,0
+2025-11-28,Kids Jacket Pota,0
+2025-11-29,Kids Jacket Pota,0
+2025-11-30,Kids Jacket Pota,0
+2025-11-01,Kids Lentil Curl,0
+2025-11-02,Kids Lentil Curl,0
+2025-11-03,Kids Lentil Curl,0
+2025-11-04,Kids Lentil Curl,0
+2025-11-05,Kids Lentil Curl,0
+2025-11-06,Kids Lentil Curl,0
+2025-11-07,Kids Lentil Curl,0
+2025-11-08,Kids Lentil Curl,0
+2025-11-09,Kids Lentil Curl,0
+2025-11-10,Kids Lentil Curl,0
+2025-11-11,Kids Lentil Curl,0
+2025-11-12,Kids Lentil Curl,0
+2025-11-13,Kids Lentil Curl,0
+2025-11-14,Kids Lentil Curl,0
+2025-11-15,Kids Lentil Curl,0
+2025-11-16,Kids Lentil Curl,0
+2025-11-17,Kids Lentil Curl,0
+2025-11-18,Kids Lentil Curl,0
+2025-11-19,Kids Lentil Curl,0
+2025-11-20,Kids Lentil Curl,0
+2025-11-21,Kids Lentil Curl,0
+2025-11-22,Kids Lentil Curl,0
+2025-11-23,Kids Lentil Curl,0
+2025-11-24,Kids Lentil Curl,0
+2025-11-25,Kids Lentil Curl,0
+2025-11-26,Kids Lentil Curl,0
+2025-11-27,Kids Lentil Curl,0
+2025-11-28,Kids Lentil Curl,0
+2025-11-29,Kids Lentil Curl,0
+2025-11-30,Kids Lentil Curl,0
+2025-11-01,Kids Mac Cheese,0
+2025-11-02,Kids Mac Cheese,0
+2025-11-03,Kids Mac Cheese,0
+2025-11-04,Kids Mac Cheese,0
+2025-11-05,Kids Mac Cheese,0
+2025-11-06,Kids Mac Cheese,0
+2025-11-07,Kids Mac Cheese,0
+2025-11-08,Kids Mac Cheese,0
+2025-11-09,Kids Mac Cheese,0
+2025-11-10,Kids Mac Cheese,0
+2025-11-11,Kids Mac Cheese,0
+2025-11-12,Kids Mac Cheese,0
+2025-11-13,Kids Mac Cheese,0
+2025-11-14,Kids Mac Cheese,0
+2025-11-15,Kids Mac Cheese,0
+2025-11-16,Kids Mac Cheese,0
+2025-11-17,Kids Mac Cheese,0
+2025-11-18,Kids Mac Cheese,0
+2025-11-19,Kids Mac Cheese,0
+2025-11-20,Kids Mac Cheese,0
+2025-11-21,Kids Mac Cheese,0
+2025-11-22,Kids Mac Cheese,0
+2025-11-23,Kids Mac Cheese,0
+2025-11-24,Kids Mac Cheese,0
+2025-11-25,Kids Mac Cheese,0
+2025-11-26,Kids Mac Cheese,0
+2025-11-27,Kids Mac Cheese,0
+2025-11-28,Kids Mac Cheese,0
+2025-11-29,Kids Mac Cheese,0
+2025-11-30,Kids Mac Cheese,0
+2025-11-01,Kids Mash,3
+2025-11-02,Kids Mash,1
+2025-11-03,Kids Mash,0
+2025-11-04,Kids Mash,2
+2025-11-05,Kids Mash,0
+2025-11-06,Kids Mash,0
+2025-11-07,Kids Mash,2
+2025-11-08,Kids Mash,0
+2025-11-09,Kids Mash,1
+2025-11-10,Kids Mash,0
+2025-11-11,Kids Mash,1
+2025-11-12,Kids Mash,0
+2025-11-13,Kids Mash,0
+2025-11-14,Kids Mash,0
+2025-11-15,Kids Mash,0
+2025-11-16,Kids Mash,2
+2025-11-17,Kids Mash,0
+2025-11-18,Kids Mash,2
+2025-11-19,Kids Mash,1
+2025-11-20,Kids Mash,0
+2025-11-21,Kids Mash,0
+2025-11-22,Kids Mash,0
+2025-11-23,Kids Mash,0
+2025-11-24,Kids Mash,0
+2025-11-25,Kids Mash,1
+2025-11-26,Kids Mash,0
+2025-11-27,Kids Mash,1
+2025-11-28,Kids Mash,0
+2025-11-29,Kids Mash,0
+2025-11-30,Kids Mash,0
+2025-11-01,Kids Mini Pizza,1
+2025-11-02,Kids Mini Pizza,0
+2025-11-03,Kids Mini Pizza,1
+2025-11-04,Kids Mini Pizza,0
+2025-11-05,Kids Mini Pizza,0
+2025-11-06,Kids Mini Pizza,0
+2025-11-07,Kids Mini Pizza,0
+2025-11-08,Kids Mini Pizza,1
+2025-11-09,Kids Mini Pizza,3
+2025-11-10,Kids Mini Pizza,0
+2025-11-11,Kids Mini Pizza,0
+2025-11-12,Kids Mini Pizza,0
+2025-11-13,Kids Mini Pizza,1
+2025-11-14,Kids Mini Pizza,3
+2025-11-15,Kids Mini Pizza,1
+2025-11-16,Kids Mini Pizza,0
+2025-11-17,Kids Mini Pizza,0
+2025-11-18,Kids Mini Pizza,1
+2025-11-19,Kids Mini Pizza,1
+2025-11-20,Kids Mini Pizza,1
+2025-11-21,Kids Mini Pizza,0
+2025-11-22,Kids Mini Pizza,2
+2025-11-23,Kids Mini Pizza,2
+2025-11-24,Kids Mini Pizza,0
+2025-11-25,Kids Mini Pizza,0
+2025-11-26,Kids Mini Pizza,0
+2025-11-27,Kids Mini Pizza,2
+2025-11-28,Kids Mini Pizza,1
+2025-11-29,Kids Mini Pizza,3
+2025-11-30,Kids Mini Pizza,1
+2025-11-01,Kids Peas,3
+2025-11-02,Kids Peas,2
+2025-11-03,Kids Peas,0
+2025-11-04,Kids Peas,2
+2025-11-05,Kids Peas,1
+2025-11-06,Kids Peas,1
+2025-11-07,Kids Peas,0
+2025-11-08,Kids Peas,0
+2025-11-09,Kids Peas,3
+2025-11-10,Kids Peas,0
+2025-11-11,Kids Peas,1
+2025-11-12,Kids Peas,1
+2025-11-13,Kids Peas,2
+2025-11-14,Kids Peas,3
+2025-11-15,Kids Peas,2
+2025-11-16,Kids Peas,1
+2025-11-17,Kids Peas,1
+2025-11-18,Kids Peas,1
+2025-11-19,Kids Peas,1
+2025-11-20,Kids Peas,2
+2025-11-21,Kids Peas,0
+2025-11-22,Kids Peas,4
+2025-11-23,Kids Peas,1
+2025-11-24,Kids Peas,0
+2025-11-25,Kids Peas,1
+2025-11-26,Kids Peas,2
+2025-11-27,Kids Peas,2
+2025-11-28,Kids Peas,0
+2025-11-29,Kids Peas,6
+2025-11-30,Kids Peas,1
+2025-11-01,Kids Popcorn,0
+2025-11-02,Kids Popcorn,0
+2025-11-03,Kids Popcorn,0
+2025-11-04,Kids Popcorn,1
+2025-11-05,Kids Popcorn,0
+2025-11-06,Kids Popcorn,0
+2025-11-07,Kids Popcorn,0
+2025-11-08,Kids Popcorn,0
+2025-11-09,Kids Popcorn,0
+2025-11-10,Kids Popcorn,0
+2025-11-11,Kids Popcorn,1
+2025-11-12,Kids Popcorn,0
+2025-11-13,Kids Popcorn,0
+2025-11-14,Kids Popcorn,0
+2025-11-15,Kids Popcorn,0
+2025-11-16,Kids Popcorn,0
+2025-11-17,Kids Popcorn,0
+2025-11-18,Kids Popcorn,0
+2025-11-19,Kids Popcorn,0
+2025-11-20,Kids Popcorn,0
+2025-11-21,Kids Popcorn,1
+2025-11-22,Kids Popcorn,0
+2025-11-23,Kids Popcorn,0
+2025-11-24,Kids Popcorn,0
+2025-11-25,Kids Popcorn,0
+2025-11-26,Kids Popcorn,0
+2025-11-27,Kids Popcorn,0
+2025-11-28,Kids Popcorn,0
+2025-11-29,Kids Popcorn,0
+2025-11-30,Kids Popcorn,0
+2025-11-01,Kids Sausage,4
+2025-11-02,Kids Sausage,1
+2025-11-03,Kids Sausage,2
+2025-11-04,Kids Sausage,2
+2025-11-05,Kids Sausage,2
+2025-11-06,Kids Sausage,1
+2025-11-07,Kids Sausage,1
+2025-11-08,Kids Sausage,4
+2025-11-09,Kids Sausage,0
+2025-11-10,Kids Sausage,2
+2025-11-11,Kids Sausage,1
+2025-11-12,Kids Sausage,2
+2025-11-13,Kids Sausage,0
+2025-11-14,Kids Sausage,1
+2025-11-15,Kids Sausage,1
+2025-11-16,Kids Sausage,5
+2025-11-17,Kids Sausage,0
+2025-11-18,Kids Sausage,3
+2025-11-19,Kids Sausage,0
+2025-11-20,Kids Sausage,0
+2025-11-21,Kids Sausage,3
+2025-11-22,Kids Sausage,2
+2025-11-23,Kids Sausage,1
+2025-11-24,Kids Sausage,2
+2025-11-25,Kids Sausage,2
+2025-11-26,Kids Sausage,1
+2025-11-27,Kids Sausage,0
+2025-11-28,Kids Sausage,3
+2025-11-29,Kids Sausage,6
+2025-11-30,Kids Sausage,3
+2025-11-01,Kids Snacks,2
+2025-11-02,Kids Snacks,3
+2025-11-03,Kids Snacks,4
+2025-11-04,Kids Snacks,4
+2025-11-05,Kids Snacks,4
+2025-11-06,Kids Snacks,2
+2025-11-07,Kids Snacks,9
+2025-11-08,Kids Snacks,2
+2025-11-09,Kids Snacks,9
+2025-11-10,Kids Snacks,4
+2025-11-11,Kids Snacks,4
+2025-11-12,Kids Snacks,1
+2025-11-13,Kids Snacks,3
+2025-11-14,Kids Snacks,2
+2025-11-15,Kids Snacks,7
+2025-11-16,Kids Snacks,3
+2025-11-17,Kids Snacks,4
+2025-11-18,Kids Snacks,1
+2025-11-19,Kids Snacks,0
+2025-11-20,Kids Snacks,4
+2025-11-21,Kids Snacks,5
+2025-11-22,Kids Snacks,4
+2025-11-23,Kids Snacks,4
+2025-11-24,Kids Snacks,0
+2025-11-25,Kids Snacks,5
+2025-11-26,Kids Snacks,2
+2025-11-27,Kids Snacks,9
+2025-11-28,Kids Snacks,2
+2025-11-29,Kids Snacks,9
+2025-11-30,Kids Snacks,8
+2025-11-01,Kids Sweet Potat,0
+2025-11-02,Kids Sweet Potat,0
+2025-11-03,Kids Sweet Potat,0
+2025-11-04,Kids Sweet Potat,0
+2025-11-05,Kids Sweet Potat,0
+2025-11-06,Kids Sweet Potat,0
+2025-11-07,Kids Sweet Potat,0
+2025-11-08,Kids Sweet Potat,0
+2025-11-09,Kids Sweet Potat,0
+2025-11-10,Kids Sweet Potat,0
+2025-11-11,Kids Sweet Potat,0
+2025-11-12,Kids Sweet Potat,0
+2025-11-13,Kids Sweet Potat,0
+2025-11-14,Kids Sweet Potat,0
+2025-11-15,Kids Sweet Potat,0
+2025-11-16,Kids Sweet Potat,0
+2025-11-17,Kids Sweet Potat,0
+2025-11-18,Kids Sweet Potat,0
+2025-11-19,Kids Sweet Potat,0
+2025-11-20,Kids Sweet Potat,0
+2025-11-21,Kids Sweet Potat,0
+2025-11-22,Kids Sweet Potat,0
+2025-11-23,Kids Sweet Potat,0
+2025-11-24,Kids Sweet Potat,0
+2025-11-25,Kids Sweet Potat,0
+2025-11-26,Kids Sweet Potat,0
+2025-11-27,Kids Sweet Potat,0
+2025-11-28,Kids Sweet Potat,0
+2025-11-29,Kids Sweet Potat,0
+2025-11-30,Kids Sweet Potat,0
+2025-11-01,Kids Sweetcorn,2
+2025-11-02,Kids Sweetcorn,1
+2025-11-03,Kids Sweetcorn,1
+2025-11-04,Kids Sweetcorn,3
+2025-11-05,Kids Sweetcorn,2
+2025-11-06,Kids Sweetcorn,0
+2025-11-07,Kids Sweetcorn,1
+2025-11-08,Kids Sweetcorn,3
+2025-11-09,Kids Sweetcorn,4
+2025-11-10,Kids Sweetcorn,3
+2025-11-11,Kids Sweetcorn,2
+2025-11-12,Kids Sweetcorn,0
+2025-11-13,Kids Sweetcorn,1
+2025-11-14,Kids Sweetcorn,1
+2025-11-15,Kids Sweetcorn,2
+2025-11-16,Kids Sweetcorn,0
+2025-11-17,Kids Sweetcorn,0
+2025-11-18,Kids Sweetcorn,1
+2025-11-19,Kids Sweetcorn,0
+2025-11-20,Kids Sweetcorn,1
+2025-11-21,Kids Sweetcorn,0
+2025-11-22,Kids Sweetcorn,5
+2025-11-23,Kids Sweetcorn,1
+2025-11-24,Kids Sweetcorn,0
+2025-11-25,Kids Sweetcorn,0
+2025-11-26,Kids Sweetcorn,0
+2025-11-27,Kids Sweetcorn,0
+2025-11-28,Kids Sweetcorn,2
+2025-11-29,Kids Sweetcorn,2
+2025-11-30,Kids Sweetcorn,3
+2025-11-01,Kids Tom Pasta,5
+2025-11-02,Kids Tom Pasta,1
+2025-11-03,Kids Tom Pasta,0
+2025-11-04,Kids Tom Pasta,0
+2025-11-05,Kids Tom Pasta,1
+2025-11-06,Kids Tom Pasta,0
+2025-11-07,Kids Tom Pasta,1
+2025-11-08,Kids Tom Pasta,1
+2025-11-09,Kids Tom Pasta,1
+2025-11-10,Kids Tom Pasta,0
+2025-11-11,Kids Tom Pasta,1
+2025-11-12,Kids Tom Pasta,0
+2025-11-13,Kids Tom Pasta,1
+2025-11-14,Kids Tom Pasta,1
+2025-11-15,Kids Tom Pasta,4
+2025-11-16,Kids Tom Pasta,1
+2025-11-17,Kids Tom Pasta,1
+2025-11-18,Kids Tom Pasta,1
+2025-11-19,Kids Tom Pasta,0
+2025-11-20,Kids Tom Pasta,0
+2025-11-21,Kids Tom Pasta,0
+2025-11-22,Kids Tom Pasta,0
+2025-11-23,Kids Tom Pasta,0
+2025-11-24,Kids Tom Pasta,1
+2025-11-25,Kids Tom Pasta,1
+2025-11-26,Kids Tom Pasta,0
+2025-11-27,Kids Tom Pasta,0
+2025-11-28,Kids Tom Pasta,0
+2025-11-29,Kids Tom Pasta,0
+2025-11-30,Kids Tom Pasta,1
+2025-11-01,Kids Veg Sticks,0
+2025-11-02,Kids Veg Sticks,0
+2025-11-03,Kids Veg Sticks,2
+2025-11-04,Kids Veg Sticks,0
+2025-11-05,Kids Veg Sticks,0
+2025-11-06,Kids Veg Sticks,2
+2025-11-07,Kids Veg Sticks,1
+2025-11-08,Kids Veg Sticks,2
+2025-11-09,Kids Veg Sticks,0
+2025-11-10,Kids Veg Sticks,1
+2025-11-11,Kids Veg Sticks,0
+2025-11-12,Kids Veg Sticks,0
+2025-11-13,Kids Veg Sticks,0
+2025-11-14,Kids Veg Sticks,2
+2025-11-15,Kids Veg Sticks,0
+2025-11-16,Kids Veg Sticks,2
+2025-11-17,Kids Veg Sticks,0
+2025-11-18,Kids Veg Sticks,1
+2025-11-19,Kids Veg Sticks,1
+2025-11-20,Kids Veg Sticks,0
+2025-11-21,Kids Veg Sticks,1
+2025-11-22,Kids Veg Sticks,0
+2025-11-23,Kids Veg Sticks,0
+2025-11-24,Kids Veg Sticks,1
+2025-11-25,Kids Veg Sticks,0
+2025-11-26,Kids Veg Sticks,0
+2025-11-27,Kids Veg Sticks,1
+2025-11-28,Kids Veg Sticks,0
+2025-11-29,Kids Veg Sticks,3
+2025-11-30,Kids Veg Sticks,0
+2025-11-01,Lemon Drizzle,0
+2025-11-02,Lemon Drizzle,0
+2025-11-03,Lemon Drizzle,0
+2025-11-04,Lemon Drizzle,0
+2025-11-05,Lemon Drizzle,0
+2025-11-06,Lemon Drizzle,0
+2025-11-07,Lemon Drizzle,0
+2025-11-08,Lemon Drizzle,0
+2025-11-09,Lemon Drizzle,0
+2025-11-10,Lemon Drizzle,0
+2025-11-11,Lemon Drizzle,0
+2025-11-12,Lemon Drizzle,0
+2025-11-13,Lemon Drizzle,0
+2025-11-14,Lemon Drizzle,0
+2025-11-15,Lemon Drizzle,0
+2025-11-16,Lemon Drizzle,0
+2025-11-17,Lemon Drizzle,0
+2025-11-18,Lemon Drizzle,0
+2025-11-19,Lemon Drizzle,0
+2025-11-20,Lemon Drizzle,0
+2025-11-21,Lemon Drizzle,0
+2025-11-22,Lemon Drizzle,0
+2025-11-23,Lemon Drizzle,0
+2025-11-24,Lemon Drizzle,0
+2025-11-25,Lemon Drizzle,0
+2025-11-26,Lemon Drizzle,0
+2025-11-27,Lemon Drizzle,0
+2025-11-28,Lemon Drizzle,0
+2025-11-29,Lemon Drizzle,0
+2025-11-30,Lemon Drizzle,0
+2025-11-01,Little Avo Toast,0
+2025-11-02,Little Avo Toast,0
+2025-11-03,Little Avo Toast,0
+2025-11-04,Little Avo Toast,0
+2025-11-05,Little Avo Toast,0
+2025-11-06,Little Avo Toast,0
+2025-11-07,Little Avo Toast,0
+2025-11-08,Little Avo Toast,0
+2025-11-09,Little Avo Toast,0
+2025-11-10,Little Avo Toast,0
+2025-11-11,Little Avo Toast,0
+2025-11-12,Little Avo Toast,0
+2025-11-13,Little Avo Toast,0
+2025-11-14,Little Avo Toast,0
+2025-11-15,Little Avo Toast,0
+2025-11-16,Little Avo Toast,0
+2025-11-17,Little Avo Toast,0
+2025-11-18,Little Avo Toast,0
+2025-11-19,Little Avo Toast,0
+2025-11-20,Little Avo Toast,0
+2025-11-21,Little Avo Toast,0
+2025-11-22,Little Avo Toast,0
+2025-11-23,Little Avo Toast,0
+2025-11-24,Little Avo Toast,0
+2025-11-25,Little Avo Toast,0
+2025-11-26,Little Avo Toast,0
+2025-11-27,Little Avo Toast,0
+2025-11-28,Little Avo Toast,0
+2025-11-29,Little Avo Toast,0
+2025-11-30,Little Avo Toast,0
+2025-11-01,Little Bean Toas,0
+2025-11-02,Little Bean Toas,0
+2025-11-03,Little Bean Toas,0
+2025-11-04,Little Bean Toas,0
+2025-11-05,Little Bean Toas,0
+2025-11-06,Little Bean Toas,0
+2025-11-07,Little Bean Toas,0
+2025-11-08,Little Bean Toas,0
+2025-11-09,Little Bean Toas,0
+2025-11-10,Little Bean Toas,0
+2025-11-11,Little Bean Toas,0
+2025-11-12,Little Bean Toas,0
+2025-11-13,Little Bean Toas,0
+2025-11-14,Little Bean Toas,0
+2025-11-15,Little Bean Toas,0
+2025-11-16,Little Bean Toas,0
+2025-11-17,Little Bean Toas,0
+2025-11-18,Little Bean Toas,0
+2025-11-19,Little Bean Toas,0
+2025-11-20,Little Bean Toas,0
+2025-11-21,Little Bean Toas,0
+2025-11-22,Little Bean Toas,0
+2025-11-23,Little Bean Toas,0
+2025-11-24,Little Bean Toas,0
+2025-11-25,Little Bean Toas,0
+2025-11-26,Little Bean Toas,0
+2025-11-27,Little Bean Toas,0
+2025-11-28,Little Bean Toas,0
+2025-11-29,Little Bean Toas,0
+2025-11-30,Little Bean Toas,0
+2025-11-01,Little Egg Toast,0
+2025-11-02,Little Egg Toast,0
+2025-11-03,Little Egg Toast,0
+2025-11-04,Little Egg Toast,0
+2025-11-05,Little Egg Toast,0
+2025-11-06,Little Egg Toast,0
+2025-11-07,Little Egg Toast,0
+2025-11-08,Little Egg Toast,0
+2025-11-09,Little Egg Toast,0
+2025-11-10,Little Egg Toast,0
+2025-11-11,Little Egg Toast,0
+2025-11-12,Little Egg Toast,0
+2025-11-13,Little Egg Toast,0
+2025-11-14,Little Egg Toast,0
+2025-11-15,Little Egg Toast,0
+2025-11-16,Little Egg Toast,0
+2025-11-17,Little Egg Toast,0
+2025-11-18,Little Egg Toast,0
+2025-11-19,Little Egg Toast,0
+2025-11-20,Little Egg Toast,0
+2025-11-21,Little Egg Toast,0
+2025-11-22,Little Egg Toast,0
+2025-11-23,Little Egg Toast,0
+2025-11-24,Little Egg Toast,0
+2025-11-25,Little Egg Toast,0
+2025-11-26,Little Egg Toast,0
+2025-11-27,Little Egg Toast,0
+2025-11-28,Little Egg Toast,0
+2025-11-29,Little Egg Toast,0
+2025-11-30,Little Egg Toast,0
+2025-11-01,Little Pancakes,0
+2025-11-02,Little Pancakes,0
+2025-11-03,Little Pancakes,0
+2025-11-04,Little Pancakes,0
+2025-11-05,Little Pancakes,0
+2025-11-06,Little Pancakes,0
+2025-11-07,Little Pancakes,0
+2025-11-08,Little Pancakes,0
+2025-11-09,Little Pancakes,0
+2025-11-10,Little Pancakes,0
+2025-11-11,Little Pancakes,0
+2025-11-12,Little Pancakes,0
+2025-11-13,Little Pancakes,0
+2025-11-14,Little Pancakes,0
+2025-11-15,Little Pancakes,0
+2025-11-16,Little Pancakes,0
+2025-11-17,Little Pancakes,0
+2025-11-18,Little Pancakes,0
+2025-11-19,Little Pancakes,0
+2025-11-20,Little Pancakes,0
+2025-11-21,Little Pancakes,0
+2025-11-22,Little Pancakes,0
+2025-11-23,Little Pancakes,0
+2025-11-24,Little Pancakes,0
+2025-11-25,Little Pancakes,0
+2025-11-26,Little Pancakes,0
+2025-11-27,Little Pancakes,0
+2025-11-28,Little Pancakes,0
+2025-11-29,Little Pancakes,0
+2025-11-30,Little Pancakes,0
+2025-11-01,Loaded Fries,0
+2025-11-02,Loaded Fries,0
+2025-11-03,Loaded Fries,0
+2025-11-04,Loaded Fries,0
+2025-11-05,Loaded Fries,0
+2025-11-06,Loaded Fries,0
+2025-11-07,Loaded Fries,0
+2025-11-08,Loaded Fries,0
+2025-11-09,Loaded Fries,0
+2025-11-10,Loaded Fries,0
+2025-11-11,Loaded Fries,0
+2025-11-12,Loaded Fries,0
+2025-11-13,Loaded Fries,0
+2025-11-14,Loaded Fries,0
+2025-11-15,Loaded Fries,0
+2025-11-16,Loaded Fries,0
+2025-11-17,Loaded Fries,0
+2025-11-18,Loaded Fries,0
+2025-11-19,Loaded Fries,0
+2025-11-20,Loaded Fries,0
+2025-11-21,Loaded Fries,0
+2025-11-22,Loaded Fries,0
+2025-11-23,Loaded Fries,0
+2025-11-24,Loaded Fries,0
+2025-11-25,Loaded Fries,0
+2025-11-26,Loaded Fries,0
+2025-11-27,Loaded Fries,0
+2025-11-28,Loaded Fries,0
+2025-11-29,Loaded Fries,0
+2025-11-30,Loaded Fries,0
+2025-11-01,Loaded Hot Dog,0
+2025-11-02,Loaded Hot Dog,0
+2025-11-03,Loaded Hot Dog,0
+2025-11-04,Loaded Hot Dog,0
+2025-11-05,Loaded Hot Dog,0
+2025-11-06,Loaded Hot Dog,0
+2025-11-07,Loaded Hot Dog,0
+2025-11-08,Loaded Hot Dog,0
+2025-11-09,Loaded Hot Dog,0
+2025-11-10,Loaded Hot Dog,0
+2025-11-11,Loaded Hot Dog,0
+2025-11-12,Loaded Hot Dog,0
+2025-11-13,Loaded Hot Dog,0
+2025-11-14,Loaded Hot Dog,0
+2025-11-15,Loaded Hot Dog,0
+2025-11-16,Loaded Hot Dog,0
+2025-11-17,Loaded Hot Dog,0
+2025-11-18,Loaded Hot Dog,0
+2025-11-19,Loaded Hot Dog,0
+2025-11-20,Loaded Hot Dog,0
+2025-11-21,Loaded Hot Dog,0
+2025-11-22,Loaded Hot Dog,0
+2025-11-23,Loaded Hot Dog,0
+2025-11-24,Loaded Hot Dog,0
+2025-11-25,Loaded Hot Dog,0
+2025-11-26,Loaded Hot Dog,0
+2025-11-27,Loaded Hot Dog,0
+2025-11-28,Loaded Hot Dog,0
+2025-11-29,Loaded Hot Dog,0
+2025-11-30,Loaded Hot Dog,0
+2025-11-01,Loaded Nachos,0
+2025-11-02,Loaded Nachos,0
+2025-11-03,Loaded Nachos,0
+2025-11-04,Loaded Nachos,0
+2025-11-05,Loaded Nachos,0
+2025-11-06,Loaded Nachos,0
+2025-11-07,Loaded Nachos,0
+2025-11-08,Loaded Nachos,0
+2025-11-09,Loaded Nachos,0
+2025-11-10,Loaded Nachos,0
+2025-11-11,Loaded Nachos,0
+2025-11-12,Loaded Nachos,0
+2025-11-13,Loaded Nachos,0
+2025-11-14,Loaded Nachos,0
+2025-11-15,Loaded Nachos,0
+2025-11-16,Loaded Nachos,0
+2025-11-17,Loaded Nachos,0
+2025-11-18,Loaded Nachos,0
+2025-11-19,Loaded Nachos,0
+2025-11-20,Loaded Nachos,0
+2025-11-21,Loaded Nachos,0
+2025-11-22,Loaded Nachos,0
+2025-11-23,Loaded Nachos,0
+2025-11-24,Loaded Nachos,0
+2025-11-25,Loaded Nachos,0
+2025-11-26,Loaded Nachos,0
+2025-11-27,Loaded Nachos,0
+2025-11-28,Loaded Nachos,0
+2025-11-29,Loaded Nachos,0
+2025-11-30,Loaded Nachos,0
+2025-11-01,Lorne Sausage,3
+2025-11-02,Lorne Sausage,3
+2025-11-03,Lorne Sausage,7
+2025-11-04,Lorne Sausage,1
+2025-11-05,Lorne Sausage,1
+2025-11-06,Lorne Sausage,1
+2025-11-07,Lorne Sausage,3
+2025-11-08,Lorne Sausage,3
+2025-11-09,Lorne Sausage,3
+2025-11-10,Lorne Sausage,0
+2025-11-11,Lorne Sausage,1
+2025-11-12,Lorne Sausage,1
+2025-11-13,Lorne Sausage,1
+2025-11-14,Lorne Sausage,2
+2025-11-15,Lorne Sausage,2
+2025-11-16,Lorne Sausage,1
+2025-11-17,Lorne Sausage,5
+2025-11-18,Lorne Sausage,6
+2025-11-19,Lorne Sausage,1
+2025-11-20,Lorne Sausage,3
+2025-11-21,Lorne Sausage,3
+2025-11-22,Lorne Sausage,5
+2025-11-23,Lorne Sausage,2
+2025-11-24,Lorne Sausage,3
+2025-11-25,Lorne Sausage,0
+2025-11-26,Lorne Sausage,1
+2025-11-27,Lorne Sausage,1
+2025-11-28,Lorne Sausage,4
+2025-11-29,Lorne Sausage,2
+2025-11-30,Lorne Sausage,3
+2025-11-01,Ltle Bfast Bacon,3
+2025-11-02,Ltle Bfast Bacon,3
+2025-11-03,Ltle Bfast Bacon,0
+2025-11-04,Ltle Bfast Bacon,0
+2025-11-05,Ltle Bfast Bacon,0
+2025-11-06,Ltle Bfast Bacon,0
+2025-11-07,Ltle Bfast Bacon,0
+2025-11-08,Ltle Bfast Bacon,1
+2025-11-09,Ltle Bfast Bacon,1
+2025-11-10,Ltle Bfast Bacon,0
+2025-11-11,Ltle Bfast Bacon,0
+2025-11-12,Ltle Bfast Bacon,2
+2025-11-13,Ltle Bfast Bacon,0
+2025-11-14,Ltle Bfast Bacon,0
+2025-11-15,Ltle Bfast Bacon,2
+2025-11-16,Ltle Bfast Bacon,1
+2025-11-17,Ltle Bfast Bacon,0
+2025-11-18,Ltle Bfast Bacon,0
+2025-11-19,Ltle Bfast Bacon,0
+2025-11-20,Ltle Bfast Bacon,1
+2025-11-21,Ltle Bfast Bacon,0
+2025-11-22,Ltle Bfast Bacon,0
+2025-11-23,Ltle Bfast Bacon,0
+2025-11-24,Ltle Bfast Bacon,1
+2025-11-25,Ltle Bfast Bacon,0
+2025-11-26,Ltle Bfast Bacon,0
+2025-11-27,Ltle Bfast Bacon,0
+2025-11-28,Ltle Bfast Bacon,0
+2025-11-29,Ltle Bfast Bacon,1
+2025-11-30,Ltle Bfast Bacon,0
+2025-11-01,Ltle Bfast Saus,4
+2025-11-02,Ltle Bfast Saus,2
+2025-11-03,Ltle Bfast Saus,1
+2025-11-04,Ltle Bfast Saus,0
+2025-11-05,Ltle Bfast Saus,0
+2025-11-06,Ltle Bfast Saus,1
+2025-11-07,Ltle Bfast Saus,4
+2025-11-08,Ltle Bfast Saus,0
+2025-11-09,Ltle Bfast Saus,4
+2025-11-10,Ltle Bfast Saus,2
+2025-11-11,Ltle Bfast Saus,0
+2025-11-12,Ltle Bfast Saus,1
+2025-11-13,Ltle Bfast Saus,1
+2025-11-14,Ltle Bfast Saus,3
+2025-11-15,Ltle Bfast Saus,2
+2025-11-16,Ltle Bfast Saus,2
+2025-11-17,Ltle Bfast Saus,2
+2025-11-18,Ltle Bfast Saus,0
+2025-11-19,Ltle Bfast Saus,0
+2025-11-20,Ltle Bfast Saus,1
+2025-11-21,Ltle Bfast Saus,0
+2025-11-22,Ltle Bfast Saus,1
+2025-11-23,Ltle Bfast Saus,4
+2025-11-24,Ltle Bfast Saus,4
+2025-11-25,Ltle Bfast Saus,1
+2025-11-26,Ltle Bfast Saus,0
+2025-11-27,Ltle Bfast Saus,3
+2025-11-28,Ltle Bfast Saus,3
+2025-11-29,Ltle Bfast Saus,5
+2025-11-30,Ltle Bfast Saus,5
+2025-11-01,Mac and Cheese,6
+2025-11-02,Mac and Cheese,5
+2025-11-03,Mac and Cheese,2
+2025-11-04,Mac and Cheese,5
+2025-11-05,Mac and Cheese,6
+2025-11-06,Mac and Cheese,4
+2025-11-07,Mac and Cheese,4
+2025-11-08,Mac and Cheese,6
+2025-11-09,Mac and Cheese,7
+2025-11-10,Mac and Cheese,7
+2025-11-11,Mac and Cheese,5
+2025-11-12,Mac and Cheese,4
+2025-11-13,Mac and Cheese,4
+2025-11-14,Mac and Cheese,9
+2025-11-15,Mac and Cheese,13
+2025-11-16,Mac and Cheese,5
+2025-11-17,Mac and Cheese,8
+2025-11-18,Mac and Cheese,3
+2025-11-19,Mac and Cheese,1
+2025-11-20,Mac and Cheese,6
+2025-11-21,Mac and Cheese,2
+2025-11-22,Mac and Cheese,10
+2025-11-23,Mac and Cheese,4
+2025-11-24,Mac and Cheese,2
+2025-11-25,Mac and Cheese,9
+2025-11-26,Mac and Cheese,5
+2025-11-27,Mac and Cheese,9
+2025-11-28,Mac and Cheese,6
+2025-11-29,Mac and Cheese,10
+2025-11-30,Mac and Cheese,9
+2025-11-01,Marshmallows,4
+2025-11-02,Marshmallows,0
+2025-11-03,Marshmallows,0
+2025-11-04,Marshmallows,0
+2025-11-05,Marshmallows,2
+2025-11-06,Marshmallows,1
+2025-11-07,Marshmallows,0
+2025-11-08,Marshmallows,6
+2025-11-09,Marshmallows,3
+2025-11-10,Marshmallows,0
+2025-11-11,Marshmallows,0
+2025-11-12,Marshmallows,6
+2025-11-13,Marshmallows,0
+2025-11-14,Marshmallows,3
+2025-11-15,Marshmallows,2
+2025-11-16,Marshmallows,3
+2025-11-17,Marshmallows,3
+2025-11-18,Marshmallows,5
+2025-11-19,Marshmallows,1
+2025-11-20,Marshmallows,7
+2025-11-21,Marshmallows,6
+2025-11-22,Marshmallows,5
+2025-11-23,Marshmallows,5
+2025-11-24,Marshmallows,2
+2025-11-25,Marshmallows,0
+2025-11-26,Marshmallows,0
+2025-11-27,Marshmallows,2
+2025-11-28,Marshmallows,5
+2025-11-29,Marshmallows,3
+2025-11-30,Marshmallows,4
+2025-11-01,Milks Extra,5
+2025-11-02,Milks Extra,5
+2025-11-03,Milks Extra,0
+2025-11-04,Milks Extra,0
+2025-11-05,Milks Extra,0
+2025-11-06,Milks Extra,1
+2025-11-07,Milks Extra,5
+2025-11-08,Milks Extra,11
+2025-11-09,Milks Extra,5
+2025-11-10,Milks Extra,2
+2025-11-11,Milks Extra,1
+2025-11-12,Milks Extra,0
+2025-11-13,Milks Extra,1
+2025-11-14,Milks Extra,3
+2025-11-15,Milks Extra,5
+2025-11-16,Milks Extra,5
+2025-11-17,Milks Extra,0
+2025-11-18,Milks Extra,2
+2025-11-19,Milks Extra,4
+2025-11-20,Milks Extra,2
+2025-11-21,Milks Extra,3
+2025-11-22,Milks Extra,5
+2025-11-23,Milks Extra,3
+2025-11-24,Milks Extra,4
+2025-11-25,Milks Extra,2
+2025-11-26,Milks Extra,4
+2025-11-27,Milks Extra,0
+2025-11-28,Milks Extra,0
+2025-11-29,Milks Extra,6
+2025-11-30,Milks Extra,4
+2025-11-01,Mini Hash Browns,5
+2025-11-02,Mini Hash Browns,2
+2025-11-03,Mini Hash Browns,2
+2025-11-04,Mini Hash Browns,0
+2025-11-05,Mini Hash Browns,2
+2025-11-06,Mini Hash Browns,3
+2025-11-07,Mini Hash Browns,0
+2025-11-08,Mini Hash Browns,2
+2025-11-09,Mini Hash Browns,2
+2025-11-10,Mini Hash Browns,1
+2025-11-11,Mini Hash Browns,1
+2025-11-12,Mini Hash Browns,1
+2025-11-13,Mini Hash Browns,3
+2025-11-14,Mini Hash Browns,1
+2025-11-15,Mini Hash Browns,3
+2025-11-16,Mini Hash Browns,3
+2025-11-17,Mini Hash Browns,0
+2025-11-18,Mini Hash Browns,1
+2025-11-19,Mini Hash Browns,2
+2025-11-20,Mini Hash Browns,3
+2025-11-21,Mini Hash Browns,1
+2025-11-22,Mini Hash Browns,5
+2025-11-23,Mini Hash Browns,1
+2025-11-24,Mini Hash Browns,2
+2025-11-25,Mini Hash Browns,2
+2025-11-26,Mini Hash Browns,1
+2025-11-27,Mini Hash Browns,1
+2025-11-28,Mini Hash Browns,1
+2025-11-29,Mini Hash Browns,1
+2025-11-30,Mini Hash Browns,2
+2025-11-01,Moz Tom Focaccia,0
+2025-11-02,Moz Tom Focaccia,0
+2025-11-03,Moz Tom Focaccia,0
+2025-11-04,Moz Tom Focaccia,0
+2025-11-05,Moz Tom Focaccia,0
+2025-11-06,Moz Tom Focaccia,0
+2025-11-07,Moz Tom Focaccia,0
+2025-11-08,Moz Tom Focaccia,0
+2025-11-09,Moz Tom Focaccia,0
+2025-11-10,Moz Tom Focaccia,0
+2025-11-11,Moz Tom Focaccia,0
+2025-11-12,Moz Tom Focaccia,0
+2025-11-13,Moz Tom Focaccia,0
+2025-11-14,Moz Tom Focaccia,0
+2025-11-15,Moz Tom Focaccia,0
+2025-11-16,Moz Tom Focaccia,0
+2025-11-17,Moz Tom Focaccia,0
+2025-11-18,Moz Tom Focaccia,0
+2025-11-19,Moz Tom Focaccia,0
+2025-11-20,Moz Tom Focaccia,0
+2025-11-21,Moz Tom Focaccia,0
+2025-11-22,Moz Tom Focaccia,0
+2025-11-23,Moz Tom Focaccia,0
+2025-11-24,Moz Tom Focaccia,0
+2025-11-25,Moz Tom Focaccia,0
+2025-11-26,Moz Tom Focaccia,0
+2025-11-27,Moz Tom Focaccia,0
+2025-11-28,Moz Tom Focaccia,0
+2025-11-29,Moz Tom Focaccia,0
+2025-11-30,Moz Tom Focaccia,0
+2025-11-01,Mozz Toastie,0
+2025-11-02,Mozz Toastie,0
+2025-11-03,Mozz Toastie,0
+2025-11-04,Mozz Toastie,0
+2025-11-05,Mozz Toastie,0
+2025-11-06,Mozz Toastie,0
+2025-11-07,Mozz Toastie,0
+2025-11-08,Mozz Toastie,0
+2025-11-09,Mozz Toastie,0
+2025-11-10,Mozz Toastie,0
+2025-11-11,Mozz Toastie,0
+2025-11-12,Mozz Toastie,0
+2025-11-13,Mozz Toastie,0
+2025-11-14,Mozz Toastie,0
+2025-11-15,Mozz Toastie,0
+2025-11-16,Mozz Toastie,0
+2025-11-17,Mozz Toastie,0
+2025-11-18,Mozz Toastie,0
+2025-11-19,Mozz Toastie,0
+2025-11-20,Mozz Toastie,0
+2025-11-21,Mozz Toastie,0
+2025-11-22,Mozz Toastie,0
+2025-11-23,Mozz Toastie,0
+2025-11-24,Mozz Toastie,0
+2025-11-25,Mozz Toastie,0
+2025-11-26,Mozz Toastie,0
+2025-11-27,Mozz Toastie,0
+2025-11-28,Mozz Toastie,0
+2025-11-29,Mozz Toastie,0
+2025-11-30,Mozz Toastie,0
+2025-11-01,Multiseed Toast Bread,0
+2025-11-02,Multiseed Toast Bread,5
+2025-11-03,Multiseed Toast Bread,11
+2025-11-04,Multiseed Toast Bread,1
+2025-11-05,Multiseed Toast Bread,2
+2025-11-06,Multiseed Toast Bread,5
+2025-11-07,Multiseed Toast Bread,0
+2025-11-08,Multiseed Toast Bread,2
+2025-11-09,Multiseed Toast Bread,6
+2025-11-10,Multiseed Toast Bread,3
+2025-11-11,Multiseed Toast Bread,1
+2025-11-12,Multiseed Toast Bread,4
+2025-11-13,Multiseed Toast Bread,4
+2025-11-14,Multiseed Toast Bread,1
+2025-11-15,Multiseed Toast Bread,4
+2025-11-16,Multiseed Toast Bread,4
+2025-11-17,Multiseed Toast Bread,0
+2025-11-18,Multiseed Toast Bread,1
+2025-11-19,Multiseed Toast Bread,4
+2025-11-20,Multiseed Toast Bread,2
+2025-11-21,Multiseed Toast Bread,4
+2025-11-22,Multiseed Toast Bread,5
+2025-11-23,Multiseed Toast Bread,1
+2025-11-24,Multiseed Toast Bread,3
+2025-11-25,Multiseed Toast Bread,2
+2025-11-26,Multiseed Toast Bread,1
+2025-11-27,Multiseed Toast Bread,4
+2025-11-28,Multiseed Toast Bread,1
+2025-11-29,Multiseed Toast Bread,1
+2025-11-30,Multiseed Toast Bread,2
+2025-11-01,Mushroom,1
+2025-11-02,Mushroom,2
+2025-11-03,Mushroom,4
+2025-11-04,Mushroom,2
+2025-11-05,Mushroom,0
+2025-11-06,Mushroom,2
+2025-11-07,Mushroom,3
+2025-11-08,Mushroom,2
+2025-11-09,Mushroom,2
+2025-11-10,Mushroom,0
+2025-11-11,Mushroom,1
+2025-11-12,Mushroom,1
+2025-11-13,Mushroom,1
+2025-11-14,Mushroom,2
+2025-11-15,Mushroom,2
+2025-11-16,Mushroom,2
+2025-11-17,Mushroom,0
+2025-11-18,Mushroom,0
+2025-11-19,Mushroom,1
+2025-11-20,Mushroom,0
+2025-11-21,Mushroom,0
+2025-11-22,Mushroom,1
+2025-11-23,Mushroom,3
+2025-11-24,Mushroom,3
+2025-11-25,Mushroom,1
+2025-11-26,Mushroom,0
+2025-11-27,Mushroom,1
+2025-11-28,Mushroom,1
+2025-11-29,Mushroom,1
+2025-11-30,Mushroom,1
+2025-11-01,Mushroom Crois,0
+2025-11-02,Mushroom Crois,0
+2025-11-03,Mushroom Crois,0
+2025-11-04,Mushroom Crois,0
+2025-11-05,Mushroom Crois,0
+2025-11-06,Mushroom Crois,0
+2025-11-07,Mushroom Crois,0
+2025-11-08,Mushroom Crois,0
+2025-11-09,Mushroom Crois,0
+2025-11-10,Mushroom Crois,0
+2025-11-11,Mushroom Crois,0
+2025-11-12,Mushroom Crois,0
+2025-11-13,Mushroom Crois,0
+2025-11-14,Mushroom Crois,0
+2025-11-15,Mushroom Crois,0
+2025-11-16,Mushroom Crois,0
+2025-11-17,Mushroom Crois,0
+2025-11-18,Mushroom Crois,0
+2025-11-19,Mushroom Crois,0
+2025-11-20,Mushroom Crois,0
+2025-11-21,Mushroom Crois,0
+2025-11-22,Mushroom Crois,0
+2025-11-23,Mushroom Crois,0
+2025-11-24,Mushroom Crois,0
+2025-11-25,Mushroom Crois,0
+2025-11-26,Mushroom Crois,0
+2025-11-27,Mushroom Crois,0
+2025-11-28,Mushroom Crois,0
+2025-11-29,Mushroom Crois,0
+2025-11-30,Mushroom Crois,0
+2025-11-01,Mushy Peas,4
+2025-11-02,Mushy Peas,0
+2025-11-03,Mushy Peas,0
+2025-11-04,Mushy Peas,0
+2025-11-05,Mushy Peas,0
+2025-11-06,Mushy Peas,1
+2025-11-07,Mushy Peas,2
+2025-11-08,Mushy Peas,0
+2025-11-09,Mushy Peas,6
+2025-11-10,Mushy Peas,0
+2025-11-11,Mushy Peas,1
+2025-11-12,Mushy Peas,0
+2025-11-13,Mushy Peas,2
+2025-11-14,Mushy Peas,1
+2025-11-15,Mushy Peas,4
+2025-11-16,Mushy Peas,3
+2025-11-17,Mushy Peas,1
+2025-11-18,Mushy Peas,0
+2025-11-19,Mushy Peas,0
+2025-11-20,Mushy Peas,0
+2025-11-21,Mushy Peas,2
+2025-11-22,Mushy Peas,3
+2025-11-23,Mushy Peas,3
+2025-11-24,Mushy Peas,4
+2025-11-25,Mushy Peas,2
+2025-11-26,Mushy Peas,1
+2025-11-27,Mushy Peas,2
+2025-11-28,Mushy Peas,2
+2025-11-29,Mushy Peas,2
+2025-11-30,Mushy Peas,3
+2025-11-01,NY Deli Foccacia,3
+2025-11-02,NY Deli Foccacia,0
+2025-11-03,NY Deli Foccacia,0
+2025-11-04,NY Deli Foccacia,1
+2025-11-05,NY Deli Foccacia,1
+2025-11-06,NY Deli Foccacia,5
+2025-11-07,NY Deli Foccacia,2
+2025-11-08,NY Deli Foccacia,1
+2025-11-09,NY Deli Foccacia,4
+2025-11-10,NY Deli Foccacia,1
+2025-11-11,NY Deli Foccacia,1
+2025-11-12,NY Deli Foccacia,0
+2025-11-13,NY Deli Foccacia,0
+2025-11-14,NY Deli Foccacia,0
+2025-11-15,NY Deli Foccacia,0
+2025-11-16,NY Deli Foccacia,0
+2025-11-17,NY Deli Foccacia,0
+2025-11-18,NY Deli Foccacia,0
+2025-11-19,NY Deli Foccacia,0
+2025-11-20,NY Deli Foccacia,0
+2025-11-21,NY Deli Foccacia,0
+2025-11-22,NY Deli Foccacia,0
+2025-11-23,NY Deli Foccacia,0
+2025-11-24,NY Deli Foccacia,0
+2025-11-25,NY Deli Foccacia,0
+2025-11-26,NY Deli Foccacia,0
+2025-11-27,NY Deli Foccacia,0
+2025-11-28,NY Deli Foccacia,0
+2025-11-29,NY Deli Foccacia,0
+2025-11-30,NY Deli Foccacia,0
+2025-11-01,Nduja Mozz Tstie,0
+2025-11-02,Nduja Mozz Tstie,0
+2025-11-03,Nduja Mozz Tstie,0
+2025-11-04,Nduja Mozz Tstie,0
+2025-11-05,Nduja Mozz Tstie,0
+2025-11-06,Nduja Mozz Tstie,0
+2025-11-07,Nduja Mozz Tstie,0
+2025-11-08,Nduja Mozz Tstie,0
+2025-11-09,Nduja Mozz Tstie,0
+2025-11-10,Nduja Mozz Tstie,0
+2025-11-11,Nduja Mozz Tstie,0
+2025-11-12,Nduja Mozz Tstie,0
+2025-11-13,Nduja Mozz Tstie,0
+2025-11-14,Nduja Mozz Tstie,0
+2025-11-15,Nduja Mozz Tstie,0
+2025-11-16,Nduja Mozz Tstie,0
+2025-11-17,Nduja Mozz Tstie,0
+2025-11-18,Nduja Mozz Tstie,0
+2025-11-19,Nduja Mozz Tstie,0
+2025-11-20,Nduja Mozz Tstie,0
+2025-11-21,Nduja Mozz Tstie,0
+2025-11-22,Nduja Mozz Tstie,0
+2025-11-23,Nduja Mozz Tstie,0
+2025-11-24,Nduja Mozz Tstie,0
+2025-11-25,Nduja Mozz Tstie,0
+2025-11-26,Nduja Mozz Tstie,0
+2025-11-27,Nduja Mozz Tstie,0
+2025-11-28,Nduja Mozz Tstie,0
+2025-11-29,Nduja Mozz Tstie,0
+2025-11-30,Nduja Mozz Tstie,0
+2025-11-01,Orange Buttons,0
+2025-11-02,Orange Buttons,0
+2025-11-03,Orange Buttons,0
+2025-11-04,Orange Buttons,0
+2025-11-05,Orange Buttons,0
+2025-11-06,Orange Buttons,0
+2025-11-07,Orange Buttons,0
+2025-11-08,Orange Buttons,0
+2025-11-09,Orange Buttons,0
+2025-11-10,Orange Buttons,0
+2025-11-11,Orange Buttons,0
+2025-11-12,Orange Buttons,0
+2025-11-13,Orange Buttons,0
+2025-11-14,Orange Buttons,0
+2025-11-15,Orange Buttons,0
+2025-11-16,Orange Buttons,0
+2025-11-17,Orange Buttons,0
+2025-11-18,Orange Buttons,0
+2025-11-19,Orange Buttons,0
+2025-11-20,Orange Buttons,0
+2025-11-21,Orange Buttons,0
+2025-11-22,Orange Buttons,0
+2025-11-23,Orange Buttons,0
+2025-11-24,Orange Buttons,0
+2025-11-25,Orange Buttons,0
+2025-11-26,Orange Buttons,0
+2025-11-27,Orange Buttons,0
+2025-11-28,Orange Buttons,0
+2025-11-29,Orange Buttons,0
+2025-11-30,Orange Buttons,0
+2025-11-01,Orange Switchel,0
+2025-11-02,Orange Switchel,0
+2025-11-03,Orange Switchel,0
+2025-11-04,Orange Switchel,0
+2025-11-05,Orange Switchel,0
+2025-11-06,Orange Switchel,0
+2025-11-07,Orange Switchel,0
+2025-11-08,Orange Switchel,0
+2025-11-09,Orange Switchel,0
+2025-11-10,Orange Switchel,0
+2025-11-11,Orange Switchel,0
+2025-11-12,Orange Switchel,0
+2025-11-13,Orange Switchel,0
+2025-11-14,Orange Switchel,0
+2025-11-15,Orange Switchel,0
+2025-11-16,Orange Switchel,0
+2025-11-17,Orange Switchel,0
+2025-11-18,Orange Switchel,0
+2025-11-19,Orange Switchel,0
+2025-11-20,Orange Switchel,0
+2025-11-21,Orange Switchel,0
+2025-11-22,Orange Switchel,0
+2025-11-23,Orange Switchel,0
+2025-11-24,Orange Switchel,0
+2025-11-25,Orange Switchel,0
+2025-11-26,Orange Switchel,0
+2025-11-27,Orange Switchel,0
+2025-11-28,Orange Switchel,0
+2025-11-29,Orange Switchel,0
+2025-11-30,Orange Switchel,0
+2025-11-01,P.Eggs on Toast,3
+2025-11-02,P.Eggs on Toast,4
+2025-11-03,P.Eggs on Toast,9
+2025-11-04,P.Eggs on Toast,5
+2025-11-05,P.Eggs on Toast,3
+2025-11-06,P.Eggs on Toast,8
+2025-11-07,P.Eggs on Toast,3
+2025-11-08,P.Eggs on Toast,6
+2025-11-09,P.Eggs on Toast,7
+2025-11-10,P.Eggs on Toast,7
+2025-11-11,P.Eggs on Toast,6
+2025-11-12,P.Eggs on Toast,6
+2025-11-13,P.Eggs on Toast,8
+2025-11-14,P.Eggs on Toast,7
+2025-11-15,P.Eggs on Toast,4
+2025-11-16,P.Eggs on Toast,10
+2025-11-17,P.Eggs on Toast,6
+2025-11-18,P.Eggs on Toast,5
+2025-11-19,P.Eggs on Toast,3
+2025-11-20,P.Eggs on Toast,5
+2025-11-21,P.Eggs on Toast,8
+2025-11-22,P.Eggs on Toast,4
+2025-11-23,P.Eggs on Toast,4
+2025-11-24,P.Eggs on Toast,5
+2025-11-25,P.Eggs on Toast,3
+2025-11-26,P.Eggs on Toast,5
+2025-11-27,P.Eggs on Toast,4
+2025-11-28,P.Eggs on Toast,5
+2025-11-29,P.Eggs on Toast,7
+2025-11-30,P.Eggs on Toast,5
+2025-11-01,Pancakes Banana,0
+2025-11-02,Pancakes Banana,3
+2025-11-03,Pancakes Banana,1
+2025-11-04,Pancakes Banana,0
+2025-11-05,Pancakes Banana,0
+2025-11-06,Pancakes Banana,0
+2025-11-07,Pancakes Banana,0
+2025-11-08,Pancakes Banana,3
+2025-11-09,Pancakes Banana,2
+2025-11-10,Pancakes Banana,1
+2025-11-11,Pancakes Banana,0
+2025-11-12,Pancakes Banana,1
+2025-11-13,Pancakes Banana,1
+2025-11-14,Pancakes Banana,0
+2025-11-15,Pancakes Banana,4
+2025-11-16,Pancakes Banana,1
+2025-11-17,Pancakes Banana,0
+2025-11-18,Pancakes Banana,1
+2025-11-19,Pancakes Banana,0
+2025-11-20,Pancakes Banana,0
+2025-11-21,Pancakes Banana,2
+2025-11-22,Pancakes Banana,0
+2025-11-23,Pancakes Banana,1
+2025-11-24,Pancakes Banana,0
+2025-11-25,Pancakes Banana,0
+2025-11-26,Pancakes Banana,1
+2025-11-27,Pancakes Banana,0
+2025-11-28,Pancakes Banana,0
+2025-11-29,Pancakes Banana,2
+2025-11-30,Pancakes Banana,2
+2025-11-01,Pancakes Bluebry,1
+2025-11-02,Pancakes Bluebry,2
+2025-11-03,Pancakes Bluebry,1
+2025-11-04,Pancakes Bluebry,1
+2025-11-05,Pancakes Bluebry,0
+2025-11-06,Pancakes Bluebry,1
+2025-11-07,Pancakes Bluebry,0
+2025-11-08,Pancakes Bluebry,0
+2025-11-09,Pancakes Bluebry,2
+2025-11-10,Pancakes Bluebry,1
+2025-11-11,Pancakes Bluebry,1
+2025-11-12,Pancakes Bluebry,1
+2025-11-13,Pancakes Bluebry,0
+2025-11-14,Pancakes Bluebry,2
+2025-11-15,Pancakes Bluebry,1
+2025-11-16,Pancakes Bluebry,1
+2025-11-17,Pancakes Bluebry,1
+2025-11-18,Pancakes Bluebry,2
+2025-11-19,Pancakes Bluebry,0
+2025-11-20,Pancakes Bluebry,0
+2025-11-21,Pancakes Bluebry,2
+2025-11-22,Pancakes Bluebry,1
+2025-11-23,Pancakes Bluebry,1
+2025-11-24,Pancakes Bluebry,0
+2025-11-25,Pancakes Bluebry,1
+2025-11-26,Pancakes Bluebry,0
+2025-11-27,Pancakes Bluebry,0
+2025-11-28,Pancakes Bluebry,1
+2025-11-29,Pancakes Bluebry,2
+2025-11-30,Pancakes Bluebry,0
+2025-11-01,Panini Rolls,0
+2025-11-02,Panini Rolls,0
+2025-11-03,Panini Rolls,0
+2025-11-04,Panini Rolls,0
+2025-11-05,Panini Rolls,0
+2025-11-06,Panini Rolls,0
+2025-11-07,Panini Rolls,0
+2025-11-08,Panini Rolls,0
+2025-11-09,Panini Rolls,0
+2025-11-10,Panini Rolls,0
+2025-11-11,Panini Rolls,0
+2025-11-12,Panini Rolls,0
+2025-11-13,Panini Rolls,0
+2025-11-14,Panini Rolls,0
+2025-11-15,Panini Rolls,0
+2025-11-16,Panini Rolls,0
+2025-11-17,Panini Rolls,0
+2025-11-18,Panini Rolls,0
+2025-11-19,Panini Rolls,0
+2025-11-20,Panini Rolls,0
+2025-11-21,Panini Rolls,0
+2025-11-22,Panini Rolls,0
+2025-11-23,Panini Rolls,0
+2025-11-24,Panini Rolls,0
+2025-11-25,Panini Rolls,0
+2025-11-26,Panini Rolls,0
+2025-11-27,Panini Rolls,0
+2025-11-28,Panini Rolls,0
+2025-11-29,Panini Rolls,0
+2025-11-30,Panini Rolls,0
+2025-11-01,Parmesan Fries,0
+2025-11-02,Parmesan Fries,0
+2025-11-03,Parmesan Fries,0
+2025-11-04,Parmesan Fries,0
+2025-11-05,Parmesan Fries,0
+2025-11-06,Parmesan Fries,0
+2025-11-07,Parmesan Fries,0
+2025-11-08,Parmesan Fries,0
+2025-11-09,Parmesan Fries,0
+2025-11-10,Parmesan Fries,0
+2025-11-11,Parmesan Fries,0
+2025-11-12,Parmesan Fries,0
+2025-11-13,Parmesan Fries,0
+2025-11-14,Parmesan Fries,0
+2025-11-15,Parmesan Fries,0
+2025-11-16,Parmesan Fries,0
+2025-11-17,Parmesan Fries,0
+2025-11-18,Parmesan Fries,0
+2025-11-19,Parmesan Fries,1
+2025-11-20,Parmesan Fries,0
+2025-11-21,Parmesan Fries,0
+2025-11-22,Parmesan Fries,2
+2025-11-23,Parmesan Fries,1
+2025-11-24,Parmesan Fries,1
+2025-11-25,Parmesan Fries,0
+2025-11-26,Parmesan Fries,0
+2025-11-27,Parmesan Fries,1
+2025-11-28,Parmesan Fries,2
+2025-11-29,Parmesan Fries,1
+2025-11-30,Parmesan Fries,3
+2025-11-01,Pastel De Nata,0
+2025-11-02,Pastel De Nata,0
+2025-11-03,Pastel De Nata,0
+2025-11-04,Pastel De Nata,0
+2025-11-05,Pastel De Nata,0
+2025-11-06,Pastel De Nata,0
+2025-11-07,Pastel De Nata,0
+2025-11-08,Pastel De Nata,0
+2025-11-09,Pastel De Nata,0
+2025-11-10,Pastel De Nata,0
+2025-11-11,Pastel De Nata,0
+2025-11-12,Pastel De Nata,0
+2025-11-13,Pastel De Nata,0
+2025-11-14,Pastel De Nata,0
+2025-11-15,Pastel De Nata,0
+2025-11-16,Pastel De Nata,0
+2025-11-17,Pastel De Nata,0
+2025-11-18,Pastel De Nata,0
+2025-11-19,Pastel De Nata,0
+2025-11-20,Pastel De Nata,0
+2025-11-21,Pastel De Nata,0
+2025-11-22,Pastel De Nata,0
+2025-11-23,Pastel De Nata,0
+2025-11-24,Pastel De Nata,0
+2025-11-25,Pastel De Nata,0
+2025-11-26,Pastel De Nata,0
+2025-11-27,Pastel De Nata,0
+2025-11-28,Pastel De Nata,0
+2025-11-29,Pastel De Nata,0
+2025-11-30,Pastel De Nata,0
+2025-11-01,Peas,8
+2025-11-02,Peas,7
+2025-11-03,Peas,4
+2025-11-04,Peas,3
+2025-11-05,Peas,6
+2025-11-06,Peas,5
+2025-11-07,Peas,12
+2025-11-08,Peas,8
+2025-11-09,Peas,4
+2025-11-10,Peas,4
+2025-11-11,Peas,8
+2025-11-12,Peas,3
+2025-11-13,Peas,3
+2025-11-14,Peas,12
+2025-11-15,Peas,8
+2025-11-16,Peas,5
+2025-11-17,Peas,8
+2025-11-18,Peas,1
+2025-11-19,Peas,3
+2025-11-20,Peas,5
+2025-11-21,Peas,6
+2025-11-22,Peas,4
+2025-11-23,Peas,2
+2025-11-24,Peas,2
+2025-11-25,Peas,10
+2025-11-26,Peas,7
+2025-11-27,Peas,5
+2025-11-28,Peas,4
+2025-11-29,Peas,6
+2025-11-30,Peas,6
+2025-11-01,Pig Blank Tstie,0
+2025-11-02,Pig Blank Tstie,0
+2025-11-03,Pig Blank Tstie,0
+2025-11-04,Pig Blank Tstie,0
+2025-11-05,Pig Blank Tstie,0
+2025-11-06,Pig Blank Tstie,0
+2025-11-07,Pig Blank Tstie,0
+2025-11-08,Pig Blank Tstie,0
+2025-11-09,Pig Blank Tstie,0
+2025-11-10,Pig Blank Tstie,0
+2025-11-11,Pig Blank Tstie,0
+2025-11-12,Pig Blank Tstie,3
+2025-11-13,Pig Blank Tstie,4
+2025-11-14,Pig Blank Tstie,3
+2025-11-15,Pig Blank Tstie,4
+2025-11-16,Pig Blank Tstie,5
+2025-11-17,Pig Blank Tstie,7
+2025-11-18,Pig Blank Tstie,1
+2025-11-19,Pig Blank Tstie,3
+2025-11-20,Pig Blank Tstie,2
+2025-11-21,Pig Blank Tstie,3
+2025-11-22,Pig Blank Tstie,5
+2025-11-23,Pig Blank Tstie,2
+2025-11-24,Pig Blank Tstie,2
+2025-11-25,Pig Blank Tstie,4
+2025-11-26,Pig Blank Tstie,7
+2025-11-27,Pig Blank Tstie,3
+2025-11-28,Pig Blank Tstie,8
+2025-11-29,Pig Blank Tstie,10
+2025-11-30,Pig Blank Tstie,8
+2025-11-01,Pink Lemon Slush,0
+2025-11-02,Pink Lemon Slush,0
+2025-11-03,Pink Lemon Slush,0
+2025-11-04,Pink Lemon Slush,0
+2025-11-05,Pink Lemon Slush,0
+2025-11-06,Pink Lemon Slush,0
+2025-11-07,Pink Lemon Slush,0
+2025-11-08,Pink Lemon Slush,0
+2025-11-09,Pink Lemon Slush,0
+2025-11-10,Pink Lemon Slush,0
+2025-11-11,Pink Lemon Slush,0
+2025-11-12,Pink Lemon Slush,0
+2025-11-13,Pink Lemon Slush,0
+2025-11-14,Pink Lemon Slush,0
+2025-11-15,Pink Lemon Slush,0
+2025-11-16,Pink Lemon Slush,0
+2025-11-17,Pink Lemon Slush,0
+2025-11-18,Pink Lemon Slush,0
+2025-11-19,Pink Lemon Slush,0
+2025-11-20,Pink Lemon Slush,0
+2025-11-21,Pink Lemon Slush,0
+2025-11-22,Pink Lemon Slush,0
+2025-11-23,Pink Lemon Slush,0
+2025-11-24,Pink Lemon Slush,0
+2025-11-25,Pink Lemon Slush,0
+2025-11-26,Pink Lemon Slush,0
+2025-11-27,Pink Lemon Slush,0
+2025-11-28,Pink Lemon Slush,0
+2025-11-29,Pink Lemon Slush,0
+2025-11-30,Pink Lemon Slush,0
+2025-11-01,Pistachio Syrup,0
+2025-11-02,Pistachio Syrup,0
+2025-11-03,Pistachio Syrup,0
+2025-11-04,Pistachio Syrup,0
+2025-11-05,Pistachio Syrup,0
+2025-11-06,Pistachio Syrup,0
+2025-11-07,Pistachio Syrup,0
+2025-11-08,Pistachio Syrup,0
+2025-11-09,Pistachio Syrup,0
+2025-11-10,Pistachio Syrup,0
+2025-11-11,Pistachio Syrup,0
+2025-11-12,Pistachio Syrup,0
+2025-11-13,Pistachio Syrup,0
+2025-11-14,Pistachio Syrup,0
+2025-11-15,Pistachio Syrup,0
+2025-11-16,Pistachio Syrup,0
+2025-11-17,Pistachio Syrup,0
+2025-11-18,Pistachio Syrup,0
+2025-11-19,Pistachio Syrup,0
+2025-11-20,Pistachio Syrup,0
+2025-11-21,Pistachio Syrup,0
+2025-11-22,Pistachio Syrup,0
+2025-11-23,Pistachio Syrup,0
+2025-11-24,Pistachio Syrup,0
+2025-11-25,Pistachio Syrup,0
+2025-11-26,Pistachio Syrup,0
+2025-11-27,Pistachio Syrup,0
+2025-11-28,Pistachio Syrup,0
+2025-11-29,Pistachio Syrup,0
+2025-11-30,Pistachio Syrup,0
+2025-11-01,Plain JP,0
+2025-11-02,Plain JP,0
+2025-11-03,Plain JP,0
+2025-11-04,Plain JP,0
+2025-11-05,Plain JP,0
+2025-11-06,Plain JP,0
+2025-11-07,Plain JP,0
+2025-11-08,Plain JP,0
+2025-11-09,Plain JP,0
+2025-11-10,Plain JP,0
+2025-11-11,Plain JP,0
+2025-11-12,Plain JP,0
+2025-11-13,Plain JP,0
+2025-11-14,Plain JP,0
+2025-11-15,Plain JP,0
+2025-11-16,Plain JP,0
+2025-11-17,Plain JP,1
+2025-11-18,Plain JP,0
+2025-11-19,Plain JP,0
+2025-11-20,Plain JP,0
+2025-11-21,Plain JP,0
+2025-11-22,Plain JP,0
+2025-11-23,Plain JP,0
+2025-11-24,Plain JP,0
+2025-11-25,Plain JP,0
+2025-11-26,Plain JP,0
+2025-11-27,Plain JP,0
+2025-11-28,Plain JP,0
+2025-11-29,Plain JP,0
+2025-11-30,Plain JP,0
+2025-11-01,Plum Tomatoes,0
+2025-11-02,Plum Tomatoes,0
+2025-11-03,Plum Tomatoes,0
+2025-11-04,Plum Tomatoes,0
+2025-11-05,Plum Tomatoes,0
+2025-11-06,Plum Tomatoes,0
+2025-11-07,Plum Tomatoes,0
+2025-11-08,Plum Tomatoes,0
+2025-11-09,Plum Tomatoes,0
+2025-11-10,Plum Tomatoes,0
+2025-11-11,Plum Tomatoes,0
+2025-11-12,Plum Tomatoes,0
+2025-11-13,Plum Tomatoes,0
+2025-11-14,Plum Tomatoes,0
+2025-11-15,Plum Tomatoes,0
+2025-11-16,Plum Tomatoes,0
+2025-11-17,Plum Tomatoes,0
+2025-11-18,Plum Tomatoes,2
+2025-11-19,Plum Tomatoes,0
+2025-11-20,Plum Tomatoes,0
+2025-11-21,Plum Tomatoes,0
+2025-11-22,Plum Tomatoes,0
+2025-11-23,Plum Tomatoes,0
+2025-11-24,Plum Tomatoes,0
+2025-11-25,Plum Tomatoes,0
+2025-11-26,Plum Tomatoes,0
+2025-11-27,Plum Tomatoes,0
+2025-11-28,Plum Tomatoes,0
+2025-11-29,Plum Tomatoes,0
+2025-11-30,Plum Tomatoes,0
+2025-11-01,Poached Egg,7
+2025-11-02,Poached Egg,5
+2025-11-03,Poached Egg,0
+2025-11-04,Poached Egg,1
+2025-11-05,Poached Egg,4
+2025-11-06,Poached Egg,6
+2025-11-07,Poached Egg,3
+2025-11-08,Poached Egg,7
+2025-11-09,Poached Egg,11
+2025-11-10,Poached Egg,0
+2025-11-11,Poached Egg,2
+2025-11-12,Poached Egg,1
+2025-11-13,Poached Egg,3
+2025-11-14,Poached Egg,2
+2025-11-15,Poached Egg,1
+2025-11-16,Poached Egg,2
+2025-11-17,Poached Egg,2
+2025-11-18,Poached Egg,0
+2025-11-19,Poached Egg,1
+2025-11-20,Poached Egg,5
+2025-11-21,Poached Egg,6
+2025-11-22,Poached Egg,2
+2025-11-23,Poached Egg,2
+2025-11-24,Poached Egg,5
+2025-11-25,Poached Egg,2
+2025-11-26,Poached Egg,6
+2025-11-27,Poached Egg,3
+2025-11-28,Poached Egg,0
+2025-11-29,Poached Egg,1
+2025-11-30,Poached Egg,3
+2025-11-01,Porridge,0
+2025-11-02,Porridge,1
+2025-11-03,Porridge,0
+2025-11-04,Porridge,0
+2025-11-05,Porridge,0
+2025-11-06,Porridge,1
+2025-11-07,Porridge,0
+2025-11-08,Porridge,0
+2025-11-09,Porridge,1
+2025-11-10,Porridge,0
+2025-11-11,Porridge,0
+2025-11-12,Porridge,0
+2025-11-13,Porridge,0
+2025-11-14,Porridge,1
+2025-11-15,Porridge,1
+2025-11-16,Porridge,1
+2025-11-17,Porridge,0
+2025-11-18,Porridge,0
+2025-11-19,Porridge,0
+2025-11-20,Porridge,0
+2025-11-21,Porridge,1
+2025-11-22,Porridge,1
+2025-11-23,Porridge,1
+2025-11-24,Porridge,0
+2025-11-25,Porridge,0
+2025-11-26,Porridge,1
+2025-11-27,Porridge,1
+2025-11-28,Porridge,0
+2025-11-29,Porridge,0
+2025-11-30,Porridge,0
+2025-11-01,Posh Beans,1
+2025-11-02,Posh Beans,0
+2025-11-03,Posh Beans,1
+2025-11-04,Posh Beans,2
+2025-11-05,Posh Beans,1
+2025-11-06,Posh Beans,1
+2025-11-07,Posh Beans,3
+2025-11-08,Posh Beans,2
+2025-11-09,Posh Beans,0
+2025-11-10,Posh Beans,2
+2025-11-11,Posh Beans,0
+2025-11-12,Posh Beans,1
+2025-11-13,Posh Beans,3
+2025-11-14,Posh Beans,1
+2025-11-15,Posh Beans,0
+2025-11-16,Posh Beans,2
+2025-11-17,Posh Beans,0
+2025-11-18,Posh Beans,0
+2025-11-19,Posh Beans,4
+2025-11-20,Posh Beans,1
+2025-11-21,Posh Beans,2
+2025-11-22,Posh Beans,1
+2025-11-23,Posh Beans,0
+2025-11-24,Posh Beans,1
+2025-11-25,Posh Beans,0
+2025-11-26,Posh Beans,2
+2025-11-27,Posh Beans,0
+2025-11-28,Posh Beans,0
+2025-11-29,Posh Beans,0
+2025-11-30,Posh Beans,2
+2025-11-01,Posh Ploughmans,0
+2025-11-02,Posh Ploughmans,0
+2025-11-03,Posh Ploughmans,0
+2025-11-04,Posh Ploughmans,0
+2025-11-05,Posh Ploughmans,0
+2025-11-06,Posh Ploughmans,0
+2025-11-07,Posh Ploughmans,0
+2025-11-08,Posh Ploughmans,0
+2025-11-09,Posh Ploughmans,0
+2025-11-10,Posh Ploughmans,0
+2025-11-11,Posh Ploughmans,0
+2025-11-12,Posh Ploughmans,0
+2025-11-13,Posh Ploughmans,0
+2025-11-14,Posh Ploughmans,0
+2025-11-15,Posh Ploughmans,0
+2025-11-16,Posh Ploughmans,0
+2025-11-17,Posh Ploughmans,0
+2025-11-18,Posh Ploughmans,0
+2025-11-19,Posh Ploughmans,0
+2025-11-20,Posh Ploughmans,0
+2025-11-21,Posh Ploughmans,0
+2025-11-22,Posh Ploughmans,0
+2025-11-23,Posh Ploughmans,0
+2025-11-24,Posh Ploughmans,0
+2025-11-25,Posh Ploughmans,0
+2025-11-26,Posh Ploughmans,0
+2025-11-27,Posh Ploughmans,0
+2025-11-28,Posh Ploughmans,0
+2025-11-29,Posh Ploughmans,0
+2025-11-30,Posh Ploughmans,0
+2025-11-01,Quorn Burger,0
+2025-11-02,Quorn Burger,0
+2025-11-03,Quorn Burger,0
+2025-11-04,Quorn Burger,0
+2025-11-05,Quorn Burger,0
+2025-11-06,Quorn Burger,0
+2025-11-07,Quorn Burger,0
+2025-11-08,Quorn Burger,0
+2025-11-09,Quorn Burger,0
+2025-11-10,Quorn Burger,0
+2025-11-11,Quorn Burger,0
+2025-11-12,Quorn Burger,0
+2025-11-13,Quorn Burger,0
+2025-11-14,Quorn Burger,0
+2025-11-15,Quorn Burger,0
+2025-11-16,Quorn Burger,0
+2025-11-17,Quorn Burger,0
+2025-11-18,Quorn Burger,0
+2025-11-19,Quorn Burger,0
+2025-11-20,Quorn Burger,0
+2025-11-21,Quorn Burger,0
+2025-11-22,Quorn Burger,0
+2025-11-23,Quorn Burger,0
+2025-11-24,Quorn Burger,0
+2025-11-25,Quorn Burger,0
+2025-11-26,Quorn Burger,0
+2025-11-27,Quorn Burger,0
+2025-11-28,Quorn Burger,0
+2025-11-29,Quorn Burger,0
+2025-11-30,Quorn Burger,0
+2025-11-01,Quorn Katsu,0
+2025-11-02,Quorn Katsu,0
+2025-11-03,Quorn Katsu,0
+2025-11-04,Quorn Katsu,0
+2025-11-05,Quorn Katsu,0
+2025-11-06,Quorn Katsu,0
+2025-11-07,Quorn Katsu,0
+2025-11-08,Quorn Katsu,0
+2025-11-09,Quorn Katsu,0
+2025-11-10,Quorn Katsu,0
+2025-11-11,Quorn Katsu,0
+2025-11-12,Quorn Katsu,0
+2025-11-13,Quorn Katsu,0
+2025-11-14,Quorn Katsu,0
+2025-11-15,Quorn Katsu,0
+2025-11-16,Quorn Katsu,0
+2025-11-17,Quorn Katsu,0
+2025-11-18,Quorn Katsu,0
+2025-11-19,Quorn Katsu,0
+2025-11-20,Quorn Katsu,0
+2025-11-21,Quorn Katsu,0
+2025-11-22,Quorn Katsu,0
+2025-11-23,Quorn Katsu,0
+2025-11-24,Quorn Katsu,0
+2025-11-25,Quorn Katsu,0
+2025-11-26,Quorn Katsu,0
+2025-11-27,Quorn Katsu,0
+2025-11-28,Quorn Katsu,0
+2025-11-29,Quorn Katsu,0
+2025-11-30,Quorn Katsu,0
+2025-11-01,Roll & Butter ,2
+2025-11-02,Roll & Butter ,4
+2025-11-03,Roll & Butter ,2
+2025-11-04,Roll & Butter ,2
+2025-11-05,Roll & Butter ,1
+2025-11-06,Roll & Butter ,1
+2025-11-07,Roll & Butter ,2
+2025-11-08,Roll & Butter ,2
+2025-11-09,Roll & Butter ,1
+2025-11-10,Roll & Butter ,0
+2025-11-11,Roll & Butter ,4
+2025-11-12,Roll & Butter ,3
+2025-11-13,Roll & Butter ,1
+2025-11-14,Roll & Butter ,2
+2025-11-15,Roll & Butter ,2
+2025-11-16,Roll & Butter ,1
+2025-11-17,Roll & Butter ,5
+2025-11-18,Roll & Butter ,9
+2025-11-19,Roll & Butter ,1
+2025-11-20,Roll & Butter ,1
+2025-11-21,Roll & Butter ,1
+2025-11-22,Roll & Butter ,1
+2025-11-23,Roll & Butter ,3
+2025-11-24,Roll & Butter ,2
+2025-11-25,Roll & Butter ,0
+2025-11-26,Roll & Butter ,1
+2025-11-27,Roll & Butter ,1
+2025-11-28,Roll & Butter ,1
+2025-11-29,Roll & Butter ,2
+2025-11-30,Roll & Butter ,2
+2025-11-01,S.Eggs on Toast,2
+2025-11-02,S.Eggs on Toast,6
+2025-11-03,S.Eggs on Toast,4
+2025-11-04,S.Eggs on Toast,5
+2025-11-05,S.Eggs on Toast,4
+2025-11-06,S.Eggs on Toast,6
+2025-11-07,S.Eggs on Toast,4
+2025-11-08,S.Eggs on Toast,1
+2025-11-09,S.Eggs on Toast,5
+2025-11-10,S.Eggs on Toast,1
+2025-11-11,S.Eggs on Toast,5
+2025-11-12,S.Eggs on Toast,0
+2025-11-13,S.Eggs on Toast,3
+2025-11-14,S.Eggs on Toast,5
+2025-11-15,S.Eggs on Toast,5
+2025-11-16,S.Eggs on Toast,5
+2025-11-17,S.Eggs on Toast,3
+2025-11-18,S.Eggs on Toast,2
+2025-11-19,S.Eggs on Toast,1
+2025-11-20,S.Eggs on Toast,1
+2025-11-21,S.Eggs on Toast,1
+2025-11-22,S.Eggs on Toast,10
+2025-11-23,S.Eggs on Toast,5
+2025-11-24,S.Eggs on Toast,1
+2025-11-25,S.Eggs on Toast,1
+2025-11-26,S.Eggs on Toast,3
+2025-11-27,S.Eggs on Toast,3
+2025-11-28,S.Eggs on Toast,0
+2025-11-29,S.Eggs on Toast,2
+2025-11-30,S.Eggs on Toast,5
+2025-11-01,Salmon Egg Bagel,0
+2025-11-02,Salmon Egg Bagel,0
+2025-11-03,Salmon Egg Bagel,0
+2025-11-04,Salmon Egg Bagel,0
+2025-11-05,Salmon Egg Bagel,0
+2025-11-06,Salmon Egg Bagel,0
+2025-11-07,Salmon Egg Bagel,0
+2025-11-08,Salmon Egg Bagel,0
+2025-11-09,Salmon Egg Bagel,0
+2025-11-10,Salmon Egg Bagel,0
+2025-11-11,Salmon Egg Bagel,0
+2025-11-12,Salmon Egg Bagel,0
+2025-11-13,Salmon Egg Bagel,0
+2025-11-14,Salmon Egg Bagel,0
+2025-11-15,Salmon Egg Bagel,0
+2025-11-16,Salmon Egg Bagel,0
+2025-11-17,Salmon Egg Bagel,0
+2025-11-18,Salmon Egg Bagel,0
+2025-11-19,Salmon Egg Bagel,0
+2025-11-20,Salmon Egg Bagel,0
+2025-11-21,Salmon Egg Bagel,0
+2025-11-22,Salmon Egg Bagel,0
+2025-11-23,Salmon Egg Bagel,0
+2025-11-24,Salmon Egg Bagel,0
+2025-11-25,Salmon Egg Bagel,0
+2025-11-26,Salmon Egg Bagel,0
+2025-11-27,Salmon Egg Bagel,0
+2025-11-28,Salmon Egg Bagel,0
+2025-11-29,Salmon Egg Bagel,0
+2025-11-30,Salmon Egg Bagel,0
+2025-11-01,Sauces,0
+2025-11-02,Sauces,0
+2025-11-03,Sauces,0
+2025-11-04,Sauces,0
+2025-11-05,Sauces,0
+2025-11-06,Sauces,0
+2025-11-07,Sauces,0
+2025-11-08,Sauces,0
+2025-11-09,Sauces,0
+2025-11-10,Sauces,0
+2025-11-11,Sauces,0
+2025-11-12,Sauces,0
+2025-11-13,Sauces,0
+2025-11-14,Sauces,0
+2025-11-15,Sauces,0
+2025-11-16,Sauces,0
+2025-11-17,Sauces,0
+2025-11-18,Sauces,0
+2025-11-19,Sauces,0
+2025-11-20,Sauces,0
+2025-11-21,Sauces,0
+2025-11-22,Sauces,0
+2025-11-23,Sauces,0
+2025-11-24,Sauces,0
+2025-11-25,Sauces,0
+2025-11-26,Sauces,0
+2025-11-27,Sauces,0
+2025-11-28,Sauces,0
+2025-11-29,Sauces,0
+2025-11-30,Sauces,0
+2025-11-01,Sausage,15
+2025-11-02,Sausage,5
+2025-11-03,Sausage,6
+2025-11-04,Sausage,3
+2025-11-05,Sausage,4
+2025-11-06,Sausage,3
+2025-11-07,Sausage,12
+2025-11-08,Sausage,12
+2025-11-09,Sausage,13
+2025-11-10,Sausage,4
+2025-11-11,Sausage,4
+2025-11-12,Sausage,2
+2025-11-13,Sausage,11
+2025-11-14,Sausage,1
+2025-11-15,Sausage,8
+2025-11-16,Sausage,14
+2025-11-17,Sausage,5
+2025-11-18,Sausage,0
+2025-11-19,Sausage,3
+2025-11-20,Sausage,7
+2025-11-21,Sausage,5
+2025-11-22,Sausage,11
+2025-11-23,Sausage,6
+2025-11-24,Sausage,6
+2025-11-25,Sausage,3
+2025-11-26,Sausage,5
+2025-11-27,Sausage,6
+2025-11-28,Sausage,5
+2025-11-29,Sausage,5
+2025-11-30,Sausage,18
+2025-11-01,Sausage Bap,22
+2025-11-02,Sausage Bap,17
+2025-11-03,Sausage Bap,11
+2025-11-04,Sausage Bap,14
+2025-11-05,Sausage Bap,4
+2025-11-06,Sausage Bap,8
+2025-11-07,Sausage Bap,7
+2025-11-08,Sausage Bap,22
+2025-11-09,Sausage Bap,13
+2025-11-10,Sausage Bap,6
+2025-11-11,Sausage Bap,7
+2025-11-12,Sausage Bap,8
+2025-11-13,Sausage Bap,7
+2025-11-14,Sausage Bap,15
+2025-11-15,Sausage Bap,18
+2025-11-16,Sausage Bap,14
+2025-11-17,Sausage Bap,12
+2025-11-18,Sausage Bap,12
+2025-11-19,Sausage Bap,7
+2025-11-20,Sausage Bap,14
+2025-11-21,Sausage Bap,14
+2025-11-22,Sausage Bap,12
+2025-11-23,Sausage Bap,17
+2025-11-24,Sausage Bap,15
+2025-11-25,Sausage Bap,11
+2025-11-26,Sausage Bap,14
+2025-11-27,Sausage Bap,14
+2025-11-28,Sausage Bap,10
+2025-11-29,Sausage Bap,16
+2025-11-30,Sausage Bap,12
+2025-11-01,Scampi & Chips,4
+2025-11-02,Scampi & Chips,3
+2025-11-03,Scampi & Chips,2
+2025-11-04,Scampi & Chips,2
+2025-11-05,Scampi & Chips,4
+2025-11-06,Scampi & Chips,3
+2025-11-07,Scampi & Chips,8
+2025-11-08,Scampi & Chips,5
+2025-11-09,Scampi & Chips,6
+2025-11-10,Scampi & Chips,5
+2025-11-11,Scampi & Chips,6
+2025-11-12,Scampi & Chips,1
+2025-11-13,Scampi & Chips,4
+2025-11-14,Scampi & Chips,7
+2025-11-15,Scampi & Chips,6
+2025-11-16,Scampi & Chips,2
+2025-11-17,Scampi & Chips,4
+2025-11-18,Scampi & Chips,0
+2025-11-19,Scampi & Chips,2
+2025-11-20,Scampi & Chips,2
+2025-11-21,Scampi & Chips,6
+2025-11-22,Scampi & Chips,4
+2025-11-23,Scampi & Chips,3
+2025-11-24,Scampi & Chips,4
+2025-11-25,Scampi & Chips,6
+2025-11-26,Scampi & Chips,3
+2025-11-27,Scampi & Chips,4
+2025-11-28,Scampi & Chips,2
+2025-11-29,Scampi & Chips,7
+2025-11-30,Scampi & Chips,4
+2025-11-01,Scrambled Egg,2
+2025-11-02,Scrambled Egg,2
+2025-11-03,Scrambled Egg,3
+2025-11-04,Scrambled Egg,1
+2025-11-05,Scrambled Egg,2
+2025-11-06,Scrambled Egg,6
+2025-11-07,Scrambled Egg,1
+2025-11-08,Scrambled Egg,1
+2025-11-09,Scrambled Egg,3
+2025-11-10,Scrambled Egg,0
+2025-11-11,Scrambled Egg,3
+2025-11-12,Scrambled Egg,0
+2025-11-13,Scrambled Egg,0
+2025-11-14,Scrambled Egg,3
+2025-11-15,Scrambled Egg,0
+2025-11-16,Scrambled Egg,2
+2025-11-17,Scrambled Egg,0
+2025-11-18,Scrambled Egg,0
+2025-11-19,Scrambled Egg,0
+2025-11-20,Scrambled Egg,0
+2025-11-21,Scrambled Egg,1
+2025-11-22,Scrambled Egg,0
+2025-11-23,Scrambled Egg,2
+2025-11-24,Scrambled Egg,0
+2025-11-25,Scrambled Egg,7
+2025-11-26,Scrambled Egg,0
+2025-11-27,Scrambled Egg,1
+2025-11-28,Scrambled Egg,3
+2025-11-29,Scrambled Egg,1
+2025-11-30,Scrambled Egg,3
+2025-11-01,Seasoned Fries,7
+2025-11-02,Seasoned Fries,4
+2025-11-03,Seasoned Fries,6
+2025-11-04,Seasoned Fries,7
+2025-11-05,Seasoned Fries,3
+2025-11-06,Seasoned Fries,8
+2025-11-07,Seasoned Fries,3
+2025-11-08,Seasoned Fries,2
+2025-11-09,Seasoned Fries,7
+2025-11-10,Seasoned Fries,1
+2025-11-11,Seasoned Fries,7
+2025-11-12,Seasoned Fries,8
+2025-11-13,Seasoned Fries,11
+2025-11-14,Seasoned Fries,12
+2025-11-15,Seasoned Fries,8
+2025-11-16,Seasoned Fries,11
+2025-11-17,Seasoned Fries,7
+2025-11-18,Seasoned Fries,5
+2025-11-19,Seasoned Fries,3
+2025-11-20,Seasoned Fries,7
+2025-11-21,Seasoned Fries,7
+2025-11-22,Seasoned Fries,7
+2025-11-23,Seasoned Fries,9
+2025-11-24,Seasoned Fries,3
+2025-11-25,Seasoned Fries,7
+2025-11-26,Seasoned Fries,4
+2025-11-27,Seasoned Fries,4
+2025-11-28,Seasoned Fries,8
+2025-11-29,Seasoned Fries,10
+2025-11-30,Seasoned Fries,10
+2025-11-01,Shakshuka Eggs,3
+2025-11-02,Shakshuka Eggs,2
+2025-11-03,Shakshuka Eggs,1
+2025-11-04,Shakshuka Eggs,0
+2025-11-05,Shakshuka Eggs,0
+2025-11-06,Shakshuka Eggs,1
+2025-11-07,Shakshuka Eggs,1
+2025-11-08,Shakshuka Eggs,3
+2025-11-09,Shakshuka Eggs,2
+2025-11-10,Shakshuka Eggs,0
+2025-11-11,Shakshuka Eggs,0
+2025-11-12,Shakshuka Eggs,1
+2025-11-13,Shakshuka Eggs,1
+2025-11-14,Shakshuka Eggs,0
+2025-11-15,Shakshuka Eggs,0
+2025-11-16,Shakshuka Eggs,3
+2025-11-17,Shakshuka Eggs,2
+2025-11-18,Shakshuka Eggs,0
+2025-11-19,Shakshuka Eggs,0
+2025-11-20,Shakshuka Eggs,0
+2025-11-21,Shakshuka Eggs,0
+2025-11-22,Shakshuka Eggs,0
+2025-11-23,Shakshuka Eggs,1
+2025-11-24,Shakshuka Eggs,0
+2025-11-25,Shakshuka Eggs,2
+2025-11-26,Shakshuka Eggs,1
+2025-11-27,Shakshuka Eggs,2
+2025-11-28,Shakshuka Eggs,1
+2025-11-29,Shakshuka Eggs,2
+2025-11-30,Shakshuka Eggs,0
+2025-11-01,Side Salad,0
+2025-11-02,Side Salad,0
+2025-11-03,Side Salad,0
+2025-11-04,Side Salad,0
+2025-11-05,Side Salad,0
+2025-11-06,Side Salad,0
+2025-11-07,Side Salad,0
+2025-11-08,Side Salad,0
+2025-11-09,Side Salad,0
+2025-11-10,Side Salad,0
+2025-11-11,Side Salad,0
+2025-11-12,Side Salad,1
+2025-11-13,Side Salad,0
+2025-11-14,Side Salad,0
+2025-11-15,Side Salad,0
+2025-11-16,Side Salad,0
+2025-11-17,Side Salad,0
+2025-11-18,Side Salad,0
+2025-11-19,Side Salad,0
+2025-11-20,Side Salad,1
+2025-11-21,Side Salad,0
+2025-11-22,Side Salad,0
+2025-11-23,Side Salad,0
+2025-11-24,Side Salad,0
+2025-11-25,Side Salad,0
+2025-11-26,Side Salad,0
+2025-11-27,Side Salad,0
+2025-11-28,Side Salad,1
+2025-11-29,Side Salad,0
+2025-11-30,Side Salad,0
+2025-11-01,Soft Drinks,87
+2025-11-02,Soft Drinks,69
+2025-11-03,Soft Drinks,58
+2025-11-04,Soft Drinks,37
+2025-11-05,Soft Drinks,42
+2025-11-06,Soft Drinks,61
+2025-11-07,Soft Drinks,51
+2025-11-08,Soft Drinks,75
+2025-11-09,Soft Drinks,59
+2025-11-10,Soft Drinks,49
+2025-11-11,Soft Drinks,31
+2025-11-12,Soft Drinks,44
+2025-11-13,Soft Drinks,35
+2025-11-14,Soft Drinks,75
+2025-11-15,Soft Drinks,71
+2025-11-16,Soft Drinks,51
+2025-11-17,Soft Drinks,36
+2025-11-18,Soft Drinks,28
+2025-11-19,Soft Drinks,29
+2025-11-20,Soft Drinks,40
+2025-11-21,Soft Drinks,45
+2025-11-22,Soft Drinks,76
+2025-11-23,Soft Drinks,54
+2025-11-24,Soft Drinks,49
+2025-11-25,Soft Drinks,41
+2025-11-26,Soft Drinks,39
+2025-11-27,Soft Drinks,63
+2025-11-28,Soft Drinks,61
+2025-11-29,Soft Drinks,69
+2025-11-30,Soft Drinks,75
+2025-11-01,Sourdough Toast Bread,1
+2025-11-02,Sourdough Toast Bread,5
+2025-11-03,Sourdough Toast Bread,1
+2025-11-04,Sourdough Toast Bread,1
+2025-11-05,Sourdough Toast Bread,0
+2025-11-06,Sourdough Toast Bread,0
+2025-11-07,Sourdough Toast Bread,1
+2025-11-08,Sourdough Toast Bread,2
+2025-11-09,Sourdough Toast Bread,1
+2025-11-10,Sourdough Toast Bread,2
+2025-11-11,Sourdough Toast Bread,1
+2025-11-12,Sourdough Toast Bread,0
+2025-11-13,Sourdough Toast Bread,1
+2025-11-14,Sourdough Toast Bread,0
+2025-11-15,Sourdough Toast Bread,1
+2025-11-16,Sourdough Toast Bread,2
+2025-11-17,Sourdough Toast Bread,0
+2025-11-18,Sourdough Toast Bread,2
+2025-11-19,Sourdough Toast Bread,0
+2025-11-20,Sourdough Toast Bread,0
+2025-11-21,Sourdough Toast Bread,0
+2025-11-22,Sourdough Toast Bread,4
+2025-11-23,Sourdough Toast Bread,1
+2025-11-24,Sourdough Toast Bread,0
+2025-11-25,Sourdough Toast Bread,0
+2025-11-26,Sourdough Toast Bread,0
+2025-11-27,Sourdough Toast Bread,1
+2025-11-28,Sourdough Toast Bread,0
+2025-11-29,Sourdough Toast Bread,2
+2025-11-30,Sourdough Toast Bread,2
+2025-11-01,Spinach,0
+2025-11-02,Spinach,0
+2025-11-03,Spinach,0
+2025-11-04,Spinach,0
+2025-11-05,Spinach,0
+2025-11-06,Spinach,0
+2025-11-07,Spinach,0
+2025-11-08,Spinach,0
+2025-11-09,Spinach,0
+2025-11-10,Spinach,0
+2025-11-11,Spinach,0
+2025-11-12,Spinach,0
+2025-11-13,Spinach,0
+2025-11-14,Spinach,0
+2025-11-15,Spinach,0
+2025-11-16,Spinach,0
+2025-11-17,Spinach,0
+2025-11-18,Spinach,0
+2025-11-19,Spinach,0
+2025-11-20,Spinach,0
+2025-11-21,Spinach,0
+2025-11-22,Spinach,0
+2025-11-23,Spinach,0
+2025-11-24,Spinach,0
+2025-11-25,Spinach,0
+2025-11-26,Spinach,0
+2025-11-27,Spinach,0
+2025-11-28,Spinach,0
+2025-11-29,Spinach,0
+2025-11-30,Spinach,0
+2025-11-01,Steak Pie,0
+2025-11-02,Steak Pie,0
+2025-11-03,Steak Pie,0
+2025-11-04,Steak Pie,0
+2025-11-05,Steak Pie,0
+2025-11-06,Steak Pie,0
+2025-11-07,Steak Pie,0
+2025-11-08,Steak Pie,0
+2025-11-09,Steak Pie,0
+2025-11-10,Steak Pie,0
+2025-11-11,Steak Pie,0
+2025-11-12,Steak Pie,0
+2025-11-13,Steak Pie,0
+2025-11-14,Steak Pie,0
+2025-11-15,Steak Pie,0
+2025-11-16,Steak Pie,0
+2025-11-17,Steak Pie,0
+2025-11-18,Steak Pie,0
+2025-11-19,Steak Pie,0
+2025-11-20,Steak Pie,0
+2025-11-21,Steak Pie,0
+2025-11-22,Steak Pie,0
+2025-11-23,Steak Pie,0
+2025-11-24,Steak Pie,0
+2025-11-25,Steak Pie,0
+2025-11-26,Steak Pie,0
+2025-11-27,Steak Pie,0
+2025-11-28,Steak Pie,0
+2025-11-29,Steak Pie,0
+2025-11-30,Steak Pie,0
+2025-11-01,Streaky Bacon,0
+2025-11-02,Streaky Bacon,0
+2025-11-03,Streaky Bacon,0
+2025-11-04,Streaky Bacon,0
+2025-11-05,Streaky Bacon,0
+2025-11-06,Streaky Bacon,1
+2025-11-07,Streaky Bacon,0
+2025-11-08,Streaky Bacon,0
+2025-11-09,Streaky Bacon,0
+2025-11-10,Streaky Bacon,0
+2025-11-11,Streaky Bacon,0
+2025-11-12,Streaky Bacon,0
+2025-11-13,Streaky Bacon,1
+2025-11-14,Streaky Bacon,0
+2025-11-15,Streaky Bacon,0
+2025-11-16,Streaky Bacon,0
+2025-11-17,Streaky Bacon,0
+2025-11-18,Streaky Bacon,0
+2025-11-19,Streaky Bacon,0
+2025-11-20,Streaky Bacon,1
+2025-11-21,Streaky Bacon,0
+2025-11-22,Streaky Bacon,0
+2025-11-23,Streaky Bacon,0
+2025-11-24,Streaky Bacon,0
+2025-11-25,Streaky Bacon,0
+2025-11-26,Streaky Bacon,0
+2025-11-27,Streaky Bacon,1
+2025-11-28,Streaky Bacon,0
+2025-11-29,Streaky Bacon,0
+2025-11-30,Streaky Bacon,0
+2025-11-01,Sweet Pot Fries,0
+2025-11-02,Sweet Pot Fries,0
+2025-11-03,Sweet Pot Fries,0
+2025-11-04,Sweet Pot Fries,0
+2025-11-05,Sweet Pot Fries,0
+2025-11-06,Sweet Pot Fries,0
+2025-11-07,Sweet Pot Fries,0
+2025-11-08,Sweet Pot Fries,0
+2025-11-09,Sweet Pot Fries,0
+2025-11-10,Sweet Pot Fries,0
+2025-11-11,Sweet Pot Fries,0
+2025-11-12,Sweet Pot Fries,0
+2025-11-13,Sweet Pot Fries,0
+2025-11-14,Sweet Pot Fries,0
+2025-11-15,Sweet Pot Fries,0
+2025-11-16,Sweet Pot Fries,0
+2025-11-17,Sweet Pot Fries,0
+2025-11-18,Sweet Pot Fries,0
+2025-11-19,Sweet Pot Fries,0
+2025-11-20,Sweet Pot Fries,0
+2025-11-21,Sweet Pot Fries,0
+2025-11-22,Sweet Pot Fries,0
+2025-11-23,Sweet Pot Fries,0
+2025-11-24,Sweet Pot Fries,0
+2025-11-25,Sweet Pot Fries,0
+2025-11-26,Sweet Pot Fries,0
+2025-11-27,Sweet Pot Fries,0
+2025-11-28,Sweet Pot Fries,0
+2025-11-29,Sweet Pot Fries,0
+2025-11-30,Sweet Pot Fries,0
+2025-11-01,Syrups,10
+2025-11-02,Syrups,15
+2025-11-03,Syrups,14
+2025-11-04,Syrups,7
+2025-11-05,Syrups,8
+2025-11-06,Syrups,6
+2025-11-07,Syrups,11
+2025-11-08,Syrups,16
+2025-11-09,Syrups,15
+2025-11-10,Syrups,5
+2025-11-11,Syrups,8
+2025-11-12,Syrups,8
+2025-11-13,Syrups,9
+2025-11-14,Syrups,16
+2025-11-15,Syrups,11
+2025-11-16,Syrups,10
+2025-11-17,Syrups,5
+2025-11-18,Syrups,4
+2025-11-19,Syrups,7
+2025-11-20,Syrups,7
+2025-11-21,Syrups,23
+2025-11-22,Syrups,14
+2025-11-23,Syrups,7
+2025-11-24,Syrups,13
+2025-11-25,Syrups,6
+2025-11-26,Syrups,21
+2025-11-27,Syrups,14
+2025-11-28,Syrups,16
+2025-11-29,Syrups,20
+2025-11-30,Syrups,16
+2025-11-01,Tattie Scone,3
+2025-11-02,Tattie Scone,0
+2025-11-03,Tattie Scone,5
+2025-11-04,Tattie Scone,0
+2025-11-05,Tattie Scone,0
+2025-11-06,Tattie Scone,6
+2025-11-07,Tattie Scone,3
+2025-11-08,Tattie Scone,2
+2025-11-09,Tattie Scone,6
+2025-11-10,Tattie Scone,0
+2025-11-11,Tattie Scone,0
+2025-11-12,Tattie Scone,1
+2025-11-13,Tattie Scone,2
+2025-11-14,Tattie Scone,2
+2025-11-15,Tattie Scone,3
+2025-11-16,Tattie Scone,2
+2025-11-17,Tattie Scone,3
+2025-11-18,Tattie Scone,0
+2025-11-19,Tattie Scone,0
+2025-11-20,Tattie Scone,1
+2025-11-21,Tattie Scone,1
+2025-11-22,Tattie Scone,5
+2025-11-23,Tattie Scone,4
+2025-11-24,Tattie Scone,5
+2025-11-25,Tattie Scone,1
+2025-11-26,Tattie Scone,1
+2025-11-27,Tattie Scone,0
+2025-11-28,Tattie Scone,2
+2025-11-29,Tattie Scone,4
+2025-11-30,Tattie Scone,3
+2025-11-01,The Breakfast,64
+2025-11-02,The Breakfast,44
+2025-11-03,The Breakfast,30
+2025-11-04,The Breakfast,26
+2025-11-05,The Breakfast,11
+2025-11-06,The Breakfast,22
+2025-11-07,The Breakfast,46
+2025-11-08,The Breakfast,45
+2025-11-09,The Breakfast,44
+2025-11-10,The Breakfast,26
+2025-11-11,The Breakfast,26
+2025-11-12,The Breakfast,38
+2025-11-13,The Breakfast,27
+2025-11-14,The Breakfast,32
+2025-11-15,The Breakfast,53
+2025-11-16,The Breakfast,46
+2025-11-17,The Breakfast,27
+2025-11-18,The Breakfast,21
+2025-11-19,The Breakfast,27
+2025-11-20,The Breakfast,14
+2025-11-21,The Breakfast,43
+2025-11-22,The Breakfast,52
+2025-11-23,The Breakfast,42
+2025-11-24,The Breakfast,28
+2025-11-25,The Breakfast,23
+2025-11-26,The Breakfast,35
+2025-11-27,The Breakfast,19
+2025-11-28,The Breakfast,49
+2025-11-29,The Breakfast,37
+2025-11-30,The Breakfast,53
+2025-11-01,The Brunch,0
+2025-11-02,The Brunch,0
+2025-11-03,The Brunch,0
+2025-11-04,The Brunch,0
+2025-11-05,The Brunch,0
+2025-11-06,The Brunch,0
+2025-11-07,The Brunch,0
+2025-11-08,The Brunch,0
+2025-11-09,The Brunch,0
+2025-11-10,The Brunch,0
+2025-11-11,The Brunch,0
+2025-11-12,The Brunch,0
+2025-11-13,The Brunch,0
+2025-11-14,The Brunch,0
+2025-11-15,The Brunch,0
+2025-11-16,The Brunch,0
+2025-11-17,The Brunch,0
+2025-11-18,The Brunch,0
+2025-11-19,The Brunch,0
+2025-11-20,The Brunch,0
+2025-11-21,The Brunch,0
+2025-11-22,The Brunch,0
+2025-11-23,The Brunch,0
+2025-11-24,The Brunch,0
+2025-11-25,The Brunch,0
+2025-11-26,The Brunch,0
+2025-11-27,The Brunch,0
+2025-11-28,The Brunch,0
+2025-11-29,The Brunch,0
+2025-11-30,The Brunch,0
+2025-11-01,Toasted Teacake,8
+2025-11-02,Toasted Teacake,10
+2025-11-03,Toasted Teacake,15
+2025-11-04,Toasted Teacake,12
+2025-11-05,Toasted Teacake,8
+2025-11-06,Toasted Teacake,11
+2025-11-07,Toasted Teacake,10
+2025-11-08,Toasted Teacake,9
+2025-11-09,Toasted Teacake,3
+2025-11-10,Toasted Teacake,8
+2025-11-11,Toasted Teacake,13
+2025-11-12,Toasted Teacake,6
+2025-11-13,Toasted Teacake,12
+2025-11-14,Toasted Teacake,11
+2025-11-15,Toasted Teacake,7
+2025-11-16,Toasted Teacake,8
+2025-11-17,Toasted Teacake,8
+2025-11-18,Toasted Teacake,13
+2025-11-19,Toasted Teacake,6
+2025-11-20,Toasted Teacake,7
+2025-11-21,Toasted Teacake,9
+2025-11-22,Toasted Teacake,6
+2025-11-23,Toasted Teacake,5
+2025-11-24,Toasted Teacake,6
+2025-11-25,Toasted Teacake,10
+2025-11-26,Toasted Teacake,4
+2025-11-27,Toasted Teacake,8
+2025-11-28,Toasted Teacake,11
+2025-11-29,Toasted Teacake,8
+2025-11-30,Toasted Teacake,6
+2025-11-01,Tom Pasta Bowl,0
+2025-11-02,Tom Pasta Bowl,0
+2025-11-03,Tom Pasta Bowl,0
+2025-11-04,Tom Pasta Bowl,0
+2025-11-05,Tom Pasta Bowl,0
+2025-11-06,Tom Pasta Bowl,0
+2025-11-07,Tom Pasta Bowl,0
+2025-11-08,Tom Pasta Bowl,0
+2025-11-09,Tom Pasta Bowl,0
+2025-11-10,Tom Pasta Bowl,0
+2025-11-11,Tom Pasta Bowl,0
+2025-11-12,Tom Pasta Bowl,0
+2025-11-13,Tom Pasta Bowl,0
+2025-11-14,Tom Pasta Bowl,0
+2025-11-15,Tom Pasta Bowl,0
+2025-11-16,Tom Pasta Bowl,0
+2025-11-17,Tom Pasta Bowl,0
+2025-11-18,Tom Pasta Bowl,0
+2025-11-19,Tom Pasta Bowl,0
+2025-11-20,Tom Pasta Bowl,0
+2025-11-21,Tom Pasta Bowl,0
+2025-11-22,Tom Pasta Bowl,0
+2025-11-23,Tom Pasta Bowl,0
+2025-11-24,Tom Pasta Bowl,0
+2025-11-25,Tom Pasta Bowl,0
+2025-11-26,Tom Pasta Bowl,0
+2025-11-27,Tom Pasta Bowl,0
+2025-11-28,Tom Pasta Bowl,0
+2025-11-29,Tom Pasta Bowl,0
+2025-11-30,Tom Pasta Bowl,0
+2025-11-01,Tomato,1
+2025-11-02,Tomato,2
+2025-11-03,Tomato,3
+2025-11-04,Tomato,0
+2025-11-05,Tomato,1
+2025-11-06,Tomato,0
+2025-11-07,Tomato,2
+2025-11-08,Tomato,0
+2025-11-09,Tomato,0
+2025-11-10,Tomato,1
+2025-11-11,Tomato,2
+2025-11-12,Tomato,0
+2025-11-13,Tomato,2
+2025-11-14,Tomato,1
+2025-11-15,Tomato,1
+2025-11-16,Tomato,3
+2025-11-17,Tomato,0
+2025-11-18,Tomato,0
+2025-11-19,Tomato,2
+2025-11-20,Tomato,1
+2025-11-21,Tomato,1
+2025-11-22,Tomato,1
+2025-11-23,Tomato,2
+2025-11-24,Tomato,2
+2025-11-25,Tomato,0
+2025-11-26,Tomato,0
+2025-11-27,Tomato,0
+2025-11-28,Tomato,2
+2025-11-29,Tomato,3
+2025-11-30,Tomato,1
+2025-11-01,Tomato Soup,10
+2025-11-02,Tomato Soup,2
+2025-11-03,Tomato Soup,1
+2025-11-04,Tomato Soup,2
+2025-11-05,Tomato Soup,5
+2025-11-06,Tomato Soup,6
+2025-11-07,Tomato Soup,8
+2025-11-08,Tomato Soup,4
+2025-11-09,Tomato Soup,4
+2025-11-10,Tomato Soup,1
+2025-11-11,Tomato Soup,1
+2025-11-12,Tomato Soup,0
+2025-11-13,Tomato Soup,4
+2025-11-14,Tomato Soup,3
+2025-11-15,Tomato Soup,3
+2025-11-16,Tomato Soup,0
+2025-11-17,Tomato Soup,0
+2025-11-18,Tomato Soup,0
+2025-11-19,Tomato Soup,1
+2025-11-20,Tomato Soup,3
+2025-11-21,Tomato Soup,3
+2025-11-22,Tomato Soup,2
+2025-11-23,Tomato Soup,5
+2025-11-24,Tomato Soup,0
+2025-11-25,Tomato Soup,4
+2025-11-26,Tomato Soup,3
+2025-11-27,Tomato Soup,6
+2025-11-28,Tomato Soup,4
+2025-11-29,Tomato Soup,2
+2025-11-30,Tomato Soup,2
+2025-11-01,Tomato Soup Add,3
+2025-11-02,Tomato Soup Add,0
+2025-11-03,Tomato Soup Add,0
+2025-11-04,Tomato Soup Add,1
+2025-11-05,Tomato Soup Add,1
+2025-11-06,Tomato Soup Add,2
+2025-11-07,Tomato Soup Add,0
+2025-11-08,Tomato Soup Add,4
+2025-11-09,Tomato Soup Add,0
+2025-11-10,Tomato Soup Add,2
+2025-11-11,Tomato Soup Add,0
+2025-11-12,Tomato Soup Add,0
+2025-11-13,Tomato Soup Add,0
+2025-11-14,Tomato Soup Add,0
+2025-11-15,Tomato Soup Add,0
+2025-11-16,Tomato Soup Add,0
+2025-11-17,Tomato Soup Add,0
+2025-11-18,Tomato Soup Add,1
+2025-11-19,Tomato Soup Add,0
+2025-11-20,Tomato Soup Add,0
+2025-11-21,Tomato Soup Add,0
+2025-11-22,Tomato Soup Add,1
+2025-11-23,Tomato Soup Add,0
+2025-11-24,Tomato Soup Add,1
+2025-11-25,Tomato Soup Add,0
+2025-11-26,Tomato Soup Add,1
+2025-11-27,Tomato Soup Add,1
+2025-11-28,Tomato Soup Add,0
+2025-11-29,Tomato Soup Add,0
+2025-11-30,Tomato Soup Add,0
+2025-11-01,Tuna JP,4
+2025-11-02,Tuna JP,7
+2025-11-03,Tuna JP,2
+2025-11-04,Tuna JP,3
+2025-11-05,Tuna JP,0
+2025-11-06,Tuna JP,1
+2025-11-07,Tuna JP,0
+2025-11-08,Tuna JP,2
+2025-11-09,Tuna JP,4
+2025-11-10,Tuna JP,3
+2025-11-11,Tuna JP,3
+2025-11-12,Tuna JP,4
+2025-11-13,Tuna JP,1
+2025-11-14,Tuna JP,1
+2025-11-15,Tuna JP,7
+2025-11-16,Tuna JP,3
+2025-11-17,Tuna JP,3
+2025-11-18,Tuna JP,4
+2025-11-19,Tuna JP,2
+2025-11-20,Tuna JP,6
+2025-11-21,Tuna JP,3
+2025-11-22,Tuna JP,2
+2025-11-23,Tuna JP,1
+2025-11-24,Tuna JP,2
+2025-11-25,Tuna JP,2
+2025-11-26,Tuna JP,1
+2025-11-27,Tuna JP,6
+2025-11-28,Tuna JP,2
+2025-11-29,Tuna JP,1
+2025-11-30,Tuna JP,4
+2025-11-01,Tuna Mayo Mix,0
+2025-11-02,Tuna Mayo Mix,0
+2025-11-03,Tuna Mayo Mix,0
+2025-11-04,Tuna Mayo Mix,0
+2025-11-05,Tuna Mayo Mix,0
+2025-11-06,Tuna Mayo Mix,0
+2025-11-07,Tuna Mayo Mix,0
+2025-11-08,Tuna Mayo Mix,0
+2025-11-09,Tuna Mayo Mix,0
+2025-11-10,Tuna Mayo Mix,0
+2025-11-11,Tuna Mayo Mix,0
+2025-11-12,Tuna Mayo Mix,0
+2025-11-13,Tuna Mayo Mix,0
+2025-11-14,Tuna Mayo Mix,0
+2025-11-15,Tuna Mayo Mix,0
+2025-11-16,Tuna Mayo Mix,0
+2025-11-17,Tuna Mayo Mix,0
+2025-11-18,Tuna Mayo Mix,0
+2025-11-19,Tuna Mayo Mix,0
+2025-11-20,Tuna Mayo Mix,0
+2025-11-21,Tuna Mayo Mix,0
+2025-11-22,Tuna Mayo Mix,0
+2025-11-23,Tuna Mayo Mix,0
+2025-11-24,Tuna Mayo Mix,0
+2025-11-25,Tuna Mayo Mix,0
+2025-11-26,Tuna Mayo Mix,0
+2025-11-27,Tuna Mayo Mix,0
+2025-11-28,Tuna Mayo Mix,0
+2025-11-29,Tuna Mayo Mix,0
+2025-11-30,Tuna Mayo Mix,0
+2025-11-01,Tuna Melt Panini,0
+2025-11-02,Tuna Melt Panini,0
+2025-11-03,Tuna Melt Panini,0
+2025-11-04,Tuna Melt Panini,0
+2025-11-05,Tuna Melt Panini,0
+2025-11-06,Tuna Melt Panini,0
+2025-11-07,Tuna Melt Panini,0
+2025-11-08,Tuna Melt Panini,0
+2025-11-09,Tuna Melt Panini,0
+2025-11-10,Tuna Melt Panini,0
+2025-11-11,Tuna Melt Panini,0
+2025-11-12,Tuna Melt Panini,0
+2025-11-13,Tuna Melt Panini,0
+2025-11-14,Tuna Melt Panini,0
+2025-11-15,Tuna Melt Panini,0
+2025-11-16,Tuna Melt Panini,0
+2025-11-17,Tuna Melt Panini,0
+2025-11-18,Tuna Melt Panini,0
+2025-11-19,Tuna Melt Panini,0
+2025-11-20,Tuna Melt Panini,0
+2025-11-21,Tuna Melt Panini,0
+2025-11-22,Tuna Melt Panini,0
+2025-11-23,Tuna Melt Panini,0
+2025-11-24,Tuna Melt Panini,0
+2025-11-25,Tuna Melt Panini,0
+2025-11-26,Tuna Melt Panini,0
+2025-11-27,Tuna Melt Panini,0
+2025-11-28,Tuna Melt Panini,0
+2025-11-29,Tuna Melt Panini,0
+2025-11-30,Tuna Melt Panini,0
+2025-11-01,Tuna Panini,0
+2025-11-02,Tuna Panini,0
+2025-11-03,Tuna Panini,0
+2025-11-04,Tuna Panini,0
+2025-11-05,Tuna Panini,0
+2025-11-06,Tuna Panini,0
+2025-11-07,Tuna Panini,0
+2025-11-08,Tuna Panini,0
+2025-11-09,Tuna Panini,0
+2025-11-10,Tuna Panini,0
+2025-11-11,Tuna Panini,0
+2025-11-12,Tuna Panini,0
+2025-11-13,Tuna Panini,0
+2025-11-14,Tuna Panini,0
+2025-11-15,Tuna Panini,0
+2025-11-16,Tuna Panini,0
+2025-11-17,Tuna Panini,0
+2025-11-18,Tuna Panini,0
+2025-11-19,Tuna Panini,0
+2025-11-20,Tuna Panini,0
+2025-11-21,Tuna Panini,0
+2025-11-22,Tuna Panini,0
+2025-11-23,Tuna Panini,0
+2025-11-24,Tuna Panini,0
+2025-11-25,Tuna Panini,0
+2025-11-26,Tuna Panini,0
+2025-11-27,Tuna Panini,0
+2025-11-28,Tuna Panini,0
+2025-11-29,Tuna Panini,0
+2025-11-30,Tuna Panini,0
+2025-11-01,Tuna Toastie,1
+2025-11-02,Tuna Toastie,2
+2025-11-03,Tuna Toastie,3
+2025-11-04,Tuna Toastie,3
+2025-11-05,Tuna Toastie,3
+2025-11-06,Tuna Toastie,1
+2025-11-07,Tuna Toastie,3
+2025-11-08,Tuna Toastie,1
+2025-11-09,Tuna Toastie,2
+2025-11-10,Tuna Toastie,2
+2025-11-11,Tuna Toastie,8
+2025-11-12,Tuna Toastie,4
+2025-11-13,Tuna Toastie,2
+2025-11-14,Tuna Toastie,4
+2025-11-15,Tuna Toastie,0
+2025-11-16,Tuna Toastie,2
+2025-11-17,Tuna Toastie,3
+2025-11-18,Tuna Toastie,1
+2025-11-19,Tuna Toastie,0
+2025-11-20,Tuna Toastie,3
+2025-11-21,Tuna Toastie,2
+2025-11-22,Tuna Toastie,2
+2025-11-23,Tuna Toastie,3
+2025-11-24,Tuna Toastie,7
+2025-11-25,Tuna Toastie,2
+2025-11-26,Tuna Toastie,1
+2025-11-27,Tuna Toastie,1
+2025-11-28,Tuna Toastie,2
+2025-11-29,Tuna Toastie,4
+2025-11-30,Tuna Toastie,1
+2025-11-01,Turkey Panini,0
+2025-11-02,Turkey Panini,0
+2025-11-03,Turkey Panini,0
+2025-11-04,Turkey Panini,0
+2025-11-05,Turkey Panini,0
+2025-11-06,Turkey Panini,0
+2025-11-07,Turkey Panini,0
+2025-11-08,Turkey Panini,0
+2025-11-09,Turkey Panini,0
+2025-11-10,Turkey Panini,0
+2025-11-11,Turkey Panini,0
+2025-11-12,Turkey Panini,0
+2025-11-13,Turkey Panini,0
+2025-11-14,Turkey Panini,0
+2025-11-15,Turkey Panini,0
+2025-11-16,Turkey Panini,0
+2025-11-17,Turkey Panini,0
+2025-11-18,Turkey Panini,0
+2025-11-19,Turkey Panini,0
+2025-11-20,Turkey Panini,0
+2025-11-21,Turkey Panini,0
+2025-11-22,Turkey Panini,0
+2025-11-23,Turkey Panini,0
+2025-11-24,Turkey Panini,0
+2025-11-25,Turkey Panini,0
+2025-11-26,Turkey Panini,0
+2025-11-27,Turkey Panini,0
+2025-11-28,Turkey Panini,0
+2025-11-29,Turkey Panini,0
+2025-11-30,Turkey Panini,0
+2025-11-01,Veg Sausage Bap,0
+2025-11-02,Veg Sausage Bap,0
+2025-11-03,Veg Sausage Bap,0
+2025-11-04,Veg Sausage Bap,0
+2025-11-05,Veg Sausage Bap,0
+2025-11-06,Veg Sausage Bap,0
+2025-11-07,Veg Sausage Bap,0
+2025-11-08,Veg Sausage Bap,0
+2025-11-09,Veg Sausage Bap,0
+2025-11-10,Veg Sausage Bap,0
+2025-11-11,Veg Sausage Bap,0
+2025-11-12,Veg Sausage Bap,0
+2025-11-13,Veg Sausage Bap,0
+2025-11-14,Veg Sausage Bap,0
+2025-11-15,Veg Sausage Bap,0
+2025-11-16,Veg Sausage Bap,0
+2025-11-17,Veg Sausage Bap,0
+2025-11-18,Veg Sausage Bap,0
+2025-11-19,Veg Sausage Bap,0
+2025-11-20,Veg Sausage Bap,0
+2025-11-21,Veg Sausage Bap,0
+2025-11-22,Veg Sausage Bap,0
+2025-11-23,Veg Sausage Bap,0
+2025-11-24,Veg Sausage Bap,0
+2025-11-25,Veg Sausage Bap,0
+2025-11-26,Veg Sausage Bap,0
+2025-11-27,Veg Sausage Bap,0
+2025-11-28,Veg Sausage Bap,0
+2025-11-29,Veg Sausage Bap,0
+2025-11-30,Veg Sausage Bap,0
+2025-11-01,Vegan Breakfast,1
+2025-11-02,Vegan Breakfast,1
+2025-11-03,Vegan Breakfast,0
+2025-11-04,Vegan Breakfast,0
+2025-11-05,Vegan Breakfast,1
+2025-11-06,Vegan Breakfast,1
+2025-11-07,Vegan Breakfast,0
+2025-11-08,Vegan Breakfast,2
+2025-11-09,Vegan Breakfast,1
+2025-11-10,Vegan Breakfast,0
+2025-11-11,Vegan Breakfast,0
+2025-11-12,Vegan Breakfast,1
+2025-11-13,Vegan Breakfast,1
+2025-11-14,Vegan Breakfast,0
+2025-11-15,Vegan Breakfast,1
+2025-11-16,Vegan Breakfast,2
+2025-11-17,Vegan Breakfast,0
+2025-11-18,Vegan Breakfast,0
+2025-11-19,Vegan Breakfast,0
+2025-11-20,Vegan Breakfast,1
+2025-11-21,Vegan Breakfast,1
+2025-11-22,Vegan Breakfast,1
+2025-11-23,Vegan Breakfast,0
+2025-11-24,Vegan Breakfast,0
+2025-11-25,Vegan Breakfast,0
+2025-11-26,Vegan Breakfast,0
+2025-11-27,Vegan Breakfast,0
+2025-11-28,Vegan Breakfast,0
+2025-11-29,Vegan Breakfast,2
+2025-11-30,Vegan Breakfast,0
+2025-11-01,Vegan Flapjack,0
+2025-11-02,Vegan Flapjack,0
+2025-11-03,Vegan Flapjack,0
+2025-11-04,Vegan Flapjack,0
+2025-11-05,Vegan Flapjack,0
+2025-11-06,Vegan Flapjack,0
+2025-11-07,Vegan Flapjack,0
+2025-11-08,Vegan Flapjack,0
+2025-11-09,Vegan Flapjack,0
+2025-11-10,Vegan Flapjack,0
+2025-11-11,Vegan Flapjack,0
+2025-11-12,Vegan Flapjack,0
+2025-11-13,Vegan Flapjack,0
+2025-11-14,Vegan Flapjack,0
+2025-11-15,Vegan Flapjack,0
+2025-11-16,Vegan Flapjack,0
+2025-11-17,Vegan Flapjack,0
+2025-11-18,Vegan Flapjack,0
+2025-11-19,Vegan Flapjack,0
+2025-11-20,Vegan Flapjack,0
+2025-11-21,Vegan Flapjack,0
+2025-11-22,Vegan Flapjack,0
+2025-11-23,Vegan Flapjack,0
+2025-11-24,Vegan Flapjack,0
+2025-11-25,Vegan Flapjack,0
+2025-11-26,Vegan Flapjack,0
+2025-11-27,Vegan Flapjack,0
+2025-11-28,Vegan Flapjack,0
+2025-11-29,Vegan Flapjack,0
+2025-11-30,Vegan Flapjack,0
+2025-11-01,Vegan Sausage,0
+2025-11-02,Vegan Sausage,0
+2025-11-03,Vegan Sausage,0
+2025-11-04,Vegan Sausage,0
+2025-11-05,Vegan Sausage,0
+2025-11-06,Vegan Sausage,0
+2025-11-07,Vegan Sausage,0
+2025-11-08,Vegan Sausage,0
+2025-11-09,Vegan Sausage,0
+2025-11-10,Vegan Sausage,0
+2025-11-11,Vegan Sausage,0
+2025-11-12,Vegan Sausage,0
+2025-11-13,Vegan Sausage,0
+2025-11-14,Vegan Sausage,0
+2025-11-15,Vegan Sausage,0
+2025-11-16,Vegan Sausage,0
+2025-11-17,Vegan Sausage,0
+2025-11-18,Vegan Sausage,0
+2025-11-19,Vegan Sausage,0
+2025-11-20,Vegan Sausage,0
+2025-11-21,Vegan Sausage,0
+2025-11-22,Vegan Sausage,0
+2025-11-23,Vegan Sausage,0
+2025-11-24,Vegan Sausage,0
+2025-11-25,Vegan Sausage,0
+2025-11-26,Vegan Sausage,0
+2025-11-27,Vegan Sausage,0
+2025-11-28,Vegan Sausage,0
+2025-11-29,Vegan Sausage,0
+2025-11-30,Vegan Sausage,0
+2025-11-01,Veggie Bap,2
+2025-11-02,Veggie Bap,1
+2025-11-03,Veggie Bap,2
+2025-11-04,Veggie Bap,0
+2025-11-05,Veggie Bap,0
+2025-11-06,Veggie Bap,0
+2025-11-07,Veggie Bap,0
+2025-11-08,Veggie Bap,0
+2025-11-09,Veggie Bap,0
+2025-11-10,Veggie Bap,0
+2025-11-11,Veggie Bap,0
+2025-11-12,Veggie Bap,1
+2025-11-13,Veggie Bap,0
+2025-11-14,Veggie Bap,1
+2025-11-15,Veggie Bap,1
+2025-11-16,Veggie Bap,1
+2025-11-17,Veggie Bap,2
+2025-11-18,Veggie Bap,0
+2025-11-19,Veggie Bap,0
+2025-11-20,Veggie Bap,0
+2025-11-21,Veggie Bap,0
+2025-11-22,Veggie Bap,0
+2025-11-23,Veggie Bap,0
+2025-11-24,Veggie Bap,2
+2025-11-25,Veggie Bap,0
+2025-11-26,Veggie Bap,1
+2025-11-27,Veggie Bap,2
+2025-11-28,Veggie Bap,1
+2025-11-29,Veggie Bap,0
+2025-11-30,Veggie Bap,1
+2025-11-01,Veggie Breakfast,7
+2025-11-02,Veggie Breakfast,3
+2025-11-03,Veggie Breakfast,0
+2025-11-04,Veggie Breakfast,1
+2025-11-05,Veggie Breakfast,0
+2025-11-06,Veggie Breakfast,2
+2025-11-07,Veggie Breakfast,5
+2025-11-08,Veggie Breakfast,2
+2025-11-09,Veggie Breakfast,2
+2025-11-10,Veggie Breakfast,1
+2025-11-11,Veggie Breakfast,0
+2025-11-12,Veggie Breakfast,1
+2025-11-13,Veggie Breakfast,5
+2025-11-14,Veggie Breakfast,1
+2025-11-15,Veggie Breakfast,6
+2025-11-16,Veggie Breakfast,2
+2025-11-17,Veggie Breakfast,0
+2025-11-18,Veggie Breakfast,1
+2025-11-19,Veggie Breakfast,3
+2025-11-20,Veggie Breakfast,0
+2025-11-21,Veggie Breakfast,2
+2025-11-22,Veggie Breakfast,4
+2025-11-23,Veggie Breakfast,4
+2025-11-24,Veggie Breakfast,4
+2025-11-25,Veggie Breakfast,0
+2025-11-26,Veggie Breakfast,2
+2025-11-27,Veggie Breakfast,4
+2025-11-28,Veggie Breakfast,1
+2025-11-29,Veggie Breakfast,3
+2025-11-30,Veggie Breakfast,6
+2025-11-01,Waffle Fries,3
+2025-11-02,Waffle Fries,4
+2025-11-03,Waffle Fries,4
+2025-11-04,Waffle Fries,0
+2025-11-05,Waffle Fries,1
+2025-11-06,Waffle Fries,1
+2025-11-07,Waffle Fries,4
+2025-11-08,Waffle Fries,10
+2025-11-09,Waffle Fries,2
+2025-11-10,Waffle Fries,3
+2025-11-11,Waffle Fries,2
+2025-11-12,Waffle Fries,1
+2025-11-13,Waffle Fries,2
+2025-11-14,Waffle Fries,4
+2025-11-15,Waffle Fries,2
+2025-11-16,Waffle Fries,4
+2025-11-17,Waffle Fries,2
+2025-11-18,Waffle Fries,1
+2025-11-19,Waffle Fries,1
+2025-11-20,Waffle Fries,4
+2025-11-21,Waffle Fries,0
+2025-11-22,Waffle Fries,4
+2025-11-23,Waffle Fries,3
+2025-11-24,Waffle Fries,4
+2025-11-25,Waffle Fries,2
+2025-11-26,Waffle Fries,3
+2025-11-27,Waffle Fries,6
+2025-11-28,Waffle Fries,0
+2025-11-29,Waffle Fries,2
+2025-11-30,Waffle Fries,3
+2025-11-01,Waffles,3
+2025-11-02,Waffles,2
+2025-11-03,Waffles,4
+2025-11-04,Waffles,3
+2025-11-05,Waffles,0
+2025-11-06,Waffles,2
+2025-11-07,Waffles,2
+2025-11-08,Waffles,1
+2025-11-09,Waffles,1
+2025-11-10,Waffles,0
+2025-11-11,Waffles,3
+2025-11-12,Waffles,2
+2025-11-13,Waffles,2
+2025-11-14,Waffles,0
+2025-11-15,Waffles,2
+2025-11-16,Waffles,1
+2025-11-17,Waffles,1
+2025-11-18,Waffles,0
+2025-11-19,Waffles,0
+2025-11-20,Waffles,3
+2025-11-21,Waffles,1
+2025-11-22,Waffles,1
+2025-11-23,Waffles,1
+2025-11-24,Waffles,2
+2025-11-25,Waffles,0
+2025-11-26,Waffles,2
+2025-11-27,Waffles,2
+2025-11-28,Waffles,1
+2025-11-29,Waffles,0
+2025-11-30,Waffles,3
+2025-11-01,White Bread,0
+2025-11-02,White Bread,0
+2025-11-03,White Bread,0
+2025-11-04,White Bread,0
+2025-11-05,White Bread,0
+2025-11-06,White Bread,0
+2025-11-07,White Bread,0
+2025-11-08,White Bread,0
+2025-11-09,White Bread,0
+2025-11-10,White Bread,0
+2025-11-11,White Bread,0
+2025-11-12,White Bread,0
+2025-11-13,White Bread,0
+2025-11-14,White Bread,0
+2025-11-15,White Bread,0
+2025-11-16,White Bread,0
+2025-11-17,White Bread,0
+2025-11-18,White Bread,0
+2025-11-19,White Bread,0
+2025-11-20,White Bread,0
+2025-11-21,White Bread,1
+2025-11-22,White Bread,0
+2025-11-23,White Bread,0
+2025-11-24,White Bread,0
+2025-11-25,White Bread,0
+2025-11-26,White Bread,0
+2025-11-27,White Bread,0
+2025-11-28,White Bread,0
+2025-11-29,White Bread,0
+2025-11-30,White Bread,0
+2025-11-01,White Toast Bread,47
+2025-11-02,White Toast Bread,46
+2025-11-03,White Toast Bread,28
+2025-11-04,White Toast Bread,20
+2025-11-05,White Toast Bread,16
+2025-11-06,White Toast Bread,29
+2025-11-07,White Toast Bread,31
+2025-11-08,White Toast Bread,31
+2025-11-09,White Toast Bread,50
+2025-11-10,White Toast Bread,28
+2025-11-11,White Toast Bread,28
+2025-11-12,White Toast Bread,26
+2025-11-13,White Toast Bread,19
+2025-11-14,White Toast Bread,30
+2025-11-15,White Toast Bread,41
+2025-11-16,White Toast Bread,36
+2025-11-17,White Toast Bread,22
+2025-11-18,White Toast Bread,26
+2025-11-19,White Toast Bread,30
+2025-11-20,White Toast Bread,27
+2025-11-21,White Toast Bread,35
+2025-11-22,White Toast Bread,39
+2025-11-23,White Toast Bread,63
+2025-11-24,White Toast Bread,32
+2025-11-25,White Toast Bread,22
+2025-11-26,White Toast Bread,29
+2025-11-27,White Toast Bread,25
+2025-11-28,White Toast Bread,31
+2025-11-29,White Toast Bread,38
+2025-11-30,White Toast Bread,34
+2025-11-01,Yog Bowl Banana,0
+2025-11-02,Yog Bowl Banana,0
+2025-11-03,Yog Bowl Banana,0
+2025-11-04,Yog Bowl Banana,0
+2025-11-05,Yog Bowl Banana,0
+2025-11-06,Yog Bowl Banana,0
+2025-11-07,Yog Bowl Banana,0
+2025-11-08,Yog Bowl Banana,0
+2025-11-09,Yog Bowl Banana,0
+2025-11-10,Yog Bowl Banana,0
+2025-11-11,Yog Bowl Banana,0
+2025-11-12,Yog Bowl Banana,0
+2025-11-13,Yog Bowl Banana,0
+2025-11-14,Yog Bowl Banana,0
+2025-11-15,Yog Bowl Banana,0
+2025-11-16,Yog Bowl Banana,0
+2025-11-17,Yog Bowl Banana,0
+2025-11-18,Yog Bowl Banana,0
+2025-11-19,Yog Bowl Banana,0
+2025-11-20,Yog Bowl Banana,0
+2025-11-21,Yog Bowl Banana,0
+2025-11-22,Yog Bowl Banana,0
+2025-11-23,Yog Bowl Banana,0
+2025-11-24,Yog Bowl Banana,1
+2025-11-25,Yog Bowl Banana,0
+2025-11-26,Yog Bowl Banana,0
+2025-11-27,Yog Bowl Banana,0
+2025-11-28,Yog Bowl Banana,0
+2025-11-29,Yog Bowl Banana,0
+2025-11-30,Yog Bowl Banana,1
+2025-11-01,Yog Bowl Bluebry,0
+2025-11-02,Yog Bowl Bluebry,0
+2025-11-03,Yog Bowl Bluebry,1
+2025-11-04,Yog Bowl Bluebry,0
+2025-11-05,Yog Bowl Bluebry,0
+2025-11-06,Yog Bowl Bluebry,0
+2025-11-07,Yog Bowl Bluebry,0
+2025-11-08,Yog Bowl Bluebry,0
+2025-11-09,Yog Bowl Bluebry,0
+2025-11-10,Yog Bowl Bluebry,0
+2025-11-11,Yog Bowl Bluebry,0
+2025-11-12,Yog Bowl Bluebry,0
+2025-11-13,Yog Bowl Bluebry,0
+2025-11-14,Yog Bowl Bluebry,0
+2025-11-15,Yog Bowl Bluebry,1
+2025-11-16,Yog Bowl Bluebry,0
+2025-11-17,Yog Bowl Bluebry,0
+2025-11-18,Yog Bowl Bluebry,0
+2025-11-19,Yog Bowl Bluebry,0
+2025-11-20,Yog Bowl Bluebry,1
+2025-11-21,Yog Bowl Bluebry,0
+2025-11-22,Yog Bowl Bluebry,0
+2025-11-23,Yog Bowl Bluebry,0
+2025-11-24,Yog Bowl Bluebry,0
+2025-11-25,Yog Bowl Bluebry,0
+2025-11-26,Yog Bowl Bluebry,0
+2025-11-27,Yog Bowl Bluebry,0
+2025-11-28,Yog Bowl Bluebry,0
+2025-11-29,Yog Bowl Bluebry,0
+2025-11-30,Yog Bowl Bluebry,0
+2025-11-01,Yog Granola Bowl,0
+2025-11-02,Yog Granola Bowl,0
+2025-11-03,Yog Granola Bowl,0
+2025-11-04,Yog Granola Bowl,0
+2025-11-05,Yog Granola Bowl,0
+2025-11-06,Yog Granola Bowl,0
+2025-11-07,Yog Granola Bowl,0
+2025-11-08,Yog Granola Bowl,0
+2025-11-09,Yog Granola Bowl,0
+2025-11-10,Yog Granola Bowl,0
+2025-11-11,Yog Granola Bowl,0
+2025-11-12,Yog Granola Bowl,0
+2025-11-13,Yog Granola Bowl,0
+2025-11-14,Yog Granola Bowl,0
+2025-11-15,Yog Granola Bowl,0
+2025-11-16,Yog Granola Bowl,0
+2025-11-17,Yog Granola Bowl,0
+2025-11-18,Yog Granola Bowl,0
+2025-11-19,Yog Granola Bowl,0
+2025-11-20,Yog Granola Bowl,0
+2025-11-21,Yog Granola Bowl,0
+2025-11-22,Yog Granola Bowl,0
+2025-11-23,Yog Granola Bowl,0
+2025-11-24,Yog Granola Bowl,0
+2025-11-25,Yog Granola Bowl,0
+2025-11-26,Yog Granola Bowl,0
+2025-11-27,Yog Granola Bowl,0
+2025-11-28,Yog Granola Bowl,0
+2025-11-29,Yog Granola Bowl,0
+2025-11-30,Yog Granola Bowl,0
+2025-11-01,York Pud Wrap,0
+2025-11-02,York Pud Wrap,0
+2025-11-03,York Pud Wrap,0
+2025-11-04,York Pud Wrap,0
+2025-11-05,York Pud Wrap,0
+2025-11-06,York Pud Wrap,0
+2025-11-07,York Pud Wrap,0
+2025-11-08,York Pud Wrap,0
+2025-11-09,York Pud Wrap,0
+2025-11-10,York Pud Wrap,0
+2025-11-11,York Pud Wrap,0
+2025-11-12,York Pud Wrap,0
+2025-11-13,York Pud Wrap,0
+2025-11-14,York Pud Wrap,0
+2025-11-15,York Pud Wrap,0
+2025-11-16,York Pud Wrap,0
+2025-11-17,York Pud Wrap,0
+2025-11-18,York Pud Wrap,0
+2025-11-19,York Pud Wrap,0
+2025-11-20,York Pud Wrap,0
+2025-11-21,York Pud Wrap,0
+2025-11-22,York Pud Wrap,0
+2025-11-23,York Pud Wrap,0
+2025-11-24,York Pud Wrap,0
+2025-11-25,York Pud Wrap,0
+2025-11-26,York Pud Wrap,0
+2025-11-27,York Pud Wrap,0
+2025-11-28,York Pud Wrap,0
+2025-11-29,York Pud Wrap,0
+2025-11-30,York Pud Wrap,0
