@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Final_capstone_project.iml" filepath="$PROJECT_DIR$/.idea/Final_capstone_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WasteNot.iml" filepath="$PROJECT_DIR$/.idea/WasteNot.iml" />
     </modules>
   </component>
 </project>

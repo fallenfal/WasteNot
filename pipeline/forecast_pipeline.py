@@ -1,14 +1,9 @@
-"""
-Forecast pipeline - retrains a model, forecasts 1/7/30 days, and generates
-3 PDF reports (kitchen prep, ordering, stakeholder).
-
-By default it picks the best model from model_tracking.db based on WAPE.
-Change FORCE_MODEL below to lock it to a specific model.
-
-Usage:
-    python forecast_pipeline.py
-    python forecast_pipeline.py --model arima
-"""
+# ── Forecast pipeline ──
+# Handles model retraining, forecasting (1, 7, 30 days), and report generation.
+# Generates reports for kitchen prep, ordering, and stakeholders.
+#
+# Defaults to the best performing model from model_tracking.db (based on WAPE).
+# The -november flag enables standardized evaluation for November 2025.
 
 import os
 import sys
@@ -23,29 +18,21 @@ from datetime import datetime, timedelta
 warnings.filterwarnings('ignore')
 
 # ── paths ──
-DATA_DIR    = '../preprocesing_data/processed_csv'
-RESULTS_DIR = '../results'
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR    = os.path.join(BASE_DIR, 'preprocesing_data', 'processed_csv')
+RESULTS_DIR = os.path.join(BASE_DIR, 'results')
 DB_PATH     = os.path.join(RESULTS_DIR, 'model_tracking.db')
 
-# how many optuna trials when retraining (30 is a good balance, drop to 10 for quick tests)
+# Optuna trials for retraining
 OPTUNA_TRIALS = 30
 
-# store opens at 8, closes at 17, so 9 business hours
+# Operational hours: 8 AM to 5 PM (9 hours)
 BUSINESS_HOURS = list(range(8, 17))
 HOURS_PER_DAY  = 9
 
-# ── which model to use ──
-# Set to None => auto-picks best model from model_tracking.db (lowest WAPE per horizon)
-# Or set to one of these to force it:
-#   'xgb_simple_daily'       basic xgb, 3 lags
-#   'xgb_improved_daily'     xgb with rolling/momentum features
-#   'xgb_simple_hourly'      hourly xgb, 3 hourly lags, rolls up 9h to daily
-#   'xgb_improved_hourly'    hourly xgb with rush flags + rolling
-#   'arima'                  ARIMA(2,1,1), fastest option
-#   'prophet_daily'          prophet per product
-#   'prophet_hourly'         hourly prophet, rolls up to daily
-#   'lstm_daily'             global LSTM, 30-day sequences (slow on CPU)
-#   'lstm_hourly'            global hourly LSTM, 63-step sequences (slowest)
+# Model Selection Strategy:
+# Set to None for auto-selection based on WAPE.
+# Manual overrides available for specific model testing.
 FORCE_MODEL = 'xgb_improved_daily'
 
 # grab the products list from the existing menu_items_ingredients.py
@@ -93,9 +80,7 @@ MODEL_TYPE_TO_RUNNER = {
 }
 
 
-# ── recipes ──
-# Try importing from the existing file first, otherwise build it inline.
-# TODO: eventually move this to a CSV or DB table so the kitchen can update it
+# Not implemented yet, eventually move this to a CSV or DB table so the kitchen can update it
 def get_recipes():
     try:
         from menu_items_ingredients import recipes
@@ -234,7 +219,7 @@ def get_recipes():
 # ── pick the best model from the DB ──
 
 def select_best_models(db_path):
-    """Check model_tracking.db for the winning model at each horizon."""
+    # Check model_tracking.db for the winning model at each horizon.
     if not os.path.exists(db_path):
         print(f"  WARNING: {db_path} not found, will default to xgb_improved_daily")
         return None
@@ -266,27 +251,37 @@ def select_best_models(db_path):
 
 
 def resolve_runner(model_type):
-    """Figure out which runner function to call for a given DB model_type string."""
-    r = MODEL_TYPE_TO_RUNNER.get(model_type)
-    if r:
-        return r
+    # Figure out which runner function to call for a given DB model_type string.
+    runner = MODEL_TYPE_TO_RUNNER.get(model_type)
+    if runner:
+        return runner
     # fuzzy match for model types I haven't explicitly mapped
-    mt = model_type.lower()
-    if 'xgboost' in mt and 'simple' in mt and 'hourly' in mt: return 'xgb_simple_hourly'
-    if 'xgboost' in mt and 'hourly' in mt: return 'xgb_improved_hourly'
-    if 'xgboost' in mt and 'simple' in mt: return 'xgb_simple_daily'
-    if 'xgboost' in mt: return 'xgb_improved_daily'
-    if 'lstm' in mt and 'hourly' in mt: return 'lstm_hourly'
-    if 'lstm' in mt: return 'lstm_daily'
-    if 'prophet' in mt and 'hourly' in mt: return 'prophet_hourly'
-    if 'prophet' in mt: return 'prophet_daily'
-    if 'arima' in mt: return 'arima'
+    # we do it like this because the models are saved in db with date appended in name
+    model_type_lower = model_type.lower()
+    if 'xgboost' in model_type_lower and 'simple' in model_type_lower and 'hourly' in model_type_lower:
+        return 'xgb_simple_hourly'
+    if 'xgboost' in model_type_lower and 'hourly' in model_type_lower:
+        return 'xgb_improved_hourly'
+    if 'xgboost' in model_type_lower and 'simple' in model_type_lower:
+        return 'xgb_simple_daily'
+    if 'xgboost' in model_type_lower:
+        return 'xgb_improved_daily'
+    if 'lstm_forcast' in model_type_lower and 'hourly' in model_type_lower:
+        return 'lstm_hourly'
+    if 'lstm_forcast' in model_type_lower:
+        return 'lstm_daily'
+    if 'prophet' in model_type_lower and 'hourly' in model_type_lower:
+        return 'prophet_hourly'
+    if 'prophet' in model_type_lower:
+        return 'prophet_daily'
+    if 'arima_forecast' in model_type_lower:
+        return 'arima_forecast'
     print(f"  WARNING: don't recognise model_type '{model_type}', falling back to xgb_improved_daily")
     return 'xgb_improved_daily'
 
 
 # ── unit conversion ──
-# anything over 500g gets shown as kg in the reports
+# anything over 500g gets shown as kg in the reports for a more easy visualization, rather than having 7850g you would get 7.85kg
 
 def convert_grams_to_kg(df):
     out = df.copy()
@@ -306,61 +301,61 @@ def fmt_qty(q, u):
 # ── data loading (shared by all models) ──
 
 def load_sales_long():
-    s = pd.read_csv(os.path.join(DATA_DIR, 'sales_data_preprocessed.csv'))
-    s['Date'] = pd.to_datetime(s['Date']).dt.normalize()
-    if 'Time' in s.columns:
-        s = s.drop(columns=['Time'])
-    ds = s.groupby('Date').sum(numeric_only=True).reset_index()
-    product_cols = [c for c in ds.columns if c != 'Date']
+    sales_data = pd.read_csv(os.path.join(DATA_DIR, 'sales_data_preprocessed.csv'))
+    sales_data['Date'] = pd.to_datetime(sales_data['Date']).dt.normalize()
+    if 'Time' in sales_data.columns:
+        sales_data = sales_data.drop(columns=['Time'])
+    daily_sales = sales_data.groupby('Date').sum(numeric_only=True).reset_index()
+    product_cols = [col for col in daily_sales.columns if col != 'Date']
 
-    dl = pd.melt(ds, id_vars=['Date'], value_vars=product_cols,
-                 var_name='Product_Name', value_name='Sales')
-    dl['Sales'] = dl['Sales'].clip(lower=0)
-    dl = dl[dl['Product_Name'].isin(PRODUCTS_TO_FORECAST)].reset_index(drop=True)
-    dl = dl.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
-    return dl, ds
+    df_long = pd.melt(daily_sales, id_vars=['Date'], value_vars=product_cols,
+                      var_name='Product_Name', value_name='Sales')
+    df_long['Sales'] = df_long['Sales'].clip(lower=0)
+    df_long = df_long[df_long['Product_Name'].isin(PRODUCTS_TO_FORECAST)].reset_index(drop=True)
+    df_long = df_long.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
+    return df_long, daily_sales
 
 def load_sales_hourly():
-    """Load hourly sales filtered to business hours only (8-16)."""
-    s = pd.read_csv(os.path.join(DATA_DIR, 'sales_data_preprocessed.csv'))
-    s['Date'] = pd.to_datetime(s['Date'])
-    s = s[s['Date'].dt.hour.isin(BUSINESS_HOURS)]
-    if 'Time' in s.columns:
-        s = s.drop(columns=['Time'])
-    pc = [c for c in s.columns if c not in ['Date', 'Time', 'date'] and s[c].dtype.kind in 'iufc']
+    # Load hourly sales filtered to business hours only (8-16).
+    sales_data = pd.read_csv(os.path.join(DATA_DIR, 'sales_data_preprocessed.csv'))
+    sales_data['Date'] = pd.to_datetime(sales_data['Date'])
+    sales_data = sales_data[sales_data['Date'].dt.hour.isin(BUSINESS_HOURS)]
+    if 'Time' in sales_data.columns:
+        sales_data = sales_data.drop(columns=['Time'])
+    product_cols = [col for col in sales_data.columns if col not in ['Date', 'Time', 'date'] and sales_data[col].dtype.kind in 'iufc']
 
-    dl = pd.melt(s, id_vars=['Date'], value_vars=pc,
-                 var_name='Product_Name', value_name='Sales')
-    dl['Sales'] = dl['Sales'].clip(lower=0)
-    dl = dl[dl['Product_Name'].isin(PRODUCTS_TO_FORECAST)].reset_index(drop=True)
-    return dl.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
+    df_long = pd.melt(sales_data, id_vars=['Date'], value_vars=product_cols,
+                      var_name='Product_Name', value_name='Sales')
+    df_long['Sales'] = df_long['Sales'].clip(lower=0)
+    df_long = df_long[df_long['Product_Name'].isin(PRODUCTS_TO_FORECAST)].reset_index(drop=True)
+    return df_long.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
 
 def load_exogenous():
     # weather
-    w = pd.read_csv(os.path.join(DATA_DIR, 'weather_data_hourly.csv'))
-    w['Date'] = pd.to_datetime(w['Date']).dt.normalize()
-    agg = {'apparent_temperature':'mean', 'precipitation':'sum', 'snowfall':'sum',
-           'snow_depth':'max', 'relative_humidity_2m':'mean', 'cloud_cover':'mean',
-           'visibility':'mean', 'wind_speed_10m':'mean', 'wind_gusts_10m':'max'}
-    if 'weather_code' in w.columns:
-        w['is_clear'] = (w['weather_code'] == 0).astype(int)
-        w['is_cloudy'] = w['weather_code'].isin([1,2,3,45,48]).astype(int)
-        w['is_rain'] = w['weather_code'].isin([51,53,55,56,57,61,63,65,66,67,80,81,82,95,96,99]).astype(int)
-        w['is_snow'] = w['weather_code'].isin([71,73,75,77,85,86]).astype(int)
-        agg.update({'is_clear':'max', 'is_cloudy':'max', 'is_rain':'max', 'is_snow':'max'})
-    daily_weather = w.groupby('Date').agg(agg).reset_index()
+    weather_data = pd.read_csv(os.path.join(DATA_DIR, 'weather_data_hourly.csv'))
+    weather_data['Date'] = pd.to_datetime(weather_data['Date']).dt.normalize()
+    aggregation_map = {'apparent_temperature':'mean', 'precipitation':'sum', 'snowfall':'sum',
+                       'snow_depth':'max', 'relative_humidity_2m':'mean', 'cloud_cover':'mean',
+                       'visibility':'mean', 'wind_speed_10m':'mean', 'wind_gusts_10m':'max'}
+    if 'weather_code' in weather_data.columns:
+        weather_data['is_clear'] = (weather_data['weather_code'] == 0).astype(int)
+        weather_data['is_cloudy'] = weather_data['weather_code'].isin([1,2,3,45,48]).astype(int)
+        weather_data['is_rain'] = weather_data['weather_code'].isin([51,53,55,56,57,61,63,65,66,67,80,81,82,95,96,99]).astype(int)
+        weather_data['is_snow'] = weather_data['weather_code'].isin([71,73,75,77,85,86]).astype(int)
+        aggregation_map.update({'is_clear':'max', 'is_cloudy':'max', 'is_rain':'max', 'is_snow':'max'})
+    daily_weather = weather_data.groupby('Date').agg(aggregation_map).reset_index()
 
     # holidays
-    h = pd.read_csv(os.path.join(DATA_DIR, 'holidays_data_preprocessed.csv'))
-    h['Date'] = pd.to_datetime(h['Date']).dt.normalize()
-    daily_holidays = h.groupby('Date').max().reset_index()
+    holiday_data = pd.read_csv(os.path.join(DATA_DIR, 'holidays_data_preprocessed.csv'))
+    holiday_data['Date'] = pd.to_datetime(holiday_data['Date']).dt.normalize()
+    daily_holidays = holiday_data.groupby('Date').max().reset_index()
     daily_holidays['is_holiday_lag_1'] = daily_holidays['is_holiday'].shift(1).fillna(0)
     daily_holidays['is_holiday_lead_1'] = daily_holidays['is_holiday'].shift(-1).fillna(0)
 
     # events
-    e = pd.read_csv(os.path.join(DATA_DIR, 'aberdeen_events_master_timeline.csv'))
-    e['Date'] = pd.to_datetime(e['Date']).dt.normalize()
-    daily_events = e.groupby('Date').max(numeric_only=True).reset_index()
+    event_data = pd.read_csv(os.path.join(DATA_DIR, 'aberdeen_events_master_timeline.csv'))
+    event_data['Date'] = pd.to_datetime(event_data['Date']).dt.normalize()
+    daily_events = event_data.groupby('Date').max(numeric_only=True).reset_index()
 
     return daily_weather, daily_holidays, daily_events
 
@@ -368,431 +363,607 @@ def load_exogenous():
 # ══════════════════════════════════════════
 # MODEL RUNNERS
 # each returns a DataFrame: Date, Product_Name, Forecast
+# all of these are a more compact version found in the notebooks
 # ══════════════════════════════════════════
 
-def run_arima(forecast_days):
+# ── 1. ARIMA ──
+def run_arima(forecast_days, eval_mode=None):
     from statsforecast import StatsForecast
     from statsforecast.models import ARIMA as AM
     print("    Loading data...")
-    dl, _ = load_sales_long()
-    ts = dl.rename(columns={'Product_Name':'unique_id','Date':'ds','Sales':'y'})
-    print(f"    Training ARIMA(2,1,1) → {forecast_days} days...")
-    sf = StatsForecast(models=[AM(order=(2,1,1),seasonal_order=(0,0,0),season_length=1,alias='ARIMA')],freq='D',n_jobs=-1)
-    f = sf.forecast(df=ts[['unique_id','ds','y']], h=forecast_days)
-    f['ARIMA'] = f['ARIMA'].clip(lower=0).round().astype(int)
-    return f.rename(columns={'unique_id':'Product_Name','ds':'Date','ARIMA':'Forecast'})[['Date','Product_Name','Forecast']].reset_index(drop=True)
+    df_long, _ = load_sales_long()
+    
+    if eval_mode == 'november':
+        val_end = '2025-11-01'
+        time_series_data = df_long[df_long['Date'] <= val_end].rename(columns={'Product_Name':'unique_id','Date':'ds','Sales':'y'})
+        print(f"    Evaluating November 2025 (Training up to {val_end})...")
+    else:
+        time_series_data = df_long.rename(columns={'Product_Name':'unique_id','Date':'ds','Sales':'y'})
+        print(f"    Training ARIMA(1,1,1) → {forecast_days} days...")
+    
+    stats_forecast = StatsForecast(models=[AM(order=(1,1,1),seasonal_order=(0,0,0),season_length=1,alias='ARIMA')],freq='D',n_jobs=-1)
+    forecast_results = stats_forecast.forecast(df=time_series_data[['unique_id','ds','y']], h=forecast_days)
+    forecast_results['ARIMA'] = forecast_results['ARIMA'].clip(lower=0).round().astype(int)
+    return forecast_results.rename(columns={'unique_id':'Product_Name','ds':'Date','ARIMA':'Forecast'})[['Date','Product_Name','Forecast']].reset_index(drop=True)
 
 # ── 2. PROPHET DAILY ──
-def run_prophet_daily(forecast_days):
+def run_prophet_daily(forecast_days, eval_mode=None):
     from prophet import Prophet
     import logging as lg
     lg.getLogger('prophet').setLevel(lg.WARNING)
     lg.getLogger('cmdstanpy').setLevel(lg.WARNING)
     print("    Loading data...")
-    dl, _ = load_sales_long()
-    dw, dh, de = load_exogenous()
-    products = sorted(dl['Product_Name'].unique())
+    df_long, _ = load_sales_long()
+    daily_weather, daily_holidays, daily_events = load_exogenous()
+    
+    if eval_mode == 'november':
+        val_end = '2025-11-01'
+        df_long = df_long[df_long['Date'] <= val_end]
+        print(f"    Evaluating November 2025 (Prophet Daily, Train <= {val_end})...")
+
+    products = sorted(df_long['Product_Name'].unique())
     results = []
     print(f"    Training Prophet for {len(products)} products → {forecast_days} days...")
-    for p in products:
-        pdf = dl[dl['Product_Name']==p][['Date','Sales']].rename(columns={'Date':'ds','Sales':'y'})
-        pdf = pdf.merge(dh[['Date','is_holiday']].rename(columns={'Date':'ds'}), on='ds', how='left').fillna(0)
-        m = Prophet(yearly_seasonality=True, weekly_seasonality=True, daily_seasonality=False,
-                    seasonality_mode='additive', changepoint_prior_scale=0.05)
-        m.add_country_holidays(country_name='GB')
-        m.fit(pdf[['ds','y']])
-        future = m.make_future_dataframe(periods=forecast_days)
-        fc = m.predict(future)
-        fc = fc.tail(forecast_days)[['ds','yhat']].copy()
-        fc['yhat'] = fc['yhat'].clip(lower=0).round().astype(int)
-        fc['Product_Name'] = p
-        results.append(fc)
-    out = pd.concat(results, ignore_index=True)
-    return out.rename(columns={'ds':'Date','yhat':'Forecast'})[['Date','Product_Name','Forecast']]
+    for product in products:
+        product_df = df_long[df_long['Product_Name']==product][['Date','Sales']].rename(columns={'Date':'ds','Sales':'y'})
+        product_df = product_df.merge(daily_holidays[['Date','is_holiday']].rename(columns={'Date':'ds'}), on='ds', how='left').fillna(0)
+        model = Prophet(yearly_seasonality=True, weekly_seasonality=True, daily_seasonality=False,
+                        seasonality_mode='additive', changepoint_prior_scale=0.05)
+        model.add_country_holidays(country_name='GB')
+        model.fit(product_df[['ds','y']])
+        future_df = model.make_future_dataframe(periods=forecast_days)
+        forecast_df = model.predict(future_df)
+        forecast_df = forecast_df.tail(forecast_days)[['ds','yhat']].copy()
+        forecast_df['yhat'] = forecast_df['yhat'].clip(lower=0).round().astype(int)
+        forecast_df['Product_Name'] = product
+        results.append(forecast_df)
+    output_df = pd.concat(results, ignore_index=True)
+    return output_df.rename(columns={'ds':'Date','yhat':'Forecast'})[['Date','Product_Name','Forecast']]
 
 # ── 3. PROPHET HOURLY ──
-def run_prophet_hourly(forecast_days):
+def run_prophet_hourly(forecast_days, eval_mode=None):
     from prophet import Prophet
     import logging as lg
     lg.getLogger('prophet').setLevel(lg.WARNING)
     lg.getLogger('cmdstanpy').setLevel(lg.WARNING)
     print("    Loading hourly data...")
-    dl = load_sales_hourly()
-    products = sorted(dl['Product_Name'].unique())
+    df_long = load_sales_hourly()
+    
+    if eval_mode == 'november':
+        val_end = '2025-11-01 23:59:59'
+        df_long = df_long[df_long['Date'] <= val_end]
+        print(f"    Evaluating November 2025 (Hourly Prophet, Train <= {val_end})...")
+
+    products = sorted(df_long['Product_Name'].unique())
     results = []
     forecast_hours = forecast_days * HOURS_PER_DAY
     print(f"    Training Hourly Prophet for {len(products)} products → {forecast_days} days ({forecast_hours} hours)...")
-    for p in products:
-        pdf = dl[dl['Product_Name']==p][['Date','Sales']].rename(columns={'Date':'ds','Sales':'y'})
-        m = Prophet(yearly_seasonality=True, weekly_seasonality=True, daily_seasonality=False,
-                    seasonality_mode='additive', changepoint_prior_scale=0.05)
-        m.add_seasonality(name='daily_business', period=1, fourier_order=5)
-        m.add_country_holidays(country_name='GB')
-        m.fit(pdf[['ds','y']])
-        future = m.make_future_dataframe(periods=forecast_hours, freq='h')
-        future = future[future['ds'].dt.hour.isin(BUSINESS_HOURS)]
-        fc = m.predict(future)
-        fc = fc.tail(forecast_hours)[['ds','yhat']].copy()
-        fc['yhat'] = fc['yhat'].clip(lower=0)
-        fc['Product_Name'] = p
-        results.append(fc)
+    for product in products:
+        product_df = df_long[df_long['Product_Name']==product][['Date','Sales']].rename(columns={'Date':'ds','Sales':'y'})
+        model = Prophet(yearly_seasonality=True, weekly_seasonality=True, daily_seasonality=False,
+                        seasonality_mode='additive', changepoint_prior_scale=0.05)
+        model.add_seasonality(name='daily_business', period=1, fourier_order=5)
+        model.add_country_holidays(country_name='GB')
+        model.fit(product_df[['ds','y']])
+        future_df = model.make_future_dataframe(periods=forecast_hours, freq='h')
+        future_df = future_df[future_df['ds'].dt.hour.isin(BUSINESS_HOURS)]
+        forecast_df = model.predict(future_df)
+        forecast_df = forecast_df.tail(forecast_hours)[['ds','yhat']].copy()
+        forecast_df['yhat'] = forecast_df['yhat'].clip(lower=0)
+        forecast_df['Product_Name'] = product
+        results.append(forecast_df)
     # Rollup hourly → daily
-    out = pd.concat(results, ignore_index=True)
-    out['Date'] = out['ds'].dt.normalize()
-    daily = out.groupby(['Date','Product_Name'])['yhat'].sum().reset_index()
-    daily['Forecast'] = daily['yhat'].round().astype(int)
-    return daily[['Date','Product_Name','Forecast']]
+    combined_results = pd.concat(results, ignore_index=True)
+    combined_results['Date'] = combined_results['ds'].dt.normalize()
+    daily_results = combined_results.groupby(['Date','Product_Name'])['yhat'].sum().reset_index()
+    daily_results['Forecast'] = daily_results['yhat'].round().astype(int)
+    return daily_results[['Date','Product_Name','Forecast']]
 
 # ── 4. XGB IMPROVED DAILY (same as v2) ──
-def run_xgb_improved_daily(forecast_days):
+def run_xgb_improved_daily(forecast_days, eval_mode=None):
     import xgboost as xgb
     import optuna; optuna.logging.set_verbosity(logging.WARNING)
     print("    Loading data...")
-    dl, _ = load_sales_long(); dw, dh, de = load_exogenous()
-    dl['Product_Name'] = dl['Product_Name'].astype('category')
+    df_long, _ = load_sales_long(); daily_weather, daily_holidays, daily_events = load_exogenous()
+    df_long['Product_Name'] = df_long['Product_Name'].astype('category')
     # Time features
-    dl['day_of_week']=dl['Date'].dt.dayofweek
-    dl['day_sin']=np.sin(2*np.pi*dl['day_of_week']/7); dl['day_cos']=np.cos(2*np.pi*dl['day_of_week']/7)
-    dl['month']=dl['Date'].dt.month
-    dl['month_sin']=np.sin(2*np.pi*(dl['month']-1)/12); dl['month_cos']=np.cos(2*np.pi*(dl['month']-1)/12)
-    dl['day_of_month']=dl['Date'].dt.day; dl['Is_Weekend']=dl['Date'].dt.dayofweek.isin([5,6]).astype(int)
-    dl['Year']=dl['Date'].dt.year; dl['week_of_year']=dl['Date'].dt.isocalendar().week.astype(int)
-    df = dl.merge(dw,on='Date',how='left').merge(dh,on='Date',how='left').merge(de,on='Date',how='left')
-    for c in ['date','Time']:
-        if c in df.columns: df=df.drop(columns=[c])
-    cc=df.select_dtypes(include=['category']).columns; df[df.columns.difference(cc)]=df[df.columns.difference(cc)].fillna(0)
-    df=df.sort_values(['Product_Name','Date']).reset_index(drop=True)
-    for lag in [1,2,7,14,30]: df[f'sales_{lag}_step_ago']=df.groupby('Product_Name',observed=False)['Sales'].shift(lag)
-    for w in [3,7,14]:
-        df[f'rolling_{w}d_avg']=df.groupby('Product_Name',observed=False)['sales_1_step_ago'].transform(lambda x:x.rolling(w,min_periods=1).mean())
-        df[f'rolling_{w}d_std']=df.groupby('Product_Name',observed=False)['sales_1_step_ago'].transform(lambda x:x.rolling(w,min_periods=1).std()).fillna(0)
-    df['sales_momentum']=df['sales_1_step_ago']-df['sales_7_step_ago']
-    df['expanding_mean']=df.groupby('Product_Name',observed=False)['sales_1_step_ago'].transform(lambda x:x.expanding(min_periods=1).mean())
-    df['ratio_1d_vs_7d']=df['sales_1_step_ago']/(df['rolling_7d_avg']+1e-8)
-    df=df.dropna().reset_index(drop=True); df['Sales']=df['Sales'].clip(lower=0)
-    fc=[c for c in df.columns if c not in ['Date','Sales']]
-    md=df['Date'].max(); vs=md-pd.Timedelta(days=30)
-    Xt,yt=df[df['Date']<=vs][fc],df[df['Date']<=vs]['Sales']
-    Xv,yv=df[df['Date']>vs][fc],df[df['Date']>vs]['Sales']
+    df_long['day_of_week'] = df_long['Date'].dt.dayofweek
+    df_long['day_sin'] = np.sin(2 * np.pi * df_long['day_of_week'] / 7)
+    df_long['day_cos'] = np.cos(2 * np.pi * df_long['day_of_week'] / 7)
+    df_long['month'] = df_long['Date'].dt.month
+    df_long['month_sin'] = np.sin(2 * np.pi * (df_long['month'] - 1) / 12)
+    df_long['month_cos'] = np.cos(2 * np.pi * (df_long['month'] - 1) / 12)
+    df_long['day_of_month'] = df_long['Date'].dt.day
+    df_long['Is_Weekend'] = df_long['Date'].dt.dayofweek.isin([5, 6]).astype(int)
+    df_long['Year'] = df_long['Date'].dt.year
+    df_long['week_of_year'] = df_long['Date'].dt.isocalendar().week.astype(int)
+    df_merged = df_long.merge(daily_weather, on='Date', how='left').merge(daily_holidays, on='Date', how='left').merge(daily_events, on='Date', how='left')
+    for col in ['date', 'Time']:
+        if col in df_merged.columns:
+            df_merged = df_merged.drop(columns=[col])
+    categorical_cols = df_merged.select_dtypes(include=['category']).columns
+    df_merged[df_merged.columns.difference(categorical_cols)] = df_merged[df_merged.columns.difference(categorical_cols)].fillna(0)
+    df_merged = df_merged.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
+    for lag in [1, 2, 7, 14, 30]:
+        df_merged[f'sales_{lag}_step_ago'] = df_merged.groupby('Product_Name', observed=False)['Sales'].shift(lag)
+    for window in [3, 7, 14]:
+        df_merged[f'rolling_{window}d_avg'] = df_merged.groupby('Product_Name', observed=False)['sales_1_step_ago'].transform(lambda x: x.rolling(window, min_periods=1).mean())
+        df_merged[f'rolling_{window}d_std'] = df_merged.groupby('Product_Name', observed=False)['sales_1_step_ago'].transform(lambda x: x.rolling(window, min_periods=1).std()).fillna(0)
+    df_merged['sales_momentum'] = df_merged['sales_1_step_ago'] - df_merged['sales_7_step_ago']
+    df_merged['expanding_mean'] = df_merged.groupby('Product_Name', observed=False)['sales_1_step_ago'].transform(lambda x: x.expanding(min_periods=1).mean())
+    df_merged['ratio_1d_vs_7d'] = df_merged['sales_1_step_ago'] / (df_merged['rolling_7d_avg'] + 1e-8)
+    df_merged = df_merged.dropna().reset_index(drop=True)
+    df_merged['Sales'] = df_merged['Sales'].clip(lower=0)
+    feature_cols = [c for c in df_merged.columns if c not in ['Date', 'Sales']]
+    
+    if eval_mode == 'november':
+        train_end = pd.to_datetime('2025-10-01')
+        val_end = pd.to_datetime('2025-11-01')
+        X_train = df_merged[df_merged['Date'] <= train_end][feature_cols]
+        y_train = df_merged[df_merged['Date'] <= train_end]['Sales']
+        X_val = df_merged[(df_merged['Date'] > train_end) & (df_merged['Date'] <= val_end)][feature_cols]
+        y_val = df_merged[(df_merged['Date'] > train_end) & (df_merged['Date'] <= val_end)]['Sales']
+        print(f"    Evaluating November 2025 (Train <= {train_end}, Val <= {val_end})...")
+    else:
+        max_date = df_merged['Date'].max()
+        val_start = max_date - pd.Timedelta(days=30)
+        X_train = df_merged[df_merged['Date'] <= val_start][feature_cols]
+        y_train = df_merged[df_merged['Date'] <= val_start]['Sales']
+        X_val = df_merged[df_merged['Date'] > val_start][feature_cols]
+        y_val = df_merged[df_merged['Date'] > val_start]['Sales']
+
     print(f"    Tuning XGBoost Improved ({OPTUNA_TRIALS} trials)...")
-    def obj(trial):
-        p={"n_estimators":1500,"early_stopping_rounds":50,"learning_rate":trial.suggest_float("lr",5e-3,0.1,log=True),
-           "max_depth":trial.suggest_int("md",4,8),"min_child_weight":trial.suggest_int("mcw",2,8),
-           "subsample":trial.suggest_float("ss",0.6,0.95),"colsample_bytree":trial.suggest_float("cb",0.5,0.9),
-           "gamma":trial.suggest_float("g",1e-4,1.0,log=True),"reg_lambda":trial.suggest_float("rl",0.01,5.0,log=True),
-           "reg_alpha":trial.suggest_float("ra",0.01,5.0,log=True),"enable_categorical":True,"tree_method":"hist"}
-        m=xgb.XGBRegressor(**p); m.fit(Xt,yt,eval_set=[(Xv,yv)],verbose=False)
-        return np.sqrt(np.mean((yv-m.predict(Xv))**2))
-    study=optuna.create_study(direction="minimize"); study.optimize(obj,n_trials=OPTUNA_TRIALS)
-    bp=study.best_params; bp.update({"n_estimators":1500,"early_stopping_rounds":30,"enable_categorical":True,"tree_method":"hist"})
-    # Rename back to standard param names
-    param_rename = {'lr':'learning_rate','md':'max_depth','mcw':'min_child_weight','ss':'subsample','cb':'colsample_bytree','g':'gamma','rl':'reg_lambda','ra':'reg_alpha'}
-    bp = {param_rename.get(k,k):v for k,v in bp.items()}
-    bp.pop('early_stopping_rounds', None)
+    def objective(trial):
+        params = {"n_estimators": 1500, "early_stopping_rounds": 50, "learning_rate": trial.suggest_float("learning_rate", 5e-3, 0.1, log=True),
+                  "max_depth": trial.suggest_int("max_depth", 4, 8), "min_child_weight": trial.suggest_int("min_child_weight", 2, 8),
+                  "subsample": trial.suggest_float("subsample", 0.6, 0.95), "colsample_bytree": trial.suggest_float("colsample_bytree", 0.5, 0.9),
+                  "gamma": trial.suggest_float("gamma", 1e-4, 1.0, log=True), "reg_lambda": trial.suggest_float("reg_lambda", 0.01, 5.0, log=True),
+                  "reg_alpha": trial.suggest_float("reg_alpha", 0.01, 5.0, log=True), "enable_categorical": True, "tree_method": "hist"}
+        model = xgb.XGBRegressor(**params)
+        model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False)
+        return np.sqrt(np.mean((y_val - model.predict(X_val)) ** 2))
+    
+    study = optuna.create_study(direction="minimize")
+    study.optimize(objective, n_trials=OPTUNA_TRIALS)
+    best_params = study.best_params
+    best_params.update({"n_estimators": 1500, "early_stopping_rounds": 30, "enable_categorical": True, "tree_method": "hist"})
+    best_params.pop('early_stopping_rounds', None)
     print(f"    Best RMSE: {study.best_value:.4f}. Training final model...")
-    model=xgb.XGBRegressor(**bp); model.fit(df[fc],df['Sales'],verbose=False)
+    
+    if eval_mode == 'november':
+        val_end = pd.to_datetime('2025-11-01')
+        full_df = df_merged[df_merged['Date'] <= val_end]
+        model = xgb.XGBRegressor(**best_params)
+        model.fit(full_df[feature_cols], full_df['Sales'], verbose=False)
+        forecast_start_df = full_df
+    else:
+        model = xgb.XGBRegressor(**best_params)
+        model.fit(df_merged[feature_cols], df_merged['Sales'], verbose=False)
+        forecast_start_df = df_merged
+
     # Recursive forecast
-    return _xgb_recursive_forecast(df, model, fc, forecast_days,
+    return _xgb_recursive_forecast(forecast_start_df, model, feature_cols, forecast_days,
         lag_map={1:'sales_1_step_ago',2:'sales_2_step_ago',7:'sales_7_step_ago',14:'sales_14_step_ago',30:'sales_30_step_ago'},
         rolling_windows=[3,7,14], use_momentum=True)
 
 # ── 5. XGB SIMPLE DAILY ──
-def run_xgb_simple_daily(forecast_days):
+def run_xgb_simple_daily(forecast_days, eval_mode=None):
     import xgboost as xgb
     import optuna; optuna.logging.set_verbosity(logging.WARNING)
     print("    Loading data...")
-    dl, _ = load_sales_long(); dw, dh, de = load_exogenous()
-    dl['Product_Name'] = dl['Product_Name'].astype('category')
-    df = dl.merge(dw,on='Date',how='left').merge(dh,on='Date',how='left').merge(de,on='Date',how='left')
-    for c in ['date','Time']:
-        if c in df.columns: df=df.drop(columns=[c])
-    cc=df.select_dtypes(include=['category']).columns; df[df.columns.difference(cc)]=df[df.columns.difference(cc)].fillna(0)
-    df=df.sort_values(['Product_Name','Date']).reset_index(drop=True)
+    df_long, _ = load_sales_long(); daily_weather, daily_holidays, daily_events = load_exogenous()
+    df_long['Product_Name'] = df_long['Product_Name'].astype('category')
+    df_merged = df_long.merge(daily_weather, on='Date', how='left').merge(daily_holidays, on='Date', how='left').merge(daily_events, on='Date', how='left')
+    for col in ['date', 'Time']:
+        if col in df_merged.columns:
+            df_merged = df_merged.drop(columns=[col])
+    categorical_cols = df_merged.select_dtypes(include=['category']).columns
+    df_merged[df_merged.columns.difference(categorical_cols)] = df_merged[df_merged.columns.difference(categorical_cols)].fillna(0)
+    df_merged = df_merged.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
     # Simple lags: 1, 7, 30 only
-    for lag,name in [(1,'sales_1_step_ago'),(7,'sales_7_steps_ago'),(30,'sales_30_steps_ago')]:
-        df[name]=df.groupby('Product_Name',observed=False)['Sales'].shift(lag)
-    df=df.dropna().reset_index(drop=True); df['Sales']=df['Sales'].clip(lower=0)
-    fc=[c for c in df.columns if c not in ['Date','Sales']]
-    md=df['Date'].max(); vs=md-pd.Timedelta(days=30)
-    Xt,yt=df[df['Date']<=vs][fc],df[df['Date']<=vs]['Sales']
-    Xv,yv=df[df['Date']>vs][fc],df[df['Date']>vs]['Sales']
+    for lag, name in [(1, 'sales_1_step_ago'), (7, 'sales_7_steps_ago'), (30, 'sales_30_steps_ago')]:
+        df_merged[name] = df_merged.groupby('Product_Name', observed=False)['Sales'].shift(lag)
+    df_merged = df_merged.dropna().reset_index(drop=True)
+    df_merged['Sales'] = df_merged['Sales'].clip(lower=0)
+    feature_cols = [c for c in df_merged.columns if c not in ['Date', 'Sales']]
+    
+    if eval_mode == 'november':
+        train_end = pd.to_datetime('2025-10-01')
+        val_end = pd.to_datetime('2025-11-01')
+        X_train = df_merged[df_merged['Date'] <= train_end][feature_cols]
+        y_train = df_merged[df_merged['Date'] <= train_end]['Sales']
+        X_val = df_merged[(df_merged['Date'] > train_end) & (df_merged['Date'] <= val_end)][feature_cols]
+        y_val = df_merged[(df_merged['Date'] > train_end) & (df_merged['Date'] <= val_end)]['Sales']
+        print(f"    Evaluating November 2025 (Train <= {train_end}, Val <= {val_end})...")
+    else:
+        max_date = df_merged['Date'].max()
+        val_start = max_date - pd.Timedelta(days=30)
+        X_train = df_merged[df_merged['Date'] <= val_start][feature_cols]
+        y_train = df_merged[df_merged['Date'] <= val_start]['Sales']
+        X_val = df_merged[df_merged['Date'] > val_start][feature_cols]
+        y_val = df_merged[df_merged['Date'] > val_start]['Sales']
+
     print(f"    Tuning XGBoost Simple ({OPTUNA_TRIALS} trials)...")
-    def obj(trial):
-        p={"n_estimators":1000,"early_stopping_rounds":50,"learning_rate":trial.suggest_float("lr",5e-3,0.1,log=True),
-           "max_depth":trial.suggest_int("md",3,7),"min_child_weight":trial.suggest_int("mcw",2,8),
-           "subsample":trial.suggest_float("ss",0.6,0.95),"colsample_bytree":trial.suggest_float("cb",0.5,0.9),
-           "gamma":trial.suggest_float("g",1e-4,1.0,log=True),"reg_lambda":trial.suggest_float("rl",0.01,5.0,log=True),
-           "reg_alpha":trial.suggest_float("ra",0.01,5.0,log=True),"enable_categorical":True,"tree_method":"hist"}
-        m=xgb.XGBRegressor(**p); m.fit(Xt,yt,eval_set=[(Xv,yv)],verbose=False)
-        return np.sqrt(np.mean((yv-m.predict(Xv))**2))
-    study=optuna.create_study(direction="minimize"); study.optimize(obj,n_trials=OPTUNA_TRIALS)
-    bp=study.best_params; bp.update({"n_estimators":1000,"early_stopping_rounds":30,"enable_categorical":True,"tree_method":"hist"})
-    param_rename = {'lr':'learning_rate','md':'max_depth','mcw':'min_child_weight','ss':'subsample','cb':'colsample_bytree','g':'gamma','rl':'reg_lambda','ra':'reg_alpha'}
-    bp = {param_rename.get(k,k):v for k,v in bp.items()}
-    bp.pop('early_stopping_rounds', None)
+    def objective(trial):
+        params = {"n_estimators": 1000, "early_stopping_rounds": 50, "learning_rate": trial.suggest_float("learning_rate", 5e-3, 0.1, log=True),
+                  "max_depth": trial.suggest_int("max_depth", 3, 7), "min_child_weight": trial.suggest_int("min_child_weight", 2, 8),
+                  "subsample": trial.suggest_float("subsample", 0.6, 0.95), "colsample_bytree": trial.suggest_float("colsample_bytree", 0.5, 0.9),
+                  "gamma": trial.suggest_float("gamma", 1e-4, 1.0, log=True), "reg_lambda": trial.suggest_float("reg_lambda", 0.01, 5.0, log=True),
+                  "reg_alpha": trial.suggest_float("reg_alpha", 0.01, 5.0, log=True), "enable_categorical": True, "tree_method": "hist"}
+        model = xgb.XGBRegressor(**params)
+        model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False)
+        return np.sqrt(np.mean((y_val - model.predict(X_val)) ** 2))
+    
+    study = optuna.create_study(direction="minimize")
+    study.optimize(objective, n_trials=OPTUNA_TRIALS)
+    best_params = study.best_params
+    best_params.update({"n_estimators": 1000, "early_stopping_rounds": 30, "enable_categorical": True, "tree_method": "hist"})
+    best_params.pop('early_stopping_rounds', None)
     print(f"    Best RMSE: {study.best_value:.4f}. Training final model...")
-    model=xgb.XGBRegressor(**bp); model.fit(df[fc],df['Sales'],verbose=False)
-    return _xgb_recursive_forecast(df, model, fc, forecast_days,
+    
+    if eval_mode == 'november':
+        val_end = pd.to_datetime('2025-11-01')
+        full_df = df_merged[df_merged['Date'] <= val_end]
+        model = xgb.XGBRegressor(**best_params)
+        model.fit(full_df[feature_cols], full_df['Sales'], verbose=False)
+        forecast_start_df = full_df
+    else:
+        model = xgb.XGBRegressor(**best_params)
+        model.fit(df_merged[feature_cols], df_merged['Sales'], verbose=False)
+        forecast_start_df = df_merged
+
+    return _xgb_recursive_forecast(forecast_start_df, model, feature_cols, forecast_days,
         lag_map={1:'sales_1_step_ago',7:'sales_7_steps_ago',30:'sales_30_steps_ago'},
         rolling_windows=[], use_momentum=False)
 
 # ── SHARED XGB RECURSIVE FORECAST HELPER ──
 def _xgb_recursive_forecast(df, model, feature_cols, forecast_days, lag_map, rolling_windows, use_momentum):
-    """Shared recursive daily XGBoost forecast logic."""
+    # Shared recursive daily XGBoost forecast logic.
     last_date = df['Date'].max()
     forecast_dates = [last_date + pd.Timedelta(days=i+1) for i in range(forecast_days)]
     products = sorted(PRODUCTS_TO_FORECAST)
-    sales_history = {(r['Product_Name'],r['Date']):r['Sales'] for _,r in df[['Date','Product_Name','Sales']].iterrows()}
-    rows = [{'Date':d,'Product_Name':p} for d in forecast_dates for p in products]
-    fdf = pd.DataFrame(rows)
-    fdf['Product_Name'] = fdf['Product_Name'].astype(pd.CategoricalDtype(categories=df['Product_Name'].cat.categories))
+    sales_history = {(row['Product_Name'], row['Date']): row['Sales'] for _, row in df[['Date', 'Product_Name', 'Sales']].iterrows()}
+    forecast_rows = [{'Date': d, 'Product_Name': p} for d in forecast_dates for p in products]
+    forecast_df = pd.DataFrame(forecast_rows)
+    forecast_df['Product_Name'] = forecast_df['Product_Name'].astype(pd.CategoricalDtype(categories=df['Product_Name'].cat.categories))
     # Copy time features
-    for tc in ['day_of_week','day_sin','day_cos','month','month_sin','month_cos','day_of_month','Is_Weekend','Year','week_of_year']:
-        if tc in feature_cols:
-            if tc=='day_of_week': fdf[tc]=fdf['Date'].dt.dayofweek
-            elif tc=='day_sin': fdf[tc]=np.sin(2*np.pi*fdf['Date'].dt.dayofweek/7)
-            elif tc=='day_cos': fdf[tc]=np.cos(2*np.pi*fdf['Date'].dt.dayofweek/7)
-            elif tc=='month': fdf[tc]=fdf['Date'].dt.month
-            elif tc=='month_sin': fdf[tc]=np.sin(2*np.pi*(fdf['Date'].dt.month-1)/12)
-            elif tc=='month_cos': fdf[tc]=np.cos(2*np.pi*(fdf['Date'].dt.month-1)/12)
-            elif tc=='day_of_month': fdf[tc]=fdf['Date'].dt.day
-            elif tc=='Is_Weekend': fdf[tc]=fdf['Date'].dt.dayofweek.isin([5,6]).astype(int)
-            elif tc=='Year': fdf[tc]=fdf['Date'].dt.year
-            elif tc=='week_of_year': fdf[tc]=fdf['Date'].dt.isocalendar().week.astype(int)
+    for time_col in ['day_of_week', 'day_sin', 'day_cos', 'month', 'month_sin', 'month_cos', 'day_of_month', 'Is_Weekend', 'Year', 'week_of_year']:
+        if time_col in feature_cols:
+            if time_col == 'day_of_week':
+                forecast_df[time_col] = forecast_df['Date'].dt.dayofweek
+            elif time_col == 'day_sin':
+                forecast_df[time_col] = np.sin(2 * np.pi * forecast_df['Date'].dt.dayofweek / 7)
+            elif time_col == 'day_cos':
+                forecast_df[time_col] = np.cos(2 * np.pi * forecast_df['Date'].dt.dayofweek / 7)
+            elif time_col == 'month':
+                forecast_df[time_col] = forecast_df['Date'].dt.month
+            elif time_col == 'month_sin':
+                forecast_df[time_col] = np.sin(2 * np.pi * (forecast_df['Date'].dt.month - 1) / 12)
+            elif time_col == 'month_cos':
+                forecast_df[time_col] = np.cos(2 * np.pi * (forecast_df['Date'].dt.month - 1) / 12)
+            elif time_col == 'day_of_month':
+                forecast_df[time_col] = forecast_df['Date'].dt.day
+            elif time_col == 'Is_Weekend':
+                forecast_df[time_col] = forecast_df['Date'].dt.dayofweek.isin([5, 6]).astype(int)
+            elif time_col == 'Year':
+                forecast_df[time_col] = forecast_df['Date'].dt.year
+            elif time_col == 'week_of_year':
+                forecast_df[time_col] = forecast_df['Date'].dt.isocalendar().week.astype(int)
     # Exogenous: last known
-    exog_exclude = set(['Date','Sales','Product_Name','day_of_week','day_sin','day_cos','month',
-        'month_sin','month_cos','day_of_month','Is_Weekend','Year','week_of_year'])
+    exog_exclude = set(['Date', 'Sales', 'Product_Name', 'day_of_week', 'day_sin', 'day_cos', 'month',
+                        'month_sin', 'month_cos', 'day_of_month', 'Is_Weekend', 'Year', 'week_of_year'])
     exog_exclude.update(lag_map.values())
-    for w in rolling_windows: exog_exclude.update([f'rolling_{w}d_avg',f'rolling_{w}d_std'])
-    if use_momentum: exog_exclude.update(['sales_momentum','expanding_mean','ratio_1d_vs_7d'])
+    for window_size in rolling_windows:
+        exog_exclude.update([f'rolling_{window_size}d_avg', f'rolling_{window_size}d_std'])
+    if use_momentum:
+        exog_exclude.update(['sales_momentum', 'expanding_mean', 'ratio_1d_vs_7d'])
     exog_cols = [c for c in df.columns if c not in exog_exclude and c in feature_cols]
     if exog_cols:
-        last_exog = df[df['Date']==last_date][exog_cols].iloc[0]
-        for c in exog_cols: fdf[c] = last_exog[c]
+        last_exog = df[df['Date'] == last_date][exog_cols].iloc[0]
+        for c in exog_cols:
+            forecast_df[c] = last_exog[c]
     # Init lags
-    for idx,row in fdf.iterrows():
-        p,d = row['Product_Name'],row['Date']
-        for ld,lc in lag_map.items(): fdf.at[idx,lc]=sales_history.get((p,d-pd.Timedelta(days=ld)),0)
+    for row_index, row in forecast_df.iterrows():
+        product_name, current_date = row['Product_Name'], row['Date']
+        for lag_days, lag_col in lag_map.items():
+            forecast_df.at[row_index, lag_col] = sales_history.get((product_name, current_date - pd.Timedelta(days=lag_days)), 0)
         if rolling_windows or use_momentum:
-            recent=[sales_history.get((p,d-pd.Timedelta(days=i)),0) for i in range(1,15)]
-            for w in rolling_windows:
-                win=recent[:w]
-                fdf.at[idx,f'rolling_{w}d_avg']=np.mean(win)
-                fdf.at[idx,f'rolling_{w}d_std']=np.std(win,ddof=1) if len(win)>1 else 0
+            recent = [sales_history.get((product_name, current_date - pd.Timedelta(days=i)), 0) for i in range(1, 15)]
+            for window_size in rolling_windows:
+                window = recent[:window_size]
+                forecast_df.at[row_index, f'rolling_{window_size}d_avg'] = np.mean(window)
+                forecast_df.at[row_index, f'rolling_{window_size}d_std'] = np.std(window, ddof=1) if len(window) > 1 else 0
             if use_momentum:
-                fdf.at[idx,'sales_momentum']=fdf.at[idx,list(lag_map.values())[0]]-fdf.at[idx,lag_map.get(7,list(lag_map.values())[-1])]
-                fdf.at[idx,'expanding_mean']=np.mean(recent)
-                r7=fdf.at[idx,'rolling_7d_avg'] if 'rolling_7d_avg' in fdf.columns else 0
-                fdf.at[idx,'ratio_1d_vs_7d']=fdf.at[idx,list(lag_map.values())[0]]/(r7+1e-8)
+                forecast_df.at[row_index, 'sales_momentum'] = forecast_df.at[row_index, list(lag_map.values())[0]] - forecast_df.at[row_index, lag_map.get(7, list(lag_map.values())[-1])]
+                forecast_df.at[row_index, 'expanding_mean'] = np.mean(recent)
+                r7 = forecast_df.at[row_index, 'rolling_7d_avg'] if 'rolling_7d_avg' in forecast_df.columns else 0
+                forecast_df.at[row_index, 'ratio_1d_vs_7d'] = forecast_df.at[row_index, list(lag_map.values())[0]] / (r7 + 1e-8)
     for c in feature_cols:
-        if c not in fdf.columns: fdf[c]=0
-    for c in fdf.select_dtypes(include=[np.number]).columns:
-        fdf[c] = fdf[c].fillna(0)
-    idx_lookup={(r['Product_Name'],r['Date']):i for i,r in fdf.iterrows()}
-    for di,cd in enumerate(forecast_dates):
-        didx=fdf.index[fdf['Date']==cd].tolist()
-        preds=np.clip(model.predict(fdf.loc[didx,feature_cols]),0,None).round().astype(int)
-        fdf.loc[didx,'Forecast']=preds
-        for ri,pv in zip(didx,preds):
-            product=fdf.at[ri,'Product_Name']; sales_history[(product,cd)]=pv
-            for ld,lc in lag_map.items():
-                fk=(product,cd+pd.Timedelta(days=ld))
-                if fk in idx_lookup: fdf.at[idx_lookup[fk],lc]=pv
-        if di+1<len(forecast_dates):
-            nd=forecast_dates[di+1]
-            for ni in fdf.index[fdf['Date']==nd]:
-                p=fdf.at[ni,'Product_Name']
-                recent=[sales_history.get((p,nd-pd.Timedelta(days=i)),0) for i in range(1,15)]
-                for w in rolling_windows:
-                    win=recent[:w]
-                    fdf.at[ni,f'rolling_{w}d_avg']=np.mean(win)
-                    fdf.at[ni,f'rolling_{w}d_std']=np.std(win,ddof=1) if len(win)>1 else 0
+        if c not in forecast_df.columns:
+            forecast_df[c] = 0
+    for c in forecast_df.select_dtypes(include=[np.number]).columns:
+        forecast_df[c] = forecast_df[c].fillna(0)
+    idx_lookup = {(r['Product_Name'], r['Date']): i for i, r in forecast_df.iterrows()}
+    for day_index, current_day in enumerate(forecast_dates):
+        day_indices = forecast_df.index[forecast_df['Date'] == current_day].tolist()
+        preds = np.clip(model.predict(forecast_df.loc[day_indices, feature_cols]), 0, None).round().astype(int)
+        forecast_df.loc[day_indices, 'Forecast'] = preds
+        for row_idx, pred_value in zip(day_indices, preds):
+            product = forecast_df.at[row_idx, 'Product_Name']
+            sales_history[(product, current_day)] = pred_value
+            for lag_days, lag_col in lag_map.items():
+                future_key = (product, current_day + pd.Timedelta(days=lag_days))
+                if future_key in idx_lookup:
+                    forecast_df.at[idx_lookup[future_key], lag_col] = pred_value
+        if day_index + 1 < len(forecast_dates):
+            next_date = forecast_dates[day_index + 1]
+            for next_idx in forecast_df.index[forecast_df['Date'] == next_date]:
+                p = forecast_df.at[next_idx, 'Product_Name']
+                recent = [sales_history.get((p, next_date - pd.Timedelta(days=i)), 0) for i in range(1, 15)]
+                for window_size in rolling_windows:
+                    window = recent[:window_size]
+                    forecast_df.at[next_idx, f'rolling_{window_size}d_avg'] = np.mean(window)
+                    forecast_df.at[next_idx, f'rolling_{window_size}d_std'] = np.std(window, ddof=1) if len(window) > 1 else 0
                 if use_momentum:
-                    fdf.at[ni,'sales_momentum']=fdf.at[ni,list(lag_map.values())[0]]-fdf.at[ni,lag_map.get(7,list(lag_map.values())[-1])]
-                    fdf.at[ni,'expanding_mean']=np.mean(recent)
-                    fdf.at[ni,'ratio_1d_vs_7d']=fdf.at[ni,list(lag_map.values())[0]]/(fdf.at[ni,'rolling_7d_avg']+1e-8)
-    result=fdf[['Date','Product_Name','Forecast']].copy(); result['Forecast']=result['Forecast'].astype(int)
+                    forecast_df.at[next_idx, 'sales_momentum'] = forecast_df.at[next_idx, list(lag_map.values())[0]] - forecast_df.at[next_idx, lag_map.get(7, list(lag_map.values())[-1])]
+                    forecast_df.at[next_idx, 'expanding_mean'] = np.mean(recent)
+                    forecast_df.at[next_idx, 'ratio_1d_vs_7d'] = forecast_df.at[next_idx, list(lag_map.values())[0]] / (forecast_df.at[next_idx, 'rolling_7d_avg'] + 1e-8)
+    result = forecast_df[['Date', 'Product_Name', 'Forecast']].copy()
+    result['Forecast'] = result['Forecast'].astype(int)
     return result
 
 # ── 6 & 7. XGB HOURLY (simple + improved) ──
-def run_xgb_simple_hourly(forecast_days):
-    """Simple XGBoost hourly: 3 hourly lags, predict per-hour then aggregate to daily."""
+def run_xgb_simple_hourly(forecast_days, eval_mode=None):
+    # Simple XGBoost hourly: 3 hourly lags, predict per-hour then aggregate to daily.
     import xgboost as xgb
     import optuna; optuna.logging.set_verbosity(logging.WARNING)
     print("    Loading hourly data...")
-    dl = load_sales_hourly()
-    dl['Product_Name'] = dl['Product_Name'].astype('category')
-    dl = dl.sort_values(['Product_Name','Date']).reset_index(drop=True)
+    df_long = load_sales_hourly()
+    df_long['Product_Name'] = df_long['Product_Name'].astype('category')
+    df_long = df_long.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
     # Simple hourly lags
-    for lag,name in [(1,'sales_1h_ago'),(HOURS_PER_DAY,'sales_same_hour_yesterday'),(HOURS_PER_DAY*7,'sales_same_hour_last_week')]:
-        dl[name]=dl.groupby('Product_Name',observed=False)['Sales'].shift(lag)
+    for lag, name in [(1, 'sales_1h_ago'), (HOURS_PER_DAY, 'sales_same_hour_yesterday'), (HOURS_PER_DAY * 7, 'sales_same_hour_last_week')]:
+        df_long[name] = df_long.groupby('Product_Name', observed=False)['Sales'].shift(lag)
     # Time features
-    dl['hour_of_day']=dl['Date'].dt.hour; dl['day_of_week']=dl['Date'].dt.dayofweek
-    dl['Is_Weekend']=dl['day_of_week'].isin([5,6]).astype(int)
-    dl=dl.dropna().reset_index(drop=True); dl['Sales']=dl['Sales'].clip(lower=0)
-    fc=[c for c in dl.columns if c not in ['Date','Sales']]
-    md=dl['Date'].max(); vs=md-pd.Timedelta(days=30)
-    Xt,yt=dl[dl['Date']<=vs][fc],dl[dl['Date']<=vs]['Sales']
-    Xv,yv=dl[dl['Date']>vs][fc],dl[dl['Date']>vs]['Sales']
+    df_long['hour_of_day'] = df_long['Date'].dt.hour
+    df_long['day_of_week'] = df_long['Date'].dt.dayofweek
+    df_long['Is_Weekend'] = df_long['day_of_week'].isin([5, 6]).astype(int)
+    df_long = df_long.dropna().reset_index(drop=True)
+    df_long['Sales'] = df_long['Sales'].clip(lower=0)
+    feature_cols = [c for c in df_long.columns if c not in ['Date', 'Sales']]
+    
+    if eval_mode == 'november':
+        train_end = pd.to_datetime('2025-10-01')
+        val_end = pd.to_datetime('2025-11-01')
+        X_train = df_long[df_long['Date'] <= train_end][feature_cols]
+        y_train = df_long[df_long['Date'] <= train_end]['Sales']
+        X_val = df_long[(df_long['Date'] > train_end) & (df_long['Date'] <= val_end)][feature_cols]
+        y_val = df_long[(df_long['Date'] > train_end) & (df_long['Date'] <= val_end)]['Sales']
+        print(f"    Evaluating November 2025 (Simple Hourly, Train <= {train_end}, Val <= {val_end})...")
+    else:
+        max_date = df_long['Date'].max()
+        val_start = max_date - pd.Timedelta(days=30)
+        X_train = df_long[df_long['Date'] <= val_start][feature_cols]
+        y_train = df_long[df_long['Date'] <= val_start]['Sales']
+        X_val = df_long[df_long['Date'] > val_start][feature_cols]
+        y_val = df_long[df_long['Date'] > val_start]['Sales']
+
     print(f"    Tuning Simple Hourly XGBoost ({OPTUNA_TRIALS} trials)...")
-    def obj(trial):
-        p={"n_estimators":1000,"early_stopping_rounds":50,"learning_rate":trial.suggest_float("lr",5e-3,0.1,log=True),
-           "max_depth":trial.suggest_int("md",3,7),"min_child_weight":trial.suggest_int("mcw",2,8),
-           "subsample":trial.suggest_float("ss",0.6,0.95),"colsample_bytree":trial.suggest_float("cb",0.5,0.9),
-           "gamma":trial.suggest_float("g",1e-4,1.0,log=True),"reg_lambda":trial.suggest_float("rl",0.01,5.0,log=True),
-           "reg_alpha":trial.suggest_float("ra",0.01,5.0,log=True),"enable_categorical":True,"tree_method":"hist"}
-        m=xgb.XGBRegressor(**p); m.fit(Xt,yt,eval_set=[(Xv,yv)],verbose=False)
-        return np.sqrt(np.mean((yv-m.predict(Xv))**2))
-    study=optuna.create_study(direction="minimize"); study.optimize(obj,n_trials=OPTUNA_TRIALS)
-    bp=study.best_params; bp.update({"n_estimators":1000,"early_stopping_rounds":30,"enable_categorical":True,"tree_method":"hist"})
-    param_rename = {'lr':'learning_rate','md':'max_depth','mcw':'min_child_weight','ss':'subsample','cb':'colsample_bytree','g':'gamma','rl':'reg_lambda','ra':'reg_alpha'}
-    bp = {param_rename.get(k,k):v for k,v in bp.items()}
-    bp.pop('early_stopping_rounds', None)
+    def objective(trial):
+        params = {"n_estimators": 1000, "early_stopping_rounds": 50, "learning_rate": trial.suggest_float("learning_rate", 5e-3, 0.1, log=True),
+                  "max_depth": trial.suggest_int("max_depth", 3, 7), "min_child_weight": trial.suggest_int("min_child_weight", 2, 8),
+                  "subsample": trial.suggest_float("subsample", 0.6, 0.95), "colsample_bytree": trial.suggest_float("colsample_bytree", 0.5, 0.9),
+                  "gamma": trial.suggest_float("gamma", 1e-4, 1.0, log=True), "reg_lambda": trial.suggest_float("reg_lambda", 0.01, 5.0, log=True),
+                  "reg_alpha": trial.suggest_float("reg_alpha", 0.01, 5.0, log=True), "enable_categorical": True, "tree_method": "hist"}
+        model = xgb.XGBRegressor(**params)
+        model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False)
+        return np.sqrt(np.mean((y_val - model.predict(X_val)) ** 2))
+    
+    study = optuna.create_study(direction="minimize")
+    study.optimize(objective, n_trials=OPTUNA_TRIALS)
+    best_params = study.best_params
+    best_params.update({"n_estimators": 1000, "early_stopping_rounds": 30, "enable_categorical": True, "tree_method": "hist"})
+    best_params.pop('early_stopping_rounds', None)
     print(f"    Best RMSE: {study.best_value:.4f}. Training + forecasting...")
-    model=xgb.XGBRegressor(**bp); model.fit(dl[fc],dl['Sales'],verbose=False)
-    # Hourly recursive forecast → aggregate to daily
-    return _xgb_hourly_recursive(dl, model, fc, forecast_days,
-        lag_map={1:'sales_1h_ago',HOURS_PER_DAY:'sales_same_hour_yesterday',HOURS_PER_DAY*7:'sales_same_hour_last_week'},
+    
+    if eval_mode == 'november':
+        val_end = pd.to_datetime('2025-11-01')
+        full_df = df_long[df_long['Date'] <= val_end]
+        model = xgb.XGBRegressor(**best_params)
+        model.fit(full_df[feature_cols], full_df['Sales'], verbose=False)
+        forecast_start_df = full_df
+    else:
+        model = xgb.XGBRegressor(**best_params)
+        model.fit(df_long[feature_cols], df_long['Sales'], verbose=False)
+        forecast_start_df = df_long
+
+    return _xgb_hourly_recursive(forecast_start_df, model, feature_cols, forecast_days,
+        lag_map={1: 'sales_1h_ago', HOURS_PER_DAY: 'sales_same_hour_yesterday', HOURS_PER_DAY * 7: 'sales_same_hour_last_week'},
         rolling_windows=[])
 
-def run_xgb_improved_hourly(forecast_days):
-    """Improved XGBoost hourly: 5 hourly lags, rolling, rush flags."""
+def run_xgb_improved_hourly(forecast_days, eval_mode=None):
+    # Improved XGBoost hourly: 5 hourly lags, rolling, rush flags."""
     import xgboost as xgb
     import optuna; optuna.logging.set_verbosity(logging.WARNING)
     print("    Loading hourly data...")
-    dl = load_sales_hourly()
-    dl['Product_Name'] = dl['Product_Name'].astype('category')
-    dl = dl.sort_values(['Product_Name','Date']).reset_index(drop=True)
+    df_long = load_sales_hourly()
+    df_long['Product_Name'] = df_long['Product_Name'].astype('category')
+    df_long = df_long.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
     # Improved hourly lags
-    for lag,name in [(1,'sales_1h_ago'),(2,'sales_2h_ago'),(HOURS_PER_DAY,'sales_same_hour_yesterday'),
-                     (HOURS_PER_DAY*7,'sales_same_hour_last_week'),(HOURS_PER_DAY*14,'sales_same_hour_2weeks_ago')]:
-        dl[name]=dl.groupby('Product_Name',observed=False)['Sales'].shift(lag)
+    for lag, name in [(1, 'sales_1h_ago'), (2, 'sales_2h_ago'), (HOURS_PER_DAY, 'sales_same_hour_yesterday'),
+                     (HOURS_PER_DAY * 7, 'sales_same_hour_last_week'), (HOURS_PER_DAY * 14, 'sales_same_hour_2weeks_ago')]:
+        df_long[name] = df_long.groupby('Product_Name', observed=False)['Sales'].shift(lag)
     # Rolling
-    for w,wn in [(HOURS_PER_DAY,'1d'),(HOURS_PER_DAY*3,'3d'),(HOURS_PER_DAY*7,'7d')]:
-        dl[f'rolling_{wn}_avg']=dl.groupby('Product_Name',observed=False)['sales_1h_ago'].transform(lambda x:x.rolling(w,min_periods=1).mean())
-        dl[f'rolling_{wn}_std']=dl.groupby('Product_Name',observed=False)['sales_1h_ago'].transform(lambda x:x.rolling(w,min_periods=1).std()).fillna(0)
+    for window, window_name in [(HOURS_PER_DAY, '1d'), (HOURS_PER_DAY * 3, '3d'), (HOURS_PER_DAY * 7, '7d')]:
+        df_long[f'rolling_{window_name}_avg'] = df_long.groupby('Product_Name', observed=False)['sales_1h_ago'].transform(lambda x: x.rolling(window, min_periods=1).mean())
+        df_long[f'rolling_{window_name}_std'] = df_long.groupby('Product_Name', observed=False)['sales_1h_ago'].transform(lambda x: x.rolling(window, min_periods=1).std()).fillna(0)
     # Time + rush features
-    dl['hour_of_day']=dl['Date'].dt.hour
-    dl['hour_sin']=np.sin(2*np.pi*(dl['hour_of_day']-8)/9)
-    dl['hour_cos']=np.cos(2*np.pi*(dl['hour_of_day']-8)/9)
-    dl['day_of_week']=dl['Date'].dt.dayofweek
-    dl['day_sin']=np.sin(2*np.pi*dl['day_of_week']/7)
-    dl['day_cos']=np.cos(2*np.pi*dl['day_of_week']/7)
-    dl['month']=dl['Date'].dt.month
-    dl['month_sin']=np.sin(2*np.pi*(dl['month']-1)/12)
-    dl['month_cos']=np.cos(2*np.pi*(dl['month']-1)/12)
-    dl['Is_Weekend']=dl['day_of_week'].isin([5,6]).astype(int)
-    dl['is_morning_rush']=dl['hour_of_day'].isin([8,9,10]).astype(int)
-    dl['is_lunch_rush']=dl['hour_of_day'].isin([11,12,13,14]).astype(int)
-    dl['is_afternoon']=dl['hour_of_day'].isin([15,16]).astype(int)
-    dl=dl.dropna().reset_index(drop=True); dl['Sales']=dl['Sales'].clip(lower=0)
-    fc=[c for c in dl.columns if c not in ['Date','Sales']]
-    md=dl['Date'].max(); vs=md-pd.Timedelta(days=30)
-    Xt,yt=dl[dl['Date']<=vs][fc],dl[dl['Date']<=vs]['Sales']
-    Xv,yv=dl[dl['Date']>vs][fc],dl[dl['Date']>vs]['Sales']
-    print(f"    Tuning Improved Hourly XGBoost ({OPTUNA_TRIALS} trials)...")
-    def obj(trial):
-        p={"n_estimators":2000,"early_stopping_rounds":50,"learning_rate":trial.suggest_float("lr",3e-3,0.15,log=True),
-           "max_depth":trial.suggest_int("md",4,10),"min_child_weight":trial.suggest_int("mcw",2,10),
-           "subsample":trial.suggest_float("ss",0.6,0.95),"colsample_bytree":trial.suggest_float("cb",0.4,0.9),
-           "gamma":trial.suggest_float("g",1e-4,2.0,log=True),"reg_lambda":trial.suggest_float("rl",0.01,10.0,log=True),
-           "reg_alpha":trial.suggest_float("ra",0.01,10.0,log=True),"enable_categorical":True,"tree_method":"hist"}
-        m=xgb.XGBRegressor(**p); m.fit(Xt,yt,eval_set=[(Xv,yv)],verbose=False)
-        return np.sqrt(np.mean((yv-m.predict(Xv))**2))
-    study=optuna.create_study(direction="minimize"); study.optimize(obj,n_trials=OPTUNA_TRIALS)
-    bp=study.best_params; bp.update({"n_estimators":2000,"early_stopping_rounds":30,"enable_categorical":True,"tree_method":"hist"})
-    param_rename = {'lr':'learning_rate','md':'max_depth','mcw':'min_child_weight','ss':'subsample','cb':'colsample_bytree','g':'gamma','rl':'reg_lambda','ra':'reg_alpha'}
-    bp = {param_rename.get(k,k):v for k,v in bp.items()}
-    bp.pop('early_stopping_rounds', None)
-    print(f"    Best RMSE: {study.best_value:.4f}. Training + forecasting...")
-    model=xgb.XGBRegressor(**bp); model.fit(dl[fc],dl['Sales'],verbose=False)
-    return _xgb_hourly_recursive(dl, model, fc, forecast_days,
-        lag_map={1:'sales_1h_ago',2:'sales_2h_ago',HOURS_PER_DAY:'sales_same_hour_yesterday',
-                 HOURS_PER_DAY*7:'sales_same_hour_last_week',HOURS_PER_DAY*14:'sales_same_hour_2weeks_ago'},
-        rolling_windows=[(HOURS_PER_DAY,'1d'),(HOURS_PER_DAY*3,'3d'),(HOURS_PER_DAY*7,'7d')])
+    df_long['hour_of_day'] = df_long['Date'].dt.hour
+    df_long['hour_sin'] = np.sin(2 * np.pi * (df_long['hour_of_day'] - 8) / 9)
+    df_long['hour_cos'] = np.cos(2 * np.pi * (df_long['hour_of_day'] - 8) / 9)
+    df_long['day_of_week'] = df_long['Date'].dt.dayofweek
+    df_long['day_sin'] = np.sin(2 * np.pi * df_long['day_of_week'] / 7)
+    df_long['day_cos'] = np.cos(2 * np.pi * df_long['day_of_week'] / 7)
+    df_long['month'] = df_long['Date'].dt.month
+    df_long['month_sin'] = np.sin(2 * np.pi * (df_long['month'] - 1) / 12)
+    df_long['month_cos'] = np.cos(2 * np.pi * (df_long['month'] - 1) / 12)
+    df_long['Is_Weekend'] = df_long['day_of_week'].isin([5, 6]).astype(int)
+    df_long['is_morning_rush'] = df_long['hour_of_day'].isin([8, 9, 10]).astype(int)
+    df_long['is_lunch_rush'] = df_long['hour_of_day'].isin([11, 12, 13, 14]).astype(int)
+    df_long['is_afternoon'] = df_long['hour_of_day'].isin([15, 16]).astype(int)
+    df_long = df_long.dropna().reset_index(drop=True)
+    df_long['Sales'] = df_long['Sales'].clip(lower=0)
+    feature_cols = [c for c in df_long.columns if c not in ['Date', 'Sales']]
+    
+    if eval_mode == 'november':
+        train_end = pd.to_datetime('2025-10-01')
+        val_end = pd.to_datetime('2025-11-01')
+        X_train = df_long[df_long['Date'] <= train_end][feature_cols]
+        y_train = df_long[df_long['Date'] <= train_end]['Sales']
+        X_val = df_long[(df_long['Date'] > train_end) & (df_long['Date'] <= val_end)][feature_cols]
+        y_val = df_long[(df_long['Date'] > train_end) & (df_long['Date'] <= val_end)]['Sales']
+        print(f"    Evaluating November 2025 (Improved Hourly, Train <= {train_end}, Val <= {val_end})...")
+    else:
+        max_date = df_long['Date'].max()
+        val_start = max_date - pd.Timedelta(days=30)
+        X_train = df_long[df_long['Date'] <= val_start][feature_cols]
+        y_train = df_long[df_long['Date'] <= val_start]['Sales']
+        X_val = df_long[df_long['Date'] > val_start][feature_cols]
+        y_val = df_long[df_long['Date'] > val_start]['Sales']
 
-def _xgb_hourly_recursive(dl, model, feature_cols, forecast_days, lag_map, rolling_windows):
-    """Shared hourly XGBoost recursive forecast → aggregate to daily."""
-    last_dt = dl['Date'].max()
-    last_date = last_dt.normalize()
+    print(f"    Tuning Improved Hourly XGBoost ({OPTUNA_TRIALS} trials)...")
+    def objective(trial):
+        params = {"n_estimators": 2000, "early_stopping_rounds": 50, "learning_rate": trial.suggest_float("learning_rate", 3e-3, 0.15, log=True),
+                  "max_depth": trial.suggest_int("max_depth", 4, 10), "min_child_weight": trial.suggest_int("min_child_weight", 2, 10),
+                  "subsample": trial.suggest_float("subsample", 0.6, 0.95), "colsample_bytree": trial.suggest_float("colsample_bytree", 0.4, 0.9),
+                  "gamma": trial.suggest_float("gamma", 1e-4, 2.0, log=True), "reg_lambda": trial.suggest_float("reg_lambda", 0.01, 10.0, log=True),
+                  "reg_alpha": trial.suggest_float("reg_alpha", 0.01, 10.0, log=True), "enable_categorical": True, "tree_method": "hist"}
+        model = xgb.XGBRegressor(**params)
+        model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False)
+        return np.sqrt(np.mean((y_val - model.predict(X_val)) ** 2))
+    
+    study = optuna.create_study(direction="minimize")
+    study.optimize(objective, n_trials=OPTUNA_TRIALS)
+    best_params = study.best_params
+    best_params.update({"n_estimators": 2000, "early_stopping_rounds": 30, "enable_categorical": True, "tree_method": "hist"})
+    best_params.pop('early_stopping_rounds', None)
+    print(f"    Best RMSE: {study.best_value:.4f}. Training + forecasting...")
+    
+    if eval_mode == 'november':
+        val_end = pd.to_datetime('2025-11-01')
+        full_df = df_long[df_long['Date'] <= val_end]
+        model = xgb.XGBRegressor(**best_params)
+        model.fit(full_df[feature_cols], full_df['Sales'], verbose=False)
+        forecast_start_df = full_df
+    else:
+        model = xgb.XGBRegressor(**best_params)
+        model.fit(df_long[feature_cols], df_long['Sales'], verbose=False)
+        forecast_start_df = df_long
+
+    return _xgb_hourly_recursive(forecast_start_df, model, feature_cols, forecast_days,
+        lag_map={1: 'sales_1h_ago', 2: 'sales_2h_ago', HOURS_PER_DAY: 'sales_same_hour_yesterday',
+                 HOURS_PER_DAY * 7: 'sales_same_hour_last_week', HOURS_PER_DAY * 14: 'sales_same_hour_2weeks_ago'},
+        rolling_windows=[(HOURS_PER_DAY, '1d'), (HOURS_PER_DAY * 3, '3d'), (HOURS_PER_DAY * 7, '7d')])
+
+def _xgb_hourly_recursive(df_long, model, feature_cols, forecast_days, lag_map, rolling_windows):
+    # Shared hourly XGBoost recursive forecast → aggregate to daily.
+    last_datetime = df_long['Date'].max()
+    last_date = last_datetime.normalize()
     # Build future hourly timestamps
     forecast_hours = []
-    for d in range(forecast_days):
-        day = last_date + pd.Timedelta(days=d+1)
-        for h in BUSINESS_HOURS:
-            forecast_hours.append(day + pd.Timedelta(hours=h))
+    for day_offset in range(forecast_days):
+        day = last_date + pd.Timedelta(days=day_offset + 1)
+        for hour in BUSINESS_HOURS:
+            forecast_hours.append(day + pd.Timedelta(hours=hour))
 
-    products = sorted(dl['Product_Name'].cat.categories)
+    products = sorted(df_long['Product_Name'].cat.categories)
     # Build sales history
-    sales_hist = {(r['Product_Name'],r['Date']):r['Sales'] for _,r in dl[['Date','Product_Name','Sales']].iterrows()}
+    sales_history = {(row['Product_Name'], row['Date']): row['Sales'] for _, row in df_long[['Date', 'Product_Name', 'Sales']].iterrows()}
 
-    rows = [{'Date':dt,'Product_Name':p} for dt in forecast_hours for p in products]
-    fdf = pd.DataFrame(rows)
-    fdf['Product_Name'] = fdf['Product_Name'].astype(pd.CategoricalDtype(categories=dl['Product_Name'].cat.categories))
+    forecast_rows = [{'Date': dt, 'Product_Name': p} for dt in forecast_hours for p in products]
+    forecast_df = pd.DataFrame(forecast_rows)
+    forecast_df['Product_Name'] = forecast_df['Product_Name'].astype(pd.CategoricalDtype(categories=df_long['Product_Name'].cat.categories))
 
     # Time features
-    for c in feature_cols:
-        if c not in fdf.columns:
-            if c=='hour_of_day': fdf[c]=fdf['Date'].dt.hour
-            elif c=='hour_sin': fdf[c]=np.sin(2*np.pi*(fdf['Date'].dt.hour-8)/9)
-            elif c=='hour_cos': fdf[c]=np.cos(2*np.pi*(fdf['Date'].dt.hour-8)/9)
-            elif c=='day_of_week': fdf[c]=fdf['Date'].dt.dayofweek
-            elif c=='day_sin': fdf[c]=np.sin(2*np.pi*fdf['Date'].dt.dayofweek/7)
-            elif c=='day_cos': fdf[c]=np.cos(2*np.pi*fdf['Date'].dt.dayofweek/7)
-            elif c=='month': fdf[c]=fdf['Date'].dt.month
-            elif c=='month_sin': fdf[c]=np.sin(2*np.pi*(fdf['Date'].dt.month-1)/12)
-            elif c=='month_cos': fdf[c]=np.cos(2*np.pi*(fdf['Date'].dt.month-1)/12)
-            elif c=='Is_Weekend': fdf[c]=fdf['Date'].dt.dayofweek.isin([5,6]).astype(int)
-            elif c=='is_morning_rush': fdf[c]=fdf['Date'].dt.hour.isin([8,9,10]).astype(int)
-            elif c=='is_lunch_rush': fdf[c]=fdf['Date'].dt.hour.isin([11,12,13,14]).astype(int)
-            elif c=='is_afternoon': fdf[c]=fdf['Date'].dt.hour.isin([15,16]).astype(int)
-            else: fdf[c]=0
+    for col in feature_cols:
+        if col not in forecast_df.columns:
+            if col == 'hour_of_day':
+                forecast_df[col] = forecast_df['Date'].dt.hour
+            elif col == 'hour_sin':
+                forecast_df[col] = np.sin(2 * np.pi * (forecast_df['Date'].dt.hour - 8) / 9)
+            elif col == 'hour_cos':
+                forecast_df[col] = np.cos(2 * np.pi * (forecast_df['Date'].dt.hour - 8) / 9)
+            elif col == 'day_of_week':
+                forecast_df[col] = forecast_df['Date'].dt.dayofweek
+            elif col == 'day_sin':
+                forecast_df[col] = np.sin(2 * np.pi * forecast_df['Date'].dt.dayofweek / 7)
+            elif col == 'day_cos':
+                forecast_df[col] = np.cos(2 * np.pi * forecast_df['Date'].dt.dayofweek / 7)
+            elif col == 'month':
+                forecast_df[col] = forecast_df['Date'].dt.month
+            elif col == 'month_sin':
+                forecast_df[col] = np.sin(2 * np.pi * (forecast_df['Date'].dt.month - 1) / 12)
+            elif col == 'month_cos':
+                forecast_df[col] = np.cos(2 * np.pi * (forecast_df['Date'].dt.month - 1) / 12)
+            elif col == 'Is_Weekend':
+                forecast_df[col] = forecast_df['Date'].dt.dayofweek.isin([5, 6]).astype(int)
+            elif col == 'is_morning_rush':
+                forecast_df[col] = forecast_df['Date'].dt.hour.isin([8, 9, 10]).astype(int)
+            elif col == 'is_lunch_rush':
+                forecast_df[col] = forecast_df['Date'].dt.hour.isin([11, 12, 13, 14]).astype(int)
+            elif col == 'is_afternoon':
+                forecast_df[col] = forecast_df['Date'].dt.hour.isin([15, 16]).astype(int)
+            else:
+                forecast_df[col] = 0
 
     # Init lags from history
-    for idx,row in fdf.iterrows():
-        p,dt = row['Product_Name'],row['Date']
-        for ls,lc in lag_map.items():
-            past = dt - pd.Timedelta(hours=ls)
-            fdf.at[idx,lc] = sales_hist.get((p,past),0)
-        for ws,wn in rolling_windows:
-            vals=[sales_hist.get((p,dt-pd.Timedelta(hours=i)),0) for i in range(1,ws+1)]
-            fdf.at[idx,f'rolling_{wn}_avg']=np.mean(vals) if vals else 0
-            fdf.at[idx,f'rolling_{wn}_std']=np.std(vals,ddof=1) if len(vals)>1 else 0
-    for c in fdf.select_dtypes(include=[np.number]).columns:
-        fdf[c] = fdf[c].fillna(0)
+    for row_index, row in forecast_df.iterrows():
+        product_name, current_datetime = row['Product_Name'], row['Date']
+        for lag_steps, lag_col in lag_map.items():
+            past_datetime = current_datetime - pd.Timedelta(hours=lag_steps)
+            forecast_df.at[row_index, lag_col] = sales_history.get((product_name, past_datetime), 0)
+        for window_size, window_name in rolling_windows:
+            window_values = [sales_history.get((product_name, current_datetime - pd.Timedelta(hours=i)), 0) for i in range(1, window_size + 1)]
+            forecast_df.at[row_index, f'rolling_{window_name}_avg'] = np.mean(window_values) if window_values else 0
+            forecast_df.at[row_index, f'rolling_{window_name}_std'] = np.std(window_values, ddof=1) if len(window_values) > 1 else 0
+    for col in forecast_df.select_dtypes(include=[np.number]).columns:
+        forecast_df[col] = forecast_df[col].fillna(0)
 
-    idx_lookup={(r['Product_Name'],r['Date']):i for i,r in fdf.iterrows()}
+    index_lookup = {(row['Product_Name'], row['Date']): i for i, row in forecast_df.iterrows()}
 
     # Predict hour by hour
-    for hi,cur_dt in enumerate(forecast_hours):
-        hidx=fdf.index[fdf['Date']==cur_dt].tolist()
-        preds=np.clip(model.predict(fdf.loc[hidx,feature_cols]),0,None)
-        fdf.loc[hidx,'Forecast']=preds
-        for ri,pv in zip(hidx,preds):
-            product=fdf.at[ri,'Product_Name']; sales_hist[(product,cur_dt)]=pv
-            for ls,lc in lag_map.items():
-                fk=(product,cur_dt+pd.Timedelta(hours=ls))
-                if fk in idx_lookup: fdf.at[idx_lookup[fk],lc]=pv
+    for hour_index, current_datetime in enumerate(forecast_hours):
+        hour_indices = forecast_df.index[forecast_df['Date'] == current_datetime].tolist()
+        predictions = np.clip(model.predict(forecast_df.loc[hour_indices, feature_cols]), 0, None)
+        forecast_df.loc[hour_indices, 'Forecast'] = predictions
+        for row_index, pred_value in zip(hour_indices, predictions):
+            product = forecast_df.at[row_index, 'Product_Name']
+            sales_history[(product, current_datetime)] = pred_value
+            for lag_steps, lag_col in lag_map.items():
+                future_key = (product, current_datetime + pd.Timedelta(hours=lag_steps))
+                if future_key in index_lookup:
+                    forecast_df.at[index_lookup[future_key], lag_col] = pred_value
         # Update rolling for next hour
-        if hi+1<len(forecast_hours):
-            ndt=forecast_hours[hi+1]
-            for ni in fdf.index[fdf['Date']==ndt]:
-                p=fdf.at[ni,'Product_Name']
-                for ws,wn in rolling_windows:
-                    vals=[sales_hist.get((p,ndt-pd.Timedelta(hours=i)),0) for i in range(1,ws+1)]
-                    fdf.at[ni,f'rolling_{wn}_avg']=np.mean(vals) if vals else 0
-                    fdf.at[ni,f'rolling_{wn}_std']=np.std(vals,ddof=1) if len(vals)>1 else 0
+        if hour_index + 1 < len(forecast_hours):
+            next_datetime = forecast_hours[hour_index + 1]
+            for next_row_index in forecast_df.index[forecast_df['Date'] == next_datetime]:
+                product = forecast_df.at[next_row_index, 'Product_Name']
+                for window_size, window_name in rolling_windows:
+                    window_values = [sales_history.get((product, next_datetime - pd.Timedelta(hours=i)), 0) for i in range(1, window_size + 1)]
+                    forecast_df.at[next_row_index, f'rolling_{window_name}_avg'] = np.mean(window_values) if window_values else 0
+                    forecast_df.at[next_row_index, f'rolling_{window_name}_std'] = np.std(window_values, ddof=1) if len(window_values) > 1 else 0
 
     # Aggregate to daily
-    fdf['Date_Day']=fdf['Date'].dt.normalize()
-    daily=fdf.groupby(['Date_Day','Product_Name'])['Forecast'].sum().reset_index()
-    daily=daily.rename(columns={'Date_Day':'Date'})
-    daily['Forecast']=daily['Forecast'].round().astype(int)
-    return daily[['Date','Product_Name','Forecast']]
+    forecast_df['Date_Day'] = forecast_df['Date'].dt.normalize()
+    daily_forecast = forecast_df.groupby(['Date_Day', 'Product_Name'])['Forecast'].sum().reset_index()
+    daily_forecast = daily_forecast.rename(columns={'Date_Day': 'Date'})
+    daily_forecast['Forecast'] = daily_forecast['Forecast'].round().astype(int)
+    return daily_forecast[['Date', 'Product_Name', 'Forecast']]
 
 # ── 8. LSTM GLOBAL DAILY (CPU-compatible) ──
-def run_lstm_daily(forecast_days):
-    """Global LSTM daily: one model for all products, 30-day sequences, recursive forecast."""
+def run_lstm_daily(forecast_days, eval_mode=None):
+    #Global LSTM daily: one model for all products, 30-day sequences, recursive forecast.
+    # Since not all system can eun on a GPU, this version of LSTM is CPU formated, but as a WARNING : it will take time
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
     os.environ['CUDA_VISIBLE_DEVICES'] = ''  # Force CPU
     import tensorflow as tf
@@ -806,185 +977,210 @@ def run_lstm_daily(forecast_days):
     from sklearn.preprocessing import MinMaxScaler, LabelEncoder
     import optuna; optuna.logging.set_verbosity(logging.WARNING)
 
-    SEQ_LEN = 30
+    SEQUENCE_LENGTH = 30
     OPTUNA_LSTM_TRIALS = 10  # Fewer trials for CPU speed
 
     print("    Loading data for LSTM Daily (CPU mode)...")
-    dl, daily_sales = load_sales_long()
-    dw, dh, de = load_exogenous()
+    df_long, daily_sales = load_sales_long()
+    daily_weather, daily_holidays, daily_events = load_exogenous()
 
     # Build wide format with time + exogenous features
-    product_cols = [c for c in daily_sales.columns if c != 'Date']
-    daily_sales['day_sin'] = np.sin(2*np.pi*daily_sales['Date'].dt.dayofweek/7)
-    daily_sales['day_cos'] = np.cos(2*np.pi*daily_sales['Date'].dt.dayofweek/7)
-    daily_sales['month_sin'] = np.sin(2*np.pi*(daily_sales['Date'].dt.month-1)/12)
-    daily_sales['month_cos'] = np.cos(2*np.pi*(daily_sales['Date'].dt.month-1)/12)
-    daily_sales['Is_Weekend'] = daily_sales['Date'].dt.dayofweek.isin([5,6]).astype(int)
-    time_feats = ['day_sin','day_cos','month_sin','month_cos','Is_Weekend']
+    product_cols = [col for col in daily_sales.columns if col != 'Date']
+    daily_sales['day_sin'] = np.sin(2 * np.pi * daily_sales['Date'].dt.dayofweek / 7)
+    daily_sales['day_cos'] = np.cos(2 * np.pi * daily_sales['Date'].dt.dayofweek / 7)
+    daily_sales['month_sin'] = np.sin(2 * np.pi * (daily_sales['Date'].dt.month - 1) / 12)
+    daily_sales['month_cos'] = np.cos(2 * np.pi * (daily_sales['Date'].dt.month - 1) / 12)
+    daily_sales['Is_Weekend'] = daily_sales['Date'].dt.dayofweek.isin([5, 6]).astype(int)
+    time_features = ['day_sin', 'day_cos', 'month_sin', 'month_cos', 'Is_Weekend']
 
-    exclude = ['Date','Time','date']
-    w_feats = [c for c in dw.columns if c not in exclude]
-    h_feats = [c for c in dh.columns if c not in exclude]
-    e_feats = [c for c in de.columns if c not in exclude]
+    exclude_cols = ['Date', 'Time', 'date']
+    weather_features = [col for col in daily_weather.columns if col not in exclude_cols]
+    holiday_features = [col for col in daily_holidays.columns if col not in exclude_cols]
+    event_features = [col for col in daily_events.columns if col not in exclude_cols]
 
-    df_wide = daily_sales.merge(dw, on='Date', how='left')
-    df_wide = df_wide.merge(dh, on='Date', how='left')
-    df_wide = df_wide.merge(de, on='Date', how='left')
-    for c in df_wide.select_dtypes(include=[np.number]).columns:
-        df_wide[c] = df_wide[c].fillna(0)
+    df_wide = daily_sales.merge(daily_weather, on='Date', how='left')
+    df_wide = df_wide.merge(daily_holidays, on='Date', how='left')
+    df_wide = df_wide.merge(daily_events, on='Date', how='left')
+    for col in df_wide.select_dtypes(include=[np.number]).columns:
+        df_wide[col] = df_wide[col].fillna(0)
 
-    base_feat_cols = [c for c in w_feats + h_feats + e_feats + time_feats
-                      if c in df_wide.columns and df_wide[c].dtype.kind in 'iufc']
+    base_feature_cols = [col for col in weather_features + holiday_features + event_features + time_features
+                         if col in df_wide.columns and df_wide[col].dtype.kind in 'iufc']
 
     # Melt to long
-    dfl = pd.melt(df_wide, id_vars=['Date']+base_feat_cols, value_vars=product_cols,
-                  var_name='Product_Name', value_name='Sales')
-    dfl['Sales'] = dfl['Sales'].clip(lower=0)
-    dfl = dfl[dfl['Product_Name'].isin(PRODUCTS_TO_FORECAST)]
-    dfl = dfl.sort_values(['Product_Name','Date']).reset_index(drop=True)
+    df_long_format = pd.melt(df_wide, id_vars=['Date'] + base_feature_cols, value_vars=product_cols,
+                             var_name='Product_Name', value_name='Sales')
+    df_long_format['Sales'] = df_long_format['Sales'].clip(lower=0)
+    df_long_format = df_long_format[df_long_format['Product_Name'].isin(PRODUCTS_TO_FORECAST)]
+    df_long_format = df_long_format.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
 
-    enc = LabelEncoder()
-    dfl['product_id'] = enc.fit_transform(dfl['Product_Name'])
+    product_encoder = LabelEncoder()
+    df_long_format['product_id'] = product_encoder.fit_transform(df_long_format['Product_Name'])
 
     # Lag features
-    dfl['sales_lag_1'] = dfl.groupby('Product_Name')['Sales'].shift(1)
-    dfl['sales_lag_7'] = dfl.groupby('Product_Name')['Sales'].shift(7)
-    dfl['sales_rolling_7_mean'] = dfl.groupby('Product_Name')['Sales'].shift(1).groupby(
-        dfl['Product_Name']).transform(lambda x: x.rolling(7, min_periods=1).mean())
-    dfl['sales_rolling_7_std'] = dfl.groupby('Product_Name')['Sales'].shift(1).groupby(
-        dfl['Product_Name']).transform(lambda x: x.rolling(7, min_periods=1).std()).fillna(0)
-    dfl['sales_diff_1'] = dfl.groupby('Product_Name')['Sales'].diff(1)
+    df_long_format['sales_lag_1'] = df_long_format.groupby('Product_Name')['Sales'].shift(1)
+    df_long_format['sales_lag_7'] = df_long_format.groupby('Product_Name')['Sales'].shift(7)
+    df_long_format['sales_rolling_7_mean'] = df_long_format.groupby('Product_Name')['Sales'].shift(1).groupby(
+        df_long_format['Product_Name']).transform(lambda x: x.rolling(7, min_periods=1).mean())
+    df_long_format['sales_rolling_7_std'] = df_long_format.groupby('Product_Name')['Sales'].shift(1).groupby(
+        df_long_format['Product_Name']).transform(lambda x: x.rolling(7, min_periods=1).std()).fillna(0)
+    df_long_format['sales_diff_1'] = df_long_format.groupby('Product_Name')['Sales'].diff(1)
 
-    lag_feats = ['sales_lag_1','sales_lag_7','sales_rolling_7_mean','sales_rolling_7_std','sales_diff_1']
-    dfl = dfl.dropna(subset=lag_feats).reset_index(drop=True)
-    feature_cols = base_feat_cols + ['product_id'] + lag_feats
+    lag_features = ['sales_lag_1', 'sales_lag_7', 'sales_rolling_7_mean', 'sales_rolling_7_std', 'sales_diff_1']
+    df_long_format = df_long_format.dropna(subset=lag_features).reset_index(drop=True)
+    final_feature_cols = base_feature_cols + ['product_id'] + lag_features
 
     # Split
-    max_date = dfl['Date'].max()
-    val_start = max_date - pd.Timedelta(days=60)
-    val_end_dt = max_date - pd.Timedelta(days=30)
+    if eval_mode == 'november':
+        train_end = pd.to_datetime('2025-10-01')
+        val_end = pd.to_datetime('2025-11-01')
+        train_data = df_long_format[df_long_format['Date'] <= train_end]
+        val_data = df_long_format[(df_long_format['Date'] > train_end) & (df_long_format['Date'] <= val_end)]
+        print(f"    Evaluating November 2025 (LSTM Daily, Train <= {train_end}, Val <= {val_end})...")
+    else:
+        max_date = df_long_format['Date'].max()
+        train_end = max_date - pd.Timedelta(days=60)
+        val_end = max_date - pd.Timedelta(days=30)
+        train_data = df_long_format[df_long_format['Date'] <= train_end]
+        val_data = df_long_format[(df_long_format['Date'] > train_end) & (df_long_format['Date'] <= val_end)]
 
-    feat_scaler = MinMaxScaler(); tgt_scaler = MinMaxScaler()
-    train_data = dfl[dfl['Date'] <= val_start]
-    feat_scaler.fit(train_data[feature_cols])
-    tgt_scaler.fit(train_data[['Sales']])
+    feature_scaler = MinMaxScaler()
+    target_scaler = MinMaxScaler()
+    feature_scaler.fit(train_data[final_feature_cols])
+    target_scaler.fit(train_data[['Sales']])
 
     # Build sequences
-    def build_seqs(pdf):
-        if len(pdf) < SEQ_LEN+1: return None, None, None
-        sf = feat_scaler.transform(pdf[feature_cols])
-        st = tgt_scaler.transform(pdf[['Sales']]).flatten()
-        X, y, d = [], [], []
-        for i in range(len(sf)-SEQ_LEN):
-            X.append(sf[i:i+SEQ_LEN]); y.append(st[i+SEQ_LEN]); d.append(pdf['Date'].values[i+SEQ_LEN])
-        return np.array(X), np.array(y), pd.to_datetime(d)
+    def build_sequences(pdf):
+        if len(pdf) < SEQUENCE_LENGTH + 1:
+            return None, None, None
+        scaled_features = feature_scaler.transform(pdf[final_feature_cols])
+        scaled_target = target_scaler.transform(pdf[['Sales']]).flatten()
+        X, y, dates = [], [], []
+        for i in range(len(scaled_features) - SEQUENCE_LENGTH):
+            X.append(scaled_features[i : i + SEQUENCE_LENGTH])
+            y.append(scaled_target[i + SEQUENCE_LENGTH])
+            dates.append(pdf['Date'].values[i + SEQUENCE_LENGTH])
+        return np.array(X), np.array(y), pd.to_datetime(dates)
 
-    all_Xt, all_yt, all_Xv, all_yv = [], [], [], []
-    for pn in dfl['Product_Name'].unique():
-        pdf = dfl[dfl['Product_Name']==pn].sort_values('Date')
-        res = build_seqs(pdf)
-        if res[0] is None: continue
-        X, y, dates = res
-        tm = dates <= np.datetime64(val_start)
-        vm = (dates > np.datetime64(val_start)) & (dates <= np.datetime64(val_end_dt))
-        if tm.sum()>0: all_Xt.append(X[tm]); all_yt.append(y[tm])
-        if vm.sum()>0: all_Xv.append(X[vm]); all_yv.append(y[vm])
+    all_X_train, all_y_train, all_X_val, all_y_val = [], [], [], []
+    for product_name in df_long_format['Product_Name'].unique():
+        product_df = df_long_format[df_long_format['Product_Name'] == product_name].sort_values('Date')
+        res = build_sequences(product_df)
+        if res[0] is None:
+            continue
+        X_seqs, y_seqs, d_seqs = res
+        train_mask = d_seqs <= np.datetime64(train_end)
+        val_mask = (d_seqs > np.datetime64(train_end)) & (d_seqs <= np.datetime64(val_end))
+        if train_mask.sum() > 0:
+            all_X_train.append(X_seqs[train_mask])
+            all_y_train.append(y_seqs[train_mask])
+        if val_mask.sum() > 0:
+            all_X_val.append(X_seqs[val_mask])
+            all_y_val.append(y_seqs[val_mask])
 
-    X_train = np.vstack(all_Xt); y_train = np.concatenate(all_yt)
-    X_val = np.vstack(all_Xv); y_val = np.concatenate(all_yv)
-    shuf = np.random.permutation(len(X_train))
-    X_train, y_train = X_train[shuf], y_train[shuf]
+    X_train = np.vstack(all_X_train)
+    y_train = np.concatenate(all_y_train)
+    X_val = np.vstack(all_X_val)
+    y_val = np.concatenate(all_y_val)
+    shuffle_indices = np.random.permutation(len(X_train))
+    X_train, y_train = X_train[shuffle_indices], y_train[shuffle_indices]
 
     print(f"    Sequences: {X_train.shape[0]} train, {X_val.shape[0]} val")
     print(f"    Tuning LSTM ({OPTUNA_LSTM_TRIALS} trials, CPU)...")
 
     def objective(trial):
         tf.keras.backend.clear_session()
-        bs = trial.suggest_categorical('batch_size',[64,128,256])
-        u1 = trial.suggest_int('lstm_1_units',64,192,step=32)
-        u2 = trial.suggest_int('lstm_2_units',32,96,step=16)
-        dr = trial.suggest_float('dropout_rate',0.1,0.4)
-        lr = trial.suggest_float('learning_rate',1e-4,1e-2,log=True)
-        l2r = trial.suggest_float('l2_reg',1e-5,1e-2,log=True)
-        m = Sequential([Input(shape=(SEQ_LEN,len(feature_cols))),
-            LSTM(u1,activation='tanh',return_sequences=True), Dropout(dr),
-            LSTM(u2,activation='tanh'), Dropout(dr),
-            Dense(64,activation='relu',kernel_regularizer=l2(l2r)),
-            Dense(32,activation='relu'), Dense(1)])
-        m.compile(optimizer=Adam(learning_rate=lr), loss=Huber())
-        m.fit(X_train, y_train, validation_data=(X_val,y_val), epochs=50, batch_size=bs,
-              callbacks=[EarlyStopping(patience=8,restore_best_weights=True)], verbose=0)
-        vp = tgt_scaler.inverse_transform(m.predict(X_val,verbose=0)).flatten()
-        va = tgt_scaler.inverse_transform(y_val.reshape(-1,1)).flatten()
-        return np.sqrt(np.mean((va-vp)**2))
+        batch_size = trial.suggest_categorical('batch_size', [64, 128, 256])
+        lstm_1_units = trial.suggest_int('lstm_1_units', 64, 192, step=32)
+        lstm_2_units = trial.suggest_int('lstm_2_units', 32, 96, step=16)
+        dropout_rate = trial.suggest_float('dropout_rate', 0.1, 0.4)
+        learning_rate = trial.suggest_float('learning_rate', 1e-4, 1e-2, log=True)
+        l2_reg = trial.suggest_float('l2_reg', 1e-5, 1e-2, log=True)
+        model = Sequential([Input(shape=(SEQUENCE_LENGTH, len(final_feature_cols))),
+                            LSTM(lstm_1_units, activation='tanh', return_sequences=True), Dropout(dropout_rate),
+                            LSTM(lstm_2_units, activation='tanh'), Dropout(dropout_rate),
+                            Dense(64, activation='relu', kernel_regularizer=l2(l2_reg)),
+                            Dense(32, activation='relu'), Dense(1)])
+        model.compile(optimizer=Adam(learning_rate=learning_rate), loss=Huber())
+        model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=50, batch_size=batch_size,
+                  callbacks=[EarlyStopping(patience=8, restore_best_weights=True)], verbose=0)
+        val_predictions = target_scaler.inverse_transform(model.predict(X_val, verbose=0)).flatten()
+        val_actuals = target_scaler.inverse_transform(y_val.reshape(-1, 1)).flatten()
+        return np.sqrt(np.mean((val_actuals - val_predictions) ** 2))
 
     study = optuna.create_study(direction='minimize')
     study.optimize(objective, n_trials=OPTUNA_LSTM_TRIALS)
-    bp = study.best_params
+    best_params = study.best_params
     print(f"    Best RMSE: {study.best_value:.4f}. Training final model...")
 
     tf.keras.backend.clear_session()
-    final = Sequential([Input(shape=(SEQ_LEN,len(feature_cols))),
-        LSTM(bp['lstm_1_units'],activation='tanh',return_sequences=True), Dropout(bp['dropout_rate']),
-        LSTM(bp['lstm_2_units'],activation='tanh'), Dropout(bp['dropout_rate']),
-        Dense(64,activation='relu',kernel_regularizer=l2(bp['l2_reg'])),
-        Dense(32,activation='relu'), Dense(1)])
-    final.compile(optimizer=Adam(learning_rate=bp['learning_rate']), loss=Huber())
-    final.fit(X_train, y_train, validation_data=(X_val,y_val), epochs=150,
-              batch_size=bp['batch_size'],
-              callbacks=[EarlyStopping(patience=15,restore_best_weights=True),
-                         ReduceLROnPlateau(factor=0.5,patience=5,min_lr=1e-6)], verbose=0)
+    final_model = Sequential([Input(shape=(SEQUENCE_LENGTH, len(final_feature_cols))),
+                              LSTM(best_params['lstm_1_units'], activation='tanh', return_sequences=True), Dropout(best_params['dropout_rate']),
+                              LSTM(best_params['lstm_2_units'], activation='tanh'), Dropout(best_params['dropout_rate']),
+                              Dense(64, activation='relu', kernel_regularizer=l2(best_params['l2_reg'])),
+                              Dense(32, activation='relu'), Dense(1)])
+    final_model.compile(optimizer=Adam(learning_rate=best_params['learning_rate']), loss=Huber())
+    final_model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=150,
+                    batch_size=best_params['batch_size'],
+                    callbacks=[EarlyStopping(patience=15, restore_best_weights=True),
+                               ReduceLROnPlateau(factor=0.5, patience=5, min_lr=1e-6)], verbose=0)
 
     # Recursive forecast
     print(f"    Forecasting {forecast_days} days recursively...")
-    lag_idx = [feature_cols.index(f) for f in lag_feats]
-    lag_min = feat_scaler.data_min_[lag_idx]
-    lag_range = feat_scaler.data_range_[lag_idx]
-    lag_range[lag_range==0] = 1.0
+    lag_indices = [final_feature_cols.index(f) for f in lag_features]
+    lag_mins = feature_scaler.data_min_[lag_indices]
+    lag_ranges = feature_scaler.data_range_[lag_indices]
+    lag_ranges[lag_ranges == 0] = 1.0
 
-    results = []
-    for pn in sorted(dfl['Product_Name'].unique()):
-        pdf = dfl[dfl['Product_Name']==pn].sort_values('Date')
-        if len(pdf) < SEQ_LEN: continue
-        tail = pdf.tail(SEQ_LEN)
-        seq = feat_scaler.transform(tail[feature_cols])
-        sales_hist = list(pdf['Sales'].values[-SEQ_LEN:])
+    forecast_results = []
+    for product_name in sorted(df_long_format['Product_Name'].unique()):
+        product_df = df_long_format[df_long_format['Product_Name'] == product_name].sort_values('Date')
+        if len(product_df) < SEQUENCE_LENGTH:
+            continue
+        product_tail = product_df.tail(SEQUENCE_LENGTH)
+        current_sequence = feature_scaler.transform(product_tail[final_feature_cols])
+        sales_history_list = list(product_df['Sales'].values[-SEQUENCE_LENGTH:])
 
-        for day_i in range(forecast_days):
-            pred_s = final.predict(seq.reshape(1,SEQ_LEN,-1), verbose=0)[0,0]
-            pred_r = max(0, tgt_scaler.inverse_transform([[pred_s]])[0,0])
-            sales_hist.append(pred_r)
-            fd = max_date + pd.Timedelta(days=day_i+1)
-            results.append({'Date':fd,'Product_Name':pn,'Forecast':int(round(pred_r))})
+        for day_idx in range(forecast_days):
+            prediction_scaled = final_model.predict(current_sequence.reshape(1, SEQUENCE_LENGTH, -1), verbose=0)[0, 0]
+            prediction_raw = max(0, target_scaler.inverse_transform([[prediction_scaled]])[0, 0])
+            sales_history_list.append(prediction_raw)
+            forecast_date = max_date + pd.Timedelta(days=day_idx + 1)
+            forecast_results.append({'Date': forecast_date, 'Product_Name': product_name, 'Forecast': int(round(prediction_raw))})
 
-            if day_i+1 < forecast_days:
-                next_feat = seq[-1].copy()
+            if day_idx + 1 < forecast_days:
+                next_features = current_sequence[-1].copy()
                 # Update time features
-                nd = fd + pd.Timedelta(days=1); dow=nd.dayofweek; mon=nd.month
-                tv = [np.sin(2*np.pi*dow/7),np.cos(2*np.pi*dow/7),
-                      np.sin(2*np.pi*(mon-1)/12),np.cos(2*np.pi*(mon-1)/12),
-                      1 if dow>=5 else 0]
-                for ti,tf_name in enumerate(time_feats):
-                    if tf_name in feature_cols:
-                        fi = feature_cols.index(tf_name)
-                        next_feat[fi] = (tv[ti]-feat_scaler.data_min_[fi])/(feat_scaler.data_range_[fi]+1e-8)
-                # Update lags from sales_hist
-                h = sales_hist
-                raw = np.array([h[-1], h[-7] if len(h)>=7 else h[0],
-                    np.mean(h[-7:]) if len(h)>=7 else np.mean(h),
-                    np.std(h[-7:]) if len(h)>=7 else 0.0,
-                    h[-1]-h[-2] if len(h)>=2 else 0.0])
-                scaled = (raw-lag_min)/lag_range
-                for li,fi in enumerate(lag_idx): next_feat[fi]=scaled[li]
-                seq = np.roll(seq,-1,axis=0); seq[-1]=next_feat
+                next_date = forecast_date + pd.Timedelta(days=1)
+                day_of_week = next_date.dayofweek
+                month = next_date.month
+                time_values = [np.sin(2 * np.pi * day_of_week / 7), np.cos(2 * np.pi * day_of_week / 7),
+                               np.sin(2 * np.pi * (month - 1) / 12), np.cos(2 * np.pi * (month - 1) / 12),
+                               1 if day_of_week >= 5 else 0]
+                for ti, tf_name in enumerate(time_features):
+                    if tf_name in final_feature_cols:
+                        fi = final_feature_cols.index(tf_name)
+                        next_features[fi] = (time_values[ti] - feature_scaler.data_min_[fi]) / (feature_scaler.data_range_[fi] + 1e-8)
+                # Update lags from sales_history_list
+                history = sales_history_list
+                raw_lags = np.array([history[-1], history[-7] if len(history) >= 7 else history[0],
+                                     np.mean(history[-7:]) if len(history) >= 7 else np.mean(history),
+                                     np.std(history[-7:]) if len(history) >= 7 else 0.0,
+                                     history[-1] - history[-2] if len(history) >= 2 else 0.0])
+                scaled_lags = (raw_lags - lag_mins) / lag_ranges
+                for li, fi in enumerate(lag_indices):
+                    next_features[fi] = scaled_lags[li]
+                current_sequence = np.roll(current_sequence, -1, axis=0)
+                current_sequence[-1] = next_features
 
     tf.keras.backend.clear_session()
-    return pd.DataFrame(results)
+    return pd.DataFrame(forecast_results)
 
 
 # ── 9. LSTM GLOBAL HOURLY (CPU-compatible) ──
-def run_lstm_hourly(forecast_days):
-    """Global LSTM hourly: one model for all products, 63-step sequences, 9h→daily rollup."""
+def run_lstm_hourly(forecast_days, eval_mode=None):
+    #Global LSTM hourly: one model for all products, 63-step sequences, 9h→daily rollup.
+    # Since not all system can eun on a GPU, this version of LSTM is CPU formated, but as a WARNING : it will take time
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
     os.environ['CUDA_VISIBLE_DEVICES'] = ''  # Force CPU
     import tensorflow as tf
@@ -998,193 +1194,214 @@ def run_lstm_hourly(forecast_days):
     from sklearn.preprocessing import MinMaxScaler, LabelEncoder
     import optuna; optuna.logging.set_verbosity(logging.WARNING)
 
-    SEQ_LEN = 63  # ~1 week of hourly data (9h × 7d)
+    SEQUENCE_LENGTH = 63  # ~1 week of hourly data (9h × 7d)
     OPTUNA_LSTM_TRIALS = 8
 
     print("    Loading hourly data for LSTM Hourly (CPU mode)...")
-    dlh = load_sales_hourly()
-
-    # Load exogenous (hourly weather already in sales file; for simplicity use daily agg)
-    dw, dh, de = load_exogenous()
+    df_long_hourly = load_sales_hourly()
+    daily_weather, daily_holidays, daily_events = load_exogenous()
 
     # Time features on hourly data
-    dlh['day_sin'] = np.sin(2*np.pi*dlh['Date'].dt.dayofweek/7)
-    dlh['day_cos'] = np.cos(2*np.pi*dlh['Date'].dt.dayofweek/7)
-    dlh['month_sin'] = np.sin(2*np.pi*(dlh['Date'].dt.month-1)/12)
-    dlh['month_cos'] = np.cos(2*np.pi*(dlh['Date'].dt.month-1)/12)
-    dlh['Is_Weekend'] = dlh['Date'].dt.dayofweek.isin([5,6]).astype(int)
-    dlh['hour_sin'] = np.sin(2*np.pi*(dlh['Date'].dt.hour-8)/9)
-    dlh['hour_cos'] = np.cos(2*np.pi*(dlh['Date'].dt.hour-8)/9)
-    time_feats = ['day_sin','day_cos','month_sin','month_cos','Is_Weekend','hour_sin','hour_cos']
+    df_long_hourly['day_sin'] = np.sin(2 * np.pi * df_long_hourly['Date'].dt.dayofweek / 7)
+    df_long_hourly['day_cos'] = np.cos(2 * np.pi * df_long_hourly['Date'].dt.dayofweek / 7)
+    df_long_hourly['month_sin'] = np.sin(2 * np.pi * (df_long_hourly['Date'].dt.month - 1) / 12)
+    df_long_hourly['month_cos'] = np.cos(2 * np.pi * (df_long_hourly['Date'].dt.month - 1) / 12)
+    df_long_hourly['Is_Weekend'] = df_long_hourly['Date'].dt.dayofweek.isin([5, 6]).astype(int)
+    df_long_hourly['hour_sin'] = np.sin(2 * np.pi * (df_long_hourly['Date'].dt.hour - 8) / 9)
+    df_long_hourly['hour_cos'] = np.cos(2 * np.pi * (df_long_hourly['Date'].dt.hour - 8) / 9)
+    time_features = ['day_sin', 'day_cos', 'month_sin', 'month_cos', 'Is_Weekend', 'hour_sin', 'hour_cos']
 
     # Merge daily exogenous (broadcast to each hour of that day)
-    dlh['Date_Day'] = dlh['Date'].dt.normalize()
-    dlh = dlh.merge(dw.rename(columns={'Date':'Date_Day'}), on='Date_Day', how='left')
-    dlh = dlh.merge(dh.rename(columns={'Date':'Date_Day'}), on='Date_Day', how='left')
-    dlh = dlh.merge(de.rename(columns={'Date':'Date_Day'}), on='Date_Day', how='left')
-    dlh = dlh.drop(columns=['Date_Day'])
-    for c in dlh.select_dtypes(include=[np.number]).columns: dlh[c]=dlh[c].fillna(0)
+    df_long_hourly['Date_Day'] = df_long_hourly['Date'].dt.normalize()
+    df_long_hourly = df_long_hourly.merge(daily_weather.rename(columns={'Date': 'Date_Day'}), on='Date_Day', how='left')
+    df_long_hourly = df_long_hourly.merge(daily_holidays.rename(columns={'Date': 'Date_Day'}), on='Date_Day', how='left')
+    df_long_hourly = df_long_hourly.merge(daily_events.rename(columns={'Date': 'Date_Day'}), on='Date_Day', how='left')
+    df_long_hourly = df_long_hourly.drop(columns=['Date_Day'])
+    for col in df_long_hourly.select_dtypes(include=[np.number]).columns:
+        df_long_hourly[col] = df_long_hourly[col].fillna(0)
 
-    exclude = ['Date','Sales','Product_Name','Time','date']
-    base_feat_cols = [c for c in dw.columns.tolist()+dh.columns.tolist()+de.columns.tolist()
-                      if c not in ['Date','Time','date'] and c in dlh.columns]
-    base_feat_cols = list(dict.fromkeys(base_feat_cols))  # dedupe preserving order
-    base_feat_cols = [c for c in base_feat_cols if dlh[c].dtype.kind in 'iufc']
+    exclude_cols = ['Date', 'Sales', 'Product_Name', 'Time', 'date']
+    exogenous_cols = [col for col in daily_weather.columns.tolist() + daily_holidays.columns.tolist() + daily_events.columns.tolist()
+                      if col not in ['Date', 'Time', 'date'] and col in df_long_hourly.columns]
+    # Deduplicate preserving order
+    exogenous_cols = list(dict.fromkeys(exogenous_cols))
+    exogenous_cols = [col for col in exogenous_cols if df_long_hourly[col].dtype.kind in 'iufc']
 
-    dlh = dlh.sort_values(['Product_Name','Date']).reset_index(drop=True)
-    enc = LabelEncoder()
-    dlh['Product_ID'] = enc.fit_transform(dlh['Product_Name'])
+    df_long_hourly = df_long_hourly.sort_values(['Product_Name', 'Date']).reset_index(drop=True)
+    product_encoder = LabelEncoder()
+    df_long_hourly['Product_ID'] = product_encoder.fit_transform(df_long_hourly['Product_Name'])
 
     # Hourly lags
-    dlh['sales_lag_1h'] = dlh.groupby('Product_Name')['Sales'].shift(1)
-    dlh['sales_lag_9h'] = dlh.groupby('Product_Name')['Sales'].shift(9)
-    dlh['sales_lag_63h'] = dlh.groupby('Product_Name')['Sales'].shift(63)
-    dlh['sales_rolling_9h_mean'] = dlh.groupby('Product_Name')['Sales'].shift(1).groupby(
-        dlh['Product_Name']).transform(lambda x: x.rolling(9,min_periods=1).mean())
-    dlh['sales_rolling_9h_std'] = dlh.groupby('Product_Name')['Sales'].shift(1).groupby(
-        dlh['Product_Name']).transform(lambda x: x.rolling(9,min_periods=1).std()).fillna(0)
+    df_long_hourly['sales_lag_1h'] = df_long_hourly.groupby('Product_Name')['Sales'].shift(1)
+    df_long_hourly['sales_lag_9h'] = df_long_hourly.groupby('Product_Name')['Sales'].shift(9)
+    df_long_hourly['sales_lag_63h'] = df_long_hourly.groupby('Product_Name')['Sales'].shift(63)
+    df_long_hourly['sales_rolling_9h_mean'] = df_long_hourly.groupby('Product_Name')['Sales'].shift(1).groupby(
+        df_long_hourly['Product_Name']).transform(lambda x: x.rolling(9, min_periods=1).mean())
+    df_long_hourly['sales_rolling_9h_std'] = df_long_hourly.groupby('Product_Name')['Sales'].shift(1).groupby(
+        df_long_hourly['Product_Name']).transform(lambda x: x.rolling(9, min_periods=1).std()).fillna(0)
 
-    lag_feats = ['sales_lag_1h','sales_lag_9h','sales_lag_63h','sales_rolling_9h_mean','sales_rolling_9h_std']
-    dlh = dlh.dropna(subset=lag_feats).reset_index(drop=True)
-    feature_cols = base_feat_cols + time_feats + ['Product_ID'] + lag_feats
-    # Dedupe
+    lag_features = ['sales_lag_1h', 'sales_lag_9h', 'sales_lag_63h', 'sales_rolling_9h_mean', 'sales_rolling_9h_std']
+    df_long_hourly = df_long_hourly.dropna(subset=lag_features).reset_index(drop=True)
+    feature_cols = exogenous_cols + time_features + ['Product_ID'] + lag_features
+    # Deduplicate
     feature_cols = list(dict.fromkeys(feature_cols))
-    feature_cols = [c for c in feature_cols if c in dlh.columns]
+    feature_cols = [col for col in feature_cols if col in df_long_hourly.columns]
 
-    max_date = dlh['Date'].max()
-    val_start = max_date - pd.Timedelta(days=60)
-    val_end_dt = max_date - pd.Timedelta(days=30)
+    if eval_mode == 'november':
+        train_end = pd.to_datetime('2025-10-01')
+        val_end = pd.to_datetime('2025-11-01')
+        print(f"    Evaluating November 2025 (LSTM Hourly, Train <= {train_end}, Val <= {val_end})...")
+    else:
+        max_date = df_long_hourly['Date'].max()
+        train_end = max_date - pd.Timedelta(days=60)
+        val_end = max_date - pd.Timedelta(days=30)
 
-    feat_scaler = MinMaxScaler(); tgt_scaler = MinMaxScaler()
-    train_data = dlh[dlh['Date'] <= val_start]
-    feat_scaler.fit(train_data[feature_cols])
-    tgt_scaler.fit(train_data[['Sales']])
+    feature_scaler = MinMaxScaler()
+    target_scaler = MinMaxScaler()
+    train_data = df_long_hourly[df_long_hourly['Date'] <= train_end]
+    feature_scaler.fit(train_data[feature_cols])
+    target_scaler.fit(train_data[['Sales']])
 
-    def build_seqs(pdf):
-        if len(pdf) < SEQ_LEN+1: return None, None, None
-        sf = feat_scaler.transform(pdf[feature_cols])
-        st = tgt_scaler.transform(pdf[['Sales']]).flatten()
-        X, y, d = [], [], []
-        for i in range(len(sf)-SEQ_LEN):
-            X.append(sf[i:i+SEQ_LEN]); y.append(st[i+SEQ_LEN]); d.append(pdf['Date'].values[i+SEQ_LEN])
-        return np.array(X), np.array(y), pd.to_datetime(d)
+    def build_sequences(pdf):
+        if len(pdf) < SEQUENCE_LENGTH + 1:
+            return None, None, None
+        scaled_features = feature_scaler.transform(pdf[feature_cols])
+        scaled_target = target_scaler.transform(pdf[['Sales']]).flatten()
+        X, y, dates = [], [], []
+        for i in range(len(scaled_features) - SEQUENCE_LENGTH):
+            X.append(scaled_features[i : i + SEQUENCE_LENGTH])
+            y.append(scaled_target[i + SEQUENCE_LENGTH])
+            dates.append(pdf['Date'].values[i + SEQUENCE_LENGTH])
+        return np.array(X), np.array(y), pd.to_datetime(dates)
 
-    all_Xt, all_yt, all_Xv, all_yv = [], [], [], []
-    for pn in dlh['Product_Name'].unique():
-        pdf = dlh[dlh['Product_Name']==pn].sort_values('Date')
-        res = build_seqs(pdf)
-        if res[0] is None: continue
-        X, y, dates = res
-        tm = dates <= np.datetime64(val_start)
-        vm = (dates > np.datetime64(val_start)) & (dates <= np.datetime64(val_end_dt))
-        if tm.sum()>0: all_Xt.append(X[tm]); all_yt.append(y[tm])
-        if vm.sum()>0: all_Xv.append(X[vm]); all_yv.append(y[vm])
+    all_X_train, all_y_train, all_X_val, all_y_val = [], [], [], []
+    for product_name in df_long_hourly['Product_Name'].unique():
+        product_df = df_long_hourly[df_long_hourly['Product_Name'] == product_name].sort_values('Date')
+        res = build_sequences(product_df)
+        if res[0] is None:
+            continue
+        X_seqs, y_seqs, d_seqs = res
+        train_mask = d_seqs <= np.datetime64(train_end)
+        val_mask = (d_seqs > np.datetime64(train_end)) & (d_seqs <= np.datetime64(val_end))
+        if train_mask.sum() > 0:
+            all_X_train.append(X_seqs[train_mask])
+            all_y_train.append(y_seqs[train_mask])
+        if val_mask.sum() > 0:
+            all_X_val.append(X_seqs[val_mask])
+            all_y_val.append(y_seqs[val_mask])
 
-    X_train = np.vstack(all_Xt); y_train = np.concatenate(all_yt)
-    X_val = np.vstack(all_Xv); y_val = np.concatenate(all_yv)
-    shuf = np.random.permutation(len(X_train))
-    X_train, y_train = X_train[shuf], y_train[shuf]
+    X_train = np.vstack(all_X_train)
+    y_train = np.concatenate(all_y_train)
+    X_val = np.vstack(all_X_val)
+    y_val = np.concatenate(all_y_val)
+    shuffle_indices = np.random.permutation(len(X_train))
+    X_train, y_train = X_train[shuffle_indices], y_train[shuffle_indices]
 
     print(f"    Sequences: {X_train.shape[0]} train, {X_val.shape[0]} val")
     print(f"    Tuning LSTM Hourly ({OPTUNA_LSTM_TRIALS} trials, CPU)...")
 
     def objective(trial):
         tf.keras.backend.clear_session()
-        bs = trial.suggest_categorical('batch_size',[64,128,256])
-        u1 = trial.suggest_int('lstm_1_units',64,192,step=32)
-        u2 = trial.suggest_int('lstm_2_units',32,96,step=16)
-        dr = trial.suggest_float('dropout_rate',0.1,0.4)
-        lr = trial.suggest_float('learning_rate',1e-4,1e-2,log=True)
-        l2r = trial.suggest_float('l2_reg',1e-5,1e-2,log=True)
-        m = Sequential([Input(shape=(SEQ_LEN,len(feature_cols))),
-            LSTM(u1,activation='tanh',return_sequences=True), Dropout(dr),
-            LSTM(u2,activation='tanh'), Dropout(dr),
-            Dense(64,activation='relu',kernel_regularizer=l2(l2r)),
-            Dense(1)])
-        m.compile(optimizer=Adam(learning_rate=lr), loss=Huber())
-        m.fit(X_train, y_train, validation_data=(X_val,y_val), epochs=30, batch_size=bs,
-              callbacks=[EarlyStopping(patience=6,restore_best_weights=True)], verbose=0)
-        vp = tgt_scaler.inverse_transform(m.predict(X_val,verbose=0)).flatten()
-        va = tgt_scaler.inverse_transform(y_val.reshape(-1,1)).flatten()
-        return np.sqrt(np.mean((va-vp)**2))
+        batch_size = trial.suggest_categorical('batch_size', [64, 128, 256])
+        lstm_1_units = trial.suggest_int('lstm_1_units', 64, 192, step=32)
+        lstm_2_units = trial.suggest_int('lstm_2_units', 32, 96, step=16)
+        dropout_rate = trial.suggest_float('dropout_rate', 0.1, 0.4)
+        learning_rate = trial.suggest_float('learning_rate', 1e-4, 1e-2, log=True)
+        l2_reg = trial.suggest_float('l2_reg', 1e-5, 1e-2, log=True)
+        model = Sequential([Input(shape=(SEQUENCE_LENGTH, len(feature_cols))),
+                            LSTM(lstm_1_units, activation='tanh', return_sequences=True), Dropout(dropout_rate),
+                            LSTM(lstm_2_units, activation='tanh'), Dropout(dropout_rate),
+                            Dense(64, activation='relu', kernel_regularizer=l2(l2_reg)),
+                            Dense(1)])
+        model.compile(optimizer=Adam(learning_rate=learning_rate), loss=Huber())
+        model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=30, batch_size=batch_size,
+                  callbacks=[EarlyStopping(patience=6, restore_best_weights=True)], verbose=0)
+        val_predictions = target_scaler.inverse_transform(model.predict(X_val, verbose=0)).flatten()
+        val_actuals = target_scaler.inverse_transform(y_val.reshape(-1, 1)).flatten()
+        return np.sqrt(np.mean((val_actuals - val_predictions) ** 2))
 
     study = optuna.create_study(direction='minimize')
     study.optimize(objective, n_trials=OPTUNA_LSTM_TRIALS)
-    bp = study.best_params
+    best_params = study.best_params
     print(f"    Best RMSE: {study.best_value:.4f}. Training final model...")
 
     tf.keras.backend.clear_session()
-    final = Sequential([Input(shape=(SEQ_LEN,len(feature_cols))),
-        LSTM(bp['lstm_1_units'],activation='tanh',return_sequences=True), Dropout(bp['dropout_rate']),
-        LSTM(bp['lstm_2_units'],activation='tanh'), Dropout(bp['dropout_rate']),
-        Dense(64,activation='relu',kernel_regularizer=l2(bp['l2_reg'])),
-        Dense(1)])
-    final.compile(optimizer=Adam(learning_rate=bp['learning_rate']), loss=Huber())
-    final.fit(X_train, y_train, validation_data=(X_val,y_val), epochs=100,
-              batch_size=bp['batch_size'],
-              callbacks=[EarlyStopping(patience=12,restore_best_weights=True),
-                         ReduceLROnPlateau(factor=0.5,patience=5,min_lr=1e-6)], verbose=0)
+    final_model = Sequential([Input(shape=(SEQUENCE_LENGTH, len(feature_cols))),
+                              LSTM(best_params['lstm_1_units'], activation='tanh', return_sequences=True), Dropout(best_params['dropout_rate']),
+                              LSTM(best_params['lstm_2_units'], activation='tanh'), Dropout(best_params['dropout_rate']),
+                              Dense(64, activation='relu', kernel_regularizer=l2(best_params['l2_reg'])),
+                              Dense(1)])
+    final_model.compile(optimizer=Adam(learning_rate=best_params['learning_rate']), loss=Huber())
+    final_model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=100,
+                    batch_size=best_params['batch_size'],
+                    callbacks=[EarlyStopping(patience=12, restore_best_weights=True),
+                               ReduceLROnPlateau(factor=0.5, patience=5, min_lr=1e-6)], verbose=0)
 
     # Recursive hourly forecast → aggregate to daily
     print(f"    Forecasting {forecast_days} days recursively (hourly)...")
-    lag_idx = [feature_cols.index(f) for f in lag_feats]
-    lag_min = feat_scaler.data_min_[lag_idx]
-    lag_range = feat_scaler.data_range_[lag_idx]
-    lag_range[lag_range==0] = 1.0
+    lag_indices = [feature_cols.index(f) for f in lag_features]
+    lag_mins = feature_scaler.data_min_[lag_indices]
+    lag_ranges = feature_scaler.data_range_[lag_indices]
+    lag_ranges[lag_ranges == 0] = 1.0
 
-    results = []
-    for pn in sorted(dlh['Product_Name'].unique()):
-        pdf = dlh[dlh['Product_Name']==pn].sort_values('Date')
-        if len(pdf) < SEQ_LEN: continue
-        tail = pdf.tail(SEQ_LEN)
-        seq = feat_scaler.transform(tail[feature_cols])
-        sales_hist = list(pdf['Sales'].values[-max(SEQ_LEN,63):])
-        max_dt = pdf['Date'].max()
+    forecast_results = []
+    for product_name in sorted(df_long_hourly['Product_Name'].unique()):
+        product_df = df_long_hourly[df_long_hourly['Product_Name'] == product_name].sort_values('Date')
+        if len(product_df) < SEQUENCE_LENGTH:
+            continue
+        product_tail = product_df.tail(SEQUENCE_LENGTH)
+        current_sequence = feature_scaler.transform(product_tail[feature_cols])
+        sales_history_list = list(product_df['Sales'].values[-max(SEQUENCE_LENGTH, 63) :])
+        max_dt = product_df['Date'].max()
 
         forecast_hours_list = []
-        for d in range(forecast_days):
-            day = max_dt.normalize() + pd.Timedelta(days=d+1)
-            for h in BUSINESS_HOURS:
-                forecast_hours_list.append(day + pd.Timedelta(hours=h))
+        for day_offset in range(forecast_days):
+            day_dt = max_dt.normalize() + pd.Timedelta(days=day_offset + 1)
+            for hour in BUSINESS_HOURS:
+                forecast_hours_list.append(day_dt + pd.Timedelta(hours=hour))
 
-        for hi, cur_dt in enumerate(forecast_hours_list):
-            pred_s = final.predict(seq.reshape(1,SEQ_LEN,-1), verbose=0)[0,0]
-            pred_r = max(0, tgt_scaler.inverse_transform([[pred_s]])[0,0])
-            sales_hist.append(pred_r)
-            results.append({'Date':cur_dt,'Product_Name':pn,'Forecast_h':pred_r})
+        for hour_idx, current_datetime in enumerate(forecast_hours_list):
+            prediction_scaled = final_model.predict(current_sequence.reshape(1, SEQUENCE_LENGTH, -1), verbose=0)[0, 0]
+            prediction_raw = max(0, target_scaler.inverse_transform([[prediction_scaled]])[0, 0])
+            sales_history_list.append(prediction_raw)
+            forecast_results.append({'Date': current_datetime, 'Product_Name': product_name, 'Forecast_h': prediction_raw})
 
-            if hi+1 < len(forecast_hours_list):
-                next_feat = seq[-1].copy()
+            if hour_idx + 1 < len(forecast_hours_list):
+                next_features = current_sequence[-1].copy()
                 # Recompute hourly lags
-                h = sales_hist
-                raw = np.array([h[-1], h[-9] if len(h)>=9 else h[0],
-                    h[-63] if len(h)>=63 else h[0],
-                    np.mean(h[-9:]) if len(h)>=9 else np.mean(h),
-                    np.std(h[-9:]) if len(h)>=9 else 0.0])
-                scaled = (raw-lag_min)/lag_range
-                for li,fi in enumerate(lag_idx): next_feat[fi]=scaled[li]
+                history = sales_history_list
+                raw_lags = np.array([history[-1], history[-9] if len(history) >= 9 else history[0],
+                                     history[-63] if len(history) >= 63 else history[0],
+                                     np.mean(history[-9:]) if len(history) >= 9 else np.mean(history),
+                                     np.std(history[-9:]) if len(history) >= 9 else 0.0])
+                scaled_lags = (raw_lags - lag_mins) / lag_ranges
+                for li, fi in enumerate(lag_indices):
+                    next_features[fi] = scaled_lags[li]
                 # Update time features for next hour
-                ndt = forecast_hours_list[hi+1]
-                dow=ndt.dayofweek; mon=ndt.month; hr=ndt.hour
-                time_vals = {'day_sin':np.sin(2*np.pi*dow/7),'day_cos':np.cos(2*np.pi*dow/7),
-                    'month_sin':np.sin(2*np.pi*(mon-1)/12),'month_cos':np.cos(2*np.pi*(mon-1)/12),
-                    'Is_Weekend':1 if dow>=5 else 0,
-                    'hour_sin':np.sin(2*np.pi*(hr-8)/9),'hour_cos':np.cos(2*np.pi*(hr-8)/9)}
-                for tf_name, tv in time_vals.items():
+                next_datetime = forecast_hours_list[hour_idx + 1]
+                day_of_week = next_datetime.dayofweek
+                month = next_datetime.month
+                hour = next_datetime.hour
+                time_values = {'day_sin': np.sin(2 * np.pi * day_of_week / 7), 'day_cos': np.cos(2 * np.pi * day_of_week / 7),
+                               'month_sin': np.sin(2 * np.pi * (month - 1) / 12), 'month_cos': np.cos(2 * np.pi * (month - 1) / 12),
+                               'Is_Weekend': 1 if day_of_week >= 5 else 0,
+                               'hour_sin': np.sin(2 * np.pi * (hour - 8) / 9), 'hour_cos': np.cos(2 * np.pi * (hour - 8) / 9)}
+                for tf_name, tv in time_values.items():
                     if tf_name in feature_cols:
-                        fi=feature_cols.index(tf_name)
-                        next_feat[fi]=(tv-feat_scaler.data_min_[fi])/(feat_scaler.data_range_[fi]+1e-8)
-                seq = np.roll(seq,-1,axis=0); seq[-1]=next_feat
+                        fi = feature_cols.index(tf_name)
+                        next_features[fi] = (tv - feature_scaler.data_min_[fi]) / (feature_scaler.data_range_[fi] + 1e-8)
+                current_sequence = np.roll(current_sequence, -1, axis=0)
+                current_sequence[-1] = next_features
 
     tf.keras.backend.clear_session()
 
     # Rollup hourly → daily
-    rdf = pd.DataFrame(results)
-    rdf['Date_Day'] = rdf['Date'].dt.normalize()
-    daily = rdf.groupby(['Date_Day','Product_Name'])['Forecast_h'].sum().reset_index()
-    daily = daily.rename(columns={'Date_Day':'Date','Forecast_h':'Forecast'})
-    daily['Forecast'] = daily['Forecast'].round().astype(int)
-    return daily[['Date','Product_Name','Forecast']]
+    rollup_df = pd.DataFrame(forecast_results)
+    rollup_df['Date_Day'] = rollup_df['Date'].dt.normalize()
+    daily_forecast = rollup_df.groupby(['Date_Day', 'Product_Name'])['Forecast_h'].sum().reset_index()
+    daily_forecast = daily_forecast.rename(columns={'Date_Day': 'Date', 'Forecast_h': 'Forecast'})
+    daily_forecast['Forecast'] = daily_forecast['Forecast'].round().astype(int)
+    return daily_forecast[['Date', 'Product_Name', 'Forecast']]
 
 
 # ── RUNNER REGISTRY ──
@@ -1193,7 +1410,7 @@ MODEL_RUNNERS = {
     'xgb_improved_daily': run_xgb_improved_daily,
     'xgb_simple_hourly':  run_xgb_simple_hourly,
     'xgb_improved_hourly':run_xgb_improved_hourly,
-    'arima':              run_arima,
+    'arima_forecast':              run_arima,
     'prophet_daily':      run_prophet_daily,
     'prophet_hourly':     run_prophet_hourly,
     'lstm_daily':         run_lstm_daily,
@@ -1202,10 +1419,9 @@ MODEL_RUNNERS = {
 
 
 # ══════════════════════════════════════════════════════════════
-# PDF REPORT (same as v2 — generate_report function)
+# PDF REPORT (generate_report function)
 # ══════════════════════════════════════════════════════════════
-# [The generate_report function is identical to v2 — it's imported/reused.
-#  For brevity in this file, I'm including it inline below.]
+
 
 def generate_report(forecast_df, daily_ingredients, model_name, model_info, horizon, output_path):
     """Generate PDF report — identical to v2 implementation."""
@@ -1232,33 +1448,41 @@ def generate_report(forecast_df, daily_ingredients, model_name, model_info, hori
     total_items=int(forecast_df['Forecast'].sum())
     DAY_NAMES=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
 
-    def make_table(data,cw,hc=hdr_bg):
-        t=Table(data,colWidths=cw,repeatRows=1)
-        s=[('BACKGROUND',(0,0),(-1,0),hc),('TEXTCOLOR',(0,0),(-1,0),hdr_fg),
-           ('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),('FONTSIZE',(0,0),(-1,0),8),
-           ('FONTSIZE',(0,1),(-1,-1),8),('ALIGN',(1,0),(-1,-1),'CENTER'),
-           ('ALIGN',(0,0),(0,-1),'LEFT'),('GRID',(0,0),(-1,-1),0.3,grid),
-           ('BOTTOMPADDING',(0,0),(-1,-1),3),('TOPPADDING',(0,0),(-1,-1),3)]
-        for i in range(1,len(data)):
-            if i%2==0: s.append(('BACKGROUND',(0,i),(-1,i),alt))
-        t.setStyle(TableStyle(s)); return t
+    def make_table(data, col_widths, header_color=hdr_bg):
+        table = Table(data, colWidths=col_widths, repeatRows=1)
+        table_style = [('BACKGROUND', (0, 0), (-1, 0), header_color), ('TEXTCOLOR', (0, 0), (-1, 0), hdr_fg),
+                       ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'), ('FONTSIZE', (0, 0), (-1, 0), 8),
+                       ('FONTSIZE', (0, 1), (-1, -1), 8), ('ALIGN', (1, 0), (-1, -1), 'CENTER'),
+                       ('ALIGN', (0, 0), (0, -1), 'LEFT'), ('GRID', (0, 0), (-1, -1), 0.3, grid),
+                       ('BOTTOMPADDING', (0, 0), (-1, -1), 3), ('TOPPADDING', (0, 0), (-1, -1), 3)]
+        for i in range(1, len(data)):
+            if i % 2 == 0:
+                table_style.append(('BACKGROUND', (0, i), (-1, i), alt))
+        table.setStyle(TableStyle(table_style))
+        return table
 
-    def add_two_col(items,c1,c2,hc=ingr_hdr):
-        half=(len(items)+1)//2; l,r=items[:half],items[half:]
-        data=[[c1,c2,'',c1,c2]]
-        for i in range(half):
-            ln=l[i][0] if i<len(l) else ''; lv=l[i][1] if i<len(l) else ''
-            rn=r[i][0] if i<len(r) else ''; rv=r[i][1] if i<len(r) else ''
-            data.append([ln,lv,'',rn,rv])
-        t=Table(data,colWidths=[4*cm,2.5*cm,0.4*cm,4*cm,2.5*cm])
-        s=[('BACKGROUND',(0,0),(1,0),hc),('BACKGROUND',(3,0),(4,0),hc),
-           ('TEXTCOLOR',(0,0),(-1,0),hdr_fg),('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),
-           ('FONTSIZE',(0,0),(-1,-1),8),('ALIGN',(1,0),(1,-1),'RIGHT'),('ALIGN',(4,0),(4,-1),'RIGHT'),
-           ('GRID',(0,0),(1,-1),0.3,grid),('GRID',(3,0),(4,-1),0.3,grid),
-           ('BOTTOMPADDING',(0,0),(-1,-1),2),('TOPPADDING',(0,0),(-1,-1),2)]
-        for i in range(1,len(data)):
-            if i%2==0: s.append(('BACKGROUND',(0,i),(1,i),alt)); s.append(('BACKGROUND',(3,i),(4,i),alt))
-        t.setStyle(TableStyle(s)); return t
+    def add_two_col(items, col_label1, col_label2, header_color=ingr_hdr):
+        half_length = (len(items) + 1) // 2
+        left_items, right_items = items[:half_length], items[half_length:]
+        data = [[col_label1, col_label2, '', col_label1, col_label2]]
+        for i in range(half_length):
+            left_name = left_items[i][0] if i < len(left_items) else ''
+            left_value = left_items[i][1] if i < len(left_items) else ''
+            right_name = right_items[i][0] if i < len(right_items) else ''
+            right_value = right_items[i][1] if i < len(right_items) else ''
+            data.append([left_name, left_value, '', right_name, right_value])
+        table = Table(data, colWidths=[4 * cm, 2.5 * cm, 0.4 * cm, 4 * cm, 2.5 * cm])
+        table_style = [('BACKGROUND', (0, 0), (1, 0), header_color), ('BACKGROUND', (3, 0), (4, 0), header_color),
+                       ('TEXTCOLOR', (0, 0), (-1, 0), hdr_fg), ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+                       ('FONTSIZE', (0, 0), (-1, -1), 8), ('ALIGN', (1, 0), (1, -1), 'RIGHT'), ('ALIGN', (4, 0), (4, -1), 'RIGHT'),
+                       ('GRID', (0, 0), (1, -1), 0.3, grid), ('GRID', (3, 0), (4, -1), 0.3, grid),
+                       ('BOTTOMPADDING', (0, 0), (-1, -1), 2), ('TOPPADDING', (0, 0), (-1, -1), 2)]
+        for i in range(1, len(data)):
+            if i % 2 == 0:
+                table_style.append(('BACKGROUND', (0, i), (1, i), alt))
+                table_style.append(('BACKGROUND', (3, i), (4, i), alt))
+        table.setStyle(TableStyle(table_style))
+        return table
 
     # Cover
     TITLES={'day':'Daily Kitchen Prep Sheet','week':'Weekly Ordering Guide','month':'Monthly Forecast Report'}
@@ -1285,100 +1509,137 @@ def generate_report(forecast_df, daily_ingredients, model_name, model_info, hori
         ('TOPPADDING',(0,0),(-1,-1),6),('LINEBELOW',(0,0),(-1,-2),0.5,grid)]))
     story.append(st); story.append(PageBreak())
 
-    if horizon=='day':
-        for d in forecast_dates:
-            dn=DAY_NAMES[d.dayofweek]
-            story.append(Paragraph(f"Kitchen Prep — {dn} {d.strftime('%d %B %Y')}",sec_s))
-            story.append(Paragraph("Forecast quantities for each menu item, sorted by expected volume. Prepare these before service.",note_s))
-            story.append(Paragraph("Items to Prepare",subsec_s))
-            dp=forecast_df[(forecast_df['Date']==d)&(forecast_df['Forecast']>0)].sort_values('Forecast',ascending=False)
-            items=[(str(r['Product_Name']),str(int(r['Forecast']))) for _,r in dp.iterrows()]
-            if items: story.append(add_two_col(items,'Item','Qty',hdr_bg)); story.append(Paragraph(f"Day total: {int(dp['Forecast'].sum())} items",body_s))
-            story.append(Spacer(1,4*mm))
-            story.append(Paragraph("Ingredients Required",subsec_s))
-            story.append(Paragraph("Total raw ingredients for today. Quantities over 500g shown in kg. Check stock and defrost accordingly.",note_s))
-            di=daily_ingredients[(daily_ingredients['Date']==d)&(daily_ingredients['total_qty']>0)]
-            di=convert_grams_to_kg(di).sort_values('total_qty',ascending=False)
-            ingr=[(str(r['ingredient']),fmt_qty(r['total_qty'],r['unit'])) for _,r in di.iterrows()]
-            if ingr: story.append(add_two_col(ingr,'Ingredient','Quantity'))
-            if d!=forecast_dates[-1]: story.append(PageBreak())
+    if horizon == 'day':
+        for current_date in forecast_dates:
+            day_name = DAY_NAMES[current_date.dayofweek]
+            story.append(Paragraph(f"Kitchen Prep — {day_name} {current_date.strftime('%d %B %Y')}", sec_s))
+            story.append(Paragraph("Forecast quantities for each menu item, sorted by expected volume. Prepare these before service.", note_s))
+            story.append(Paragraph("Items to Prepare", subsec_s))
+            day_predictions = forecast_df[(forecast_df['Date'] == current_date) & (forecast_df['Forecast'] > 0)].sort_values('Forecast', ascending=False)
+            items_to_prep = [(str(row['Product_Name']), str(int(row['Forecast']))) for _, row in day_predictions.iterrows()]
+            if items_to_prep:
+                story.append(add_two_col(items_to_prep, 'Item', 'Qty', hdr_bg))
+                story.append(Paragraph(f"Day total: {int(day_predictions['Forecast'].sum())} items", body_s))
+            story.append(Spacer(1, 4 * mm))
+            story.append(Paragraph("Ingredients Required", subsec_s))
+            story.append(Paragraph("Total raw ingredients for today. Quantities over 500g shown in kg. Check stock and defrost accordingly.", note_s))
+            needed_ingredients = daily_ingredients[(daily_ingredients['Date'] == current_date) & (daily_ingredients['total_qty'] > 0)]
+            needed_ingredients = convert_grams_to_kg(needed_ingredients).sort_values('total_qty', ascending=False)
+            ingredient_rows = [(str(row['ingredient']), fmt_qty(row['total_qty'], row['unit'])) for _, row in needed_ingredients.iterrows()]
+            if ingredient_rows:
+                story.append(add_two_col(ingredient_rows, 'Ingredient', 'Quantity'))
+            if current_date != forecast_dates[-1]:
+                story.append(PageBreak())
 
-    elif horizon=='week':
-        story.append(Paragraph("Weekly Product Overview",sec_s))
-        story.append(Paragraph("Forecast per product per day. A dash means zero. Use for daily prep planning and staffing.",note_s))
-        pivot=forecast_df.pivot_table(index='Product_Name',columns='Date',values='Forecast',aggfunc='sum',fill_value=0)
-        pivot['TOTAL']=pivot.sum(axis=1); pivot=pivot[pivot['TOTAL']>0].sort_values('TOTAL',ascending=False)
-        hdrs=['Product']+[f"{DAY_NAMES[d.dayofweek][:3]}\n{d.day}" for d in forecast_dates]+['Total']
-        td=[hdrs]
-        for pn,row in pivot.iterrows():
-            r=[str(pn)]+[str(int(row.get(d,0))) if int(row.get(d,0))>0 else '-' for d in forecast_dates]+[str(int(row['TOTAL']))]
-            td.append(r)
-        td.append(['TOTAL']+[str(int(pivot[d].sum())) for d in forecast_dates]+[str(int(pivot['TOTAL'].sum()))])
-        nc=len(hdrs); cw=[3.8*cm]+[1.6*cm]*(nc-2)+[1.8*cm]
-        tw=sum(cw)
-        if tw>W: cw=[w*W/tw for w in cw]
-        t=Table(td,colWidths=cw,repeatRows=1)
-        tsl=[('BACKGROUND',(0,0),(-1,0),hdr_bg),('TEXTCOLOR',(0,0),(-1,0),hdr_fg),
-             ('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),('FONTSIZE',(0,0),(-1,-1),7),
-             ('ALIGN',(1,0),(-1,-1),'CENTER'),('ALIGN',(0,0),(0,-1),'LEFT'),('GRID',(0,0),(-1,-1),0.3,grid),
-             ('BOTTOMPADDING',(0,0),(-1,-1),3),('TOPPADDING',(0,0),(-1,-1),3),
-             ('BACKGROUND',(0,-1),(-1,-1),total_bg),('FONTNAME',(0,-1),(-1,-1),'Helvetica-Bold')]
-        for i in range(1,len(td)-1):
-            if i%2==0: tsl.append(('BACKGROUND',(0,i),(-1,i),alt))
-        t.setStyle(TableStyle(tsl)); story.append(t); story.append(PageBreak())
-        story.append(Paragraph("Supplier Order List — Weekly Totals",sec_s))
-        story.append(Paragraph("Total ingredients for the week, sorted by volume. Quantities over 500g shown in kg. Consider a 10-15% buffer for popular items.",note_s))
-        wi=(daily_ingredients.groupby(['ingredient','unit'])['total_qty'].sum().reset_index().sort_values('total_qty',ascending=False))
-        wi=wi[wi['total_qty']>0]; wi=convert_grams_to_kg(wi)
-        ingr=[(str(r['ingredient']),fmt_qty(r['total_qty'],r['unit'])) for _,r in wi.iterrows()]
-        if ingr: story.append(add_two_col(ingr,'Ingredient','Order Qty'))
+    elif horizon == 'week':
+        story.append(Paragraph("Weekly Product Overview", sec_s))
+        story.append(Paragraph("Forecast per product per day. A dash means zero. Use for daily prep planning and staffing.", note_s))
+        pivot_table = forecast_df.pivot_table(index='Product_Name', columns='Date', values='Forecast', aggfunc='sum', fill_value=0)
+        pivot_table['TOTAL'] = pivot_table.sum(axis=1)
+        pivot_table = pivot_table[pivot_table['TOTAL'] > 0].sort_values('TOTAL', ascending=False)
+        headers = ['Product'] + [f"{DAY_NAMES[d.dayofweek][:3]}\n{d.day}" for d in forecast_dates] + ['Total']
+        table_data = [headers]
+        for product_name, row in pivot_table.iterrows():
+            row_data = [str(product_name)] + [str(int(row.get(d, 0))) if int(row.get(d, 0)) > 0 else '-' for d in forecast_dates] + [str(int(row['TOTAL']))]
+            table_data.append(row_data)
+        table_data.append(['TOTAL'] + [str(int(pivot_table[d].sum())) for d in forecast_dates] + [str(int(pivot_table['TOTAL'].sum()))])
+        num_cols = len(headers)
+        col_widths = [3.8 * cm] + [1.6 * cm] * (num_cols - 2) + [1.8 * cm]
+        total_table_width = sum(col_widths)
+        if total_table_width > W:
+            col_widths = [w * W / total_table_width for w in col_widths]
+        table = Table(table_data, colWidths=col_widths, repeatRows=1)
+        table_style_list = [('BACKGROUND', (0, 0), (-1, 0), hdr_bg), ('TEXTCOLOR', (0, 0), (-1, 0), hdr_fg),
+                            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'), ('FONTSIZE', (0, 0), (-1, -1), 7),
+                            ('ALIGN', (1, 0), (-1, -1), 'CENTER'), ('ALIGN', (0, 0), (0, -1), 'LEFT'), ('GRID', (0, 0), (-1, -1), 0.3, grid),
+                            ('BOTTOMPADDING', (0, 0), (-1, -1), 3), ('TOPPADDING', (0, 0), (-1, -1), 3),
+                            ('BACKGROUND', (0, -1), (-1, -1), total_bg), ('FONTNAME', (0, -1), (-1, -1), 'Helvetica-Bold')]
+        for i in range(1, len(table_data) - 1):
+            if i % 2 == 0:
+                table_style_list.append(('BACKGROUND', (0, i), (-1, i), alt))
+        table.setStyle(TableStyle(table_style_list))
+        story.append(table)
+        story.append(PageBreak())
+        story.append(Paragraph("Supplier Order List — Weekly Totals", sec_s))
+        story.append(Paragraph("Total ingredients for the week, sorted by volume. Quantities over 500g shown in kg. Consider a 10-15% buffer for popular items.", note_s))
+        weekly_ingredients = (daily_ingredients.groupby(['ingredient', 'unit'])['total_qty'].sum().reset_index().sort_values('total_qty', ascending=False))
+        weekly_ingredients = weekly_ingredients[weekly_ingredients['total_qty'] > 0]
+        weekly_ingredients = convert_grams_to_kg(weekly_ingredients)
+        ingredient_rows = [(str(row['ingredient']), fmt_qty(row['total_qty'], row['unit'])) for _, row in weekly_ingredients.iterrows()]
+        if ingredient_rows:
+            story.append(add_two_col(ingredient_rows, 'Ingredient', 'Order Qty'))
 
-    elif horizon=='month':
-        story.append(Paragraph("Weekly Breakdown",sec_s))
-        story.append(Paragraph("Monthly forecast split by calendar week for staffing and inventory planning.",note_s))
-        forecast_df=forecast_df.copy(); forecast_df['week']=forecast_df['Date'].dt.isocalendar().week.astype(int)
-        wt=forecast_df.groupby('week')['Forecast'].sum().reset_index()
-        wtd=[['Week','Total','Daily Avg']]
-        for _,wr in wt.iterrows():
-            wk=int(wr['week']); tot=int(wr['Forecast']); diw=len(forecast_df[forecast_df['week']==wk]['Date'].unique())
-            wtd.append([f"Week {wk}",str(tot),str(int(tot/diw) if diw>0 else 0)])
-        story.append(make_table(wtd,[3*cm,4*cm,4*cm])); story.append(Spacer(1,6*mm))
-        story.append(Paragraph("Top 15 Products by Volume",sec_s))
-        story.append(Paragraph("Highest-demand products. Ensure reliable supply and sufficient prep capacity.",note_s))
-        top=forecast_df.groupby('Product_Name')['Forecast'].sum().sort_values(ascending=False).head(15).reset_index()
-        td=[['#','Product','Monthly Total','Daily Avg']]
-        for i,(_,r) in enumerate(top.iterrows(),1): td.append([str(i),str(r['Product_Name']),str(int(r['Forecast'])),f"{r['Forecast']/n_days:.1f}"])
-        story.append(make_table(td,[1*cm,5*cm,3*cm,3*cm])); story.append(Spacer(1,6*mm))
-        story.append(Paragraph("Lowest Volume Products",sec_s))
-        story.append(Paragraph("Consider whether these items justify their menu space, prep time, and ingredient costs.",note_s))
-        bot=forecast_df.groupby('Product_Name')['Forecast'].sum().sort_values().head(10).reset_index()
-        bd=[['Product','Monthly Total','Daily Avg']]
-        for _,r in bot.iterrows(): bd.append([str(r['Product_Name']),str(int(r['Forecast'])),f"{r['Forecast']/n_days:.1f}"])
-        story.append(make_table(bd,[5*cm,3*cm,3*cm])); story.append(PageBreak())
-        story.append(Paragraph("Day-of-Week Demand Patterns",sec_s))
-        story.append(Paragraph("Average daily volume by day of week. Plan staffing rotas and prep schedules accordingly.",note_s))
-        forecast_df['dow_name']=forecast_df['Date'].dt.dayofweek.map({i:DAY_NAMES[i] for i in range(7)})
-        da=forecast_df.groupby('dow_name')['Forecast'].sum(); dc=forecast_df.groupby('dow_name')['Date'].nunique()
-        dd=[['Day','Total','Daily Avg']]
-        for dn in DAY_NAMES:
-            if dn in da.index: dd.append([dn,str(int(da[dn])),str(int(da[dn]/dc[dn]))])
-        story.append(make_table(dd,[4*cm,3*cm,3*cm])); story.append(Spacer(1,6*mm))
-        story.append(Paragraph("Monthly Ingredient Requirements",sec_s))
-        story.append(Paragraph("Total ingredients for the month. Quantities over 500g shown in kg. Use for bulk ordering and supplier negotiations.",note_s))
-        wi=(daily_ingredients.groupby(['ingredient','unit'])['total_qty'].sum().reset_index().sort_values('total_qty',ascending=False))
-        wi=wi[wi['total_qty']>0]; wi=convert_grams_to_kg(wi)
-        ingr=[(str(r['ingredient']),fmt_qty(r['total_qty'],r['unit'])) for _,r in wi.iterrows()]
-        if ingr: story.append(add_two_col(ingr,'Ingredient','Monthly Total'))
+    elif horizon == 'month':
+        story.append(Paragraph("Weekly Breakdown", sec_s))
+        story.append(Paragraph("Monthly forecast split by calendar week for staffing and inventory planning.", note_s))
+        forecast_df = forecast_df.copy()
+        forecast_df['week'] = forecast_df['Date'].dt.isocalendar().week.astype(int)
+        weekly_totals = forecast_df.groupby('week')['Forecast'].sum().reset_index()
+        weekly_table_data = [['Week', 'Total', 'Daily Avg']]
+        for _, week_row in weekly_totals.iterrows():
+            week_num = int(week_row['week'])
+            total_qty = int(week_row['Forecast'])
+            days_in_week = len(forecast_df[forecast_df['week'] == week_num]['Date'].unique())
+            weekly_table_data.append([f"Week {week_num}", str(total_qty), str(int(total_qty / days_in_week) if days_in_week > 0 else 0)])
+        story.append(make_table(weekly_table_data, [3 * cm, 4 * cm, 4 * cm]))
+        story.append(Spacer(1, 6 * mm))
+        story.append(Paragraph("Top 15 Products by Volume", sec_s))
+        story.append(Paragraph("Highest-demand products. Ensure reliable supply and sufficient prep capacity.", note_s))
+        top_products = forecast_df.groupby('Product_Name')['Forecast'].sum().sort_values(ascending=False).head(15).reset_index()
+        top_table_data = [['#', 'Product', 'Monthly Total', 'Daily Avg']]
+        for i, (_, row) in enumerate(top_products.iterrows(), 1):
+            top_table_data.append([str(i), str(row['Product_Name']), str(int(row['Forecast'])), f"{row['Forecast']/n_days:.1f}"])
+        story.append(make_table(top_table_data, [1 * cm, 5 * cm, 3 * cm, 3 * cm]))
+        story.append(Spacer(1, 6 * mm))
+        story.append(Paragraph("Lowest Volume Products", sec_s))
+        story.append(Paragraph("Consider whether these items justify their menu space, prep time, and ingredient costs.", note_s))
+        bottom_products = forecast_df.groupby('Product_Name')['Forecast'].sum().sort_values().head(10).reset_index()
+        bottom_table_data = [['Product', 'Monthly Total', 'Daily Avg']]
+        for _, row in bottom_products.iterrows():
+            bottom_table_data.append([str(row['Product_Name']), str(int(row['Forecast'])), f"{row['Forecast']/n_days:.1f}"])
+        story.append(make_table(bottom_table_data, [5 * cm, 3 * cm, 3 * cm]))
+        story.append(PageBreak())
+        story.append(Paragraph("Day-of-Week Demand Patterns", sec_s))
+        story.append(Paragraph("Average daily volume by day of week. Plan staffing rotas and prep schedules accordingly.", note_s))
+        forecast_df['dow_name'] = forecast_df['Date'].dt.dayofweek.map({i: DAY_NAMES[i] for i in range(7)})
+        day_averages = forecast_df.groupby('dow_name')['Forecast'].sum()
+        day_counts = forecast_df.groupby('dow_name')['Date'].nunique()
+        day_demand_data = [['Day', 'Total', 'Daily Avg']]
+        for day_name in DAY_NAMES:
+            if day_name in day_averages.index:
+                day_demand_data.append([day_name, str(int(day_averages[day_name])), str(int(day_averages[day_name] / day_counts[day_name]))])
+        story.append(make_table(day_demand_data, [4 * cm, 3 * cm, 3 * cm]))
+        story.append(Spacer(1, 6 * mm))
+        story.append(Paragraph("Monthly Ingredient Requirements", sec_s))
+        story.append(Paragraph("Total ingredients for the month. Quantities over 500g shown in kg. Use for bulk ordering and supplier negotiations.", note_s))
+        monthly_ingredients = (daily_ingredients.groupby(['ingredient', 'unit'])['total_qty'].sum().reset_index().sort_values('total_qty', ascending=False))
+        monthly_ingredients = monthly_ingredients[monthly_ingredients['total_qty'] > 0]
+        monthly_ingredients = convert_grams_to_kg(monthly_ingredients)
+        ingredient_rows = [(str(row['ingredient']), fmt_qty(row['total_qty'], row['unit'])) for _, row in monthly_ingredients.iterrows()]
+        if ingredient_rows:
+            story.append(add_two_col(ingredient_rows, 'Ingredient', 'Monthly Total'))
 
-    doc.build(story); print(f"    PDF saved: {output_path}")
+    import time
+    try:
+        doc.build(story); print(f"    PDF saved: {output_path}")
+    except PermissionError:
+        ts = int(time.time())
+        new_path = output_path.replace(".pdf", f"_{ts}.pdf")
+        print(f"    WARNING: Permission denied on {output_path}. File might be open.")
+        print(f"    Saving to fallback: {new_path}")
+        from reportlab.lib.pagesizes import A4
+        doc = SimpleDocTemplate(new_path, pagesize=A4, rightMargin=40, leftMargin=40, topMargin=40, bottomMargin=40)
+        doc.build(story)
+        print(f"    PDF saved: {new_path}")
 
 
 # ══════════════════════════════════════════════════════════════
 # MAIN PIPELINE
 # ══════════════════════════════════════════════════════════════
 def main():
-    parser = argparse.ArgumentParser(description='Multi-Model Forecast Pipeline v3')
-    parser.add_argument('--model', help='Force a specific runner (xgb_improved_daily, arima, prophet_daily, etc.)')
+    parser = argparse.ArgumentParser(description='Multi-Model Forecast Pipeline')
+    parser.add_argument('--model', help='Force a specific runner (xgb_improved_daily, arima_forecast, prophet_daily, etc.)')
+    parser.add_argument('--november', action='store_true', help='Forecast November 2025 using notebook-style train/val/test split')
     args = parser.parse_args()
 
     print("\n" + "═"*58)
@@ -1415,50 +1676,69 @@ def main():
             for h in ['day','week','month']:
                 runners[h] = resolve_runner(best_models[h]['model_type']) if best_models[h] else 'xgb_improved_daily'
 
-    configs = [('day',1,'Daily Kitchen Prep Sheet'),('week',7,'Weekly Ordering Guide'),('month',30,'Monthly Stakeholder Report')]
+    if args.november:
+        print("  MODE: November 2025 Evaluation (Notebook-style split)")
+        # For November mode, notebook logic for train/val/test split
+        # train until Oct 01, val until Nov 01, test until Nov 30
+        # This results in a 29-day forecast starting Nov 02
+        configs = [('month',29,'Monthly Stakeholder Report (November 2025)')]
+    else:
+        configs = [('day',1,'Daily Kitchen Prep Sheet'),('week',7,'Weekly Ordering Guide'),('month',30,'Monthly Stakeholder Report')]
 
     # Group by runner to avoid retraining
     runner_to_horizons = {}
-    for hk,hd,ht in configs:
-        rn = runners[hk]
-        if rn not in runner_to_horizons: runner_to_horizons[rn]=[]
-        runner_to_horizons[rn].append((hk,hd,ht))
+    for horizon_key, horizon_days, report_title in configs:
+        runner_name = runners[horizon_key]
+        if runner_name not in runner_to_horizons: 
+            runner_to_horizons[runner_name] = []
+        runner_to_horizons[runner_name].append((horizon_key, horizon_days, report_title))
 
     forecasts = {}
-    for rn,hl in runner_to_horizons.items():
-        md=max(hd for _,hd,_ in hl)
-        print(f"\n  ── Running {rn.upper()} (forecasting {md} days) ──")
-        fn = MODEL_RUNNERS.get(rn)
-        if not fn:
-            print(f"    ERROR: No runner '{rn}'. Skipping.")
+    for runner_name, horizon_list in runner_to_horizons.items():
+        max_days = max(hd for _, hd, _ in horizon_list)
+        print(f"\n  ── Running {runner_name.upper()} (forecasting {max_days} days) ──")
+        runner_func = MODEL_RUNNERS.get(runner_name)
+        if not runner_func:
+            print(f"    ERROR: No runner '{runner_name}'. Skipping.")
             continue
-        forecasts[rn] = fn(md)
-        print(f"    Done: {len(forecasts[rn])} predictions")
+        
+        if args.november:
+            # Pass a flag or special handling for November
+            # We'll modify runners to accept an optional 'eval_mode' or similar
+            try:
+                forecasts[runner_name] = runner_func(max_days, eval_mode='november')
+            except TypeError:
+                # Fallback if runner doesn't support eval_mode yet
+                forecasts[runner_name] = runner_func(max_days)
+        else:
+            forecasts[runner_name] = runner_func(max_days)
+        print(f"    Done: {len(forecasts[runner_name])} predictions")
 
     print(f"\n  ── Generating Reports ──")
     paths = []
-    for hk,hd,ht in configs:
-        rn = runners[hk]
-        if rn not in forecasts: continue
-        ff = forecasts[rn]
-        dates = sorted(ff['Date'].unique())[:hd]
-        fdf = ff[ff['Date'].isin(dates)].copy()
-        merged = fdf.merge(recipes,left_on='Product_Name',right_on='product',how='left')
+    for horizon_key, horizon_days, report_title in configs:
+        runner_name = runners[horizon_key]
+        if runner_name not in forecasts: 
+            continue
+        full_forecast = forecasts[runner_name]
+        dates = sorted(full_forecast['Date'].unique())[:horizon_days]
+        forecast_df = full_forecast[full_forecast['Date'].isin(dates)].copy()
+        merged = forecast_df.merge(recipes, left_on='Product_Name', right_on='product', how='left')
         merged['total_qty'] = merged['Forecast'] * merged['quantity']
-        di = merged.groupby(['Date','ingredient','unit'])['total_qty'].sum().reset_index().sort_values(['Date','ingredient'])
-        mn = best_models[hk]['model_type'] if best_models[hk] else rn.upper()
-        mi = best_models[hk]
-        fn = f"forecast_{hk}_{fdf['Date'].min().strftime('%Y-%m-%d')}.pdf"
-        op = os.path.join(RESULTS_DIR,fn)
-        print(f"    {ht} ({mn})...")
-        generate_report(fdf,di,mn,mi,hk,op)
-        paths.append(op)
+        daily_ingredients = merged.groupby(['Date', 'ingredient', 'unit'])['total_qty'].sum().reset_index().sort_values(['Date', 'ingredient'])
+        model_display_name = best_models[horizon_key]['model_type'] if best_models[horizon_key] else runner_name.upper()
+        model_info = best_models[horizon_key]
+        report_filename = f"forecast_{horizon_key}_{forecast_df['Date'].min().strftime('%Y-%m-%d')}.pdf"
+        output_path = os.path.join(RESULTS_DIR, report_filename)
+        print(f"    {report_title} ({model_display_name})...")
+        generate_report(forecast_df, daily_ingredients, model_display_name, model_info, horizon_key, output_path)
+        paths.append(output_path)
 
     if forecasts:
-        longest=max(forecasts.values(),key=len)
-        cp=os.path.join(RESULTS_DIR,f"forecast_all_{datetime.now().strftime('%Y%m%d')}.csv")
-        longest.to_csv(cp,index=False)
-        print(f"\n    CSV: {cp}")
+        longest_forecast = max(forecasts.values(), key=len)
+        csv_path = os.path.join(RESULTS_DIR, f"forecast_all_{datetime.now().strftime('%Y%m%d')}.csv")
+        longest_forecast.to_csv(csv_path, index=False)
+        print(f"\n    CSV: {csv_path}")
 
     print("\n"+"═"*58)
     print("  PIPELINE COMPLETE — 3 reports generated")
