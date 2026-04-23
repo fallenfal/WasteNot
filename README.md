@@ -158,6 +158,8 @@ The features vary a bit by model but the main ones across the board are:
  While the project is ment to be run , each notebook individually, while running complex enviroments there is a posibility that the notebook would require more
   packages installed, or to run on specific enviroment (linux, Windows)
 
+ Also the project dosen't have a random seed generator, so multiple runs may have different results  because of the optuna function, wich searched the best params withing a certain runs, but different result should not have a big impact for example can be as variant as  0.366 to 0.377.
+
 ## Known Issues / Things I'd Improve
 
 - The recipe database is hardcoded in Python — ideally this should be in a CSV or database table that kitchen staff can update themselves without touching code
