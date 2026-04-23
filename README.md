@@ -153,6 +153,11 @@ The features vary a bit by model but the main ones across the board are:
 - reportlab (for PDF report generation)
 - sqlite3 (standard library)
 
+ ## Important
+
+ While the project is ment to be run , each notebook individually, while running complex enviroments there is a posibility that the notebook would require more
+  packages installed, or to run on specific enviroment (linux, Windows)
+
 ## Known Issues / Things I'd Improve
 
 - The recipe database is hardcoded in Python — ideally this should be in a CSV or database table that kitchen staff can update themselves without touching code
